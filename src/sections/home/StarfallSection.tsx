@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/Button";
 import { fadeUp, staggerContainer } from "@/animations/variants/fade-up";
 
-const ARTWORK_SRC = "/media/images/starfall-documentary.jpg";
+const ARTWORK_SRC = "/assets/media/images/starfall-documentary.png";
 
 export function StarfallSection() {
   const [imageAvailable, setImageAvailable] = useState(true);

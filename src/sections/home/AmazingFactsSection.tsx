@@ -10,7 +10,7 @@ const documentaries = [
     id: "cosmic-conflict",
     title: "Cosmic Conflict",
     description: "The origin of evil and the war that began before Earth.",
-    image: "/media/images/cosmic-conflict.jpg",
+    image: "/assets/media/images/cosmic-conflict.png"
   },
   {
     id: "revelation-bbb",
