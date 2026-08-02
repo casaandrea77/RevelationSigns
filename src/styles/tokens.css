@@ -1,0 +1,14 @@
+@theme {
+  --color-background: #080808;
+  --color-foreground: #f4efe6;
+  --color-muted: #a39e94;
+  --color-accent: #c4a35a;
+  --color-accent-hover: #d4b872;
+  --color-surface: #111111;
+  --color-border: rgba(244, 239, 230, 0.14);
+
+  --font-serif: var(--font-cormorant), "Cormorant Garamond", Georgia, serif;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+
+  --ease-cinematic: cubic-bezier(0.22, 1, 0.36, 1);
+}
