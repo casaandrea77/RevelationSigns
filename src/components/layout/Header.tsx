@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
-import { Button } from "@/components/ui/Button";
 
 const SCROLL_THRESHOLD = 24;
 
@@ -86,10 +85,10 @@ export function Header() {
         <nav className="hidden items-center gap-8 lg:flex" aria-label="Primary navigation">
           {[
             ["Journey", "/#journey"],
-            ["Documentaries", "/#documentaries"],
-            ["The Book", "/#the-book"],
-            ["About", "/#about"],
-            ["Contact", "/#contact"],
+            ["Documentaries", "/documentaries"],
+            ["The Book", "/great-controversy"],
+            ["Bible Studies", "/bible-studies"],
+            ["Contact", "/contact"],
           ].map(([label, href]) => (
             <Link
               key={label}
@@ -102,7 +101,7 @@ export function Header() {
         </nav>
 
         <div className="hidden lg:block">
-          <Button variant="primary" className="min-h-11 px-7 text-xs">Start the Journey</Button>
+          <Link href="/#journey" className="inline-flex min-h-11 items-center justify-center border border-transparent bg-accent px-7 font-sans text-xs font-medium tracking-[0.18em] text-background uppercase transition-colors hover:bg-accent-hover">Start the Journey</Link>
         </div>
 
         <button
@@ -116,6 +115,21 @@ export function Header() {
           <HamburgerIcon isOpen={isMenuOpen} />
         </button>
       </div>
+      {isMenuOpen ? (
+        <nav id="site-navigation" aria-label="Mobile navigation" className="border-t border-accent/20 bg-[#06101a]/98 px-6 py-6 shadow-[0_18px_40px_rgba(0,0,0,0.35)] backdrop-blur-md lg:hidden">
+          <div className="mx-auto flex max-w-[1440px] flex-col">
+            {[
+              ["Journey", "/#journey"],
+              ["Documentaries", "/documentaries"],
+              ["The Book", "/great-controversy"],
+              ["Bible Studies", "/bible-studies"],
+              ["Contact", "/contact"],
+            ].map(([label, href]) => (
+              <Link key={label} href={href} onClick={() => setIsMenuOpen(false)} className="border-b border-white/8 py-4 font-sans text-xs tracking-[0.2em] uppercase text-foreground/85 transition-colors hover:text-accent">{label}</Link>
+            ))}
+          </div>
+        </nav>
+      ) : null}
     </header>
   );
 }

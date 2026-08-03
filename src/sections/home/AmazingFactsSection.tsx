@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { fadeUp, staggerContainer } from "@/animations/variants/fade-up";
 
@@ -10,19 +11,22 @@ const documentaries = [
     id: "cosmic-conflict",
     title: "Cosmic Conflict",
     description: "The origin of evil and the war that began before Earth.",
-    image: "/assets/media/images/cosmic-conflict.png"
+    image: "/assets/media/images/cosmic-conflict.png",
+    href: "https://www.amazingfacts.org/watch/special-projects/amazing-facts-documentaries/cosmic-conflict-the-origin-of-evil/",
   },
   {
     id: "revelation-bbb",
     title: "Revelation: Bride, Beast & Babylon",
     description: "Prophecy decoded for the world we live in today.",
     image: "/assets/media/images/revelation-bbb.png",
+    href: "https://www.amazingfacts.org/watch/en/watch/special-projects/amazing-facts-documentaries/revelation-the-bride-the-beast-and-babylon-2/",
   },
   {
     id: "armageddon",
     title: "Armageddon",
     description: "The final battle and the hope beyond the storm.",
     image: "/assets/media/images/armageddon.png",
+    href: "https://www.amazingfacts.org/en/watch/special-projects/amazing-facts-documentaries/armageddon-and-the-final-events-of-bible-prophecy/",
   },
 ] as const;
 
@@ -30,9 +34,10 @@ type DocumentaryCardProps = {
   title: string;
   description: string;
   image: string;
+  href: string;
 };
 
-function DocumentaryCard({ title, description, image }: DocumentaryCardProps) {
+function DocumentaryCard({ title, description, image, href }: DocumentaryCardProps) {
   const [imageAvailable, setImageAvailable] = useState(true);
 
   return (
@@ -42,6 +47,7 @@ function DocumentaryCard({ title, description, image }: DocumentaryCardProps) {
       transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
       className="group relative flex h-full flex-col overflow-hidden rounded-sm border border-accent/40 bg-background/35 backdrop-blur-md transition-all duration-300 hover:border-accent/70 hover:shadow-[0_12px_40px_rgba(0,0,0,0.35),0_0_24px_rgba(196,163,90,0.08)]"
     >
+      <Link href={href} target="_blank" rel="noopener noreferrer" className="flex h-full flex-col" aria-label={`Watch ${title} on Amazing Facts`}>
       <div className="relative aspect-[3/2] w-full overflow-hidden">
         {imageAvailable ? (
           <Image
@@ -64,9 +70,10 @@ function DocumentaryCard({ title, description, image }: DocumentaryCardProps) {
           {description}
         </p>
         <span className="mt-6 font-sans text-[0.625rem] tracking-[0.3em] uppercase text-accent">
-          Watch
+          Watch Free ↗
         </span>
       </div>
+      </Link>
     </motion.article>
   );
 }
@@ -116,9 +123,15 @@ export function AmazingFactsSection() {
               title={doc.title}
               description={doc.description}
               image={doc.image}
+              href={doc.href}
             />
           ))}
         </motion.div>
+        <div className="mt-12 text-center">
+          <Link href="/documentaries" className="inline-flex min-h-13 items-center justify-center border border-accent/60 px-8 font-sans text-xs tracking-[0.2em] uppercase transition-colors hover:bg-accent hover:text-[#06101a]">
+            View All Documentaries
+          </Link>
+        </div>
       </div>
     </section>
   );

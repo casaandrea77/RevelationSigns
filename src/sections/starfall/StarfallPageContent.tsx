@@ -6,6 +6,8 @@ import { motion } from "framer-motion";
 import { fadeIn, fadeUp, staggerContainer } from "@/animations/variants/fade-up";
 import { Footer } from "@/components/layout/Footer";
 
+const STARFALL_DOCUMENTARY_URL = "https://www.youtube.com/watch?v=IbZJOALUPok";
+
 const scriptureTests = [
   {
     reference: "Isaiah 8:20",
@@ -34,16 +36,19 @@ const relatedDocumentaries = [
     title: "Cosmic Conflict",
     subtitle: "The origin of evil",
     image: "/assets/media/images/cosmic-conflict.png",
+    href: "https://www.amazingfacts.org/watch/special-projects/amazing-facts-documentaries/cosmic-conflict-the-origin-of-evil/",
   },
   {
     title: "Revelation",
     subtitle: "The bride, the beast and Babylon",
     image: "/assets/media/images/revelation-bbb.png",
+    href: "https://www.amazingfacts.org/watch/en/watch/special-projects/amazing-facts-documentaries/revelation-the-bride-the-beast-and-babylon-2/",
   },
   {
     title: "Armageddon",
     subtitle: "The final events of Bible prophecy",
     image: "/assets/media/images/armageddon.png",
+    href: "https://www.amazingfacts.org/en/watch/special-projects/amazing-facts-documentaries/armageddon-and-the-final-events-of-bible-prophecy/",
   },
 ] as const;
 
@@ -69,7 +74,7 @@ export function StarfallPageContent() {
           className="relative z-10 mx-auto w-full max-w-[1440px] px-6 pb-20 sm:px-10 lg:px-12 lg:pb-28"
         >
           <motion.p variants={fadeUp} className="font-sans text-xs tracking-[0.34em] uppercase text-accent sm:text-sm">
-            A RevelationSigns Documentary
+            A Strange Normal Documentary
           </motion.p>
           <motion.h1 id="starfall-title" variants={fadeUp} className="mt-5 font-serif text-[clamp(4.5rem,10vw,9rem)] font-medium leading-[0.82] tracking-[0.08em] uppercase">
             Starfall
@@ -78,10 +83,10 @@ export function StarfallPageContent() {
             Ancient mysteries. Extraordinary encounters. Biblical answers.
           </motion.p>
           <motion.div variants={fadeUp} className="mt-9 flex flex-wrap items-center gap-5">
-            <Link href="#watch" className="inline-flex min-h-14 items-center justify-center bg-accent px-9 font-sans text-sm font-semibold tracking-[0.17em] text-[#06101a] uppercase transition-colors hover:bg-accent-hover">
-              Watch Documentary
+            <Link href={STARFALL_DOCUMENTARY_URL} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-14 items-center justify-center bg-accent px-9 font-sans text-sm font-semibold tracking-[0.17em] text-[#06101a] uppercase transition-colors hover:bg-accent-hover">
+              Watch Documentary ↗
             </Link>
-            <span className="font-sans text-xs tracking-[0.22em] text-foreground/70 uppercase">Coming soon · Free to watch</span>
+            <span className="font-sans text-xs tracking-[0.22em] text-foreground/70 uppercase">34 minutes · Free on YouTube</span>
           </motion.div>
         </motion.div>
       </section>
@@ -89,12 +94,14 @@ export function StarfallPageContent() {
       <section id="watch" aria-labelledby="watch-heading" className="bg-[#f4efe6] px-6 py-20 text-[#1a1814] sm:px-10 lg:px-12 lg:py-28">
         <div className="mx-auto grid max-w-[1320px] items-center gap-12 lg:grid-cols-[1.3fr_0.7fr] lg:gap-16">
           <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} className="relative aspect-video overflow-hidden rounded-sm border border-black/10 bg-[#071422] shadow-[0_30px_80px_rgba(26,24,20,0.22)]">
-            <Image src="/assets/media/images/starfall-documentary-v2.png" alt="Starfall documentary video preview" fill sizes="(max-width: 1024px) 100vw, 65vw" className="object-cover opacity-65" />
-            <div className="absolute inset-0 bg-black/25" />
-            <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white">
-              <span className="flex h-20 w-20 items-center justify-center rounded-full border border-accent bg-black/35 text-2xl text-accent backdrop-blur-sm" aria-hidden>▶</span>
-              <p className="mt-5 font-sans text-xs tracking-[0.3em] uppercase">Documentary coming soon</p>
-            </div>
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/IbZJOALUPok?rel=0"
+              title="Starfall – The Strange Connection between Christians and UFOs"
+              className="absolute inset-0 h-full w-full"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            />
           </motion.div>
           <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.3 }}>
             <motion.p variants={fadeUp} className="font-sans text-xs tracking-[0.35em] uppercase text-[#8a6728]">Featured Film</motion.p>
@@ -103,9 +110,14 @@ export function StarfallPageContent() {
               Reports of strange lights and extraordinary encounters raise profound questions. Starfall explores why these stories captivate us—and how Scripture invites us to approach supernatural claims with courage, humility, and discernment.
             </motion.p>
             <motion.dl variants={fadeUp} className="mt-8 grid grid-cols-2 gap-6 border-t border-[#1a1814]/15 pt-6 font-sans">
-              <div><dt className="text-[0.65rem] tracking-[0.2em] text-[#8a6728] uppercase">Availability</dt><dd className="mt-2 text-sm">Free to watch</dd></div>
-              <div><dt className="text-[0.65rem] tracking-[0.2em] text-[#8a6728] uppercase">Perspective</dt><dd className="mt-2 text-sm">Bible-based</dd></div>
+              <div><dt className="text-[0.65rem] tracking-[0.2em] text-[#8a6728] uppercase">Presented by</dt><dd className="mt-2 text-sm">Strange Normal</dd></div>
+              <div><dt className="text-[0.65rem] tracking-[0.2em] text-[#8a6728] uppercase">Runtime</dt><dd className="mt-2 text-sm">34 minutes</dd></div>
             </motion.dl>
+            <motion.div variants={fadeUp} className="mt-8">
+              <Link href={STARFALL_DOCUMENTARY_URL} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-12 items-center justify-center bg-[#1a1814] px-7 font-sans text-xs font-semibold tracking-[0.18em] text-[#f4efe6] uppercase transition-colors hover:bg-[#2a2720]">
+                Watch on Strange Normal ↗
+              </Link>
+            </motion.div>
           </motion.div>
         </div>
       </section>
@@ -161,12 +173,14 @@ export function StarfallPageContent() {
           <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.15 }} className="mt-12 grid gap-7 md:grid-cols-3">
             {relatedDocumentaries.map((item) => (
               <motion.article key={item.title} variants={fadeUp} className="group overflow-hidden border border-accent/30 bg-black/20">
+                <Link href={item.href} target="_blank" rel="noopener noreferrer" aria-label={`Watch ${item.title} on Amazing Facts`}>
                 <div className="relative aspect-[3/2] overflow-hidden"><Image src={item.image} alt={`${item.title} documentary artwork`} fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover transition-transform duration-700 group-hover:scale-[1.03]" /></div>
-                <div className="p-6"><h3 className="font-serif text-3xl font-light">{item.title}</h3><p className="mt-2 font-sans text-sm text-muted">{item.subtitle}</p><span className="mt-5 block font-sans text-[0.65rem] tracking-[0.28em] text-accent uppercase">Coming next</span></div>
+                <div className="p-6"><h3 className="font-serif text-3xl font-light">{item.title}</h3><p className="mt-2 font-sans text-sm text-muted">{item.subtitle}</p><span className="mt-5 block font-sans text-[0.65rem] tracking-[0.28em] text-accent uppercase">Watch Free ↗</span></div>
+                </Link>
               </motion.article>
             ))}
           </motion.div>
-          <div className="mt-16 text-center"><Link href="/#documentaries" className="inline-flex min-h-14 items-center justify-center border border-accent/60 px-9 font-sans text-sm tracking-[0.17em] uppercase transition-colors hover:bg-accent hover:text-[#06101a]">View all documentaries</Link></div>
+          <div className="mt-16 text-center"><Link href="/documentaries" className="inline-flex min-h-14 items-center justify-center border border-accent/60 px-9 font-sans text-sm tracking-[0.17em] uppercase transition-colors hover:bg-accent hover:text-[#06101a]">View all documentaries</Link></div>
         </div>
       </section>
 

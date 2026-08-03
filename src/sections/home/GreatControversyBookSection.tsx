@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/Button";
 import { fadeUp, staggerContainer } from "@/animations/variants/fade-up";
 
 const BOOK_COVER_SRC = "/assets/media/images/great-controversy-book.png";
@@ -88,10 +88,10 @@ export function GreatControversyBookSection() {
             variants={fadeUp}
             className="mt-10 flex flex-wrap justify-center gap-3 lg:justify-start"
           >
-            <Button variant="primary" className="min-h-14 min-w-[11.5rem] px-10 text-base">Read Free</Button>
-            <Button variant="secondary" className="min-h-14 min-w-[11.5rem] px-10 text-base">Listen Free</Button>
-            <Button variant="secondary" className="min-h-14 min-w-[11.5rem] px-10 text-base">Download Free</Button>
-            <Button variant="secondary" className="min-h-14 min-w-[11.5rem] px-10 text-base">Explore the Book</Button>
+            <Link href="https://www.gutenberg.org/ebooks/25833" target="_blank" rel="noopener noreferrer" className="inline-flex min-h-14 min-w-[11.5rem] items-center justify-center border border-transparent bg-accent px-10 font-sans text-base font-medium tracking-[0.18em] text-background uppercase transition-colors hover:bg-accent-hover">Read Free ↗</Link>
+            <Link href="https://librivox.org/the-great-controversy-by-ellen-g-white/" target="_blank" rel="noopener noreferrer" className="inline-flex min-h-14 min-w-[11.5rem] items-center justify-center border border-[#1a1814]/25 px-10 font-sans text-base font-medium tracking-[0.18em] uppercase transition-colors hover:bg-[#1a1814]/5">Listen Free ↗</Link>
+            <Link href="https://whiteestate.org/books/ebooks/gc/gc.htm" target="_blank" rel="noopener noreferrer" className="inline-flex min-h-14 min-w-[11.5rem] items-center justify-center border border-[#1a1814]/25 px-10 font-sans text-base font-medium tracking-[0.18em] uppercase transition-colors hover:bg-[#1a1814]/5">Download Free ↗</Link>
+            <Link href="/great-controversy" className="inline-flex min-h-14 min-w-[11.5rem] items-center justify-center border border-[#1a1814]/25 px-10 font-sans text-base font-medium tracking-[0.18em] uppercase transition-colors hover:bg-[#1a1814]/5">Explore the Book</Link>
           </motion.div>
         </motion.div>
 

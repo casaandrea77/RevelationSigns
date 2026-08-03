@@ -15,16 +15,28 @@ export function Footer() {
             Journey
           </Link>
           <Link
-            href="/#documentaries"
+            href="/documentaries"
             className="font-sans text-xs tracking-[0.22em] uppercase text-muted transition-colors duration-300 hover:text-foreground"
           >
             Documentaries
           </Link>
           <Link
-            href="/#the-book"
+            href="/great-controversy"
             className="font-sans text-xs tracking-[0.22em] uppercase text-muted transition-colors duration-300 hover:text-foreground"
           >
             The Book
+          </Link>
+          <Link
+            href="/bible-studies"
+            className="font-sans text-xs tracking-[0.22em] uppercase text-muted transition-colors duration-300 hover:text-foreground"
+          >
+            Bible Studies
+          </Link>
+          <Link
+            href="/contact"
+            className="font-sans text-xs tracking-[0.22em] uppercase text-muted transition-colors duration-300 hover:text-foreground"
+          >
+            Contact
           </Link>
         </nav>
 
