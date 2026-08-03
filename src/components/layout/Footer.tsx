@@ -9,19 +9,19 @@ export function Footer() {
 
         <nav aria-label="Footer" className="flex flex-wrap justify-center gap-8">
           <Link
-            href="#journey"
+            href="/#journey"
             className="font-sans text-xs tracking-[0.22em] uppercase text-muted transition-colors duration-300 hover:text-foreground"
           >
             Journey
           </Link>
           <Link
-            href="#documentaries"
+            href="/#documentaries"
             className="font-sans text-xs tracking-[0.22em] uppercase text-muted transition-colors duration-300 hover:text-foreground"
           >
             Documentaries
           </Link>
           <Link
-            href="#the-book"
+            href="/#the-book"
             className="font-sans text-xs tracking-[0.22em] uppercase text-muted transition-colors duration-300 hover:text-foreground"
           >
             The Book

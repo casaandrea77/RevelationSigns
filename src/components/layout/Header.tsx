@@ -85,11 +85,11 @@ export function Header() {
 
         <nav className="hidden items-center gap-8 lg:flex" aria-label="Primary navigation">
           {[
-            ["Journey", "#journey"],
-            ["Documentaries", "#documentaries"],
-            ["The Book", "#the-book"],
-            ["About", "#about"],
-            ["Contact", "#contact"],
+            ["Journey", "/#journey"],
+            ["Documentaries", "/#documentaries"],
+            ["The Book", "/#the-book"],
+            ["About", "/#about"],
+            ["Contact", "/#contact"],
           ].map(([label, href]) => (
             <Link
               key={label}
