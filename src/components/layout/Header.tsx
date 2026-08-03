@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
+import { Button } from "@/components/ui/Button";
 
 const SCROLL_THRESHOLD = 24;
 
@@ -56,13 +57,13 @@ export function Header() {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 h-[88px] transition-all duration-300 ${
+      className={`fixed inset-x-0 top-0 z-50 h-[82px] transition-all duration-300 ${
         isScrolled
-          ? "border-b border-border/60 bg-background/45 backdrop-blur-md"
+          ? "border-b border-accent/20 bg-[#06101a]/95 shadow-[0_8px_30px_rgba(0,0,0,0.28)] backdrop-blur-md"
           : "border-b border-transparent bg-transparent"
       }`}
     >
-      <div className="mx-auto flex h-full max-w-7xl items-center justify-between px-6 sm:px-10 lg:px-16">
+      <div className="mx-auto flex h-full max-w-[1440px] items-center justify-between gap-8 px-5 sm:px-8 lg:px-12">
         <Link
           href="/"
           className="group relative flex min-w-0 items-center transition-opacity duration-300 hover:opacity-90"
@@ -70,7 +71,7 @@ export function Header() {
         >
           <span
             aria-hidden
-            className="pointer-events-none absolute -inset-x-2 -inset-y-1.5 rounded-sm bg-black/20 backdrop-blur-[3px] sm:-inset-x-3 sm:-inset-y-2"
+            className="pointer-events-none absolute -inset-x-2 -inset-y-1.5 rounded-sm bg-black/10 backdrop-blur-[2px] sm:-inset-x-3 sm:-inset-y-2"
           />
           <Image
             src="/assets/logo/RevelationSigns_Logo_Transparent.png"
@@ -78,13 +79,35 @@ export function Header() {
             width={480}
             height={160}
             priority
-            className="relative z-[1] h-auto w-[170px] drop-shadow-[0_2px_16px_rgba(0,0,0,0.4)] sm:w-[220px] lg:w-[300px]"
+            className="relative z-[1] h-auto w-[170px] drop-shadow-[0_2px_16px_rgba(0,0,0,0.35)] sm:w-[210px] lg:w-[245px]"
           />
         </Link>
 
+        <nav className="hidden items-center gap-8 lg:flex" aria-label="Primary navigation">
+          {[
+            ["Journey", "#journey"],
+            ["Documentaries", "#documentaries"],
+            ["The Book", "#the-book"],
+            ["About", "#about"],
+            ["Contact", "#contact"],
+          ].map(([label, href]) => (
+            <Link
+              key={label}
+              href={href}
+              className="font-sans text-[0.67rem] font-medium tracking-[0.12em] uppercase text-foreground/85 transition-colors hover:text-accent"
+            >
+              {label}
+            </Link>
+          ))}
+        </nav>
+
+        <div className="hidden lg:block">
+          <Button variant="primary" className="min-h-11 px-7 text-xs">Start the Journey</Button>
+        </div>
+
         <button
           type="button"
-          className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-border/50 transition-colors duration-300 hover:border-foreground/30 hover:bg-foreground/5"
+          className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-border/50 transition-colors duration-300 hover:border-foreground/30 hover:bg-foreground/5 lg:hidden"
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           aria-expanded={isMenuOpen}
           aria-controls="site-navigation"

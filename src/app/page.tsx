@@ -4,6 +4,7 @@ import { StarfallSection } from "@/sections/home/StarfallSection";
 import { HistoryProphecySection } from "@/sections/home/HistoryProphecySection";
 import { AmazingFactsSection } from "@/sections/home/AmazingFactsSection";
 import { GreatControversyBookSection } from "@/sections/home/GreatControversyBookSection";
+import { HopeSection } from "@/sections/home/HopeSection";
 import { Footer } from "@/components/layout/Footer";
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
       <HistoryProphecySection />
       <AmazingFactsSection />
       <GreatControversyBookSection />
+      <HopeSection />
       <Footer />
     </main>
   );

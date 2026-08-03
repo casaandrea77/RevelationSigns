@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/Button";
 import { fadeIn, fadeUp, staggerContainer } from "@/animations/variants/fade-up";
 
-const ARTWORK_SRC = "/media/images/earth-from-space.jpg";
+const ARTWORK_SRC = "/assets/media/images/earth-from-space.png";
 
 export function HistoryProphecySection() {
   const [imageAvailable, setImageAvailable] = useState(true);
@@ -14,7 +14,7 @@ export function HistoryProphecySection() {
   return (
     <section
       aria-labelledby="history-prophecy-heading"
-      className="relative min-h-screen w-full overflow-hidden bg-background text-foreground"
+      className="relative min-h-[430px] w-full overflow-hidden bg-background text-foreground lg:min-h-[520px]"
     >
       <div aria-hidden className="absolute inset-0">
         {imageAvailable ? (
@@ -33,12 +33,13 @@ export function HistoryProphecySection() {
         <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(8,8,8,0.7)_0%,rgba(8,8,8,0.35)_50%,rgba(8,8,8,0.85)_100%)]" />
       </div>
 
-      <div className="relative z-10 mx-auto flex min-h-screen w-full max-w-5xl flex-col items-center justify-center px-6 py-20 text-center sm:px-10 sm:py-24">
+      <div className="relative z-10 mx-auto flex min-h-[430px] w-full max-w-[1440px] items-center px-6 py-16 sm:px-10 lg:min-h-[520px] lg:px-12">
         <motion.div
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.35 }}
+          className="max-w-xl text-left"
         >
           <motion.p
             variants={fadeUp}
@@ -57,15 +58,15 @@ export function HistoryProphecySection() {
 
           <motion.p
             variants={fadeUp}
-            className="mt-6 font-serif text-[clamp(2.25rem,5vw,3.75rem)] font-light leading-[1.3] tracking-[0.02em]"
+            className="mt-6 font-serif text-[clamp(2.3rem,4.4vw,4rem)] font-light leading-[1.1] tracking-[0.01em]"
           >
             The Bible doesn&rsquo;t just explain the past&hellip;
-            <span className="mt-4 block italic text-foreground/90">
+            <span className="mt-2 block text-accent">
               It reveals where history is going.
             </span>
           </motion.p>
 
-          <motion.div variants={fadeIn} className="mx-auto mt-10 h-px w-16 bg-accent/80" />
+          <motion.div variants={fadeIn} className="mt-8 h-px w-16 bg-accent/80" />
 
           <motion.div variants={fadeUp} className="mt-10">
             <Button variant="primary" className="min-h-14 min-w-[11.5rem] px-10 text-base">

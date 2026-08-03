@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/Button";
 import { fadeUp, staggerContainer } from "@/animations/variants/fade-up";
 
-const ARTWORK_SRC = "/assets/media/images/starfall-documentary.png";
+const ARTWORK_SRC = "/assets/media/images/starfall-documentary-v2.png";
 
 export function StarfallSection() {
   const [imageAvailable, setImageAvailable] = useState(true);
@@ -16,13 +16,13 @@ export function StarfallSection() {
       aria-labelledby="starfall-heading"
       className="relative w-full overflow-hidden bg-[#f4efe6] text-[#1a1814]"
     >
-      <div className="relative z-10 mx-auto grid w-full max-w-7xl items-center gap-10 px-6 py-20 sm:px-10 sm:py-24 lg:grid-cols-[3fr_2fr] lg:gap-14 lg:px-12 lg:py-28">
+      <div className="relative z-10 mx-auto grid w-full max-w-[1320px] items-center gap-10 px-6 py-16 sm:px-10 sm:py-20 lg:grid-cols-[1.25fr_1fr] lg:gap-16 lg:px-12 lg:py-24">
         <motion.div
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
-          className="relative min-h-[50vh] w-full overflow-hidden rounded-sm border border-[#1a1814]/10 shadow-[0_32px_80px_rgba(26,24,20,0.16)] lg:min-h-[68vh] lg:order-1"
+          className="relative aspect-[3/2] w-full overflow-hidden rounded-md border border-[#1a1814]/10 shadow-[0_28px_70px_rgba(26,24,20,0.16)] lg:order-1"
         >
           {imageAvailable ? (
             <Image
@@ -64,8 +64,8 @@ export function StarfallSection() {
             variants={fadeUp}
             className="mt-8 max-w-lg font-sans text-lg leading-[1.85] text-[#5c564d] sm:text-xl"
           >
-            A cinematic journey through prophecy, rebellion, and the cosmic events
-            that changed the universe forever.
+            Millions are fascinated by UFOs, ancient mysteries, and supernatural
+            encounters. Could the Bible already explain what is behind these phenomena?
           </motion.p>
 
           <motion.div variants={fadeUp} className="mt-10">
@@ -73,7 +73,7 @@ export function StarfallSection() {
               variant="primary"
               className="min-h-14 min-w-[11.5rem] bg-[#1a1814] px-10 text-base text-[#f4efe6] hover:bg-[#2a2720]"
             >
-              Watch
+              Watch Starfall
             </Button>
           </motion.div>
         </motion.div>

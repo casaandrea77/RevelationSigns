@@ -16,13 +16,13 @@ const documentaries = [
     id: "revelation-bbb",
     title: "Revelation: Bride, Beast & Babylon",
     description: "Prophecy decoded for the world we live in today.",
-    image: "/media/images/revelation-bbb.jpg",
+    image: "/assets/media/images/revelation-bbb.png",
   },
   {
     id: "armageddon",
     title: "Armageddon",
     description: "The final battle and the hope beyond the storm.",
-    image: "/media/images/armageddon.jpg",
+    image: "/assets/media/images/armageddon.png",
   },
 ] as const;
 
@@ -40,7 +40,7 @@ function DocumentaryCard({ title, description, image }: DocumentaryCardProps) {
       variants={fadeUp}
       whileHover={{ y: -6 }}
       transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
-      className="group flex h-full flex-col overflow-hidden rounded-sm border border-border/60 bg-background/35 backdrop-blur-md transition-all duration-300 hover:border-accent/45 hover:shadow-[0_12px_40px_rgba(0,0,0,0.35),0_0_24px_rgba(196,163,90,0.08)]"
+      className="group relative flex h-full flex-col overflow-hidden rounded-sm border border-accent/40 bg-background/35 backdrop-blur-md transition-all duration-300 hover:border-accent/70 hover:shadow-[0_12px_40px_rgba(0,0,0,0.35),0_0_24px_rgba(196,163,90,0.08)]"
     >
       <div className="relative aspect-[3/2] w-full overflow-hidden">
         {imageAvailable ? (
@@ -58,9 +58,9 @@ function DocumentaryCard({ title, description, image }: DocumentaryCardProps) {
         <div className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-accent/60 to-transparent" />
       </div>
 
-      <div className="flex flex-1 flex-col p-9 sm:p-11">
-        <h3 className="font-serif text-[clamp(1.5rem,2.5vw,2rem)] font-light tracking-[0.03em]">{title}</h3>
-        <p className="mt-5 flex-1 font-sans text-base leading-relaxed text-muted sm:text-lg">
+      <div className="flex flex-1 flex-col p-6 sm:p-7">
+        <h3 className="font-serif text-[clamp(1.45rem,2.3vw,1.9rem)] font-light tracking-[0.03em]">{title}</h3>
+        <p className="mt-3 flex-1 font-sans text-sm leading-relaxed text-muted sm:text-base">
           {description}
         </p>
         <span className="mt-6 font-sans text-[0.625rem] tracking-[0.3em] uppercase text-accent">
@@ -74,12 +74,13 @@ function DocumentaryCard({ title, description, image }: DocumentaryCardProps) {
 export function AmazingFactsSection() {
   return (
     <section
+      id="documentaries"
       aria-labelledby="amazing-facts-heading"
       className="relative w-full overflow-hidden bg-background text-foreground"
     >
       <div aria-hidden className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_0%,rgba(196,163,90,0.05)_0%,transparent_55%)]" />
 
-      <div className="relative z-10 mx-auto w-full max-w-7xl px-6 py-20 sm:px-10 sm:py-24 lg:px-12 lg:py-28">
+      <div className="relative z-10 mx-auto w-full max-w-[1320px] px-6 py-16 sm:px-10 sm:py-20 lg:px-12 lg:py-24">
         <motion.div
           className="text-center"
           variants={staggerContainer}
@@ -91,19 +92,19 @@ export function AmazingFactsSection() {
             variants={fadeUp}
             className="font-sans text-sm tracking-[0.4em] uppercase text-accent"
           >
-            Amazing Facts
+            Continue Watching
           </motion.p>
           <motion.h2
             id="amazing-facts-heading"
             variants={fadeUp}
             className="mt-5 font-serif text-[clamp(2.25rem,4.5vw,4rem)] font-light tracking-[0.02em]"
           >
-            Documentaries
+            Powerful Bible Prophecy Documentaries
           </motion.h2>
         </motion.div>
 
         <motion.div
-          className="mt-14 grid gap-10 md:mt-16 md:grid-cols-3 lg:gap-12"
+          className="mt-10 grid gap-7 md:mt-12 md:grid-cols-3 lg:gap-8"
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"

@@ -1,36 +1,35 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer className="border-t border-border/60 bg-background text-foreground">
-      <div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-between gap-8 px-6 py-14 sm:flex-row sm:px-10 lg:px-16">
-        <p className="font-serif text-lg tracking-[0.04em] text-foreground">
-          Revelation<span className="text-accent">Signs</span>
-        </p>
+    <footer id="contact" className="border-t border-accent/20 bg-[#06101a] text-foreground">
+      <div className="mx-auto flex w-full max-w-[1440px] flex-col items-center justify-between gap-8 px-6 py-10 sm:flex-row sm:px-10 lg:px-12">
+        <Image src="/assets/logo/RevelationSigns_Logo_Transparent.png" alt="RevelationSigns" width={300} height={100} className="h-auto w-[190px]" />
 
         <nav aria-label="Footer" className="flex flex-wrap justify-center gap-8">
           <Link
-            href="#"
+            href="#journey"
             className="font-sans text-xs tracking-[0.22em] uppercase text-muted transition-colors duration-300 hover:text-foreground"
           >
-            About
+            Journey
           </Link>
           <Link
-            href="#"
+            href="#documentaries"
             className="font-sans text-xs tracking-[0.22em] uppercase text-muted transition-colors duration-300 hover:text-foreground"
           >
-            Contact
+            Documentaries
           </Link>
           <Link
-            href="#"
+            href="#the-book"
             className="font-sans text-xs tracking-[0.22em] uppercase text-muted transition-colors duration-300 hover:text-foreground"
           >
-            Privacy
+            The Book
           </Link>
         </nav>
 
         <p className="font-sans text-xs tracking-[0.12em] text-muted/80">
-          &copy; {new Date().getFullYear()} RevelationSigns
+          &copy; {new Date().getFullYear()} RevelationSigns. All rights reserved.
         </p>
       </div>
     </footer>

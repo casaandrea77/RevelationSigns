@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/Button";
 import { fadeUp, staggerContainer } from "@/animations/variants/fade-up";
 
-const BOOK_COVER_SRC = "/media/images/great-controversy-book.jpg";
-const JESUS_ARTWORK_SRC = "/media/images/jesus-artwork.jpg";
+const BOOK_COVER_SRC = "/assets/media/images/great-controversy-book.png";
+const JESUS_ARTWORK_SRC = "/assets/media/images/jesus-artwork.png";
 
 export function GreatControversyBookSection() {
   const [coverAvailable, setCoverAvailable] = useState(true);
@@ -15,21 +15,22 @@ export function GreatControversyBookSection() {
 
   return (
     <section
+      id="the-book"
       aria-labelledby="gc-book-heading"
-      className="relative w-full overflow-hidden bg-background text-foreground"
+      className="relative w-full overflow-hidden bg-[#f4efe6] text-[#1a1814]"
     >
       <div
         aria-hidden
-        className="absolute inset-0 bg-[radial-gradient(ellipse_at_70%_50%,rgba(196,163,90,0.06)_0%,transparent_55%)]"
+        className="absolute inset-0 bg-[radial-gradient(ellipse_at_65%_45%,rgba(196,163,90,0.18)_0%,transparent_60%)]"
       />
 
-      <div className="relative z-10 mx-auto grid w-full max-w-7xl items-center gap-10 px-6 py-20 sm:px-10 sm:py-24 lg:grid-cols-[minmax(0,320px)_1fr_minmax(0,360px)] lg:gap-12 lg:px-12 lg:py-28">
+      <div className="relative z-10 mx-auto grid w-full max-w-[1440px] items-center gap-9 px-6 py-16 sm:px-10 sm:py-20 lg:grid-cols-[minmax(0,330px)_1fr_minmax(0,390px)] lg:gap-12 lg:px-12 lg:py-24">
         <motion.div
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
-          className="relative mx-auto aspect-[2/3] w-full max-w-[320px] overflow-hidden rounded-sm border border-border/60 shadow-[0_24px_60px_rgba(0,0,0,0.5)]"
+          className="relative mx-auto aspect-[3/2] w-full max-w-[330px] overflow-hidden rounded-sm border border-[#1a1814]/15 shadow-[0_22px_55px_rgba(26,24,20,0.2)]"
         >
           {coverAvailable ? (
             <Image
@@ -54,7 +55,7 @@ export function GreatControversyBookSection() {
         >
           <motion.p
             variants={fadeUp}
-            className="font-sans text-sm tracking-[0.4em] uppercase text-accent"
+            className="font-sans text-xs tracking-[0.32em] uppercase text-[#8a6728]"
           >
             The Great Controversy
           </motion.p>
@@ -69,7 +70,7 @@ export function GreatControversyBookSection() {
 
           <motion.p
             variants={fadeUp}
-            className="mt-6 max-w-xl font-sans text-lg leading-[1.85] text-muted sm:text-xl lg:mx-0 mx-auto"
+            className="mt-6 mx-auto max-w-xl font-sans text-base leading-[1.75] text-[#5c564d] sm:text-lg lg:mx-0"
           >
             Ellen White&rsquo;s classic work traces the conflict between Christ and
             Satan from Heaven to the final restoration&mdash;offered freely to the
@@ -78,7 +79,7 @@ export function GreatControversyBookSection() {
 
           <motion.blockquote
             variants={fadeUp}
-            className="mt-8 border-l border-accent/50 pl-6 font-serif text-xl italic leading-relaxed text-foreground/90 sm:text-2xl lg:max-w-xl"
+            className="mt-7 border-l border-[#b68b3a]/60 pl-5 font-serif text-lg italic leading-relaxed text-[#3f3a31] sm:text-xl lg:max-w-xl"
           >
             &ldquo;In the beginning, God and Christ alone existed.&rdquo;
           </motion.blockquote>
@@ -99,7 +100,7 @@ export function GreatControversyBookSection() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
-          className="relative mx-auto hidden aspect-[3/4] w-full max-w-[360px] overflow-hidden rounded-sm border border-border/60 lg:block"
+            className="relative mx-auto hidden aspect-[3/2] w-full max-w-[390px] overflow-hidden rounded-sm border border-[#1a1814]/15 lg:block"
         >
           {artworkAvailable ? (
             <Image
