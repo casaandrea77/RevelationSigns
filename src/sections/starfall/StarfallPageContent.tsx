@@ -65,19 +65,19 @@ const relatedDocumentaries = [
   {
     title: "Cosmic Conflict",
     subtitle: "The origin of evil",
-    image: "/assets/media/images/cosmic-conflict.png",
+    videoId: "JqLIndMA9Ks",
     href: "https://www.amazingfacts.org/watch/special-projects/amazing-facts-documentaries/cosmic-conflict-the-origin-of-evil/",
   },
   {
     title: "Revelation",
     subtitle: "The bride, the beast and Babylon",
-    image: "/assets/media/images/revelation-bbb.png",
+    videoId: "vDKG_WFLUi4",
     href: "https://www.amazingfacts.org/watch/en/watch/special-projects/amazing-facts-documentaries/revelation-the-bride-the-beast-and-babylon-2/",
   },
   {
     title: "Armageddon",
     subtitle: "The final events of Bible prophecy",
-    image: "/assets/media/images/armageddon.png",
+    videoId: "ieYCzJ81m6I",
     href: "https://www.amazingfacts.org/en/watch/special-projects/amazing-facts-documentaries/armageddon-and-the-final-events-of-bible-prophecy/",
   },
 ] as const;
@@ -310,10 +310,14 @@ export function StarfallPageContent() {
           <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.15 }} className="mt-12 grid gap-7 md:grid-cols-3">
             {relatedDocumentaries.map((item) => (
               <motion.article key={item.title} variants={fadeUp} className="group overflow-hidden border border-accent/30 bg-black/20">
-                <Link href={item.href} target="_blank" rel="noopener noreferrer" aria-label={`Watch ${item.title} on Amazing Facts`}>
-                <div className="relative aspect-[3/2] overflow-hidden"><Image src={item.image} alt={`${item.title} documentary artwork`} fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover transition-transform duration-700 group-hover:scale-[1.03]" /></div>
-                <div className="p-6"><h3 className="font-serif text-3xl font-light">{item.title}</h3><p className="mt-2 font-sans text-sm text-muted">{item.subtitle}</p><span className="mt-5 block font-sans text-[0.65rem] tracking-[0.28em] text-accent uppercase">Watch Free ↗</span></div>
-                </Link>
+                <EmbeddedVideo videoId={item.videoId} title={`${item.title} — ${item.subtitle}`} />
+                <div className="p-6">
+                  <h3 className="font-serif text-3xl font-light">{item.title}</h3>
+                  <p className="mt-2 font-sans text-sm text-muted">{item.subtitle}</p>
+                  <Link href={item.href} target="_blank" rel="noopener noreferrer" className="mt-5 inline-flex font-sans text-[0.65rem] font-semibold tracking-[0.22em] text-accent uppercase" aria-label={`Open the official ${item.title} page on Amazing Facts`}>
+                    Official Amazing Facts page ↗
+                  </Link>
+                </div>
               </motion.article>
             ))}
           </motion.div>
