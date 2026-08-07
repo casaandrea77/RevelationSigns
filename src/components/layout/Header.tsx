@@ -86,6 +86,7 @@ export function Header() {
           {[
             ["Journey", "/#journey"],
             ["Documentaries", "/documentaries"],
+            ["Starfall", "/starfall"],
             ["The Book", "/great-controversy"],
             ["Bible Studies", "/bible-studies"],
             ["Contact", "/contact"],
@@ -121,6 +122,7 @@ export function Header() {
             {[
               ["Journey", "/#journey"],
               ["Documentaries", "/documentaries"],
+              ["Starfall", "/starfall"],
               ["The Book", "/great-controversy"],
               ["Bible Studies", "/bible-studies"],
               ["Contact", "/contact"],
