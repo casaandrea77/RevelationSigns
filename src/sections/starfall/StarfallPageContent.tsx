@@ -8,26 +8,40 @@ import { Footer } from "@/components/layout/Footer";
 
 const STARFALL_DOCUMENTARY_URL = "https://www.youtube.com/watch?v=IbZJOALUPok";
 
+const testimonyLinks = {
+  rogerInterview: "https://www.youtube.com/watch?v=Ird-BKuPRlw",
+  rogerBiography: "https://tripintothesupernatural.com/",
+  rogerFilms: "https://lifestreams.org/films/",
+  joeTestimony: "https://www.youtube.com/watch?v=b6tnQlugr1I",
+  joeCommunion: "https://www.youtube.com/watch?v=tStmPk9IuQk",
+  joeResearch: "https://stopalienabduction.com/",
+  alienTrailer: "https://www.youtube.com/watch?v=yJaXRMGfCus",
+  alienFilm: "https://www.alienintrusion.com/",
+} as const;
+
+const externalLinkClass =
+  "inline-flex min-h-12 items-center justify-center border border-accent/70 px-6 py-3 text-center font-sans text-[0.68rem] font-semibold tracking-[0.18em] text-accent uppercase transition-colors hover:bg-accent hover:text-[#06101a] focus-visible:bg-accent focus-visible:text-[#06101a]";
+
 const scriptureTests = [
   {
-    reference: "Isaiah 8:20",
+    reference: "Isaiah 8:20 · KJV",
     title: "Test every message by Scripture",
-    text: "Spiritual claims are not authenticated by wonder alone. Their teaching must agree with God's revealed word.",
+    text: "To the law and to the testimony: if they speak not according to this word, it is because there is no light in them.",
   },
   {
-    reference: "Matthew 24:24",
+    reference: "Matthew 24:24 · KJV",
     title: "Signs can be persuasive",
-    text: "Jesus warned that impressive signs may be used to deceive, making careful discernment essential.",
+    text: "For there shall arise false Christs, and false prophets, and shall shew great signs and wonders; insomuch that, if it were possible, they shall deceive the very elect.",
   },
   {
-    reference: "2 Corinthians 11:14",
+    reference: "2 Corinthians 11:14 · KJV",
     title: "Appearances may mislead",
-    text: "Something radiant, powerful, or apparently benevolent should not be accepted without spiritual examination.",
+    text: "And no marvel; for Satan himself is transformed into an angel of light.",
   },
   {
-    reference: "1 Thessalonians 5:21",
+    reference: "1 Thessalonians 5:21 · KJV",
     title: "Examine everything",
-    text: "The biblical response is neither automatic belief nor automatic dismissal, but thoughtful testing and holding fast to what is good.",
+    text: "Prove all things; hold fast that which is good.",
   },
 ] as const;
 
@@ -54,7 +68,7 @@ const relatedDocumentaries = [
 
 export function StarfallPageContent() {
   return (
-    <main className="overflow-hidden bg-[#06101a] text-foreground">
+    <main id="main-content" className="overflow-hidden bg-[#06101a] text-foreground">
       <section className="relative flex min-h-[760px] items-end overflow-hidden pt-24 lg:min-h-[880px]" aria-labelledby="starfall-title">
         <Image
           src="/assets/media/images/starfall-documentary-v2.png"
@@ -76,10 +90,10 @@ export function StarfallPageContent() {
           <motion.p variants={fadeUp} className="font-sans text-xs tracking-[0.34em] uppercase text-accent sm:text-sm">
             A Strange Normal Documentary
           </motion.p>
-          <motion.h1 id="starfall-title" variants={fadeUp} className="mt-5 font-serif text-[clamp(4.5rem,10vw,9rem)] font-medium leading-[0.82] tracking-[0.08em] uppercase">
+          <motion.h1 id="starfall-title" variants={fadeUp} className="mt-5 max-w-full font-serif text-[2.55rem] font-medium leading-[0.86] tracking-[0.01em] uppercase sm:text-[clamp(4rem,10vw,9rem)] sm:tracking-[0.06em] lg:tracking-[0.08em]">
             Starfall
           </motion.h1>
-          <motion.p variants={fadeUp} className="mt-6 max-w-2xl font-serif text-[clamp(1.6rem,3vw,2.6rem)] font-light leading-tight text-foreground/90">
+          <motion.p variants={fadeUp} className="mt-6 max-w-full break-words font-serif text-xl font-light leading-tight text-foreground/90 sm:max-w-2xl sm:text-[clamp(1.6rem,3vw,2.6rem)]">
             Ancient mysteries. Extraordinary encounters. Biblical answers.
           </motion.p>
           <motion.div variants={fadeUp} className="mt-9 flex flex-wrap items-center gap-5">
@@ -107,7 +121,7 @@ export function StarfallPageContent() {
             <motion.p variants={fadeUp} className="font-sans text-xs tracking-[0.35em] uppercase text-[#8a6728]">Featured Film</motion.p>
             <motion.h2 id="watch-heading" variants={fadeUp} className="mt-4 font-serif text-[clamp(2.7rem,5vw,4.8rem)] font-medium leading-[0.95]">Look beyond the phenomenon.</motion.h2>
             <motion.p variants={fadeUp} className="mt-7 font-sans text-base leading-[1.8] text-[#5c564d] sm:text-lg">
-              Reports of strange lights and extraordinary encounters raise profound questions. Starfall explores why these stories captivate us—and how Scripture invites us to approach supernatural claims with courage, humility, and discernment.
+              Starfall examines why extraordinary encounters captivate us and how Scripture invites us to test supernatural claims with courage, humility, and discernment.
             </motion.p>
             <motion.dl variants={fadeUp} className="mt-8 grid grid-cols-2 gap-6 border-t border-[#1a1814]/15 pt-6 font-sans">
               <div><dt className="text-[0.65rem] tracking-[0.2em] text-[#8a6728] uppercase">Presented by</dt><dd className="mt-2 text-sm">Strange Normal</dd></div>
@@ -119,6 +133,100 @@ export function StarfallPageContent() {
               </Link>
             </motion.div>
           </motion.div>
+        </div>
+      </section>
+
+      <section id="voices" aria-labelledby="voices-heading" className="border-y border-accent/20 bg-[#040d16] text-foreground">
+        <div className="mx-auto max-w-[1440px] px-6 py-20 sm:px-10 lg:px-12 lg:py-28">
+          <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} className="mx-auto max-w-4xl text-center">
+            <motion.p variants={fadeUp} className="font-sans text-xs tracking-[0.35em] text-accent uppercase">Testimony and Investigation</motion.p>
+            <motion.h2 id="voices-heading" variants={fadeUp} className="mt-5 font-serif text-[clamp(2.8rem,6vw,5.6rem)] font-light leading-[0.95]">Voices that challenge the modern alien story</motion.h2>
+            <motion.p variants={fadeUp} className="mx-auto mt-7 max-w-3xl font-sans text-base leading-[1.8] text-muted sm:text-lg">Personal testimony, documented case reports, and a feature documentary converge on one question: could a spiritual deception be presenting itself as something from the stars?</motion.p>
+          </motion.div>
+
+          <motion.article variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.12 }} className="mt-16 overflow-hidden border border-accent/30 bg-[#071522] lg:grid lg:grid-cols-[1.08fr_0.92fr]">
+            <div className="flex flex-col justify-center p-7 sm:p-10 lg:p-14">
+              <p className="font-sans text-[0.68rem] font-semibold tracking-[0.28em] text-accent uppercase">A warning recorded decades ago</p>
+              <blockquote className="mt-6 font-serif text-[clamp(2rem,4vw,4rem)] font-light leading-[1.08] text-[#f4efe6]">“Demon spirits will declare themselves to be inhabitants of far-distant planets … coming to warn the inhabitants of planet Earth.”</blockquote>
+              <h3 className="mt-8 font-serif text-3xl text-accent sm:text-4xl">From demon worship to faith in Jesus</h3>
+              <p className="mt-4 max-w-2xl font-sans text-sm leading-[1.8] text-muted sm:text-base">According to his testimony, Roger J. Morneau became involved with a secret society devoted to spirit worship before leaving it and becoming a Christian author and prayer warrior.</p>
+              <p className="mt-4 font-serif text-lg italic text-foreground/75">Roger Morneau — <cite>A Trip Into the Supernatural</cite></p>
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+                <Link href={testimonyLinks.rogerInterview} target="_blank" rel="noopener noreferrer" className={`${externalLinkClass} bg-accent text-[#06101a] hover:bg-accent-hover`}>Watch full testimony ↗</Link>
+                <Link href={testimonyLinks.rogerBiography} target="_blank" rel="noopener noreferrer" className={externalLinkClass}>Explore his story ↗</Link>
+              </div>
+            </div>
+            <div className="relative min-h-[360px] sm:min-h-[480px] lg:min-h-full">
+              <Image src="/assets/media/images/roger-morneau-interview.jpg" alt="Roger Morneau speaking during his recorded testimony" fill sizes="(max-width: 1024px) 100vw, 46vw" className="object-cover object-center" />
+              <div className="absolute inset-0 bg-[linear-gradient(to_top,rgba(4,13,22,0.75),transparent_55%)] lg:bg-[linear-gradient(to_right,rgba(7,21,34,0.25),transparent_45%)]" />
+            </div>
+          </motion.article>
+
+          <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.12 }} className="mt-6 grid gap-6 md:grid-cols-2">
+            {[{ title: "Charmed by Darkness", subtitle: "The life and legacy of Roger Morneau" }, { title: "Beware of Angels", subtitle: "Dramatic stories of supernatural deception" }].map((film, index) => (
+              <motion.article key={film.title} variants={fadeUp} className="relative overflow-hidden border border-accent/30 bg-[#091725] p-7 sm:p-9">
+                <div className={`absolute inset-0 opacity-20 ${index === 0 ? "bg-[radial-gradient(circle_at_85%_30%,#a46a24,transparent_38%)]" : "bg-[radial-gradient(circle_at_80%_35%,#c4a35a,transparent_35%)]"}`} />
+                <div className="relative">
+                  <h3 className="font-serif text-4xl text-[#ead6a2]">{film.title}</h3>
+                  <p className="mt-3 font-serif text-xl text-foreground/80">{film.subtitle}</p>
+                  <Link href={testimonyLinks.rogerFilms} target="_blank" rel="noopener noreferrer" className="mt-8 inline-flex min-h-12 items-center font-sans text-xs font-semibold tracking-[0.2em] text-accent uppercase">View film information ↗</Link>
+                </div>
+              </motion.article>
+            ))}
+          </motion.div>
+
+          <motion.article variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.12 }} className="mt-20 border-y border-accent/30 py-12 lg:grid lg:grid-cols-[0.38fr_0.62fr] lg:items-center lg:gap-14 lg:py-16">
+            <div className="mx-auto w-full max-w-[390px]">
+              <div className="relative aspect-square overflow-hidden rounded-full border border-accent/50">
+                <Image src="/assets/media/images/joseph-jordan.jpg" alt="Joseph Jordan, founder of CE4 Research Group" fill sizes="(max-width: 1024px) 80vw, 28vw" className="object-cover object-center" />
+              </div>
+            </div>
+            <div className="mt-10 lg:mt-0">
+              <p className="font-sans text-[0.68rem] font-semibold tracking-[0.28em] text-accent uppercase">The finding that changed the investigation</p>
+              <blockquote className="mt-5 font-serif text-[clamp(2.1rem,4vw,4.2rem)] font-light leading-[1.08]">“The experience was shown to be able to be stopped or terminated by calling on the name and authority of Jesus Christ.”</blockquote>
+              <p className="mt-7 font-serif text-2xl text-foreground/80">Hundreds of reported encounters. One recurring response.</p>
+              <p className="mt-4 font-sans text-sm leading-[1.7] text-muted sm:text-base"><strong className="text-accent">Joseph G. Jordan</strong> — Founder, CE4 Research Group; MUFON investigator and 30-year lifetime member.</p>
+              <div className="mt-8 grid gap-3 sm:grid-cols-2">
+                <Link href={testimonyLinks.joeTestimony} target="_blank" rel="noopener noreferrer" className={externalLinkClass}>MUFON investigator testimony ↗</Link>
+                <Link href={testimonyLinks.joeCommunion} target="_blank" rel="noopener noreferrer" className={externalLinkClass}>Unholy Communion ↗</Link>
+              </div>
+              <Link href={testimonyLinks.joeResearch} target="_blank" rel="noopener noreferrer" className="mt-6 inline-flex min-h-11 items-center font-sans text-xs font-semibold tracking-[0.2em] text-accent uppercase">View CE4 testimonies and research ↗</Link>
+            </div>
+          </motion.article>
+
+          <motion.article variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.12 }} className="mt-20 overflow-hidden border border-accent/30 bg-[#071522] lg:grid lg:grid-cols-[0.9fr_1.1fr]">
+            <div className="flex flex-col justify-center p-7 sm:p-10 lg:p-14">
+              <p className="font-sans text-[0.68rem] font-semibold tracking-[0.28em] text-accent uppercase">The documentary that unmasks the deception</p>
+              <blockquote className="mt-6 font-serif text-[clamp(2.4rem,5vw,5rem)] font-light leading-[1.02]">What if the modern alien story is not what it appears to be?</blockquote>
+              <h3 className="mt-8 font-serif text-4xl text-accent">Alien Intrusion</h3>
+              <p className="mt-3 font-serif text-xl text-foreground/80">UFOs, evolution, and a biblical explanation.</p>
+              <p className="mt-5 font-sans text-sm leading-[1.8] text-muted sm:text-base">Based on the bestselling work of Gary Bates and produced by Creation Ministries International.</p>
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+                <Link href={testimonyLinks.alienTrailer} target="_blank" rel="noopener noreferrer" className={`${externalLinkClass} bg-accent text-[#06101a] hover:bg-accent-hover`}>Watch official trailer ↗</Link>
+                <Link href={testimonyLinks.alienFilm} target="_blank" rel="noopener noreferrer" className={externalLinkClass}>Explore the film ↗</Link>
+              </div>
+            </div>
+            <div className="relative min-h-[520px] bg-[#040d16] p-7 sm:p-10 lg:min-h-[620px] lg:p-12">
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_25%,rgba(196,163,90,0.18),transparent_40%)]" />
+              <div className="relative flex h-full flex-col justify-between gap-10">
+                <div className="relative aspect-video overflow-hidden border border-accent/35">
+                  <Image src="/assets/media/images/starfall-documentary-v2.png" alt="Alien Intrusion documentary feature artwork" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
+                  <div className="absolute inset-0 bg-black/25" />
+                  <div className="absolute inset-x-0 bottom-0 p-5 sm:p-7"><span className="font-sans text-xs font-semibold tracking-[0.25em] text-accent uppercase">Official trailer</span></div>
+                </div>
+                <div className="grid items-center gap-6 sm:grid-cols-[150px_1fr]">
+                  <div className="relative mx-auto aspect-[4/5] w-[150px] overflow-hidden border border-accent/60 bg-white">
+                    <Image src="/assets/media/images/john-schneider-imdb.jpg" alt="John Schneider, narrator of Alien Intrusion" fill sizes="150px" className="object-cover object-top" />
+                  </div>
+                  <div>
+                    <p className="font-sans text-sm leading-[1.7] text-muted"><strong className="text-accent">Gary Bates</strong> — Author and producer</p>
+                    <p className="mt-4 font-sans text-sm leading-[1.7] text-muted"><strong className="text-accent">John Schneider</strong> — Narrator</p>
+                    <p className="mt-2 font-sans text-sm leading-[1.7] text-foreground/75">Known for Bo Duke in <cite>The Dukes of Hazzard</cite> and Jonathan Kent in <cite>Smallville</cite>.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </motion.article>
         </div>
       </section>
 
