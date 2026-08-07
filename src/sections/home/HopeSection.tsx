@@ -12,7 +12,7 @@ export function HopeSection() {
         src="/assets/media/images/jesus-artwork.png"
         alt="Jesus overlooking a hopeful city at sunrise"
         fill
-        className="object-cover object-center"
+        className="object-cover object-left sm:object-center"
         sizes="100vw"
       />
       <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(244,239,230,0.96)_0%,rgba(244,239,230,0.82)_38%,rgba(244,239,230,0.18)_70%,transparent_100%)]" />
