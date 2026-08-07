@@ -8,6 +8,7 @@ import { Footer } from "@/components/layout/Footer";
 
 const documentaries = [
   {
+    id: "cosmic-conflict",
     title: "Cosmic Conflict",
     subtitle: "The Origin of Evil",
     description:
@@ -18,6 +19,7 @@ const documentaries = [
     topics: ["Origin of evil", "War in heaven", "God's character"],
   },
   {
+    id: "revelation",
     title: "Revelation",
     subtitle: "The Bride, the Beast and Babylon",
     description:
@@ -28,6 +30,7 @@ const documentaries = [
     topics: ["Revelation 12", "Revelation 17", "Church history"],
   },
   {
+    id: "armageddon",
     title: "Armageddon",
     subtitle: "The Final Events of Bible Prophecy",
     description:
@@ -62,7 +65,7 @@ export function DocumentariesPageContent() {
 
           <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.08 }} className="mt-12 space-y-10">
             {documentaries.map((film, index) => (
-              <motion.article key={film.title} variants={fadeUp} className="group grid overflow-hidden border border-accent/25 bg-black/15 lg:grid-cols-[1.05fr_0.95fr]">
+              <motion.article id={film.id} key={film.title} variants={fadeUp} className="group grid scroll-mt-28 overflow-hidden border border-accent/25 bg-black/15 lg:grid-cols-[1.05fr_0.95fr]">
                 <div className={`flex min-h-[280px] items-center bg-black p-3 sm:min-h-[430px] sm:p-5 ${index % 2 === 1 ? "lg:order-2" : ""}`}>
                   <div className="relative aspect-video w-full overflow-hidden border border-accent/30 bg-black">
                     <iframe
