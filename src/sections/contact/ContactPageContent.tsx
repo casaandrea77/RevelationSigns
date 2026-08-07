@@ -1,7 +1,6 @@
 "use client";
 
 import { FormEvent, useState } from "react";
-import Link from "next/link";
 import { motion } from "framer-motion";
 import { fadeUp, staggerContainer } from "@/animations/variants/fade-up";
 import { Footer } from "@/components/layout/Footer";
@@ -56,7 +55,7 @@ export function ContactPageContent() {
 
       <section className="bg-[#f4efe6] px-6 py-20 text-[#1a1814] sm:px-10 lg:px-12 lg:py-28" aria-labelledby="request-heading">
         <div className="mx-auto grid max-w-[1200px] gap-12 lg:grid-cols-[0.7fr_1.3fr] lg:gap-20">
-          <div><p className="font-sans text-xs tracking-[0.35em] uppercase text-[#8a6728]">Personal Support</p><h2 id="request-heading" className="mt-5 font-serif text-[clamp(3rem,5vw,4.8rem)] font-medium leading-none">How can we help?</h2><p className="mt-7 font-sans text-base leading-[1.85] text-[#5c564d]">Choose what you are interested in and tell us a little about your request. We will respond by email whenever possible.</p><div className="mt-9 border-t border-[#1a1814]/15 pt-7"><p className="font-sans text-xs tracking-[0.22em] text-[#8a6728] uppercase">Direct email</p><Link href={`mailto:${CONTACT_EMAIL}`} className="mt-3 block break-all font-serif text-2xl underline decoration-[#8a6728]/40 underline-offset-4">{CONTACT_EMAIL}</Link></div><div className="mt-8 border border-[#8a6728]/25 bg-[#eee7da] p-6"><p className="font-sans text-sm leading-[1.7] text-[#5c564d]"><strong className="text-[#1a1814]">Privacy:</strong> This version does not store your details on the website. Pressing the button prepares a message in your own email application for you to review and send.</p></div></div>
+          <div><p className="font-sans text-xs tracking-[0.35em] uppercase text-[#8a6728]">Personal Support</p><h2 id="request-heading" className="mt-5 font-serif text-[clamp(3rem,5vw,4.8rem)] font-medium leading-none">How can we help?</h2><p className="mt-7 font-sans text-base leading-[1.85] text-[#5c564d]">Choose what you are interested in and tell us a little about your request. We will respond by email whenever possible.</p><div className="mt-9 border border-[#8a6728]/25 bg-[#eee7da] p-6"><p className="font-sans text-sm leading-[1.7] text-[#5c564d]"><strong className="text-[#1a1814]">Privacy:</strong> This version does not store your details on the website. Pressing the button prepares a message in your own email application for you to review and send.</p></div></div>
 
           <form onSubmit={handleSubmit} className="border border-[#1a1814]/15 bg-white/35 p-6 sm:p-9">
             <div className="grid gap-6 sm:grid-cols-2">
