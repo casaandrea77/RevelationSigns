@@ -22,6 +22,22 @@ const testimonyLinks = {
 const externalLinkClass =
   "inline-flex min-h-12 items-center justify-center border border-accent/70 px-6 py-3 text-center font-sans text-[0.68rem] font-semibold tracking-[0.18em] text-accent uppercase transition-colors hover:bg-accent hover:text-[#06101a] focus-visible:bg-accent focus-visible:text-[#06101a]";
 
+function EmbeddedVideo({ videoId, title }: { videoId: string; title: string }) {
+  return (
+    <div className="relative aspect-video overflow-hidden border border-accent/35 bg-black">
+      <iframe
+        src={`https://www.youtube-nocookie.com/embed/${videoId}?rel=0`}
+        title={title}
+        className="absolute inset-0 h-full w-full"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerPolicy="strict-origin-when-cross-origin"
+        allowFullScreen
+        loading="lazy"
+      />
+    </div>
+  );
+}
+
 const scriptureTests = [
   {
     reference: "Isaiah 8:20 · KJV",
@@ -97,8 +113,8 @@ export function StarfallPageContent() {
             Ancient mysteries. Extraordinary encounters. Biblical answers.
           </motion.p>
           <motion.div variants={fadeUp} className="mt-9 flex flex-wrap items-center gap-5">
-            <Link href={STARFALL_DOCUMENTARY_URL} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-14 items-center justify-center bg-accent px-9 font-sans text-sm font-semibold tracking-[0.17em] text-[#06101a] uppercase transition-colors hover:bg-accent-hover">
-              Watch Documentary ↗
+            <Link href="#watch" className="inline-flex min-h-14 items-center justify-center bg-accent px-9 font-sans text-sm font-semibold tracking-[0.17em] text-[#06101a] uppercase transition-colors hover:bg-accent-hover">
+              Watch Documentary ↓
             </Link>
             <span className="font-sans text-xs tracking-[0.22em] text-foreground/70 uppercase">34 minutes · Free on YouTube</span>
           </motion.div>
@@ -128,8 +144,8 @@ export function StarfallPageContent() {
               <div><dt className="text-[0.65rem] tracking-[0.2em] text-[#8a6728] uppercase">Runtime</dt><dd className="mt-2 text-sm">34 minutes</dd></div>
             </motion.dl>
             <motion.div variants={fadeUp} className="mt-8">
-              <Link href={STARFALL_DOCUMENTARY_URL} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-12 items-center justify-center bg-[#1a1814] px-7 font-sans text-xs font-semibold tracking-[0.18em] text-[#f4efe6] uppercase transition-colors hover:bg-[#2a2720]">
-                Watch on Strange Normal ↗
+              <Link href={STARFALL_DOCUMENTARY_URL} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-12 items-center justify-center border border-[#1a1814]/35 px-7 font-sans text-xs font-semibold tracking-[0.18em] text-[#1a1814] uppercase transition-colors hover:bg-[#1a1814] hover:text-[#f4efe6]">
+                Open original on YouTube ↗
               </Link>
             </motion.div>
           </motion.div>
@@ -152,7 +168,7 @@ export function StarfallPageContent() {
               <p className="mt-4 max-w-2xl font-sans text-sm leading-[1.8] text-muted sm:text-base">According to his testimony, Roger J. Morneau became involved with a secret society devoted to spirit worship before leaving it and becoming a Christian author and prayer warrior.</p>
               <p className="mt-4 font-serif text-lg italic text-foreground/75">Roger Morneau — <cite>A Trip Into the Supernatural</cite></p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-                <Link href={testimonyLinks.rogerInterview} target="_blank" rel="noopener noreferrer" className={`${externalLinkClass} bg-accent text-[#06101a] hover:bg-accent-hover`}>Watch full testimony ↗</Link>
+                <Link href="#roger-video" className={`${externalLinkClass} bg-accent text-[#06101a] hover:bg-accent-hover`}>Watch full testimony ↓</Link>
                 <Link href={testimonyLinks.rogerBiography} target="_blank" rel="noopener noreferrer" className={externalLinkClass}>Explore his story ↗</Link>
               </div>
             </div>
@@ -161,6 +177,11 @@ export function StarfallPageContent() {
               <div className="absolute inset-0 bg-[linear-gradient(to_top,rgba(4,13,22,0.75),transparent_55%)] lg:bg-[linear-gradient(to_right,rgba(7,21,34,0.25),transparent_45%)]" />
             </div>
           </motion.article>
+
+          <motion.div id="roger-video" variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.12 }} className="mt-6 scroll-mt-28">
+            <EmbeddedVideo videoId="Ird-BKuPRlw" title="Roger Morneau — A Trip Into the Supernatural" />
+            <Link href={testimonyLinks.rogerInterview} target="_blank" rel="noopener noreferrer" className="mt-3 inline-flex font-sans text-[0.65rem] font-semibold tracking-[0.18em] text-accent uppercase">Open original testimony on YouTube ↗</Link>
+          </motion.div>
 
           <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.12 }} className="mt-6 grid gap-6 md:grid-cols-2">
             {[{ title: "Charmed by Darkness", subtitle: "The life and legacy of Roger Morneau" }, { title: "Beware of Angels", subtitle: "Dramatic stories of supernatural deception" }].map((film, index) => (
@@ -186,13 +207,22 @@ export function StarfallPageContent() {
               <blockquote className="mt-5 font-serif text-[clamp(2.1rem,4vw,4.2rem)] font-light leading-[1.08]">“The experience was shown to be able to be stopped or terminated by calling on the name and authority of Jesus Christ.”</blockquote>
               <p className="mt-7 font-serif text-2xl text-foreground/80">Hundreds of reported encounters. One recurring response.</p>
               <p className="mt-4 font-sans text-sm leading-[1.7] text-muted sm:text-base"><strong className="text-accent">Joseph G. Jordan</strong> — Founder, CE4 Research Group; MUFON investigator and 30-year lifetime member.</p>
-              <div className="mt-8 grid gap-3 sm:grid-cols-2">
-                <Link href={testimonyLinks.joeTestimony} target="_blank" rel="noopener noreferrer" className={externalLinkClass}>MUFON investigator testimony ↗</Link>
-                <Link href={testimonyLinks.joeCommunion} target="_blank" rel="noopener noreferrer" className={externalLinkClass}>Unholy Communion ↗</Link>
-              </div>
               <Link href={testimonyLinks.joeResearch} target="_blank" rel="noopener noreferrer" className="mt-6 inline-flex min-h-11 items-center font-sans text-xs font-semibold tracking-[0.2em] text-accent uppercase">View CE4 testimonies and research ↗</Link>
             </div>
           </motion.article>
+
+          <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.12 }} className="mt-6 grid gap-6 lg:grid-cols-2">
+            {[
+              { id: "b6tnQlugr1I", title: "Testimony of a MUFON Investigator", href: testimonyLinks.joeTestimony },
+              { id: "tStmPk9IuQk", title: "Unholy Communion: The Spiritual Nature of Abduction Reports", href: testimonyLinks.joeCommunion },
+            ].map((video) => (
+              <motion.article key={video.id} variants={fadeUp} className="bg-[#071522] p-4 sm:p-5">
+                <EmbeddedVideo videoId={video.id} title={video.title} />
+                <h3 className="mt-5 font-serif text-2xl text-[#ead6a2]">{video.title}</h3>
+                <Link href={video.href} target="_blank" rel="noopener noreferrer" className="mt-3 inline-flex font-sans text-[0.65rem] font-semibold tracking-[0.18em] text-accent uppercase">Open original on YouTube ↗</Link>
+              </motion.article>
+            ))}
+          </motion.div>
 
           <motion.article variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.12 }} className="mt-20 overflow-hidden border border-accent/30 bg-[#071522] lg:grid lg:grid-cols-[0.9fr_1.1fr]">
             <div className="flex flex-col justify-center p-7 sm:p-10 lg:p-14">
@@ -202,17 +232,16 @@ export function StarfallPageContent() {
               <p className="mt-3 font-serif text-xl text-foreground/80">UFOs, evolution, and a biblical explanation.</p>
               <p className="mt-5 font-sans text-sm leading-[1.8] text-muted sm:text-base">Based on the bestselling work of Gary Bates and produced by Creation Ministries International.</p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-                <Link href={testimonyLinks.alienTrailer} target="_blank" rel="noopener noreferrer" className={`${externalLinkClass} bg-accent text-[#06101a] hover:bg-accent-hover`}>Watch official trailer ↗</Link>
+                <Link href="#alien-trailer" className={`${externalLinkClass} bg-accent text-[#06101a] hover:bg-accent-hover`}>Watch official trailer ↓</Link>
                 <Link href={testimonyLinks.alienFilm} target="_blank" rel="noopener noreferrer" className={externalLinkClass}>Explore the film ↗</Link>
               </div>
             </div>
             <div className="relative min-h-[520px] bg-[#040d16] p-7 sm:p-10 lg:min-h-[620px] lg:p-12">
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_25%,rgba(196,163,90,0.18),transparent_40%)]" />
               <div className="relative flex h-full flex-col justify-between gap-10">
-                <div className="relative aspect-video overflow-hidden border border-accent/35">
-                  <Image src="/assets/media/images/starfall-documentary-v2.png" alt="Alien Intrusion documentary feature artwork" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
-                  <div className="absolute inset-0 bg-black/25" />
-                  <div className="absolute inset-x-0 bottom-0 p-5 sm:p-7"><span className="font-sans text-xs font-semibold tracking-[0.25em] text-accent uppercase">Official trailer</span></div>
+                <div id="alien-trailer" className="scroll-mt-28">
+                  <EmbeddedVideo videoId="yJaXRMGfCus" title="Alien Intrusion official trailer" />
+                  <Link href={testimonyLinks.alienTrailer} target="_blank" rel="noopener noreferrer" className="mt-3 inline-flex font-sans text-[0.65rem] font-semibold tracking-[0.18em] text-accent uppercase">Open original trailer on YouTube ↗</Link>
                 </div>
                 <div className="grid items-center gap-6 sm:grid-cols-[150px_1fr]">
                   <div className="relative mx-auto aspect-[4/5] w-[150px] overflow-hidden border border-accent/60 bg-white">
