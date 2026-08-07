@@ -1,9 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { motion, useReducedMotion } from "framer-motion";
+import { Brand } from "@/components/layout/Brand";
 
 const SCROLL_THRESHOLD = 24;
 
@@ -63,24 +63,7 @@ export function Header() {
       }`}
     >
       <div className="mx-auto flex h-full max-w-[1440px] items-center justify-between gap-8 px-5 sm:px-8 lg:px-12">
-        <Link
-          href="/"
-          className="group relative flex min-w-0 items-center transition-opacity duration-300 hover:opacity-90"
-          aria-label="RevelationSigns home"
-        >
-          <span
-            aria-hidden
-            className="pointer-events-none absolute -inset-x-2 -inset-y-1.5 rounded-sm bg-black/10 backdrop-blur-[2px] sm:-inset-x-3 sm:-inset-y-2"
-          />
-          <Image
-            src="/assets/logo/RevelationSigns_Logo_Transparent.png"
-            alt="RevelationSigns"
-            width={480}
-            height={160}
-            priority
-            className="relative z-[1] h-auto w-[170px] drop-shadow-[0_2px_16px_rgba(0,0,0,0.35)] sm:w-[210px] lg:w-[245px]"
-          />
-        </Link>
+        <Brand />
 
         <nav className="hidden items-center gap-8 lg:flex" aria-label="Primary navigation">
           {[
