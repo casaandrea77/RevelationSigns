@@ -46,7 +46,7 @@ export function GreatControversyPageContent() {
   return (
     <main id="main-content" className="overflow-hidden bg-[#06101a] text-foreground">
       <section className="relative min-h-[700px] overflow-hidden pt-[82px] lg:min-h-[575px]" aria-labelledby="gc-title">
-        <Image src="/assets/media/images/great-controversy-restoration-hero-v2.png" alt="A family walking through a restored landscape toward a radiant city" fill priority sizes="100vw" className="object-cover object-[72%_center] lg:object-center" />
+        <Image src="/assets/media/images/great-controversy-restoration-hero-v2.png" alt="A family walking through a restored landscape toward a radiant city" fill priority sizes="100vw" className="object-cover object-[86%_center] lg:object-center" />
         <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(4,18,29,0.92)_0%,rgba(4,18,29,0.58)_39%,rgba(4,18,29,0.05)_78%)]" />
         <div className="relative z-10 mx-auto flex min-h-[618px] max-w-[1440px] flex-col justify-center px-6 py-14 sm:px-10 lg:min-h-[493px] lg:px-20 lg:pt-16">
           <h1 id="gc-title" className="max-w-[560px] font-serif text-[clamp(4.1rem,6.5vw,6.2rem)] font-medium leading-[0.9] tracking-[-0.025em]">The Great<br />Controversy</h1>
