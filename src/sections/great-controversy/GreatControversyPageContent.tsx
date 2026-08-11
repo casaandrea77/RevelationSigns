@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
+import { FiBookOpen, FiDownload, FiHeadphones, FiMail, FiPlay } from "react-icons/fi";
 import { Footer } from "@/components/layout/Footer";
+import { GreatControversyAudioPlayer } from "./GreatControversyAudioPlayer";
 
 const storyMovements = [
   { number: "1", title: "The Conflict Begins", text: "Lucifer’s rebellion in heaven began a conflict that would touch every life in the universe.", image: "/assets/media/images/great-controversy-war-in-heaven-v2.png" },
@@ -36,23 +38,23 @@ const readerStories = [
 ] as const;
 
 const resources = [
-  { title: "Read Online", text: "Start reading instantly in your browser.", action: "Start Reading", href: "https://thegreatcontroversy.org/read/132.2", external: true },
-  { title: "Listen Free", text: "Listen to the complete Great Controversy audiobook.", action: "Listen Now", href: "https://ellenwhiteaudio.org/great-controversy/", external: true },
-  { title: "Download PDF", text: "Download the complete book directly as a PDF.", action: "Download Now", href: "https://ellenwhiteaudio.org/audio/en/gc/The%20Great%20Controversy.pdf", external: true },
-  { title: "Request a Free Copy", text: "Ask us about receiving a printed gift copy.", action: "Request Now", href: "/contact?request=Physical%20gift%20by%20post#request-heading", primary: true },
+  { title: "Read Online", text: "Start reading instantly in your browser.", action: "Start Reading", href: "https://thegreatcontroversy.org/read/132.2", external: true, icon: FiBookOpen },
+  { title: "Listen Free", text: "Listen to the complete Great Controversy audiobook.", action: "Listen Now", href: "#listen", icon: FiHeadphones, primary: true },
+  { title: "Download PDF", text: "Download the complete book directly as a PDF.", action: "Download PDF", href: "https://ellenwhiteaudio.org/audio/en/gc/The%20Great%20Controversy.pdf", external: true, icon: FiDownload },
+  { title: "Request a Free Copy", text: "Ask us about receiving a printed gift copy.", action: "Request Now", href: "/contact?request=Physical%20gift%20by%20post#request-heading", icon: FiMail },
 ] as const;
 
 export function GreatControversyPageContent() {
   return (
     <main id="main-content" className="overflow-hidden bg-[#06101a] text-foreground">
-      <section className="relative min-h-[700px] overflow-hidden pt-[82px] lg:min-h-[575px]" aria-labelledby="gc-title">
+      <section className="relative min-h-[760px] overflow-hidden pt-[82px] lg:min-h-[680px]" aria-labelledby="gc-title">
         <Image src="/assets/media/images/great-controversy-restoration-hero-v2.png" alt="A family walking through a restored landscape toward a radiant city" fill priority sizes="100vw" className="object-cover object-[86%_center] lg:object-center" />
         <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(4,18,29,0.92)_0%,rgba(4,18,29,0.58)_39%,rgba(4,18,29,0.05)_78%)]" />
-        <div className="relative z-10 mx-auto flex min-h-[618px] max-w-[1440px] flex-col justify-center px-6 py-14 sm:px-10 lg:min-h-[493px] lg:px-20 lg:pt-16">
-          <h1 id="gc-title" className="max-w-[560px] font-serif text-[clamp(4.1rem,6.5vw,6.2rem)] font-medium leading-[0.9] tracking-[-0.025em]">The Great<br />Controversy</h1>
+        <div className="relative z-10 mx-auto flex min-h-[678px] max-w-[1440px] flex-col justify-center px-6 py-14 sm:px-10 lg:min-h-[598px] lg:px-20 lg:pt-16">
+          <h1 id="gc-title" className="max-w-[560px] font-serif text-[2.25rem] font-medium leading-[0.92] tracking-[-0.025em] min-[430px]:text-[2.75rem] sm:text-[clamp(3.15rem,6.5vw,6.2rem)]">The Great<br />Controversy</h1>
           <div className="mt-6 h-[3px] w-14 bg-accent" />
           <p className="mt-6 max-w-[390px] font-serif text-[clamp(1.2rem,1.65vw,1.55rem)] leading-[1.42] text-foreground/90">The conflict between Christ and Satan—from rebellion to restoration.</p>
-          <Link href="https://thegreatcontroversy.org/read/132.2" target="_blank" rel="noopener noreferrer" className="mt-7 inline-flex min-h-14 w-fit items-center justify-center rounded-sm bg-accent px-10 font-sans text-xs font-semibold tracking-[0.16em] text-[#06101a] uppercase shadow-[0_8px_24px_rgba(0,0,0,0.25)] hover:bg-accent-hover">Read the Book</Link>
+          <div className="mt-7 flex flex-wrap gap-3"><Link href="https://thegreatcontroversy.org/read/132.2" target="_blank" rel="noopener noreferrer" className="inline-flex min-h-14 items-center justify-center rounded-sm bg-accent px-10 font-sans text-xs font-semibold tracking-[0.16em] text-[#06101a] uppercase shadow-[0_8px_24px_rgba(0,0,0,0.25)] hover:bg-accent-hover">Read the Book</Link><Link href="#listen" className="inline-flex min-h-14 items-center gap-3 rounded-sm border border-accent px-7 font-sans text-xs font-semibold tracking-[0.14em] text-[#f5e8cb] uppercase"><FiPlay className="text-lg" /> Listen to Chapter 1</Link></div>
         </div>
       </section>
 
@@ -68,6 +70,8 @@ export function GreatControversyPageContent() {
           </div>
         </div>
       </section>
+
+      <GreatControversyAudioPlayer />
 
       <section id="story-unfolds" className="bg-[#061729] text-[#f6e7c5]" aria-labelledby="story-heading">
         <h2 id="story-heading" className="sr-only">The Story Unfolds</h2>
@@ -96,13 +100,14 @@ export function GreatControversyPageContent() {
         <div className="relative z-10 mx-auto flex min-h-[300px] max-w-[1240px] items-center justify-end px-6 py-12 sm:px-10 lg:px-12"><div className="max-w-[560px] text-[#f5dfb0] [text-shadow:0_2px_12px_rgba(0,0,0,0.65)]"><h2 id="scripture-standard" className="font-serif text-[clamp(2.4rem,4vw,4.1rem)] leading-[1.02]">Read thoughtfully.<br />Compare faithfully.<br />Hold fast to what is true.</h2><p className="mt-3 font-sans text-[0.7rem] font-semibold tracking-[0.18em] uppercase text-[#f0b64f]">Scripture is our final authority.</p></div></div>
       </section>
 
-      <section className="bg-[#07192b] px-6 py-16 sm:px-10 lg:px-12 lg:py-20" aria-labelledby="choose-how"><div className="mx-auto max-w-[1320px]"><p id="choose-how" className="text-center font-sans text-sm font-semibold tracking-[0.22em] uppercase text-accent">Choose How to Begin</p><div className="mt-10 grid gap-px bg-accent/30 sm:grid-cols-2 lg:grid-cols-4">{resources.map((resource) => {
+      <section className="bg-[#f3ede3] px-6 py-16 text-[#102238] sm:px-10 lg:px-12 lg:py-20" aria-labelledby="choose-how"><div className="mx-auto max-w-[1320px]"><p id="choose-how" className="text-center font-sans text-sm font-semibold tracking-[0.22em] uppercase text-[#a36e1d]">Choose How to Begin</p><div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">{resources.map((resource) => {
         const isExternal = "external" in resource && resource.external;
         const isPrimary = "primary" in resource && resource.primary;
-        return <article key={resource.title} className="flex min-h-[250px] flex-col bg-[#07192b] px-7 py-8 text-center"><h3 className="font-sans text-sm font-semibold tracking-[0.13em] text-accent uppercase">{resource.title}</h3><p className="mt-5 flex-1 font-serif text-base leading-[1.55] text-muted">{resource.text}</p><Link href={resource.href} {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})} className={`mt-7 inline-flex min-h-12 items-center justify-center px-6 font-sans text-[0.7rem] font-semibold tracking-[0.15em] uppercase ${isPrimary ? "bg-accent text-[#06101a]" : "border border-accent text-accent"}`}>{resource.action}{isExternal ? " →" : ""}</Link></article>;
+        const Icon = resource.icon;
+        return <article key={resource.title} className={`flex min-h-[265px] flex-col rounded-sm border px-7 py-8 text-center shadow-sm ${isPrimary ? "border-[#b57b20] bg-white shadow-[0_8px_30px_rgba(92,58,8,0.12)]" : "border-[#cdbb9f] bg-[#f8f3eb]"}`}><Icon aria-hidden className="mx-auto text-4xl text-[#0a2942]" /><h3 className="mt-5 font-sans text-sm font-semibold tracking-[0.13em] text-[#a16e21] uppercase">{resource.title}</h3><p className="mt-4 flex-1 font-serif text-base leading-[1.55] text-[#4a5563]">{resource.text}</p><Link href={resource.href} {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})} className={`mt-6 inline-flex min-h-12 items-center justify-center px-6 font-sans text-[0.7rem] font-semibold tracking-[0.15em] uppercase ${isPrimary ? "bg-[#c99a42] text-[#06101a]" : "border border-[#c99a42] text-[#8f5d16]"}`}>{resource.action}{isExternal ? " →" : ""}</Link></article>;
       })}</div></div></section>
 
-      <section className="bg-[#f3ede3] text-[#12233a]" aria-labelledby="final-invitation"><div className="mx-auto grid min-h-[190px] max-w-[1440px] lg:grid-cols-[0.88fr_1.12fr]"><div className="relative min-h-[190px] overflow-hidden"><Image src="/assets/media/images/great-controversy-restoration-hero-v2.png" alt="A hopeful path toward restoration" fill sizes="(max-width: 1024px) 100vw, 640px" className="object-cover object-[72%_center]" /></div><div className="flex flex-col justify-center px-7 py-8 lg:px-12"><h2 id="final-invitation" className="font-serif text-[clamp(2.3rem,3.4vw,3.8rem)] leading-[0.98]">Perhaps your story<br />begins with the first page.</h2><p className="mt-3 max-w-xl font-serif text-sm leading-[1.5] text-[#485466]">This is more than a book—it is an invitation to discover God’s plan, find lasting hope, and become part of the greatest story ever told.</p><Link href="https://thegreatcontroversy.org/read/132.2" target="_blank" rel="noopener noreferrer" className="mt-4 inline-flex min-h-9 w-fit items-center justify-center bg-[#c79032] px-8 font-sans text-[0.62rem] font-semibold tracking-[0.15em] text-[#101820] uppercase">Open the Book</Link></div></div></section>
+      <section className="bg-[#061a2b] px-5 py-16 text-[#f6ead1] sm:px-8 lg:px-12 lg:py-24" aria-labelledby="armageddon-heading"><div className="mx-auto max-w-[1120px] text-center"><p className="font-sans text-xs font-semibold tracking-[0.22em] text-[#d5a245] uppercase">Continue the Journey</p><h2 id="armageddon-heading" className="mt-4 font-serif text-[clamp(2.3rem,4.7vw,4.5rem)] leading-[1.02]">Armageddon and the Final Events of Bible Prophecy</h2><p className="mx-auto mt-4 max-w-3xl font-serif text-lg leading-relaxed text-[#d7cdbd]">Watch this Amazing Facts documentary and explore what Scripture reveals about Earth’s final events.</p><div className="mt-9 overflow-hidden rounded border border-[#d4a64f] bg-black shadow-2xl"><div className="aspect-video"><iframe className="h-full w-full" src="https://www.youtube-nocookie.com/embed/ieYCzJ81m6I?rel=0" title="Armageddon and the Final Events of Bible Prophecy by Amazing Facts" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen /></div><div className="flex flex-col items-center justify-between gap-4 border-t border-[#d4a64f]/35 px-5 py-4 sm:flex-row"><span className="font-sans text-xs font-semibold tracking-[0.17em] uppercase text-[#f0bd5d]">Amazing Facts · Full Documentary</span><Link href="https://www.amazingfacts.org/en/watch/special-projects/amazing-facts-documentaries/armageddon-and-the-final-events-of-bible-prophecy/" target="_blank" rel="noopener noreferrer" className="font-sans text-xs text-[#e5c98f] underline-offset-4 hover:underline">Watch on Amazing Facts ↗</Link></div></div><p className="mx-auto mt-8 max-w-2xl font-serif text-lg text-[#d9cdb7]">The conflict described in the book is unfolding before us. Compare every teaching with Scripture.</p></div></section>
       <Footer />
     </main>
   );

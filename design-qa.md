@@ -1,26 +1,11 @@
-# Design QA — Mobile Hope Section
+# Great Controversy redesign QA
 
-## Reference
+- Reference: approved 11 August Great Controversy full-page mockup.
+- Desktop: verified at 1440 × 900; hero, book introduction, three-column audiobook layout, story/testimony sections, resource cards, documentary, footer, and sticky player align with the approved navy, cream, and gold direction.
+- Tablet: grid breakpoints preserve readable text, chapter controls, and card hierarchy without horizontal overflow.
+- Mobile: verified at 390 × 844; navigation, image crops, headings, controls, chapter list, resource cards, and documentary stack cleanly.
+- Functionality: direct MP3 playback works, playback time advances, chapter selection works, progress is saved locally, and the sticky mini-player appears after playback begins.
+- Links: all six local routes return 200. Read, PDF, audiobook, and Amazing Facts destinations return 200. The embedded YouTube documentary uses the privacy-enhanced player.
+- Build: `npm run build` passes with static generation for all routes.
 
-- Samsung Galaxy mobile screenshot supplied by the site owner.
-- Problem: text printed inside the background artwork overlapped the live heading and made the section unreadable.
-
-## Fix
-
-- Mobile now anchors the Hope artwork to the left edge, keeping Jesus visible while moving the artwork's printed verse outside the viewport.
-- Tablet and desktop retain the existing centered crop.
-
-## Verification
-
-- Tested at a 412 × 915 mobile viewport.
-- Heading, description, and call-to-action remain readable.
-- Embedded artwork text is no longer visible or overlapping.
-- Header, footer, and navigation remain intact.
-
-## Issues
-
-- P0: None.
-- P1: None.
-- P2: None.
-
-Result: Passed.
+final result: passed
