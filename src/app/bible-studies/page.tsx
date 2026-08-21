@@ -4,7 +4,7 @@ import { BibleStudiesPageContent } from "@/sections/bible-studies/BibleStudiesPa
 export const metadata: Metadata = {
   title: "Bible Studies | RevelationSigns",
   description:
-    "Explore Daniel 2, Bible prophecy, the origin of evil, the Second Coming, and other Scripture-based studies.",
+    "Explore guided foundational Bible studies and a separate Daniel and Revelation prophecy journey.",
 };
 
 export default function BibleStudiesPage() {
