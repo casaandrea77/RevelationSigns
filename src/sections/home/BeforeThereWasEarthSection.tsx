@@ -73,14 +73,14 @@ export function BeforeThereWasEarthSection() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
-          className="relative min-h-[460px] w-full overflow-hidden border-t border-border/40 lg:min-h-[650px] lg:border-l lg:border-t-0"
+          className="relative aspect-[3/2] w-full overflow-hidden border-t border-border/40 bg-[#06101a] lg:aspect-auto lg:min-h-[650px] lg:border-l lg:border-t-0"
         >
           {imageAvailable ? (
             <Image
               src={ARTWORK_SRC}
               alt="War in Heaven"
               fill
-              className="object-cover object-center"
+              className="object-contain object-center"
               sizes="(max-width: 1024px) 100vw, 50vw"
               onError={() => setImageAvailable(false)}
             />
