@@ -85,23 +85,25 @@ const relatedDocumentaries = [
 export function StarfallPageContent() {
   return (
     <main id="main-content" className="overflow-hidden bg-[#06101a] text-foreground">
-      <section className="relative flex min-h-[760px] items-end overflow-hidden pt-24 lg:min-h-[880px]" aria-labelledby="starfall-title">
-        <Image
-          src="/assets/media/images/starfall-documentary-v2.png"
-          alt="Starfall documentary artwork showing a night sky above an ancient landscape"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-center"
-        />
-        <div className="absolute inset-0 bg-[linear-gradient(to_top,#06101a_2%,rgba(6,16,26,0.82)_30%,rgba(6,16,26,0.25)_72%,rgba(6,16,26,0.5)_100%)]" />
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(6,16,26,0.82),transparent_70%)]" />
+      <section className="relative overflow-hidden bg-[#06101a] pt-24 lg:flex lg:min-h-[880px] lg:items-end" aria-labelledby="starfall-title">
+        <div className="relative aspect-[3/2] w-full lg:absolute lg:inset-0 lg:aspect-auto">
+          <Image
+            src="/assets/media/images/starfall-documentary-v2.png"
+            alt="Starfall documentary artwork showing a night sky above an ancient landscape"
+            fill
+            priority
+            sizes="100vw"
+            className="object-contain object-center lg:object-cover"
+          />
+          <div className="absolute inset-0 bg-[linear-gradient(to_top,#06101a_0%,transparent_28%)] lg:bg-[linear-gradient(to_top,#06101a_2%,rgba(6,16,26,0.82)_30%,rgba(6,16,26,0.25)_72%,rgba(6,16,26,0.5)_100%)]" />
+          <div className="absolute inset-0 hidden bg-[linear-gradient(to_right,rgba(6,16,26,0.82),transparent_70%)] lg:block" />
+        </div>
 
         <motion.div
           variants={staggerContainer}
           initial="hidden"
           animate="visible"
-          className="relative z-10 mx-auto w-full max-w-[1440px] px-6 pb-20 sm:px-10 lg:px-12 lg:pb-28"
+          className="relative z-10 mx-auto w-full max-w-[1440px] px-6 py-12 sm:px-10 sm:py-16 lg:px-12 lg:pb-28 lg:pt-0"
         >
           <motion.p variants={fadeUp} className="font-sans text-xs tracking-[0.34em] uppercase text-accent sm:text-sm">
             A Strange Normal Documentary
