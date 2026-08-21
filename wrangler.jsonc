@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "revelation-signs-primary",
+  "main": "cloudflare/worker.js",
+  "compatibility_date": "2026-08-21",
+  "workers_dev": true,
+  "preview_urls": true,
+  "routes": [
+    {
+      "pattern": "revelationsigns.one/*",
+      "zone_name": "revelationsigns.one"
+    }
+  ]
+}
