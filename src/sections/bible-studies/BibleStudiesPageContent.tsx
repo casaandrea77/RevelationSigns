@@ -7,13 +7,13 @@ import { fadeIn, fadeUp, staggerContainer } from "@/animations/variants/fade-up"
 import { Footer } from "@/components/layout/Footer";
 
 const studies = [
-  { title: "Daniel & Revelation", description: "Explore the prophetic books that reveal God's sovereignty, judgment, and plan of rescue.", href: "https://www.amazingfacts.org/study/topics/", label: "Prophecy" },
-  { title: "The Origin of Evil", description: "Study how Scripture explains sin, suffering, freedom, and the conflict that began in heaven.", href: "https://www.amazingfacts.org/study/bible-study-guides/", label: "Great Controversy" },
-  { title: "The Second Coming", description: "Examine the biblical promises and signs surrounding the visible return of Jesus Christ.", href: "https://www.amazingfacts.org/study/bible-study-guides/", label: "Christian Hope" },
-  { title: "The State of the Dead", description: "Compare popular ideas about death and the afterlife with the testimony of Scripture.", href: "https://www.amazingfacts.org/study/bible-study-guides/", label: "Bible Teaching" },
-  { title: "The Sabbath", description: "Trace the seventh-day Sabbath from creation through the life of Christ and the new earth.", href: "https://www.amazingfacts.org/study/bible-study-guides/", label: "Bible Teaching" },
-  { title: "Judgment & Sanctuary", description: "Follow the sanctuary theme and the Bible's teaching about judgment, mercy, and Christ's ministry.", href: "https://www.amazingfacts.org/study/bible-study-guides/", label: "Prophecy" },
+  { number: "01", title: "God's Amazing Book", description: "Can a book written across centuries still speak with one clear voice?", href: "/bible-studies/gods-amazing-book", meta: "15 questions · 25 min", label: "Foundations" },
+  { number: "02", title: "The Origin of Sin", description: "Where did evil begin—and why did God allow freedom to be misused?", href: "/bible-studies/origin-of-sin", meta: "14 questions · 25 min", label: "Great Controversy" },
+  { number: "03", title: "Who Is Christ?", description: "Discover the identity, character, and saving mission of Jesus.", href: "/bible-studies/who-is-christ", meta: "17 questions · 25 min", label: "Jesus Christ" },
+  { number: "04", title: "The Problem of Sin", description: "What has sin broken, and why can humanity not repair it alone?", href: "/bible-studies/problem-of-sin", meta: "16 questions · 25 min", label: "Foundations" },
 ] as const;
+
+const upcoming = ["Sin and Its Cure", "A New Person", "Law & Gospel", "The World's Only Hope", "God's Tomorrow"] as const;
 
 export function BibleStudiesPageContent() {
   return (
@@ -38,17 +38,18 @@ export function BibleStudiesPageContent() {
             <motion.h2 id="daniel-heading" variants={fadeUp} className="mt-5 font-serif text-[clamp(3rem,5.5vw,5.2rem)] font-medium leading-[0.94]">A prophecy that spans history</motion.h2>
             <motion.p variants={fadeUp} className="mt-7 font-sans text-base leading-[1.85] text-[#5c564d] sm:text-lg">Daniel 2 records King Nebuchadnezzar&apos;s dream of a great image. Daniel identifies a succession of kingdoms—from Babylon onward—and a final kingdom established by God that will never be destroyed.</motion.p>
             <motion.p variants={fadeUp} className="mt-5 font-sans text-base leading-[1.85] text-[#5c564d] sm:text-lg">The chapter introduces the method and central hope of biblical prophecy: God knows history in advance, rules above earthly powers, and will bring human kingdoms to an end.</motion.p>
-            <motion.div variants={fadeUp} className="mt-9 flex flex-wrap gap-3"><Link href="https://www.amazingfacts.org/bible-book/daniel-chapter-2/" target="_blank" rel="noopener noreferrer" className="inline-flex min-h-14 items-center justify-center bg-[#1a1814] px-8 font-sans text-xs font-semibold tracking-[0.2em] text-[#f4efe6] uppercase">Explore Daniel 2 ↗</Link><Link href="https://manna.amazingfacts.org/amazingfacts/website/panoramaofprophecy/docs/en/POP-lesson-2-Dream-of-the-Empires.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex min-h-14 items-center justify-center border border-[#1a1814]/30 px-8 font-sans text-xs tracking-[0.2em] uppercase">Study Guide PDF ↗</Link></motion.div>
+            <motion.div variants={fadeUp} className="mt-9 flex flex-wrap gap-3"><Link href="/bible-studies/prophecy/daniel-2" className="inline-flex min-h-14 items-center justify-center bg-[#1a1814] px-8 font-sans text-xs font-semibold tracking-[0.2em] text-[#f4efe6] uppercase">Begin the Daniel 2 Study →</Link></motion.div>
           </motion.div>
         </div>
       </section>
 
       <section className="px-6 py-20 sm:px-10 lg:px-12 lg:py-28" aria-labelledby="study-library-heading">
         <div className="mx-auto max-w-[1200px]">
-          <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.3 }} className="max-w-3xl"><p className="font-sans text-xs tracking-[0.35em] uppercase text-accent">Continue Studying</p><h2 id="study-library-heading" className="mt-5 font-serif text-[clamp(3rem,5vw,5rem)] font-light leading-none">Explore the great themes of Scripture</h2></motion.div>
-          <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.1 }} className="mt-14 grid gap-px overflow-hidden border border-accent/20 bg-accent/20 md:grid-cols-2 lg:grid-cols-3">
-            {studies.map((study) => <motion.article key={study.title} variants={fadeUp} className="flex min-h-[330px] flex-col bg-[#06101a] p-8"><p className="font-sans text-[0.62rem] tracking-[0.25em] text-accent uppercase">{study.label}</p><h3 className="mt-6 font-serif text-3xl font-light">{study.title}</h3><p className="mt-4 flex-1 font-sans text-base leading-[1.75] text-muted">{study.description}</p><Link href={study.href} target="_blank" rel="noopener noreferrer" className="mt-7 font-sans text-xs tracking-[0.22em] text-accent uppercase">Study with Amazing Facts ↗</Link></motion.article>)}
+          <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.3 }} className="max-w-3xl"><p className="font-sans text-xs tracking-[0.35em] uppercase text-accent">Continue Studying</p><h2 id="study-library-heading" className="mt-5 font-serif text-[clamp(3rem,5vw,5rem)] font-light leading-none">Explore the great themes of Scripture</h2><p className="mt-6 font-sans text-base leading-[1.8] text-muted sm:text-lg">Read at your own pace, reveal the Bible passages and explanations, save your progress, and return whenever you are ready.</p></motion.div>
+          <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.1 }} className="mt-14 grid gap-px overflow-hidden border border-accent/20 bg-accent/20 md:grid-cols-2">
+            {studies.map((study) => <motion.article key={study.number} variants={fadeUp} className="group flex min-h-[330px] flex-col bg-[#06101a] p-8 transition-colors hover:bg-[#0d2531]"><div className="flex items-center justify-between"><p className="font-sans text-[0.62rem] tracking-[0.25em] text-accent uppercase">{study.label}</p><span className="font-sans text-[0.62rem] tracking-[0.2em] text-foreground/45">{study.number}</span></div><h3 className="mt-6 font-serif text-4xl font-light">{study.title}</h3><p className="mt-4 flex-1 font-sans text-base leading-[1.75] text-muted">{study.description}</p><div className="mt-7 flex flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-5"><span className="font-sans text-[0.6rem] tracking-[0.18em] text-foreground/45 uppercase">{study.meta}</span><Link href={study.href} className="font-sans text-xs tracking-[0.22em] text-accent uppercase">Begin Study →</Link></div></motion.article>)}
           </motion.div>
+          <div className="mt-px grid gap-px bg-accent/20 sm:grid-cols-2 lg:grid-cols-5">{upcoming.map((title, index) => <div key={title} className="min-h-40 bg-[#081722] p-6"><span className="font-sans text-[0.6rem] tracking-[0.22em] text-accent/70 uppercase">Study {String(index + 5).padStart(2, "0")}</span><h3 className="mt-4 font-serif text-2xl font-light">{title}</h3><p className="mt-5 font-sans text-[0.6rem] tracking-[0.18em] text-foreground/40 uppercase">Coming soon</p></div>)}</div>
         </div>
       </section>
 
