@@ -94,10 +94,12 @@ export function GreatControversyPageContent() {
         </div>
       </section>
 
-      <section className="relative min-h-[300px] overflow-hidden" aria-labelledby="scripture-standard">
-        <Image src="/assets/media/images/great-controversy-bible-reading.png" alt="The Great Controversy beside an open Bible in warm morning light" fill sizes="100vw" className="object-cover object-[38%_center]" />
-        <div className="absolute inset-0 bg-black/20" />
-        <div className="relative z-10 mx-auto flex min-h-[300px] max-w-[1240px] items-center justify-end px-6 py-12 sm:px-10 lg:px-12"><div className="max-w-[560px] text-[#f5dfb0] [text-shadow:0_2px_12px_rgba(0,0,0,0.65)]"><h2 id="scripture-standard" className="font-serif text-[clamp(2.4rem,4vw,4.1rem)] leading-[1.02]">Read thoughtfully.<br />Compare faithfully.<br />Hold fast to what is true.</h2><p className="mt-3 font-sans text-[0.7rem] font-semibold tracking-[0.18em] uppercase text-[#f0b64f]">Scripture is our final authority.</p></div></div>
+      <section className="relative overflow-hidden bg-[#21170d] lg:min-h-[300px]" aria-labelledby="scripture-standard">
+        <div className="relative aspect-[4/3] w-full lg:absolute lg:inset-0 lg:aspect-auto">
+          <Image src="/assets/media/images/great-controversy-bible-reading.png" alt="The Great Controversy beside an open Bible in warm morning light" fill sizes="100vw" className="object-cover object-left lg:object-[38%_center]" />
+          <div className="absolute inset-0 bg-black/10 lg:bg-black/20" />
+        </div>
+        <div className="relative z-10 mx-auto flex max-w-[1240px] items-center bg-[#21170d] px-6 py-10 sm:px-10 lg:min-h-[300px] lg:justify-end lg:bg-transparent lg:px-12 lg:py-12"><div className="max-w-[560px] text-[#f5dfb0] [text-shadow:0_2px_12px_rgba(0,0,0,0.65)]"><h2 id="scripture-standard" className="font-serif text-[clamp(2.4rem,4vw,4.1rem)] leading-[1.02]">Read thoughtfully.<br />Compare faithfully.<br />Hold fast to what is true.</h2><p className="mt-3 font-sans text-[0.7rem] font-semibold tracking-[0.18em] uppercase text-[#f0b64f]">Scripture is our final authority.</p></div></div>
       </section>
 
       <section className="bg-[#f3ede3] px-6 py-16 text-[#102238] sm:px-10 lg:px-12 lg:py-20" aria-labelledby="choose-how"><div className="mx-auto max-w-[1320px]"><p id="choose-how" className="text-center font-sans text-sm font-semibold tracking-[0.22em] uppercase text-[#a36e1d]">Choose How to Begin</p><div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">{resources.map((resource) => {
