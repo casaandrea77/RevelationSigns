@@ -1,6 +1,8 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
+import { useEffect, useRef, useState } from "react";
 import { Footer } from "@/components/layout/Footer";
 import { useStudyProgress } from "@/hooks/useStudyProgress";
 
@@ -21,13 +23,80 @@ const questions = [
 ];
 
 const empires = [
-  { metal: "Gold", name: "Babylon", dates: "605–539 BC" },
-  { metal: "Silver", name: "Medo-Persia", dates: "539–331 BC" },
-  { metal: "Bronze", name: "Greece", dates: "331–168 BC" },
-  { metal: "Iron", name: "Rome", dates: "168 BC–AD 476" },
-  { metal: "Iron + clay", name: "Divided Europe", dates: "AD 476–present" },
-  { metal: "The stone", name: "God’s Kingdom", dates: "Forever" },
+  { metal: "Head of gold", name: "Babylon", dates: "605–539 BC", ref: "Daniel 2:37–38", description: "The head of gold represents Nebuchadnezzar’s Babylon—wealthy, splendid and first in the prophetic sequence." },
+  { metal: "Chest and arms of silver", name: "Medo-Persia", dates: "539–331 BC", ref: "Daniel 2:39", description: "The silver chest and arms portray the Medo-Persian Empire, the kingdom that conquered Babylon and continued the prophetic sequence." },
+  { metal: "Belly and thighs of bronze", name: "Greece", dates: "331–168 BC", ref: "Daniel 2:39", description: "The bronze belly and thighs point to Greece, whose dominion spread with extraordinary speed under Alexander the Great." },
+  { metal: "Legs of iron", name: "Rome", dates: "168 BC–AD 476", ref: "Daniel 2:40", description: "The iron legs represent Rome—strong, enduring and able to crush other powers as iron breaks things in pieces." },
+  { metal: "Feet of iron and clay", name: "Divided Europe", dates: "AD 476–present", ref: "Daniel 2:41–43", description: "The mixed feet portray the divided nations that followed Rome: partly strong, partly fragile and never permanently reunited." },
+  { metal: "The stone", name: "God’s Kingdom", dates: "Forever", ref: "Daniel 2:44–45", description: "The stone cut without hands destroys the image and becomes a great mountain—God’s everlasting kingdom filling the whole earth." },
 ];
+
+function KingdomScrollStory() {
+  const [activeEmpire, setActiveEmpire] = useState(0);
+  const chapterRefs = useRef<Array<HTMLElement | null>>([]);
+
+  useEffect(() => {
+    const isMobile = window.matchMedia("(max-width: 800px)").matches;
+    const observer = new IntersectionObserver((entries) => {
+      const visible = entries
+        .filter((entry) => entry.isIntersecting)
+        .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+      if (visible) setActiveEmpire(Number((visible.target as HTMLElement).dataset.empire));
+    }, { rootMargin: isMobile ? "-72% 0px -12% 0px" : "-32% 0px -38% 0px", threshold: [0, 0.25, 0.5, 0.75] });
+
+    chapterRefs.current.forEach((chapter) => chapter && observer.observe(chapter));
+    return () => observer.disconnect();
+  }, []);
+
+  const active = empires[activeEmpire];
+
+  return <section className="kingdom-scroll-story" aria-labelledby="kingdom-story-title">
+    <header className="kingdom-story-heading">
+      <p className="eyebrow">The image through history</p>
+      <h2 id="kingdom-story-title">One statue.<br />Six kingdoms.</h2>
+      <p>Scroll through the prophecy to see each part of the image and the kingdom it represents.</p>
+    </header>
+
+    <div className="kingdom-story-layout">
+      <figure className={`kingdom-statue-stage active-empire-${activeEmpire + 1}`}>
+        <div className="kingdom-statue-frame">
+          <Image fill sizes="(max-width: 800px) 100vw, 360px" src="/media/images/daniel-2-statue-metals.png" alt="The image from Daniel 2 with a gold head, silver chest and arms, bronze body, iron legs, and feet of iron mixed with clay" />
+          {empires.map((empire, index) => <span key={empire.name} aria-hidden="true" className={`kingdom-highlight kingdom-highlight-${index + 1} ${activeEmpire === index ? "active" : ""}`} />)}
+          <figcaption className="kingdom-statue-caption">
+            <small>{active.metal}</small>
+            <strong>{active.name}</strong>
+          </figcaption>
+        </div>
+        <p className="kingdom-scroll-hint"><span>↓</span> Scroll to trace the prophecy</p>
+      </figure>
+
+      <div className="kingdom-story-chapters">
+        {empires.map((empire, index) => {
+          const isActive = activeEmpire === index;
+          return <article
+            className={`kingdom-chapter kingdom-chapter-${index + 1} ${isActive ? "active" : ""}`}
+            data-empire={index}
+            key={empire.name}
+            ref={(node) => { chapterRefs.current[index] = node; }}
+            tabIndex={0}
+            aria-current={isActive ? "step" : undefined}
+            onFocus={() => setActiveEmpire(index)}
+            onMouseEnter={() => setActiveEmpire(index)}
+          >
+            <div className="kingdom-chapter-number">{String(index + 1).padStart(2, "0")}</div>
+            <div className="kingdom-chapter-copy">
+              <p>{empire.metal}</p>
+              <h3>{empire.name}</h3>
+              <div className="kingdom-chapter-meta"><span>{empire.dates}</span><span>{empire.ref}</span></div>
+              <p className="kingdom-description">{empire.description}</p>
+            </div>
+          </article>;
+        })}
+      </div>
+    </div>
+  </section>;
+}
 
 export default function StudyTwo() {
   const { open, complete, reflection, setComplete, setReflection, toggle } = useStudyProgress("daniel-2");
@@ -82,11 +151,7 @@ export default function StudyTwo() {
           </div>
         </section>
 
-        <section className="prophecy-timeline" aria-label="Daniel 2 kingdom sequence">
-          {empires.map((empire, index) => <div className={`empire empire-${index + 1}`} key={empire.name}>
-            <span>{String(index + 1).padStart(2, "0")}</span><div><small>{empire.metal}</small><b>{empire.name}</b><em>{empire.dates}</em></div>
-          </div>)}
-        </section>
+        <KingdomScrollStory />
 
         {questions.map((item, index) => {
           const isOpen = open.includes(index);
