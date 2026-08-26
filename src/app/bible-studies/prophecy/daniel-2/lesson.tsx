@@ -71,7 +71,7 @@ export default function StudyTwo() {
                 poster="/media/images/daniel-2-film-poster.png"
                 aria-label="Daniel 2: The king's dream and its interpretation"
               >
-                <source src="/media/videos/daniel-2-complete-sequence.mp4" type="video/mp4" />
+                <source src="/media/videos/daniel-2-complete-sequence.mp4?v=2" type="video/mp4" />
                 Your browser does not support the video player.
               </video>
             </div>
