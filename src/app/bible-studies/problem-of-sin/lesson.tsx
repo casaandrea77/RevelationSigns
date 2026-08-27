@@ -74,7 +74,7 @@ export default function StudyFive() {
     <nav className="lesson-nav shell" aria-label="Study navigation">
       <Link href="/bible-studies/who-is-christ"><span>←</span><small>Previous</small><b>Who Is Christ?</b></Link>
       <div className="lesson-nav-center"><span>Study 03</span><i></i><span>Study 04</span></div>
-      <a className="next-disabled" aria-disabled="true"><small>Next</small><b>Sin and Its Cure</b><span>→</span><em>Coming next</em></a>
+      <Link href="/bible-studies/sin-and-its-cure"><small>Next</small><b>Sin and Its Cure</b><span>→</span></Link>
     </nav>
     <Footer />
   </main>;

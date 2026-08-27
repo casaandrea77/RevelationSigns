@@ -11,9 +11,12 @@ const studies = [
   { number: "02", title: "The Origin of Sin", description: "Where did evil begin—and why did God allow freedom to be misused?", href: "/bible-studies/origin-of-sin", meta: "14 questions · 25 min", label: "Great Controversy" },
   { number: "03", title: "Who Is Christ?", description: "Discover the identity, character, and saving mission of Jesus.", href: "/bible-studies/who-is-christ", meta: "17 questions · 25 min", label: "Jesus Christ" },
   { number: "04", title: "The Problem of Sin", description: "What has sin broken, and why can humanity not repair it alone?", href: "/bible-studies/problem-of-sin", meta: "16 questions · 25 min", label: "Foundations" },
+  { number: "05", title: "Sin and Its Cure", description: "How does the cross answer humanity’s deepest problem?", href: "/bible-studies/sin-and-its-cure", meta: "10 questions · 20 min", label: "Salvation" },
+  { number: "06", title: "A New Person", description: "Can the gospel truly create a new heart and a new direction?", href: "/bible-studies/a-new-person", meta: "10 questions · 20 min", label: "Christian Life" },
+  { number: "07", title: "Law & Gospel", description: "How do God’s perfect law and saving grace work together?", href: "/bible-studies/law-and-gospel", meta: "10 questions · 20 min", label: "Foundations" },
+  { number: "08", title: "The World’s Only Hope", description: "What does the Bible reveal about the return of Jesus?", href: "/bible-studies/worlds-only-hope", meta: "10 questions · 20 min", label: "Second Coming" },
+  { number: "09", title: "God’s Tomorrow", description: "What will life be like when God makes all things new?", href: "/bible-studies/gods-tomorrow", meta: "12 questions · 20 min", label: "Restoration" },
 ] as const;
-
-const upcoming = ["Sin and Its Cure", "A New Person", "Law & Gospel", "The World's Only Hope", "God's Tomorrow"] as const;
 
 export function BibleStudiesPageContent() {
   return (
@@ -49,7 +52,6 @@ export function BibleStudiesPageContent() {
           <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.1 }} className="mt-14 grid gap-px overflow-hidden border border-accent/20 bg-accent/20 md:grid-cols-2">
             {studies.map((study) => <motion.article key={study.number} variants={fadeUp} className="group flex min-h-[330px] flex-col bg-[#06101a] p-8 transition-colors hover:bg-[#0d2531]"><div className="flex items-center justify-between"><p className="font-sans text-[0.62rem] tracking-[0.25em] text-accent uppercase">{study.label}</p><span className="font-sans text-[0.62rem] tracking-[0.2em] text-foreground/45">{study.number}</span></div><h3 className="mt-6 font-serif text-4xl font-light">{study.title}</h3><p className="mt-4 flex-1 font-sans text-base leading-[1.75] text-muted">{study.description}</p><div className="mt-7 flex flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-5"><span className="font-sans text-[0.6rem] tracking-[0.18em] text-foreground/45 uppercase">{study.meta}</span><Link href={study.href} className="font-sans text-xs tracking-[0.22em] text-accent uppercase">Begin Study →</Link></div></motion.article>)}
           </motion.div>
-          <div className="mt-px grid gap-px bg-accent/20 sm:grid-cols-2 lg:grid-cols-5">{upcoming.map((title, index) => <div key={title} className="min-h-40 bg-[#081722] p-6"><span className="font-sans text-[0.6rem] tracking-[0.22em] text-accent/70 uppercase">Study {String(index + 5).padStart(2, "0")}</span><h3 className="mt-4 font-serif text-2xl font-light">{title}</h3><p className="mt-5 font-sans text-[0.6rem] tracking-[0.18em] text-foreground/40 uppercase">Coming soon</p></div>)}</div>
         </div>
       </section>
 

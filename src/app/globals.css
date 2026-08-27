@@ -88,6 +88,11 @@
 .study-3-photo { background-image: url('/assets/media/images/bible-studies/origin-of-sin.png'); }
 .study-4-photo { background-image: url('/assets/media/images/bible-studies/who-is-christ.png'); }
 .study-5-photo { background-image: url('/assets/media/images/bible-studies/problem-of-sin.png'); }
+.study-6-photo { background-image: url('/assets/media/images/bible-studies/sin-and-its-cure.png'); }
+.study-7-photo { background-image: url('/assets/media/images/bible-studies/a-new-person.png'); }
+.study-8-photo { background-image: url('/assets/media/images/bible-studies/law-and-gospel.png'); }
+.study-9-photo { background-image: url('/assets/media/images/bible-studies/worlds-only-hope.png'); }
+.study-10-photo { background-image: url('/assets/media/images/bible-studies/gods-tomorrow.png'); }
 .study-5-photo::before {
   background: linear-gradient(90deg, rgba(4,20,29,.78) 0%, rgba(4,20,29,.64) 38%, rgba(4,20,29,.16) 76%, rgba(4,20,29,.08));
 }
