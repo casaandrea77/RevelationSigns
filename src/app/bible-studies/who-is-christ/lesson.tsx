@@ -57,7 +57,7 @@ export default function StudyFour() {
               <span className="question-main"><small>{item.ref}</small><b>{item.q}</b></span>
               <span className="question-toggle">{isOpen ? "−" : "+"}</span>
             </button>
-            {isOpen && <div className="answer"><blockquote>“{item.verse}”</blockquote><p>{item.answer}</p><span>King James Version · excerpt</span></div>}
+            {isOpen && <div className="answer"><blockquote>“{item.verse}”</blockquote><p>{item.answer}</p><Link className="answer-version" href="/bible-studies/gods-amazing-book#why-kjv">King James Version · Why the KJV?</Link></div>}
           </article>;
         })}
 

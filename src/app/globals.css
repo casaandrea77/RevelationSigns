@@ -137,6 +137,22 @@
 .answer blockquote { margin: 0 0 20px; font-family: var(--font-cormorant), Georgia, serif; font-size: 22px; font-style: italic; line-height: 1.45; }
 .answer p { margin: 0 0 14px; color: #596467; font-size: 13px; line-height: 1.7; }
 .answer > span { color: #9a815f; font-size: 8px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.answer-version { display: inline-flex; color: #8a6728; font-size: 8px; font-weight: 700; letter-spacing: .12em; text-decoration: underline; text-decoration-color: rgba(138,103,40,.35); text-underline-offset: 4px; text-transform: uppercase; }
+.answer-version:hover { color: #5f451b; text-decoration-color: currentColor; }
+
+.kjv-feature { scroll-margin-top: 110px; display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(320px, .95fr); gap: 52px; margin: 75px 0 85px; padding: 58px; color: #f8f4eb; background: linear-gradient(140deg, #071923 0%, #102f3a 58%, #173f49 100%); box-shadow: 0 30px 70px rgba(7, 25, 35, .2); }
+.kjv-feature-copy h2 { margin-top: 18px; font-size: clamp(45px, 5vw, 64px); line-height: .88; }
+.kjv-feature-copy h2 em { color: #d1a965; font-weight: 400; }
+.kjv-feature-copy > p:not(.eyebrow) { margin: 24px 0 0; color: #c8d4d5; font-size: 13px; line-height: 1.8; }
+.kjv-note { display: grid; gap: 8px; margin-top: 30px; padding: 20px 22px; border-left: 2px solid #d1a965; background: rgba(2, 15, 22, .34); }
+.kjv-note strong { color: #d8b979; font-size: 9px; letter-spacing: .14em; text-transform: uppercase; }
+.kjv-note span { color: #b9c8ca; font-size: 11px; line-height: 1.65; }
+.kjv-video-card { align-self: center; border: 1px solid rgba(209,169,101,.42); background: #06131b; box-shadow: 0 20px 45px rgba(0,0,0,.28); }
+.kjv-video-frame { position: relative; aspect-ratio: 16 / 9; overflow: hidden; background: #02080c; }
+.kjv-video-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.kjv-video-caption { padding: 22px 24px 24px; }
+.kjv-video-caption span { color: #d8b979; font-size: 9px; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; }
+.kjv-video-caption p { margin: 9px 0 0; color: #bdcacc; font-family: var(--font-cormorant), Georgia, serif; font-size: 18px; line-height: 1.35; }
 
 .callout { display: grid; grid-template-columns: 90px 1fr; gap: 32px; margin: 90px 0; padding: 55px; color: #fff; background: linear-gradient(145deg, #173844, #102b35); }
 .callout-icon { font-size: 42px; color: #c6a064; }
@@ -228,6 +244,9 @@
   .question-main b { font-size: 20px; }
   .answer { margin-left: 0; padding: 24px; }
   .answer blockquote { font-size: 20px; }
+  .kjv-feature { grid-template-columns: 1fr; gap: 38px; margin: 60px 0 70px; padding: 38px 24px 28px; }
+  .kjv-feature-copy h2 { font-size: 45px; }
+  .kjv-feature-copy > p:not(.eyebrow) { font-size: 12px; }
   .callout { grid-template-columns: 1fr; padding: 38px 28px; margin: 65px 0; }
   .callout-icon { font-size: 32px; }
   .callout h3 { font-size: 31px; }
