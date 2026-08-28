@@ -57,21 +57,8 @@ export default function StudyOne() {
                 <span className="question-main"><small>{item.ref}</small><b>{item.q}</b></span>
                 <span className="question-toggle">{isOpen ? "−" : "+"}</span>
               </button>
-              {isOpen && <div className="answer"><blockquote>“{item.verse}”</blockquote><p>{item.answer}</p><Link className="answer-version" href="#why-kjv">King James Version · Why the KJV?</Link></div>}
+              {isOpen && <div className="answer"><blockquote>“{item.verse}”</blockquote><p>{item.answer}</p><Link className="answer-version" href="/bible-studies#why-kjv">King James Version · Why the KJV?</Link></div>}
             </article>
-            {index === 5 && <section className="kjv-feature" id="why-kjv" aria-labelledby="kjv-heading">
-              <div className="kjv-feature-copy">
-                <p className="eyebrow">A translation of remarkable precision</p>
-                <h2 id="kjv-heading">Why we use the<br /><em>King James Bible.</em></h2>
-                <p>RevelationSigns uses the King James Version throughout these studies. For more than four centuries, its dignified language has carried Scripture into worship, preaching and memory. Its consistent phrasing also helps readers compare related passages and recognise the Bible’s recurring themes.</p>
-                <p>We believe God has providentially preserved and greatly blessed this translation. Its lasting influence and remarkable verbal patterns invite careful investigation—while our confidence in Scripture rests first upon Christ’s testimony, the Bible’s own claims, its unified message and fulfilled prophecy.</p>
-                <div className="kjv-note"><strong>Consider the evidence carefully</strong><span>The video examines the claim that God’s direct speech in Genesis 1 contains 343 words—7 × 7 × 7—in the KJV. Numerical observations are supporting evidence and should be tested using a clearly identified edition and transparent counting method.</span></div>
-              </div>
-              <div className="kjv-video-card">
-                <div className="kjv-video-frame"><iframe src="https://www.youtube-nocookie.com/embed/nLO6BQY_lj0?start=415&rel=0" title="Grok Learns KJV Patterns and Its Conclusion Will Bother Many" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen /></div>
-                <div className="kjv-video-caption"><span>Watch from 6:55</span><p>An investigation of numerical patterns claimed to be distinctive to the King James Bible.</p></div>
-              </div>
-            </section>}
           </Fragment>;
         })}
 

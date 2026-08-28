@@ -140,7 +140,7 @@
 .answer-version { display: inline-flex; color: #8a6728; font-size: 8px; font-weight: 700; letter-spacing: .12em; text-decoration: underline; text-decoration-color: rgba(138,103,40,.35); text-underline-offset: 4px; text-transform: uppercase; }
 .answer-version:hover { color: #5f451b; text-decoration-color: currentColor; }
 
-.kjv-feature { scroll-margin-top: 110px; display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(320px, .95fr); gap: 52px; margin: 75px 0 85px; padding: 58px; color: #f8f4eb; background: linear-gradient(140deg, #071923 0%, #102f3a 58%, #173f49 100%); box-shadow: 0 30px 70px rgba(7, 25, 35, .2); }
+.kjv-feature { scroll-margin-top: 110px; display: grid; grid-template-columns: minmax(0, .9fr) minmax(400px, 1.1fr); gap: 48px; margin: 75px 0 85px; padding: 58px; color: #f8f4eb; background: linear-gradient(140deg, #071923 0%, #102f3a 58%, #173f49 100%); box-shadow: 0 30px 70px rgba(7, 25, 35, .2); }
 .kjv-feature-copy h2 { margin-top: 18px; font-size: clamp(45px, 5vw, 64px); line-height: .88; }
 .kjv-feature-copy h2 em { color: #d1a965; font-weight: 400; }
 .kjv-feature-copy > p:not(.eyebrow) { margin: 24px 0 0; color: #c8d4d5; font-size: 13px; line-height: 1.8; }
@@ -153,6 +153,16 @@
 .kjv-video-caption { padding: 22px 24px 24px; }
 .kjv-video-caption span { color: #d8b979; font-size: 9px; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; }
 .kjv-video-caption p { margin: 9px 0 0; color: #bdcacc; font-family: var(--font-cormorant), Georgia, serif; font-size: 18px; line-height: 1.35; }
+
+@media (min-width: 801px) {
+  .kjv-feature {
+    width: calc(100% + 350px);
+    margin-left: -350px;
+  }
+}
+
+.bible-studies-kjv { padding: 80px 24px 96px; background: #f4efe6; }
+.bible-studies-kjv .kjv-feature { width: min(1200px, 100%); margin: 0 auto; }
 
 .callout { display: grid; grid-template-columns: 90px 1fr; gap: 32px; margin: 90px 0; padding: 55px; color: #fff; background: linear-gradient(145deg, #173844, #102b35); }
 .callout-icon { font-size: 42px; color: #c6a064; }
