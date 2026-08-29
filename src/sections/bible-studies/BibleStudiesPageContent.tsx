@@ -8,14 +8,15 @@ import { Footer } from "@/components/layout/Footer";
 
 const studies = [
   { number: "01", title: "God's Amazing Book", description: "Can a book written across centuries still speak with one clear voice?", href: "/bible-studies/gods-amazing-book", meta: "15 questions · 25 min", label: "Foundations" },
-  { number: "02", title: "The Origin of Sin", description: "Where did evil begin—and why did God allow freedom to be misused?", href: "/bible-studies/origin-of-sin", meta: "14 questions · 25 min", label: "Great Controversy" },
-  { number: "03", title: "Who Is Christ?", description: "Discover the identity, character, and saving mission of Jesus.", href: "/bible-studies/who-is-christ", meta: "17 questions · 25 min", label: "Jesus Christ" },
-  { number: "04", title: "The Problem of Sin", description: "What has sin broken, and why can humanity not repair it alone?", href: "/bible-studies/problem-of-sin", meta: "16 questions · 25 min", label: "Foundations" },
-  { number: "05", title: "Sin and Its Cure", description: "How does the cross answer humanity’s deepest problem?", href: "/bible-studies/sin-and-its-cure", meta: "10 questions · 20 min", label: "Salvation" },
-  { number: "06", title: "A New Person", description: "Can the gospel truly create a new heart and a new direction?", href: "/bible-studies/a-new-person", meta: "10 questions · 20 min", label: "Christian Life" },
-  { number: "07", title: "Law & Gospel", description: "How do God’s perfect law and saving grace work together?", href: "/bible-studies/law-and-gospel", meta: "10 questions · 20 min", label: "Foundations" },
-  { number: "08", title: "The World’s Only Hope", description: "What does the Bible reveal about the return of Jesus?", href: "/bible-studies/worlds-only-hope", meta: "10 questions · 20 min", label: "Second Coming" },
-  { number: "09", title: "God’s Tomorrow", description: "What will life be like when God makes all things new?", href: "/bible-studies/gods-tomorrow", meta: "12 questions · 20 min", label: "Restoration" },
+  { number: "02", title: "God Unfolds the Future", description: "Follow Daniel 2 from Babylon through the kingdoms of history to Christ’s everlasting kingdom.", href: "/bible-studies/prophecy/daniel-2", meta: "13 questions · 30 min", label: "Bible Prophecy" },
+  { number: "03", title: "The Origin of Sin", description: "Where did evil begin—and why did God allow freedom to be misused?", href: "/bible-studies/origin-of-sin", meta: "14 questions · 25 min", label: "Great Controversy" },
+  { number: "04", title: "Who Is Christ?", description: "Discover the identity, character, and saving mission of Jesus.", href: "/bible-studies/who-is-christ", meta: "17 questions · 25 min", label: "Jesus Christ" },
+  { number: "05", title: "The Problem of Sin", description: "What has sin broken, and why can humanity not repair it alone?", href: "/bible-studies/problem-of-sin", meta: "16 questions · 25 min", label: "Foundations" },
+  { number: "06", title: "Sin and Its Cure", description: "How does the cross answer humanity’s deepest problem?", href: "/bible-studies/sin-and-its-cure", meta: "10 questions · 20 min", label: "Salvation" },
+  { number: "07", title: "A New Person", description: "Can the gospel truly create a new heart and a new direction?", href: "/bible-studies/a-new-person", meta: "10 questions · 20 min", label: "Christian Life" },
+  { number: "08", title: "Law & Gospel", description: "How do God’s perfect law and saving grace work together?", href: "/bible-studies/law-and-gospel", meta: "10 questions · 20 min", label: "Foundations" },
+  { number: "09", title: "The World’s Only Hope", description: "What does the Bible reveal about the return of Jesus?", href: "/bible-studies/worlds-only-hope", meta: "10 questions · 20 min", label: "Second Coming" },
+  { number: "10", title: "God’s Tomorrow", description: "What will life be like when God makes all things new?", href: "/bible-studies/gods-tomorrow", meta: "12 questions · 20 min", label: "Restoration" },
 ] as const;
 
 export function BibleStudiesPageContent() {

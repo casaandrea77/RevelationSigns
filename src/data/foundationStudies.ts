@@ -24,7 +24,7 @@ export type FoundationStudy = {
 
 export const foundationStudies: Record<string, FoundationStudy> = {
   "sin-and-its-cure": {
-    slug: "sin-and-its-cure", number: "05", title: ["Sin and", "Its Cure"], photoClass: "study-6-photo",
+    slug: "sin-and-its-cure", number: "06", title: ["Sin and", "Its Cure"], photoClass: "study-6-photo",
     introLead: "If sin is the disease, what is God’s cure?",
     intro: ["The Bible never minimises the seriousness of sin, yet its central message is not condemnation—it is rescue. God Himself has acted in Jesus Christ to bear our guilt and restore the relationship we could not repair.", "This study follows the path from the wages of sin to the gift of eternal life, showing how grace, repentance, confession and faith bring Christ’s saving work into a human life."],
     asideTitle: "The remedy is a Person", asideText: "Salvation is not earned by performing religious duties. It is received by trusting the crucified and risen Christ.",
@@ -43,10 +43,10 @@ export const foundationStudies: Record<string, FoundationStudy> = {
     ],
     calloutEyebrow: "Grace that transforms", calloutTitle: ["Forgiven fully.", "Changed deeply."], calloutText: "The gospel does not choose between pardon and transformation. In Christ, God removes condemnation and begins remaking the heart.",
     summaryTitle: ["The debt is paid.", "The gift is offered."], summaryText: "Christ bore our sins, opened the way back to God and offers eternal life as a gift. We receive His cure through faith, repentance and confession—and He begins a work of genuine renewal within us.", reflectionPrompt: "What makes it difficult—or freeing—to receive salvation as God’s gift?",
-    previous: { number: "04", title: "The Problem of Sin", href: "/bible-studies/problem-of-sin" }, next: { title: "A New Person", href: "/bible-studies/a-new-person" },
+    previous: { number: "05", title: "The Problem of Sin", href: "/bible-studies/problem-of-sin" }, next: { title: "A New Person", href: "/bible-studies/a-new-person" },
   },
   "a-new-person": {
-    slug: "a-new-person", number: "06", title: ["A New", "Person"], photoClass: "study-7-photo",
+    slug: "a-new-person", number: "07", title: ["A New", "Person"], photoClass: "study-7-photo",
     introLead: "Can a life truly begin again?", intro: ["Jesus described conversion as a new birth. The gospel is not simply an improved set of habits placed over an unchanged heart; it is the beginning of a new identity and a new direction.", "This study explores how the Holy Spirit creates that life, how baptism portrays it, and how daily surrender allows Christ’s character to grow in us."],
     asideTitle: "A beginning, then a journey", asideText: "New birth begins the Christian life. Growth continues as we trust, learn, surrender and walk with Christ each day.",
     questionsEyebrow: "The life made new", questionsTitle: ["Born of God.", "Growing in grace."],
@@ -64,10 +64,10 @@ export const foundationStudies: Record<string, FoundationStudy> = {
     ],
     calloutEyebrow: "More than reform", calloutTitle: ["A new heart.", "A new direction."], calloutText: "God does not merely polish the old life. Through His Spirit, He creates new desires, a new identity and the power to walk with Christ.",
     summaryTitle: ["The old life is buried.", "A new life begins."], summaryText: "To receive Christ is to be born into God’s family. The Spirit renews the mind, baptism declares our union with Christ, and His fruit becomes visible as God faithfully continues His work in us.", reflectionPrompt: "Where do you most want Christ to make His new life visible in you?",
-    previous: { number: "05", title: "Sin and Its Cure", href: "/bible-studies/sin-and-its-cure" }, next: { title: "Law & Gospel", href: "/bible-studies/law-and-gospel" },
+    previous: { number: "06", title: "Sin and Its Cure", href: "/bible-studies/sin-and-its-cure" }, next: { title: "Law & Gospel", href: "/bible-studies/law-and-gospel" },
   },
   "law-and-gospel": {
-    slug: "law-and-gospel", number: "07", title: ["Law &", "Gospel"], photoClass: "study-8-photo",
+    slug: "law-and-gospel", number: "08", title: ["Law &", "Gospel"], photoClass: "study-8-photo",
     introLead: "Do God’s law and His grace oppose each other?", intro: ["The law reveals God’s character and shows what sin is; the gospel reveals His saving action in Christ. Confusing their roles produces either self-righteousness or a grace that leaves the heart unchanged.", "This study shows their harmony: the law cannot save us, grace does not excuse sin, and the new covenant writes God’s principles of love within the heart."],
     asideTitle: "Different roles, one purpose", asideText: "The law diagnoses sin. The gospel provides the Saviour. Grace then creates a life that delights to follow God.",
     questionsEyebrow: "Truth and grace together", questionsTitle: ["The perfect standard.", "The sufficient Saviour."],
@@ -85,10 +85,10 @@ export const foundationStudies: Record<string, FoundationStudy> = {
     ],
     calloutEyebrow: "The new covenant", calloutTitle: ["Grace saves us.", "Love reshapes us."], calloutText: "The gospel never turns obedience into a payment. It forgives the lawbreaker and writes God’s loving principles upon a willing heart.",
     summaryTitle: ["The law points to Christ.", "Christ restores the heart."], summaryText: "God’s holy law reveals sin but cannot justify the sinner. We are saved entirely by grace through faith, then recreated for a life in which obedience flows from love and God’s law is written within.", reflectionPrompt: "How does seeing obedience as a response to love change your picture of God’s law?",
-    previous: { number: "06", title: "A New Person", href: "/bible-studies/a-new-person" }, next: { title: "The World’s Only Hope", href: "/bible-studies/worlds-only-hope" },
+    previous: { number: "07", title: "A New Person", href: "/bible-studies/a-new-person" }, next: { title: "The World’s Only Hope", href: "/bible-studies/worlds-only-hope" },
   },
   "worlds-only-hope": {
-    slug: "worlds-only-hope", number: "08", title: ["The World’s", "Only Hope"], photoClass: "study-9-photo",
+    slug: "worlds-only-hope", number: "09", title: ["The World’s", "Only Hope"], photoClass: "study-9-photo",
     introLead: "Will history continue forever as it is?", intro: ["Jesus promised to return. Scripture presents His second coming not as a private metaphor but as the visible, glorious event that ends the present age, raises the faithful dead and gathers God’s people.", "This study examines the manner of Christ’s return, the resurrection hope and the readiness that grows from watching, trusting and living faithfully."],
     asideTitle: "The blessed hope", asideText: "Christian hope is anchored in a Person who promised to return—not in humanity’s ability to perfect a broken world.",
     questionsEyebrow: "The King returns", questionsTitle: ["Visible glory.", "Living hope."],
@@ -106,10 +106,10 @@ export const foundationStudies: Record<string, FoundationStudy> = {
     ],
     calloutEyebrow: "Not a secret", calloutTitle: ["The heavens declare it.", "Every eye beholds it."], calloutText: "Christ’s coming is personal, visible, audible and glorious. It raises the dead in Christ and gathers the whole redeemed family to their King.",
     summaryTitle: ["The promise remains.", "The King is coming."], summaryText: "Jesus will return visibly and personally. At His appearing, the faithful dead are raised, God’s people are transformed and reunited, and the long hope of the gospel becomes sight.", reflectionPrompt: "What would it look like for Christ’s return to shape the way you live today?",
-    previous: { number: "07", title: "Law & Gospel", href: "/bible-studies/law-and-gospel" }, next: { title: "God’s Tomorrow", href: "/bible-studies/gods-tomorrow" },
+    previous: { number: "08", title: "Law & Gospel", href: "/bible-studies/law-and-gospel" }, next: { title: "God’s Tomorrow", href: "/bible-studies/gods-tomorrow" },
   },
   "gods-tomorrow": {
-    slug: "gods-tomorrow", number: "09", title: ["God’s", "Tomorrow"], photoClass: "study-10-photo",
+    slug: "gods-tomorrow", number: "10", title: ["God’s", "Tomorrow"], photoClass: "study-10-photo",
     introLead: "What future is God preparing for His people?", intro: ["The Bible’s final vision is not of souls escaping creation forever, but of God making all things new. Evil, death, grief and pain are removed; God dwells with humanity; and the earth is restored.", "This study gathers the promises of the new heavens and new earth—a real home, a healed creation and an unbroken relationship with God that will never end."],
     asideTitle: "Restoration, not abandonment", asideText: "The Creator does not surrender His world to evil. He removes the curse and makes creation new, beautiful and secure.",
     questionsEyebrow: "All things made new", questionsTitle: ["A restored earth.", "God with us."],
@@ -129,6 +129,6 @@ export const foundationStudies: Record<string, FoundationStudy> = {
     ],
     calloutEyebrow: "The end of the curse", calloutTitle: ["No more death.", "No more goodbyes."], calloutText: "God’s tomorrow is not an endless extension of today. It is creation healed, evil excluded forever and the face-to-face presence of God.",
     summaryTitle: ["All things are made new.", "And God is with us."], summaryText: "God will restore the earth as the secure home of His people. The curse, death and sorrow disappear; creation flourishes in peace; and redeemed humanity lives forever in the light and presence of God.", reflectionPrompt: "Which promise about God’s restored world brings you the greatest hope—and why?",
-    previous: { number: "08", title: "The World’s Only Hope", href: "/bible-studies/worlds-only-hope" },
+    previous: { number: "09", title: "The World’s Only Hope", href: "/bible-studies/worlds-only-hope" },
   },
 };

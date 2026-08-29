@@ -132,6 +132,28 @@
 .question-main small { color: #927044; font-size: 10px; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
 .question-main b { font-family: var(--font-cormorant), Georgia, serif; font-size: 23px; font-weight: 500; line-height: 1.25; }
 .question-toggle { width: 30px; height: 30px; border: 1px solid #c9c5ba; border-radius: 50%; display: grid; place-items: center; color: #85683e; font-size: 17px; }
+.booklet-comment { margin: -10px 36px 28px 68px; padding: 18px 22px; border-left: 2px solid #b78b43; background: #f4f0e7; color: #596467; font-size: 13px; line-height: 1.7; }
+.booklet-comment p { margin: 0; }
+.booklet-comment p + p { margin-top: 14px; }
+.study-source-figure { margin: 72px 0 0; padding-top: 45px; border-top: 1px solid var(--study-line); }
+.study-source-figure h3 { display: none; }
+.study-source-figure > p { color: #596467; font-size: 14px; line-height: 1.8; }
+.study-source-crop { position: relative; width: 100%; margin-bottom: 28px; overflow: hidden; border: 1px solid #b8a27e; background: #eee8dc; }
+.study-source-crop.timeline,
+.study-source-crop.sanctuary { aspect-ratio: 16 / 9; }
+.study-source-crop.timeline img,
+.study-source-crop.sanctuary img { opacity: 0; }
+.study-source-crop.timeline { background: #f7f2e8 url('/media/images/study-9-prophetic-timeline-drawing.png') center / contain no-repeat; }
+.study-source-crop.sanctuary { background: #f7f2e8 url('/media/images/study-9-sanctuary-plan-drawing.png') center / contain no-repeat; }
+.tabernacle-video { margin-top: 72px; padding-top: 45px; border-top: 1px solid var(--study-line); }
+.tabernacle-video h3 { margin: 12px 0 28px; font-size: clamp(38px, 5vw, 58px); line-height: .95; }
+.tabernacle-video-frame { position: relative; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; border: 1px solid #b8a27e; background: #071923; box-shadow: 0 22px 50px rgba(7, 25, 35, .16); }
+.tabernacle-video-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+@media (min-width: 1050px) {
+  .study-source-figure { width: calc(100% + 180px); margin-left: -90px; }
+  .study-source-figure > p { max-width: 830px; margin-right: auto; margin-left: auto; }
+  .tabernacle-video { width: calc(100% + 180px); margin-left: -90px; }
+}
 .answer { margin: 0 0 35px 68px; padding: 28px 32px; background: #f0ece2; animation: study-reveal .25s ease-out; }
 @keyframes study-reveal { from { opacity: 0; transform: translateY(-6px); } }
 .answer blockquote { margin: 0 0 20px; font-family: var(--font-cormorant), Georgia, serif; font-size: 22px; font-style: italic; line-height: 1.45; }
@@ -139,6 +161,18 @@
 .answer > span { color: #9a815f; font-size: 8px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
 .answer-version { display: inline-flex; color: #8a6728; font-size: 8px; font-weight: 700; letter-spacing: .12em; text-decoration: underline; text-decoration-color: rgba(138,103,40,.35); text-underline-offset: 4px; text-transform: uppercase; }
 .answer-version:hover { color: #5f451b; text-decoration-color: currentColor; }
+
+.prophecy-evidence { margin: 58px 0 72px; padding: 42px; border: 1px solid #c9b994; background: #f0ece2; }
+.prophecy-evidence h3 { margin-top: 12px; color: var(--study-ink); font-size: clamp(34px, 4.2vw, 48px); line-height: .98; }
+.prophecy-evidence h3 em { color: #9a7040; font-weight: 400; }
+.prophecy-evidence-intro { max-width: 680px; margin: 20px 0 28px; color: #596467; font-size: 13px; line-height: 1.75; }
+.prophecy-table-wrap { overflow-x: auto; border: 1px solid #b8aa8a; background: #faf7f0; }
+.prophecy-evidence table { width: 100%; min-width: 680px; border-collapse: collapse; }
+.prophecy-evidence th { padding: 14px 16px; border-right: 1px solid rgba(255,255,255,.3); background: #486f80; color: #fff; font-size: 10px; letter-spacing: .12em; text-align: left; text-transform: uppercase; }
+.prophecy-evidence td { padding: 14px 16px; border-top: 1px solid #d4cbb7; border-right: 1px solid #d4cbb7; color: #273638; font-family: var(--font-cormorant), Georgia, serif; font-size: 17px; line-height: 1.25; }
+.prophecy-evidence th:last-child,
+.prophecy-evidence td:last-child { border-right: 0; }
+.prophecy-evidence tbody tr:nth-child(even) { background: #f3eee3; }
 
 .kjv-feature { scroll-margin-top: 110px; display: grid; grid-template-columns: minmax(0, .9fr) minmax(400px, 1.1fr); gap: 48px; margin: 75px 0 85px; padding: 58px; color: #f8f4eb; background: linear-gradient(140deg, #071923 0%, #102f3a 58%, #173f49 100%); box-shadow: 0 30px 70px rgba(7, 25, 35, .2); }
 .kjv-feature-copy h2 { margin-top: 18px; font-size: clamp(45px, 5vw, 64px); line-height: .88; }
@@ -253,7 +287,10 @@
   .question > button { grid-template-columns: 32px 1fr 30px; gap: 10px; padding: 24px 0; }
   .question-main b { font-size: 20px; }
   .answer { margin-left: 0; padding: 24px; }
+  .booklet-comment { margin: -8px 0 24px 42px; }
   .answer blockquote { font-size: 20px; }
+  .prophecy-evidence { margin: 46px 0 58px; padding: 28px 20px; }
+  .prophecy-evidence h3 { font-size: 36px; }
   .kjv-feature { grid-template-columns: 1fr; gap: 38px; margin: 60px 0 70px; padding: 38px 24px 28px; }
   .kjv-feature-copy h2 { font-size: 45px; }
   .kjv-feature-copy > p:not(.eyebrow) { font-size: 12px; }
