@@ -24,7 +24,7 @@ export function BibleStudiesPageContent() {
   return (
     <main className="overflow-hidden bg-[#06101a] text-foreground">
       <section className="relative min-h-[700px] overflow-hidden pt-24" aria-labelledby="studies-title">
-        <Image src="/assets/media/images/daniel-2-statue.png" alt="" fill priority sizes="100vw" aria-hidden className="scale-105 object-cover object-center opacity-65 blur-[2px]" />
+        <Image src="/assets/media/images/daniel-2-statue.png" alt="" fill priority sizes="100vw" aria-hidden className="scale-110 object-cover object-center opacity-40 blur-[20px]" />
         <div
           className="absolute inset-y-0 left-1/2 w-full -translate-x-1/2 lg:w-[82%]"
           style={{ WebkitMaskImage: "linear-gradient(to right, transparent, black 6%, black 94%, transparent)", maskImage: "linear-gradient(to right, transparent, black 6%, black 94%, transparent)" }}
