@@ -471,7 +471,7 @@
 .controversy-copy { max-width:650px; margin:0 auto; color:#acb8b8; font-size:13px; line-height:1.8; }
 .controversy-copy strong { color:#d7b477; text-transform:uppercase; letter-spacing:.14em; }
 
-.verdict-section { padding:135px 0; background:#eee9df; }
+.verdict-section { padding:135px 0; color:#17252c; background:#eee9df; }
 .verdict-heading { display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:end; margin-bottom:70px; }
 .verdict-heading h2 { font-size:clamp(60px,7vw,88px); line-height:.84; letter-spacing:-.05em; }
 .verdict-heading h2 em { color:#9b713a; }
