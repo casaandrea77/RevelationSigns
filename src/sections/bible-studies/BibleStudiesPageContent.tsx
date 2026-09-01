@@ -24,7 +24,9 @@ export function BibleStudiesPageContent() {
   return (
     <main className="overflow-hidden bg-[#06101a] text-foreground">
       <section className="relative min-h-[700px] overflow-hidden pt-24" aria-labelledby="studies-title">
-        <Image src="/assets/media/images/daniel-2-statue.png" alt="Nebuchadnezzar's dream statue from Daniel 2" fill priority sizes="100vw" className="object-cover object-center" />
+        <div className="absolute inset-y-0 left-1/2 w-[94%] -translate-x-1/2">
+          <Image src="/assets/media/images/daniel-2-statue.png" alt="Nebuchadnezzar's dream statue from Daniel 2" fill priority sizes="94vw" className="object-cover object-center" />
+        </div>
         <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(6,16,26,0.96)_0%,rgba(6,16,26,0.72)_48%,rgba(6,16,26,0.22)_78%)]" />
         <div className="absolute inset-0 bg-[linear-gradient(to_top,#06101a_0%,transparent_60%)]" />
         <motion.div variants={staggerContainer} initial="hidden" animate="visible" className="relative z-10 mx-auto flex min-h-[600px] max-w-[1440px] flex-col justify-center px-6 py-20 sm:px-10 lg:px-12">
