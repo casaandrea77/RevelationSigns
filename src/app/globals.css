@@ -543,3 +543,76 @@
   .final-inner>blockquote { font-size:27px; }
   .next-study-card>i { display:none; }
 }
+
+/* Angels, Demons & the Great Controversy study */
+.angels-page { --n-gold:#d1ad70; }
+.angels-hero { min-height:100svh; position:relative; overflow:hidden; isolation:isolate; color:#fff; background:#061119 url('/assets/media/images/angels-demons-great-controversy-hero.png') center/cover no-repeat; }
+.angels-hero:before { content:""; position:absolute; z-index:-1; inset:0; background:linear-gradient(90deg,rgba(2,10,15,.92) 0%,rgba(3,12,18,.75) 30%,rgba(3,12,18,.12) 58%,rgba(2,8,12,.18) 100%),linear-gradient(0deg,rgba(2,9,13,.78),transparent 48%); }
+.angels-hero:after { content:""; position:absolute; z-index:-1; inset:auto 0 0; height:34%; background:linear-gradient(transparent,#07141b); }
+.angels-hero h1 { max-width:820px; color:#f2eee5; font-size:clamp(62px,7.1vw,108px); line-height:.76; letter-spacing:-.055em; text-shadow:0 7px 45px rgba(0,0,0,.55); }
+.angels-hero h1 span { color:#fff; }
+.angels-hero h1 em { color:#d2ad70; font-weight:400; }
+.angels-hero h1 small { color:#b9c5c4; font-size:.42em; font-style:italic; }
+.angels-hero .nephilim-subtitle { max-width:610px; margin-top:35px; }
+
+.angels-sides-section { padding:130px 0; color:#18282f; background:#eee9df; }
+.angels-sides-grid { display:grid; grid-template-columns:1fr 1fr; border:1px solid #c9c1b4; }
+.angels-sides-grid article { min-height:470px; display:flex; flex-direction:column; padding:55px; background:rgba(255,255,255,.28); }
+.angels-sides-grid article+article { border-left:1px solid #c9c1b4; background:#162d36; color:#eaf0ee; }
+.angels-sides-grid article>span { color:#907044; font-size:9px; font-weight:800; letter-spacing:.16em; text-transform:uppercase; }
+.angels-sides-grid article+article>span { color:#d1ad70; }
+.angels-sides-grid h3 { margin:22px 0 34px; font-size:48px; line-height:.95; }
+.angels-sides-grid ul { margin:0; padding:0; list-style:none; }
+.angels-sides-grid li { padding:14px 0; border-top:1px solid rgba(48,48,41,.16); font-family:var(--font-cormorant),Georgia,serif; font-size:20px; }
+.angels-sides-grid article+article li { border-color:rgba(255,255,255,.13); }
+.angels-sides-grid li:before { content:"—"; margin-right:14px; color:#ad8750; }
+.angels-sides-grid small { margin-top:auto; padding-top:35px; color:#8a7658; font-size:8px; font-weight:700; letter-spacing:.13em; text-transform:uppercase; }
+.angels-sides-grid article+article small { color:#9faeac; }
+
+.angels-deception { background:linear-gradient(145deg,#07171e,#122e38 55%,#120d0d); }
+.deception-quote { max-width:820px; position:relative; margin:85px auto 0; padding:55px 60px 50px; border-top:1px solid rgba(209,173,112,.5); border-bottom:1px solid rgba(209,173,112,.5); text-align:center; }
+.deception-quote>span { position:absolute; top:20px; left:22px; color:rgba(209,173,112,.4); font-family:var(--font-cormorant),Georgia,serif; font-size:80px; line-height:1; }
+.deception-quote blockquote { margin:0; font-family:var(--font-cormorant),Georgia,serif; font-size:clamp(32px,4.5vw,55px); font-style:italic; line-height:1.12; }
+.deception-quote small { display:block; margin-top:25px; color:#d1ad70; font-size:8px; font-weight:700; letter-spacing:.16em; text-transform:uppercase; }
+.angels-page .warning-grid h3 { margin:15px 0 0; font-size:29px; }
+.angels-page .warning-grid p { margin-top:8px; font-size:18px; font-style:normal; }
+
+.angels-dead-section { padding:135px 0; color:#e7ecea; background:radial-gradient(circle at 75% 30%,rgba(187,135,66,.16),transparent 28%),#0b2029; }
+.angels-dead-grid { display:grid; grid-template-columns:1fr 1fr; gap:100px; align-items:center; }
+.angels-dead-section h2 { font-size:clamp(58px,7vw,88px); line-height:.86; letter-spacing:-.045em; }
+.angels-dead-section h2 em { color:#d1ad70; }
+.angels-dead-section p:not(.eyebrow) { margin:35px 0 0; color:#a7b3b3; font-size:14px; line-height:1.85; }
+.angels-dead-section blockquote { margin:0; padding:50px; border:1px solid rgba(209,173,112,.42); color:#eee8dc; font-family:var(--font-cormorant),Georgia,serif; font-size:31px; font-style:italic; line-height:1.45; }
+.angels-dead-section blockquote span { display:block; margin-top:25px; color:#d1ad70; font-family:var(--font-inter),system-ui,sans-serif; font-size:8px; font-style:normal; font-weight:700; letter-spacing:.16em; text-transform:uppercase; }
+
+.angels-cross-section { background:radial-gradient(circle at 50% 40%,rgba(205,158,84,.18),transparent 30%),linear-gradient(rgba(4,15,20,.78),rgba(4,15,20,.94)),url('/assets/media/images/angels-demons-great-controversy-hero.png') center/cover; }
+.angels-armour-section { padding:135px 0; color:#17262c; background:#f3efe6; }
+.armour-grid { display:grid; grid-template-columns:repeat(4,1fr); border-top:1px solid #c8c0b3; border-left:1px solid #c8c0b3; }
+.armour-grid article { min-height:245px; display:flex; flex-direction:column; padding:30px; border-right:1px solid #c8c0b3; border-bottom:1px solid #c8c0b3; }
+.armour-grid article:nth-child(7) { grid-column:span 2; }
+.armour-grid span { color:#9d7948; font-size:8px; }
+.armour-grid h3 { margin:auto 0 12px; font-size:31px; }
+.armour-grid p { margin:0; color:#687274; font-size:12px; line-height:1.7; }
+.angels-final { background:radial-gradient(circle at 50% 0,rgba(183,139,76,.22),transparent 35%),linear-gradient(#071820,#041017); }
+
+@media (max-width:800px) {
+  .angels-hero { min-height:850px; background-position:55% center; }
+  .angels-hero:before { background:linear-gradient(90deg,rgba(2,10,15,.88),rgba(3,12,18,.42)),linear-gradient(0deg,rgba(2,9,13,.86),transparent 58%); }
+  .angels-hero h1 { font-size:62px; line-height:.8; }
+  .angels-sides-section,.angels-dead-section,.angels-armour-section { padding-block:88px; }
+  .angels-sides-grid,.angels-dead-grid { grid-template-columns:1fr; }
+  .angels-sides-grid article { min-height:420px; padding:38px 30px; }
+  .angels-sides-grid article+article { border-left:0; border-top:1px solid #c9c1b4; }
+  .angels-dead-grid { gap:50px; }
+  .angels-dead-section blockquote { padding:35px 28px; font-size:27px; }
+  .armour-grid { grid-template-columns:1fr 1fr; }
+  .armour-grid article:nth-child(7) { grid-column:span 2; }
+}
+
+@media (max-width:480px) {
+  .angels-hero { min-height:790px; background-position:52% center; }
+  .angels-hero h1 { font-size:50px; }
+  .deception-quote { padding:48px 20px 38px; }
+  .armour-grid { grid-template-columns:1fr; }
+  .armour-grid article,.armour-grid article:nth-child(7) { min-height:200px; grid-column:auto; }
+}

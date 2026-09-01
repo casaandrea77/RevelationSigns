@@ -126,7 +126,7 @@ export function NephilimStudyContent() {
       <div className="verdict-table" aria-live="polite"><div className="verdict-row verdict-labels"><span>Claim</span><span>Biblical confidence</span></div>{visibleVerdicts.map((item) => <div className="verdict-row" key={item.claim}><strong>{item.claim}</strong><ConfidenceBadge level={item.level}>{item.label}</ConfidenceBadge></div>)}</div>
     </div></section>
 
-    <section className="final-section"><div className="shell final-inner"><p className="eyebrow light">Hold fast to what is good</p><h2>Don’t build your faith<br />on <em>speculation.</em></h2><p>The Bible leaves Genesis 6 mysterious—but it does not leave us ignorant about deception.</p><blockquote>“Prove all things; hold fast that which is good.”<span>1 Thessalonians 5:21</span></blockquote><div className="next-study-card next-study-coming"><span><small>Next study · Coming soon</small><b>Angels, Demons &<br />the Great Controversy</b></span><i>—</i></div></div></section>
+    <section className="final-section"><div className="shell final-inner"><p className="eyebrow light">Hold fast to what is good</p><h2>Don’t build your faith<br />on <em>speculation.</em></h2><p>The Bible leaves Genesis 6 mysterious—but it does not leave us ignorant about deception.</p><blockquote>“Prove all things; hold fast that which is good.”<span>1 Thessalonians 5:21</span></blockquote><Link href="/bible-studies/angels-demons-great-controversy" className="next-study-card"><span><small>Next study</small><b>Angels, Demons &<br />the Great Controversy</b></span><i>→</i></Link></div></section>
 
     <Footer />
   </main>;
