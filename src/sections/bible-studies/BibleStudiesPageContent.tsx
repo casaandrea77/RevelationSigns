@@ -24,8 +24,12 @@ export function BibleStudiesPageContent() {
   return (
     <main className="overflow-hidden bg-[#06101a] text-foreground">
       <section className="relative min-h-[700px] overflow-hidden pt-24" aria-labelledby="studies-title">
-        <div className="absolute inset-y-0 left-1/2 w-[94%] -translate-x-1/2">
-          <Image src="/assets/media/images/daniel-2-statue.png" alt="Nebuchadnezzar's dream statue from Daniel 2" fill priority sizes="94vw" className="object-cover object-center" />
+        <Image src="/assets/media/images/daniel-2-statue.png" alt="" fill priority sizes="100vw" aria-hidden className="scale-105 object-cover object-center opacity-65 blur-[2px]" />
+        <div
+          className="absolute inset-y-0 left-1/2 w-full -translate-x-1/2 lg:w-[82%]"
+          style={{ WebkitMaskImage: "linear-gradient(to right, transparent, black 6%, black 94%, transparent)", maskImage: "linear-gradient(to right, transparent, black 6%, black 94%, transparent)" }}
+        >
+          <Image src="/assets/media/images/daniel-2-statue.png" alt="Nebuchadnezzar's dream statue from Daniel 2" fill priority sizes="(max-width: 1023px) 100vw, 82vw" className="object-cover object-center shadow-[0_0_70px_rgba(6,16,26,0.7)]" />
         </div>
         <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(6,16,26,0.96)_0%,rgba(6,16,26,0.72)_48%,rgba(6,16,26,0.22)_78%)]" />
         <div className="absolute inset-0 bg-[linear-gradient(to_top,#06101a_0%,transparent_60%)]" />
