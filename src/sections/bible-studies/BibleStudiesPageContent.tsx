@@ -19,6 +19,7 @@ const studies = [
   { number: "10", title: "God’s Tomorrow", description: "What will life be like when God makes all things new?", href: "/bible-studies/gods-tomorrow", meta: "12 questions · 20 min", label: "Restoration" },
   { number: "11", title: "The Nephilim", description: "Angels, giants, or men? Test Genesis 6 and the popular claims against Scripture.", href: "/bible-studies/prophecy/nephilim", meta: "Evidence study · 35 min", label: "Bible Mystery" },
   { number: "12", title: "Angels, Demons & the Great Controversy", description: "Follow the unseen conflict from rebellion in heaven to Christ’s victory and the final end of evil.", href: "/bible-studies/angels-demons-great-controversy", meta: "Evidence study · 40 min", label: "Great Controversy" },
+  { number: "13", title: "The State of the Dead", description: "Can the dead speak to the living? Examine the soul, spiritualism, difficult passages, and the resurrection hope.", href: "/bible-studies/state-of-the-dead", meta: "Evidence study · 40 min", label: "Life & Death" },
 ] as const;
 
 export function BibleStudiesPageContent() {
