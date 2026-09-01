@@ -17,6 +17,7 @@ const studies = [
   { number: "08", title: "Law & Gospel", description: "How do God’s perfect law and saving grace work together?", href: "/bible-studies/law-and-gospel", meta: "10 questions · 20 min", label: "Foundations" },
   { number: "09", title: "The World’s Only Hope", description: "What does the Bible reveal about the return of Jesus?", href: "/bible-studies/worlds-only-hope", meta: "10 questions · 20 min", label: "Second Coming" },
   { number: "10", title: "God’s Tomorrow", description: "What will life be like when God makes all things new?", href: "/bible-studies/gods-tomorrow", meta: "12 questions · 20 min", label: "Restoration" },
+  { number: "11", title: "The Nephilim", description: "Angels, giants, or men? Test Genesis 6 and the popular claims against Scripture.", href: "/bible-studies/prophecy/nephilim", meta: "Evidence study · 35 min", label: "Bible Mystery" },
 ] as const;
 
 export function BibleStudiesPageContent() {
