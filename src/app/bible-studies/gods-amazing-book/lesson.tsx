@@ -22,16 +22,25 @@ export default function StudyOne() {
     </header>
 
     <section id="study-guide-pages" className="af-facsimile-reader" aria-label="Amazing Facts Study Guide 1 original pages">
-      {pages.map((page) => <figure key={page.number} className="af-facsimile-sheet">
-        <Image
-          src={page.src}
-          alt={`Amazing Facts Study Guide 1, original page ${page.number}`}
-          width={1032}
-          height={1527}
-          sizes="(max-width: 900px) 100vw, 920px"
-          priority={page.number <= 2}
-        />
-      </figure>)}
+      {pages.map((page) => {
+        const pageClassName = [
+          "af-facsimile-sheet",
+          page.number === 14 ? "af-facsimile-sheet-address-hidden" : "",
+          page.number === 16 ? "af-facsimile-sheet-summary-only" : "",
+        ].filter(Boolean).join(" ");
+
+        return <figure key={page.number} className={pageClassName}>
+          <Image
+            src={page.src}
+            alt={`Amazing Facts Study Guide 1, original page ${page.number}`}
+            width={1032}
+            height={1527}
+            sizes="(max-width: 900px) 100vw, 920px"
+            priority={page.number <= 2}
+          />
+          {page.number === 14 && <span className="af-facsimile-address-mask" aria-hidden="true" />}
+        </figure>;
+      })}
     </section>
 
     <nav className="af-facsimile-nav shell" aria-label="Study navigation">
