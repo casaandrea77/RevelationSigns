@@ -294,9 +294,9 @@
 .af-facsimile-sheet { position: relative; width: min(920px, 100%); margin: 0 auto; overflow: hidden; background: #fff; box-shadow: 0 24px 70px rgba(26,28,25,.22); }
 .af-facsimile-sheet img { width: 100%; height: auto; display: block; }
 .af-facsimile-address-mask { position: absolute; z-index: 1; left: 54%; right: 2.5%; top: 76%; bottom: 4.5%; background: #f6f5f1; box-shadow: 0 0 18px 12px #f6f5f1; }
-.af-facsimile-sheet-summary-only { aspect-ratio: 1032 / 660; }
 .af-facsimile-sheet-summary-only img { position: absolute; inset: 0 auto auto 0; }
 .af-facsimile-sheet-summary-only::after { content: ""; position: absolute; z-index: 1; inset: 0 0 0 auto; width: 4.4%; background: #fff; }
+.af-facsimile-instruction-mask { position: absolute; z-index: 2; background: #fff; box-shadow: 0 0 5px 4px #fff; }
 .af-facsimile-nav { min-height: 150px; display: flex; align-items: center; justify-content: space-between; gap: 28px; border-top: 1px solid #c9c1b4; }
 .af-facsimile-nav a { color: #654f31; font-size: 10px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
 

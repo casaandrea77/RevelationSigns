@@ -5,9 +5,9 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { fadeIn, fadeUp, staggerContainer } from "@/animations/variants/fade-up";
 import { Footer } from "@/components/layout/Footer";
+import { amazingFactsGuideHref, amazingFactsStudyGuides } from "@/data/amazingFactsStudyGuides";
 
 const studies = [
-  { number: "01", title: "Is There Anything Left You Can Trust?", description: "Amazing Facts Study Guide 1—complete, unabridged, and presented in a responsive study format.", href: "/bible-studies/gods-amazing-book", meta: "13 questions · Complete guide", label: "Amazing Facts" },
   { number: "02", title: "God Unfolds the Future", description: "Follow Daniel 2 from Babylon through the kingdoms of history to Christ’s everlasting kingdom.", href: "/bible-studies/prophecy/daniel-2", meta: "13 questions · 30 min", label: "Bible Prophecy" },
   { number: "03", title: "The Origin of Sin", description: "Where did evil begin—and why did God allow freedom to be misused?", href: "/bible-studies/origin-of-sin", meta: "14 questions · 25 min", label: "Great Controversy" },
   { number: "04", title: "Who Is Christ?", description: "Discover the identity, character, and saving mission of Jesus.", href: "/bible-studies/who-is-christ", meta: "17 questions · 25 min", label: "Jesus Christ" },
@@ -38,9 +38,34 @@ export function BibleStudiesPageContent() {
         <motion.div variants={staggerContainer} initial="hidden" animate="visible" className="relative z-10 mx-auto flex min-h-[600px] max-w-[1440px] flex-col justify-center px-6 py-20 sm:px-10 lg:px-12">
           <motion.p variants={fadeUp} className="font-sans text-xs tracking-[0.35em] uppercase text-accent">Know God&apos;s Word Better</motion.p>
           <motion.h1 id="studies-title" variants={fadeUp} className="mt-5 max-w-4xl font-serif text-[clamp(4rem,8vw,7.5rem)] font-medium leading-[0.88] tracking-[-0.025em]">Bible Studies</motion.h1>
-          <motion.p variants={fadeUp} className="mt-7 max-w-2xl font-sans text-base leading-[1.85] text-foreground/80 sm:text-lg">Begin with Daniel 2, the foundation of Bible prophecy, then continue through the subjects that connect the biblical story from creation to restoration.</motion.p>
-          <motion.div variants={fadeUp} className="mt-9 flex flex-wrap gap-3"><Link href="#daniel-2" className="inline-flex min-h-14 items-center justify-center bg-accent px-8 font-sans text-xs font-semibold tracking-[0.2em] text-[#06101a] uppercase">Begin with Daniel 2</Link><Link href="/contact" className="inline-flex min-h-14 items-center justify-center border border-accent/50 px-8 font-sans text-xs tracking-[0.2em] uppercase hover:bg-accent hover:text-[#06101a]">Request Personal Help</Link></motion.div>
+          <motion.p variants={fadeUp} className="mt-7 max-w-2xl font-sans text-base leading-[1.85] text-foreground/80 sm:text-lg">Read the complete collection of 27 illustrated Amazing Facts Study Guides, then continue through RevelationSigns studies on prophecy and the great controversy.</motion.p>
+          <motion.div variants={fadeUp} className="mt-9 flex flex-wrap gap-3"><Link href="#amazing-facts-guides" className="inline-flex min-h-14 items-center justify-center bg-accent px-8 font-sans text-xs font-semibold tracking-[0.2em] text-[#06101a] uppercase">Explore All 27 Guides</Link><Link href="/contact" className="inline-flex min-h-14 items-center justify-center border border-accent/50 px-8 font-sans text-xs tracking-[0.2em] uppercase hover:bg-accent hover:text-[#06101a]">Request Personal Help</Link></motion.div>
         </motion.div>
+      </section>
+
+      <section id="amazing-facts-guides" className="scroll-mt-24 bg-[#eee7da] px-6 py-20 text-[#1a1814] sm:px-10 lg:px-12 lg:py-28" aria-labelledby="amazing-facts-heading">
+        <div className="mx-auto max-w-[1320px]">
+          <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} className="max-w-3xl">
+            <p className="font-sans text-xs tracking-[0.35em] uppercase text-[#8a6728]">The Complete Original Collection</p>
+            <h2 id="amazing-facts-heading" className="mt-5 font-serif text-[clamp(3rem,5vw,5rem)] font-medium leading-none">Amazing Facts Study Guides</h2>
+            <p className="mt-6 font-sans text-base leading-[1.8] text-[#5c564d] sm:text-lg">All 27 illustrated lessons are presented page by page in their original format. Choose a guide to begin, then move through the collection in order.</p>
+          </motion.div>
+
+          <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.03 }} className="mt-14 grid gap-7 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {amazingFactsStudyGuides.map((guide) => <motion.article key={guide.number} variants={fadeUp} className="group overflow-hidden border border-black/10 bg-[#f8f5ef] shadow-[0_16px_40px_rgba(45,38,28,0.1)] transition-transform duration-300 hover:-translate-y-1">
+              <Link href={amazingFactsGuideHref(guide)} className="block">
+                <div className="relative aspect-[0.676/1] overflow-hidden bg-white">
+                  <Image src={`/assets/media/images/amazing-facts-study-${guide.number}/pages/page-01.jpg`} alt={`Cover of Amazing Facts Study Guide ${guide.number}: ${guide.title}`} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" className="object-cover transition-transform duration-500 group-hover:scale-[1.015]" />
+                </div>
+                <div className="p-6">
+                  <p className="font-sans text-[0.62rem] font-semibold tracking-[0.24em] text-[#9b6f2d] uppercase">Study Guide {guide.number}</p>
+                  <h3 className="mt-3 font-serif text-[1.75rem] font-medium leading-[1.02]">{guide.title}</h3>
+                  <p className="mt-5 border-t border-black/10 pt-4 font-sans text-[0.65rem] font-semibold tracking-[0.18em] text-[#6f5a39] uppercase">Read the complete guide →</p>
+                </div>
+              </Link>
+            </motion.article>)}
+          </motion.div>
+        </div>
       </section>
 
       <section id="daniel-2" className="bg-[#f4efe6] px-6 py-20 text-[#1a1814] sm:px-10 lg:px-12 lg:py-28" aria-labelledby="daniel-heading">
