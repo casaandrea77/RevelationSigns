@@ -7,7 +7,7 @@ import { fadeIn, fadeUp, staggerContainer } from "@/animations/variants/fade-up"
 import { Footer } from "@/components/layout/Footer";
 
 const studies = [
-  { number: "01", title: "God's Amazing Book", description: "Can a book written across centuries still speak with one clear voice?", href: "/bible-studies/gods-amazing-book", meta: "15 questions · 25 min", label: "Foundations" },
+  { number: "01", title: "Is There Anything Left You Can Trust?", description: "Amazing Facts Study Guide 1—complete, unabridged, and presented in a responsive study format.", href: "/bible-studies/gods-amazing-book", meta: "13 questions · Complete guide", label: "Amazing Facts" },
   { number: "02", title: "God Unfolds the Future", description: "Follow Daniel 2 from Babylon through the kingdoms of history to Christ’s everlasting kingdom.", href: "/bible-studies/prophecy/daniel-2", meta: "13 questions · 30 min", label: "Bible Prophecy" },
   { number: "03", title: "The Origin of Sin", description: "Where did evil begin—and why did God allow freedom to be misused?", href: "/bible-studies/origin-of-sin", meta: "14 questions · 25 min", label: "Great Controversy" },
   { number: "04", title: "Who Is Christ?", description: "Discover the identity, character, and saving mission of Jesus.", href: "/bible-studies/who-is-christ", meta: "17 questions · 25 min", label: "Jesus Christ" },

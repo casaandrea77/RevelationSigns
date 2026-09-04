@@ -174,6 +174,95 @@
 .prophecy-evidence td:last-child { border-right: 0; }
 .prophecy-evidence tbody tr:nth-child(even) { background: #f3eee3; }
 
+/* Amazing Facts Study Guide 1 — complete edition */
+.af-study-page { background: #f4efe6; }
+.af-hero { position: relative; min-height: 690px; display: flex; align-items: center; overflow: hidden; color: #fff; background: #061923; }
+.af-hero-image { position: absolute; inset: 0; background: url('/assets/media/images/bible-studies/gods-amazing-book.png') center / cover no-repeat; transform: scale(1.02); }
+.af-hero-shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(2,15,22,.98) 0%, rgba(2,15,22,.88) 45%, rgba(2,15,22,.28) 78%), linear-gradient(0deg, #06101a 0%, transparent 28%); }
+.af-hero-content { position: relative; z-index: 1; padding-block: 76px; }
+.af-hero .back-link { margin-bottom: 82px; color: #cbd6d8; }
+.af-hero .eyebrow { color: #d4ad69; }
+.af-hero h1 { max-width: 920px; color: #fff; font-size: clamp(62px, 7.5vw, 112px); line-height: .82; letter-spacing: -.045em; }
+.af-hero h1 em { color: #d1a65e; font-weight: 400; }
+.af-hero-content > p:last-child { margin: 36px 0 0; color: #ccd5d6; font-size: 11px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; }
+.af-introduction { display: grid; grid-template-columns: 220px 1fr; gap: 70px; padding-block: 100px; border-bottom: 1px solid #d8d1c3; }
+.af-introduction > p:last-child { max-width: 830px; margin: 0; color: #22343a; font-family: var(--font-cormorant), Georgia, serif; font-size: clamp(28px, 3vw, 40px); line-height: 1.35; }
+.af-layout { display: grid; grid-template-columns: 210px minmax(0, 1fr); gap: 80px; padding-block: 85px 120px; }
+.af-aside { position: sticky; top: 120px; align-self: start; }
+.af-aside strong { display: block; font-family: var(--font-cormorant), Georgia, serif; font-size: 64px; font-weight: 500; line-height: 1; }
+.af-aside small { color: #718083; font-size: 9px; letter-spacing: .14em; text-transform: uppercase; }
+.af-aside nav { display: grid; margin-top: 32px; border-top: 1px solid #d6cfc1; }
+.af-aside nav a { padding: 9px 0; border-bottom: 1px solid #ddd6c9; color: #6a7475; font-size: 9px; letter-spacing: .12em; text-transform: uppercase; }
+.af-aside nav a:hover { color: #9a7040; }
+.af-questions { min-width: 0; }
+.af-question { scroll-margin-top: 110px; border-top: 1px solid #cfc7b8; }
+.af-question:last-of-type { border-bottom: 1px solid #cfc7b8; }
+.af-question summary { display: grid; grid-template-columns: 46px 1fr 34px; gap: 18px; align-items: start; padding: 34px 0; list-style: none; cursor: pointer; }
+.af-question summary::-webkit-details-marker { display: none; }
+.af-question summary > span { padding-top: 7px; color: #a17a42; font-size: 10px; }
+.af-question summary h2 { font-size: clamp(27px, 3.1vw, 40px); line-height: 1.12; }
+.af-question summary i { width: 30px; height: 30px; display: grid; place-items: center; border: 1px solid #c4bba9; border-radius: 50%; color: #916e3c; font-style: normal; transition: transform .2s ease; }
+.af-question[open] summary i { transform: rotate(45deg); }
+.af-question-body { padding: 0 0 54px 64px; }
+.af-verse { margin: 0 0 18px; padding: 24px 28px; border-left: 2px solid #b88b47; background: #ece5d8; color: #27383d; font-family: var(--font-cormorant), Georgia, serif; font-size: 22px; font-style: italic; line-height: 1.45; }
+.af-verse cite { display: block; margin-top: 11px; color: #8a6839; font-family: var(--font-inter), system-ui, sans-serif; font-size: 9px; font-style: normal; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.af-caption { margin: 18px 0 0; color: #766a59; font-size: 11px; font-style: italic; line-height: 1.6; }
+.af-footnote { color: #897d6a !important; font-size: 10px !important; font-style: italic; }
+.af-answer { display: grid; grid-template-columns: 78px 1fr; gap: 24px; margin-top: 28px; }
+.af-answer > strong { color: #9b6f37; font-size: 10px; letter-spacing: .13em; text-transform: uppercase; }
+.af-answer p { margin: 0 0 18px; color: #586567; font-size: 14px; line-height: 1.8; }
+.af-letter-list { list-style: upper-alpha; margin: 20px 0 22px; padding-left: 24px; }
+.af-letter-list li, .af-bullet-list li, .af-faq li { margin-bottom: 12px; padding-left: 7px; color: #586567; font-size: 14px; line-height: 1.75; }
+.af-bullet-list { margin: 18px 0 24px; padding-left: 21px; }
+.af-note { margin: 24px 0; padding: 22px 24px; border-left: 2px solid #b88b47; background: #ece5d8; color: #586567; font-size: 13px; line-height: 1.75; }
+.af-table-wrap { overflow-x: auto; margin: 28px 0; border: 1px solid #cbbfa9; }
+.af-table-wrap table { width: 100%; min-width: 680px; border-collapse: collapse; }
+.af-table-wrap th { padding: 14px 16px; background: #7a3035; color: #fff; font-size: 9px; letter-spacing: .1em; text-align: left; text-transform: uppercase; }
+.af-table-wrap td { padding: 13px 16px; border-top: 1px solid #d8cdb9; color: #344247; font-size: 13px; line-height: 1.35; }
+.af-table-wrap tr:nth-child(even) { background: #eee7da; }
+.af-your-answer { display: block; color: #8f6b3c; font-size: 10px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.af-your-answer input { width: 100%; display: block; margin-top: 15px; padding: 14px 4px; border: 0; border-bottom: 1px solid #9a8b72; outline: 0; background: transparent; color: #26383d; font-size: 16px; }
+.af-faq, .af-summary-sheet, .af-source { margin-top: 100px; padding-top: 70px; border-top: 1px solid #cfc7b8; }
+.af-faq > h2, .af-summary-sheet > h2, .af-source h2 { max-width: 760px; font-size: clamp(44px, 5.5vw, 72px); line-height: .9; }
+.af-faq-grid { display: grid; gap: 1px; margin-top: 48px; background: #cfc7b8; border: 1px solid #cfc7b8; }
+.af-faq article { padding: 32px; background: #f8f4ec; }
+.af-faq article > span { color: #a2763d; font-size: 9px; letter-spacing: .14em; }
+.af-faq h3 { margin: 12px 0 18px; font-size: 27px; line-height: 1.15; }
+.af-faq p { margin: 0 0 14px; color: #586567; font-size: 13px; line-height: 1.8; }
+.af-summary-sheet > p:not(.eyebrow), .af-source > p { max-width: 760px; color: #586567; font-size: 13px; line-height: 1.8; }
+.af-summary-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; margin-top: 45px; background: #cfc7b8; border: 1px solid #cfc7b8; }
+.af-summary-grid fieldset { min-width: 0; padding: 28px; border: 0; background: #f8f4ec; }
+.af-summary-grid legend { width: 100%; margin-bottom: 17px; color: #24373c; font-family: var(--font-cormorant), Georgia, serif; font-size: 21px; font-weight: 600; line-height: 1.25; }
+.af-summary-grid legend span { color: #9d733b; }
+.af-summary-grid legend small { color: #9d733b; font-family: var(--font-inter), system-ui, sans-serif; font-size: 9px; }
+.af-summary-grid label { display: grid; grid-template-columns: 18px 1fr; gap: 10px; margin-top: 11px; color: #5d686a; font-size: 12px; line-height: 1.45; cursor: pointer; }
+.af-summary-grid input { width: 15px; height: 15px; margin: 1px 0 0; accent-color: #7a3035; }
+.af-summary-reminder { margin-top: 22px; color: #7a3035 !important; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+.af-source { padding: 68px; border: 1px solid #b69b6f; background: #102a34; color: #fff; }
+.af-source .eyebrow { color: #d4ad69; }
+.af-source h2 { color: #fff; }
+.af-source > p { color: #c8d2d3; }
+.af-registration { display: grid; gap: 14px; margin: 28px 0; color: #d9dfdf; font-family: var(--font-cormorant), Georgia, serif; font-size: 18px; }
+.af-source address { margin-top: 28px; color: #c8d2d3; font-size: 12px; font-style: normal; line-height: 1.8; }
+.af-copyright { margin-top: 28px; color: #8fa3a7 !important; font-size: 10px !important; }
+.af-official-link { display: inline-flex; margin-top: 18px; color: #d4ad69; font-size: 10px; font-weight: 700; letter-spacing: .12em; text-decoration: underline; text-underline-offset: 5px; text-transform: uppercase; }
+.af-study-page .complete-button { margin-top: 34px; }
+
+@media (max-width: 800px) {
+  .af-hero { min-height: 620px; }
+  .af-hero-image { background-position: 64% center; }
+  .af-hero-shade { background: linear-gradient(90deg, rgba(2,15,22,.96), rgba(2,15,22,.64)), linear-gradient(0deg, #06101a, transparent 35%); }
+  .af-hero h1 { font-size: clamp(52px, 14vw, 76px); line-height: .86; }
+  .af-introduction { grid-template-columns: 1fr; gap: 16px; padding-block: 70px; }
+  .af-layout { grid-template-columns: 1fr; padding-block: 35px 90px; }
+  .af-aside { display: none; }
+  .af-question summary { grid-template-columns: 34px 1fr 30px; gap: 10px; padding: 26px 0; }
+  .af-question-body { padding: 0 0 42px 44px; }
+  .af-answer { grid-template-columns: 1fr; gap: 12px; }
+  .af-summary-grid { grid-template-columns: 1fr; }
+  .af-source { padding: 42px 26px; }
+}
+
 .kjv-feature { scroll-margin-top: 110px; display: grid; grid-template-columns: minmax(0, .9fr) minmax(400px, 1.1fr); gap: 48px; margin: 75px 0 85px; padding: 58px; color: #f8f4eb; background: linear-gradient(140deg, #071923 0%, #102f3a 58%, #173f49 100%); box-shadow: 0 30px 70px rgba(7, 25, 35, .2); }
 .kjv-feature-copy h2 { margin-top: 18px; font-size: clamp(45px, 5vw, 64px); line-height: .88; }
 .kjv-feature-copy h2 em { color: #d1a965; font-weight: 400; }
