@@ -280,6 +280,29 @@
   .af-source { padding: 42px 26px; }
 }
 
+/* Exact-page reader for the original Amazing Facts Study Guide 1 */
+.af-facsimile-page { background: #e8e3da; color: #17252c; }
+.af-facsimile-page .shell { width: min(1180px, calc(100% - 48px)); margin-inline: auto; }
+.af-facsimile-header { padding: 72px 0 78px; color: #fff; background: #061923; }
+.af-facsimile-header .back-link { margin-bottom: 58px; color: #bdc9cb; }
+.af-facsimile-header p { margin: 0 0 18px; color: #d0a55e; font-size: 10px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; }
+.af-facsimile-header h1 { margin: 0; color: #fff; font-family: var(--font-cormorant), Georgia, serif; font-size: clamp(54px, 7vw, 96px); font-weight: 500; line-height: .84; letter-spacing: -.035em; }
+.af-facsimile-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 42px; }
+.af-facsimile-actions a { display: inline-flex; min-height: 48px; align-items: center; padding: 0 22px; border: 1px solid #b58b4e; color: #efdcb9; font-size: 9px; font-weight: 700; letter-spacing: .13em; text-transform: uppercase; }
+.af-facsimile-actions a:first-child { background: #c69a55; color: #071923; }
+.af-facsimile-reader { display: grid; gap: 42px; padding: 70px 24px 95px; scroll-margin-top: 90px; }
+.af-facsimile-sheet { width: min(920px, 100%); margin: 0 auto; background: #fff; box-shadow: 0 24px 70px rgba(26,28,25,.22); }
+.af-facsimile-sheet img { width: 100%; height: auto; display: block; }
+.af-facsimile-nav { min-height: 150px; display: flex; align-items: center; justify-content: space-between; gap: 28px; border-top: 1px solid #c9c1b4; }
+.af-facsimile-nav a { color: #654f31; font-size: 10px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+
+@media (max-width: 640px) {
+  .af-facsimile-page .shell { width: min(100% - 32px, 1180px); }
+  .af-facsimile-header { padding-block: 56px 62px; }
+  .af-facsimile-reader { gap: 20px; padding: 32px 10px 65px; }
+  .af-facsimile-nav { min-height: 130px; flex-direction: column; justify-content: center; text-align: center; }
+}
+
 .kjv-feature { scroll-margin-top: 110px; display: grid; grid-template-columns: minmax(0, .9fr) minmax(400px, 1.1fr); gap: 48px; margin: 75px 0 85px; padding: 58px; color: #f8f4eb; background: linear-gradient(140deg, #071923 0%, #102f3a 58%, #173f49 100%); box-shadow: 0 30px 70px rgba(7, 25, 35, .2); }
 .kjv-feature-copy h2 { margin-top: 18px; font-size: clamp(45px, 5vw, 64px); line-height: .88; }
 .kjv-feature-copy h2 em { color: #d1a965; font-weight: 400; }
