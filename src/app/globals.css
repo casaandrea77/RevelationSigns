@@ -182,11 +182,15 @@
 .af-hero-content { position: relative; z-index: 1; padding-block: 76px; padding-right: 350px; }
 .af-hero .back-link { margin-bottom: 82px; color: #cbd6d8; }
 .af-hero .eyebrow { color: #d4ad69; }
+.af-guide-label { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; }
+.af-guide-label .eyebrow { margin: 0; }
+.af-study-number { width: 54px; height: 54px; flex: 0 0 54px; display: grid; place-items: center; border: 2px solid #d4ad69; border-radius: 50%; color: #f5dfb4; font-family: var(--font-cormorant), Georgia, serif; font-size: 34px; font-weight: 600; line-height: 1; box-shadow: 0 0 28px rgba(212,173,105,.2); }
 .af-hero h1 { max-width: 920px; color: #fff; font-size: clamp(62px, 7.5vw, 112px); line-height: .82; letter-spacing: -.045em; }
 .af-hero h1 em { color: #d1a65e; font-weight: 400; }
 .af-hero-content > p:last-child { margin: 36px 0 0; color: #ccd5d6; font-size: 11px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; }
-.af-cover-art { position: absolute; right: 0; top: 54px; width: 270px; overflow: hidden; border: 1px solid rgba(212,173,105,.72); box-shadow: 0 35px 75px rgba(0,0,0,.48); transform: rotate(1.5deg); }
+.af-cover-art { position: absolute; right: 0; top: 35px; width: 305px; margin: 0; border: 1px solid rgba(212,173,105,.72); background: #071923; box-shadow: 0 35px 75px rgba(0,0,0,.48); transform: rotate(1.5deg); }
 .af-cover-art img { width: 100%; height: auto; display: block; }
+.af-cover-art figcaption { padding: 11px 14px; color: #d7bd8c; font-size: 8px; font-weight: 700; letter-spacing: .15em; text-align: center; text-transform: uppercase; }
 .af-introduction { display: grid; grid-template-columns: 220px 1fr; gap: 70px; padding-block: 100px; border-bottom: 1px solid #d8d1c3; }
 .af-introduction > p:last-child { max-width: 830px; margin: 0; color: #22343a; font-family: var(--font-cormorant), Georgia, serif; font-size: clamp(28px, 3vw, 40px); line-height: 1.35; }
 .af-layout { display: grid; grid-template-columns: 210px minmax(0, 1fr); gap: 80px; padding-block: 85px 120px; }
