@@ -179,12 +179,14 @@
 .af-hero { position: relative; min-height: 690px; display: flex; align-items: center; overflow: hidden; color: #fff; background: #061923; }
 .af-hero-image { position: absolute; inset: 0; background: url('/assets/media/images/bible-studies/gods-amazing-book.png') center / cover no-repeat; transform: scale(1.02); }
 .af-hero-shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(2,15,22,.98) 0%, rgba(2,15,22,.88) 45%, rgba(2,15,22,.28) 78%), linear-gradient(0deg, #06101a 0%, transparent 28%); }
-.af-hero-content { position: relative; z-index: 1; padding-block: 76px; }
+.af-hero-content { position: relative; z-index: 1; padding-block: 76px; padding-right: 350px; }
 .af-hero .back-link { margin-bottom: 82px; color: #cbd6d8; }
 .af-hero .eyebrow { color: #d4ad69; }
 .af-hero h1 { max-width: 920px; color: #fff; font-size: clamp(62px, 7.5vw, 112px); line-height: .82; letter-spacing: -.045em; }
 .af-hero h1 em { color: #d1a65e; font-weight: 400; }
 .af-hero-content > p:last-child { margin: 36px 0 0; color: #ccd5d6; font-size: 11px; font-weight: 700; letter-spacing: .22em; text-transform: uppercase; }
+.af-cover-art { position: absolute; right: 0; top: 54px; width: 270px; overflow: hidden; border: 1px solid rgba(212,173,105,.72); box-shadow: 0 35px 75px rgba(0,0,0,.48); transform: rotate(1.5deg); }
+.af-cover-art img { width: 100%; height: auto; display: block; }
 .af-introduction { display: grid; grid-template-columns: 220px 1fr; gap: 70px; padding-block: 100px; border-bottom: 1px solid #d8d1c3; }
 .af-introduction > p:last-child { max-width: 830px; margin: 0; color: #22343a; font-family: var(--font-cormorant), Georgia, serif; font-size: clamp(28px, 3vw, 40px); line-height: 1.35; }
 .af-layout { display: grid; grid-template-columns: 210px minmax(0, 1fr); gap: 80px; padding-block: 85px 120px; }
@@ -204,6 +206,12 @@
 .af-question summary i { width: 30px; height: 30px; display: grid; place-items: center; border: 1px solid #c4bba9; border-radius: 50%; color: #916e3c; font-style: normal; transition: transform .2s ease; }
 .af-question[open] summary i { transform: rotate(45deg); }
 .af-question-body { padding: 0 0 54px 64px; }
+.af-study-visual { width: 100%; aspect-ratio: 16 / 8.8; margin: 0 0 30px; overflow: hidden; border: 1px solid #c6b99f; background: #eee7da; box-shadow: 0 18px 42px rgba(34,38,34,.12); }
+.af-study-visual img { width: 100%; height: 100%; display: block; object-fit: cover; }
+.af-study-visual.portrait { aspect-ratio: 4 / 3; }
+.af-study-visual.portrait img { object-fit: contain; }
+.af-visual-pair { display: grid; grid-template-columns: 1.25fr .75fr; gap: 16px; margin-bottom: 30px; }
+.af-visual-pair .af-study-visual { height: 100%; min-height: 265px; margin: 0; aspect-ratio: auto; }
 .af-verse { margin: 0 0 18px; padding: 24px 28px; border-left: 2px solid #b88b47; background: #ece5d8; color: #27383d; font-family: var(--font-cormorant), Georgia, serif; font-size: 22px; font-style: italic; line-height: 1.45; }
 .af-verse cite { display: block; margin-top: 11px; color: #8a6839; font-family: var(--font-inter), system-ui, sans-serif; font-size: 9px; font-style: normal; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
 .af-caption { margin: 18px 0 0; color: #766a59; font-size: 11px; font-style: italic; line-height: 1.6; }
@@ -252,12 +260,17 @@
   .af-hero { min-height: 620px; }
   .af-hero-image { background-position: 64% center; }
   .af-hero-shade { background: linear-gradient(90deg, rgba(2,15,22,.96), rgba(2,15,22,.64)), linear-gradient(0deg, #06101a, transparent 35%); }
+  .af-hero-content { padding-right: 32px; }
+  .af-cover-art { position: relative; top: auto; right: auto; width: 190px; margin: 42px 0 0 auto; }
   .af-hero h1 { font-size: clamp(52px, 14vw, 76px); line-height: .86; }
   .af-introduction { grid-template-columns: 1fr; gap: 16px; padding-block: 70px; }
   .af-layout { grid-template-columns: 1fr; padding-block: 35px 90px; }
   .af-aside { display: none; }
   .af-question summary { grid-template-columns: 34px 1fr 30px; gap: 10px; padding: 26px 0; }
   .af-question-body { padding: 0 0 42px 44px; }
+  .af-study-visual { aspect-ratio: 4 / 3; }
+  .af-visual-pair { grid-template-columns: 1fr; }
+  .af-visual-pair .af-study-visual { min-height: 230px; }
   .af-answer { grid-template-columns: 1fr; gap: 12px; }
   .af-summary-grid { grid-template-columns: 1fr; }
   .af-source { padding: 42px 26px; }
