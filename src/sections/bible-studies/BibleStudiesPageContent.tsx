@@ -49,6 +49,7 @@ export function BibleStudiesPageContent() {
             <p className="font-sans text-xs tracking-[0.35em] uppercase text-[#8a6728]">The Complete Original Collection</p>
             <h2 id="amazing-facts-heading" className="mt-5 font-serif text-[clamp(3rem,5vw,5rem)] font-medium leading-none">Amazing Facts Study Guides</h2>
             <p className="mt-6 font-sans text-base leading-[1.8] text-[#5c564d] sm:text-lg">All 27 illustrated lessons are presented page by page in their original format. Choose a guide to begin, then move through the collection in order.</p>
+            <a href="https://www.amazingfacts.org/it/studio/guide-allo-studio-della-bibbia/" hrefLang="it" target="_blank" rel="noreferrer" className="mt-7 inline-flex min-h-12 items-center justify-center border border-[#8a6728] px-6 font-sans text-[0.68rem] font-semibold tracking-[0.18em] text-[#6f4f21] uppercase transition-colors hover:bg-[#8a6728] hover:text-white">Italiano · Tutte le 27 guide ↗</a>
           </motion.div>
 
           <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.03 }} className="mt-14 grid gap-7 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">

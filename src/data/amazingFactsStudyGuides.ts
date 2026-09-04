@@ -40,6 +40,40 @@ export function amazingFactsGuideHref(guide: AmazingFactsStudyGuide) {
     : `/bible-studies/amazing-facts/${guide.slug}`;
 }
 
+const italianGuideSlugs = [
+  "ce-ancora-qualcosa-di-cui-fidarsi",
+  "dio-ha-creato-il-diavolo",
+  "salvati-da-morte-certa",
+  "una-citta-colossale-nello-spazio",
+  "chiavi-per-un-matrimonio-felice",
+  "scritto-nella-pietra",
+  "il-giorno-perduto-della-storia",
+  "la-liberazione-definitiva",
+  "purezza-e-potere",
+  "i-morti-sono-davvero-morti",
+  "il-diavolo-e-a-capo-dellinferno",
+  "1-000-anni-di-pace",
+  "il-piano-sanitario-gratuito-di-dio",
+  "lobbedienza-e-legalismo",
+  "chi-e-lanticristo",
+  "messaggi-degli-angeli-dallo-spazio",
+  "dio-ha-disegnato-i-piani",
+  "in-perfetto-orario-appuntamenti-profetici-rivelati",
+  "il-giudizio-finale",
+  "il-marchio-della-bestia",
+  "gli-stati-uniti-nella-profezia-biblica",
+  "laltra-donna",
+  "la-sposa-di-cristo",
+  "dio-ispira-gli-astrologi-e-i-sensitivi",
+  "in-dio-confidiamo",
+  "un-amore-che-trasforma",
+  "non-si-torna-indietro",
+] as const;
+
+export function amazingFactsItalianHref(guide: AmazingFactsStudyGuide) {
+  return `https://www.amazingfacts.org/it/studio/guide-allo-studio-della-bibbia/${italianGuideSlugs[guide.number - 1]}/`;
+}
+
 export function getAmazingFactsGuideBySlug(slug: string) {
   return amazingFactsStudyGuides.find((guide) => guide.slug === slug);
 }

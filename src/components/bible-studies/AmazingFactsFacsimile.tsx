@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Footer } from "@/components/layout/Footer";
-import { amazingFactsGuideHref, amazingFactsStudyGuides, type AmazingFactsStudyGuide } from "@/data/amazingFactsStudyGuides";
+import { amazingFactsGuideHref, amazingFactsItalianHref, amazingFactsStudyGuides, type AmazingFactsStudyGuide } from "@/data/amazingFactsStudyGuides";
 
 const pageNumbers = Array.from({ length: 16 }, (_, index) => index + 1);
 
@@ -58,6 +58,7 @@ export function AmazingFactsFacsimile({ guide }: { guide: AmazingFactsStudyGuide
         <h1>{guide.title}</h1>
         <div className="af-facsimile-actions">
           <a href="#study-guide-pages">Read the original guide ↓</a>
+          <a href={amazingFactsItalianHref(guide)} hrefLang="it" target="_blank" rel="noreferrer">Italiano · Traduzione ufficiale ↗</a>
           <a href={`https://manna.amazingfacts.org/amazingfacts/specialproj/offerdownloads/docs/sg${guide.number}.pdf`} target="_blank" rel="noreferrer">Open original PDF ↗</a>
         </div>
       </div>
