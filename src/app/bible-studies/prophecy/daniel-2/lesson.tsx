@@ -45,6 +45,33 @@ export default function StudyTwo() {
       <div className="questions">
         <div className="questions-heading"><h2>Read and study the following verses<br />and write down your answers.</h2></div>
 
+        <section className="mb-[75px]" aria-labelledby="daniel-2-film-title">
+          <div className="mb-7 max-w-2xl">
+            <p className="eyebrow">The king&apos;s dream</p>
+            <h2 id="daniel-2-film-title" className="text-[clamp(2.4rem,5vw,3.8rem)] leading-[0.95]">Watch the prophecy unfold.</h2>
+            <p className="mt-5 text-sm leading-7 text-[#596567]">From Babylon&apos;s head of gold to the stone that becomes a great mountain, this visual journey follows the complete sequence revealed in Daniel 2.</p>
+          </div>
+          <div className="overflow-hidden rounded-sm border border-[#bb9154] bg-[#06101a] shadow-2xl">
+            <div className="aspect-video bg-black">
+              <video
+                className="h-full w-full"
+                controls
+                playsInline
+                preload="metadata"
+                poster="/media/images/daniel-2-film-poster.png"
+                aria-label="Daniel 2: The king's dream and its interpretation"
+              >
+                <source src="/media/videos/daniel-2-complete-sequence.mp4?v=2" type="video/mp4" />
+                Your browser does not support the video player.
+              </video>
+            </div>
+            <div className="flex flex-col gap-2 border-t border-[#bb9154]/35 px-5 py-4 text-[#f0bd5d] sm:flex-row sm:items-center sm:justify-between">
+              <span className="font-sans text-[0.68rem] font-semibold tracking-[0.17em] uppercase">Daniel 2 · The Rise and Fall of Kingdoms</span>
+              <span className="font-sans text-[0.68rem] tracking-[0.12em] uppercase text-[#e5c98f]">1 min 26 sec</span>
+            </div>
+          </div>
+        </section>
+
         {questions.map((item, index) => {
           const isOpen = open.includes(index);
           return <article className={`question ${isOpen ? "open" : ""}`} key={`${item.ref}-${index}`}>
