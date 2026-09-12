@@ -45,15 +45,15 @@ export function BibleStudiesPageContent() {
 
       <section id="amazing-facts-guides" className="scroll-mt-24 bg-[#eee7da] px-6 py-20 text-[#1a1814] sm:px-10 lg:px-12 lg:py-28" aria-labelledby="amazing-facts-heading">
         <div className="mx-auto max-w-[1320px]">
-          <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} className="max-w-3xl">
+          <div className="max-w-3xl">
             <p className="font-sans text-xs tracking-[0.35em] uppercase text-[#8a6728]">The Complete Original Collection</p>
             <h2 id="amazing-facts-heading" className="mt-5 font-serif text-[clamp(3rem,5vw,5rem)] font-medium leading-none">Amazing Facts Study Guides</h2>
             <p className="mt-6 font-sans text-base leading-[1.8] text-[#5c564d] sm:text-lg">All 27 illustrated lessons are presented page by page in their original format. Choose a guide to begin, then move through the collection in order.</p>
             <a href="https://www.amazingfacts.org/it/studio/guide-allo-studio-della-bibbia/" hrefLang="it" target="_blank" rel="noreferrer" className="mt-7 inline-flex min-h-12 items-center justify-center border border-[#8a6728] px-6 font-sans text-[0.68rem] font-semibold tracking-[0.18em] text-[#6f4f21] uppercase transition-colors hover:bg-[#8a6728] hover:text-white">Italiano · Tutte le 27 guide ↗</a>
-          </motion.div>
+          </div>
 
-          <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.03 }} className="mt-14 grid gap-7 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-            {amazingFactsStudyGuides.map((guide) => <motion.article key={guide.number} variants={fadeUp} className="group overflow-hidden border border-black/10 bg-[#f8f5ef] shadow-[0_16px_40px_rgba(45,38,28,0.1)] transition-transform duration-300 hover:-translate-y-1">
+          <div className="mt-14 grid gap-7 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {amazingFactsStudyGuides.map((guide) => <article key={guide.number} className="group overflow-hidden border border-black/10 bg-[#f8f5ef] shadow-[0_16px_40px_rgba(45,38,28,0.1)] transition-transform duration-300 hover:-translate-y-1">
               <Link href={amazingFactsGuideHref(guide)} className="block">
                 <div className="relative aspect-[0.676/1] overflow-hidden bg-white">
                   <Image src={`/assets/media/images/amazing-facts-study-${guide.number}/pages/page-01.jpg`} alt={`Cover of Amazing Facts Study Guide ${guide.number}: ${guide.title}`} fill sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw" className="object-cover transition-transform duration-500 group-hover:scale-[1.015]" />
@@ -64,8 +64,8 @@ export function BibleStudiesPageContent() {
                   <p className="mt-5 border-t border-black/10 pt-4 font-sans text-[0.65rem] font-semibold tracking-[0.18em] text-[#6f5a39] uppercase">Read the complete guide →</p>
                 </div>
               </Link>
-            </motion.article>)}
-          </motion.div>
+            </article>)}
+          </div>
         </div>
       </section>
 
