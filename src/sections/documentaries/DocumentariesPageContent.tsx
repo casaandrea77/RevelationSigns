@@ -96,6 +96,26 @@ export function DocumentariesPageContent() {
         </div>
       </section>
 
+      <section className="border-y border-accent/20 bg-[#0a1926] px-6 py-20 sm:px-10 lg:px-12 lg:py-24" aria-labelledby="lecture-series-heading">
+        <div className="mx-auto grid max-w-[1320px] overflow-hidden border border-accent/30 bg-[#06101a] lg:grid-cols-[0.9fr_1.1fr]">
+          <div className="flex flex-col justify-center p-8 sm:p-12 lg:p-16">
+            <p className="font-sans text-[0.68rem] font-semibold tracking-[0.3em] text-accent uppercase">Featured Lecture Series</p>
+            <h2 id="lecture-series-heading" className="mt-5 font-serif text-[clamp(3.2rem,6vw,6rem)] font-light leading-[0.88]">Total<br /><em className="text-[#d4a653]">Onslaught</em></h2>
+            <p className="mt-4 font-serif text-xl italic text-foreground/70 sm:text-2xl">Walter Veith</p>
+            <p className="mt-7 max-w-xl font-sans text-base leading-[1.8] text-muted sm:text-lg">Explore this extensive presentation series on Bible prophecy, history, spiritual deception, and the great controversy.</p>
+            <Link href="/lecture-series/total-onslaught" className="mt-9 inline-flex min-h-13 w-fit items-center justify-center border border-accent/60 px-7 font-sans text-xs font-semibold tracking-[0.18em] text-accent uppercase transition-colors hover:bg-accent hover:text-[#06101a]">Explore the complete series →</Link>
+          </div>
+          <Link href="/lecture-series/total-onslaught" className="group relative flex min-h-[360px] items-center justify-center overflow-hidden bg-[radial-gradient(circle_at_center,rgba(206,159,78,0.2),transparent_42%),linear-gradient(145deg,#173d48,#071722_72%)] p-8 sm:min-h-[480px]" aria-label="Explore Walter Veith's Total Onslaught lecture series">
+            <div className="absolute inset-7 border border-accent/20 transition-transform duration-500 group-hover:scale-[0.98]" />
+            <div className="relative text-center">
+              <span className="font-sans text-[0.65rem] tracking-[0.32em] text-accent uppercase">Truth · History · Prophecy</span>
+              <p className="mt-7 font-serif text-[clamp(4rem,8vw,7.5rem)] font-light leading-[0.75] text-foreground/95">T<span className="text-accent">O</span></p>
+              <span className="mt-8 block font-sans text-xs tracking-[0.24em] text-foreground/55 uppercase">Complete YouTube Playlist</span>
+            </div>
+          </Link>
+        </div>
+      </section>
+
       <section className="border-y border-accent/20 bg-[#0a1926] px-6 py-20 text-center sm:px-10 lg:py-24" aria-labelledby="starfall-invitation">
         <div className="mx-auto max-w-3xl"><p className="font-sans text-xs tracking-[0.35em] uppercase text-accent">Presented by Strange Normal</p><h2 id="starfall-invitation" className="mt-5 font-serif text-[clamp(3rem,6vw,5.5rem)] font-light leading-none">Explore Starfall</h2><p className="mx-auto mt-6 max-w-2xl font-sans text-base leading-[1.8] text-muted sm:text-lg">Examine extraordinary encounters and the biblical principles for testing supernatural claims.</p><Link href="/starfall" className="mt-9 inline-flex min-h-14 items-center justify-center border border-accent/60 px-9 font-sans text-sm tracking-[0.17em] uppercase transition-colors hover:bg-accent hover:text-[#06101a]">Visit the Starfall Page</Link></div>
       </section>
