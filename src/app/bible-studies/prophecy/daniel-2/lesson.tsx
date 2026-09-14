@@ -95,6 +95,13 @@ export default function StudyTwo() {
       </div>
     </section>
 
+    <section className="shell" style={{ paddingBlock: "35px", borderTop: "1px solid #bb915455" }} aria-label="Continue the prophecy journey">
+      <p className="eyebrow">Continue in Daniel &amp; Revelation</p>
+      <h2 style={{ fontSize: "2.5rem", marginBottom: "16px" }}>When Michael Stands Up</h2>
+      <p style={{ marginBottom: "18px" }}>Follow the final messages, the worship crisis, and the promise of deliverance through Daniel and Revelation.</p>
+      <Link href="/bible-studies/prophecy/when-michael-stands-up" style={{ textDecoration: "underline", textUnderlineOffset: "5px" }}>Explore the study and interactive timeline →</Link>
+    </section>
+
     <nav className="lesson-nav shell" aria-label="Study navigation">
       <Link href="/bible-studies/gods-amazing-book"><span>←</span><small>Previous</small><b>God’s Amazing Book</b></Link>
       <div className="lesson-nav-center"><span>Study 02</span><i></i><span>Study 03</span></div>

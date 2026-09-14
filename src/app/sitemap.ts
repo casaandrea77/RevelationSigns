@@ -17,6 +17,7 @@ const mainRoutes = [
 ];
 
 const studyRoutes = [
+  "/bible-studies/prophecy/when-michael-stands-up",
   "/bible-studies/prophecy/daniel-2",
   "/bible-studies/origin-of-sin",
   "/bible-studies/who-is-christ",

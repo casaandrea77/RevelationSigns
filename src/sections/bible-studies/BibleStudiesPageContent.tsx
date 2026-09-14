@@ -8,6 +8,7 @@ import { Footer } from "@/components/layout/Footer";
 import { amazingFactsGuideHref, amazingFactsStudyGuides } from "@/data/amazingFactsStudyGuides";
 
 const studies = [
+  { number: "14", title: "When Michael Stands Up", description: "The final events in Daniel & Revelation: trace the gospel, the worship crisis, and the promise of deliverance through an interactive timeline.", href: "/bible-studies/prophecy/when-michael-stands-up", meta: "15 sections · Interactive timeline", label: "Daniel & Revelation" },
   { number: "02", title: "God Unfolds the Future", description: "Follow Daniel 2 from Babylon through the kingdoms of history to Christ’s everlasting kingdom.", href: "/bible-studies/prophecy/daniel-2", meta: "13 questions · 30 min", label: "Bible Prophecy" },
   { number: "03", title: "The Origin of Sin", description: "Where did evil begin—and why did God allow freedom to be misused?", href: "/bible-studies/origin-of-sin", meta: "14 questions · 25 min", label: "Great Controversy" },
   { number: "04", title: "Who Is Christ?", description: "Discover the identity, character, and saving mission of Jesus.", href: "/bible-studies/who-is-christ", meta: "17 questions · 25 min", label: "Jesus Christ" },
@@ -79,6 +80,18 @@ export function BibleStudiesPageContent() {
             <motion.p variants={fadeUp} className="mt-5 font-sans text-base leading-[1.85] text-[#5c564d] sm:text-lg">The chapter introduces the method and central hope of biblical prophecy: God knows history in advance, rules above earthly powers, and will bring human kingdoms to an end.</motion.p>
             <motion.div variants={fadeUp} className="mt-9 flex flex-wrap gap-3"><Link href="/bible-studies/prophecy/daniel-2" className="inline-flex min-h-14 items-center justify-center bg-[#1a1814] px-8 font-sans text-xs font-semibold tracking-[0.2em] text-[#f4efe6] uppercase">Begin the Daniel 2 Study →</Link></motion.div>
           </motion.div>
+        </div>
+      </section>
+
+      <section id="daniel-revelation" className="scroll-mt-24 border-y border-accent/25 bg-[#0b1b28] px-6 py-20 sm:px-10 lg:px-12" aria-labelledby="prophecy-journey-heading">
+        <div className="mx-auto max-w-[1250px]">
+          <p className="font-sans text-sm tracking-[0.2em] uppercase text-accent">Daniel &amp; Revelation · The prophecy journey</p>
+          <h2 id="prophecy-journey-heading" className="mt-5 font-serif text-5xl sm:text-6xl">From earthly kingdoms to everlasting hope.</h2>
+          <p className="mt-6 max-w-3xl text-base leading-relaxed text-[#c5cdd1]">Begin with Daniel’s vision of the kingdoms, then explore the final events with Scripture, careful comparisons, and clearly marked Adventist interpretations.</p>
+          <nav aria-label="Daniel and Revelation studies" className="mt-10 grid gap-6 md:grid-cols-2">
+            <Link href="/bible-studies/prophecy/daniel-2" className="border border-accent/30 p-7 transition-colors hover:bg-white/5"><span className="text-sm text-accent">Daniel 2 · The foundation</span><h3 className="mt-3 font-serif text-3xl">God Unfolds the Future →</h3><p className="mt-4 text-base text-[#bdc8ce]">The rise and fall of kingdoms—and the kingdom that never ends.</p></Link>
+            <Link href="/bible-studies/prophecy/when-michael-stands-up" className="border border-accent/60 bg-accent/5 p-7 transition-colors hover:bg-accent/10"><span className="text-sm text-accent">Daniel 11–12 &amp; Revelation 14–22</span><h3 className="mt-3 font-serif text-3xl">When Michael Stands Up →</h3><p className="mt-4 text-base text-[#bdc8ce]">A guided study with an interactive timeline of the final events.</p></Link>
+          </nav>
         </div>
       </section>
 
