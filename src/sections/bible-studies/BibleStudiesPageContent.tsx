@@ -8,8 +8,6 @@ import { Footer } from "@/components/layout/Footer";
 import { amazingFactsGuideHref, amazingFactsStudyGuides } from "@/data/amazingFactsStudyGuides";
 
 const studies = [
-  { number: "14", title: "When Michael Stands Up", description: "The final events in Daniel & Revelation: trace the gospel, the worship crisis, and the promise of deliverance through an interactive timeline.", href: "/bible-studies/prophecy/when-michael-stands-up", meta: "15 sections · Interactive timeline", label: "Daniel & Revelation" },
-  { number: "02", title: "God Unfolds the Future", description: "Follow Daniel 2 from Babylon through the kingdoms of history to Christ’s everlasting kingdom.", href: "/bible-studies/prophecy/daniel-2", meta: "13 questions · 30 min", label: "Bible Prophecy" },
   { number: "03", title: "The Origin of Sin", description: "Where did evil begin—and why did God allow freedom to be misused?", href: "/bible-studies/origin-of-sin", meta: "14 questions · 25 min", label: "Great Controversy" },
   { number: "04", title: "Who Is Christ?", description: "Discover the identity, character, and saving mission of Jesus.", href: "/bible-studies/who-is-christ", meta: "17 questions · 25 min", label: "Jesus Christ" },
   { number: "05", title: "The Problem of Sin", description: "What has sin broken, and why can humanity not repair it alone?", href: "/bible-studies/problem-of-sin", meta: "16 questions · 25 min", label: "Foundations" },
@@ -23,27 +21,39 @@ const studies = [
   { number: "13", title: "The State of the Dead", description: "Can the dead speak to the living? Examine the soul, spiritualism, difficult passages, and the resurrection hope.", href: "/bible-studies/state-of-the-dead", meta: "Evidence study · 40 min", label: "Life & Death" },
 ] as const;
 
-export function BibleStudiesPageContent() {
+const collections = [
+  { key: "amazing-facts", title: "Amazing Facts Bible Studies", subtitle: "The illustrated collection", description: "Explore all 27 original Amazing Facts Study Guides, presented page by page.", image: "/assets/media/images/amazing-facts-study-1/pages/page-01.jpg", count: "27 study guides", anchor: "amazing-facts-guides" },
+  { key: "general", title: "Bible Studies", subtitle: "Faith & the Christian life", description: "Discover Jesus, salvation, the great controversy, and the promises of Scripture at your own pace.", image: "/assets/media/images/bible-studies/gods-amazing-book.png", count: "11 guided studies", anchor: "general-studies" },
+  { key: "daniel-revelation", title: "Daniel & Revelation Series", subtitle: "Prophecy & everlasting hope", description: "Follow the kingdoms of Daniel through the final events of Revelation and the return of Jesus.", image: "/assets/media/images/daniel-2-statue.png", count: "2 in-depth Bible studies", anchor: "daniel-revelation" },
+] as const;
+
+type Collection = typeof collections[number]["key"];
+
+export function BibleStudiesPageContent({ collection }: { collection?: Collection }) {
+  const selected = collections.find((item) => item.key === collection);
+
   return (
     <main className="overflow-hidden bg-[#06101a] text-foreground">
-      <section className="relative min-h-[700px] overflow-hidden pt-24" aria-labelledby="studies-title">
-        <Image src="/assets/media/images/daniel-2-statue.png" alt="" fill priority sizes="100vw" aria-hidden className="scale-110 object-cover object-center opacity-40 blur-[20px]" />
-        <div
-          className="absolute inset-y-0 left-1/2 w-full -translate-x-1/2 lg:w-[82%]"
-          style={{ WebkitMaskImage: "linear-gradient(to right, transparent, black 6%, black 94%, transparent)", maskImage: "linear-gradient(to right, transparent, black 6%, black 94%, transparent)" }}
-        >
-          <Image src="/assets/media/images/daniel-2-statue.png" alt="Nebuchadnezzar's dream statue from Daniel 2" fill priority sizes="(max-width: 1023px) 100vw, 82vw" className="object-cover object-center shadow-[0_0_70px_rgba(6,16,26,0.7)]" />
+      <section className="relative overflow-hidden px-6 pb-12 pt-36 sm:px-10 sm:pt-40 lg:px-12" aria-labelledby="studies-title">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(196,163,90,0.16),transparent_65%)]" />
+        <div className="relative mx-auto max-w-[1320px] pb-8">
+          {selected && <Link href="/bible-studies" className="mb-8 inline-flex py-2 text-sm text-accent underline-offset-4 hover:underline">← All three study collections</Link>}
+          <p className="font-sans text-xs tracking-[0.3em] uppercase text-accent">{selected?.subtitle ?? "Open your Bible. Choose your journey."}</p>
+          <h1 id="studies-title" className="mt-5 max-w-5xl font-serif text-[clamp(3.2rem,6vw,6rem)] leading-[1.02]">{selected?.title ?? "Bible Studies"}</h1>
+          <p className="mt-6 max-w-3xl text-base leading-relaxed text-[#d1d5d8] sm:text-lg">{selected?.description ?? "Three collections. One invitation to know God’s Word. Choose where you would like to begin."}</p>
         </div>
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(6,16,26,0.96)_0%,rgba(6,16,26,0.72)_48%,rgba(6,16,26,0.22)_78%)]" />
-        <div className="absolute inset-0 bg-[linear-gradient(to_top,#06101a_0%,transparent_60%)]" />
-        <motion.div variants={staggerContainer} initial="hidden" animate="visible" className="relative z-10 mx-auto flex min-h-[600px] max-w-[1440px] flex-col justify-center px-6 py-20 sm:px-10 lg:px-12">
-          <motion.p variants={fadeUp} className="font-sans text-xs tracking-[0.35em] uppercase text-accent">Know God&apos;s Word Better</motion.p>
-          <motion.h1 id="studies-title" variants={fadeUp} className="mt-5 max-w-4xl font-serif text-[clamp(4rem,8vw,7.5rem)] font-medium leading-[0.88] tracking-[-0.025em]">Bible Studies</motion.h1>
-          <motion.p variants={fadeUp} className="mt-7 max-w-2xl font-sans text-base leading-[1.85] text-foreground/80 sm:text-lg">Read the complete collection of 27 illustrated Amazing Facts Study Guides, then continue through RevelationSigns studies on prophecy and the great controversy.</motion.p>
-          <motion.div variants={fadeUp} className="mt-9 flex flex-wrap gap-3"><Link href="#amazing-facts-guides" className="inline-flex min-h-14 items-center justify-center bg-accent px-8 font-sans text-xs font-semibold tracking-[0.2em] text-[#06101a] uppercase">Explore All 27 Guides</Link><Link href="/contact" className="inline-flex min-h-14 items-center justify-center border border-accent/50 px-8 font-sans text-xs tracking-[0.2em] uppercase hover:bg-accent hover:text-[#06101a]">Request Personal Help</Link></motion.div>
-        </motion.div>
       </section>
 
+      {!selected && <section className="bg-[#faf9f6] px-6 py-12 text-[#202a30] sm:px-10 lg:px-12 lg:py-16" aria-label="Choose a Bible study collection">
+        <nav className="mx-auto grid max-w-[1320px] gap-6 md:grid-cols-3" aria-label="Bible study collections">
+          {collections.map((item, index) => <Link id={item.anchor} key={item.key} href={`/bible-studies/${item.key}`} className="group flex scroll-mt-28 flex-col overflow-hidden border border-[#ddd8cc] bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#8a6728]">
+            <div className="relative h-48 overflow-hidden bg-[#eee7da] lg:h-56"><Image src={item.image} alt="" fill sizes="(max-width: 767px) 100vw, 33vw" className="object-cover transition-transform duration-500 group-hover:scale-105" /><div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" /><span className="absolute bottom-5 left-6 text-sm tracking-[0.2em] text-white">0{index + 1}</span></div>
+            <div className="flex flex-1 flex-col p-7"><p className="text-[0.65rem] font-semibold tracking-[0.18em] text-[#806027] uppercase">{item.subtitle}</p><h2 className="mt-4 font-serif text-4xl leading-[1.05]">{item.title}</h2><p className="mt-5 flex-1 text-base leading-relaxed text-[#56616a]">{item.description}</p><p className="mt-7 text-sm text-[#697079]">{item.count}</p><span className="mt-5 border-t border-[#e5e1d8] pt-5 text-sm font-semibold text-[#806027]">Explore collection →</span></div>
+          </Link>)}
+        </nav>
+      </section>}
+
+      {collection === "amazing-facts" && <>
       <section id="amazing-facts-guides" className="scroll-mt-24 bg-[#eee7da] px-6 py-20 text-[#1a1814] sm:px-10 lg:px-12 lg:py-28" aria-labelledby="amazing-facts-heading">
         <div className="mx-auto max-w-[1320px]">
           <div className="max-w-3xl">
@@ -70,39 +80,32 @@ export function BibleStudiesPageContent() {
         </div>
       </section>
 
-      <section id="daniel-2" className="bg-[#f4efe6] px-6 py-20 text-[#1a1814] sm:px-10 lg:px-12 lg:py-28" aria-labelledby="daniel-heading">
-        <div className="mx-auto grid max-w-[1250px] items-center gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20">
-          <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.2 }} className="relative min-h-[520px] overflow-hidden border border-black/10 shadow-[0_28px_70px_rgba(26,24,20,0.18)]"><Image src="/assets/media/images/daniel-2-statue.png" alt="Nebuchadnezzar's dream statue with its gold, silver, bronze, iron, and clay sections" fill sizes="(max-width: 1024px) 100vw, 45vw" className="object-cover object-center" /><div className="absolute inset-0 bg-gradient-to-t from-black/65 via-transparent to-transparent" /><div className="absolute inset-x-0 bottom-0 p-8 text-white"><p className="font-sans text-xs tracking-[0.3em] uppercase text-accent">Featured Study</p><p className="mt-3 font-serif text-4xl">Daniel 2</p></div></motion.div>
-          <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.25 }}>
-            <motion.p variants={fadeUp} className="font-sans text-xs tracking-[0.35em] uppercase text-[#8a6728]">The Dream of the Empires</motion.p>
-            <motion.h2 id="daniel-heading" variants={fadeUp} className="mt-5 font-serif text-[clamp(3rem,5.5vw,5.2rem)] font-medium leading-[0.94]">A prophecy that spans history</motion.h2>
-            <motion.p variants={fadeUp} className="mt-7 font-sans text-base leading-[1.85] text-[#5c564d] sm:text-lg">Daniel 2 records King Nebuchadnezzar&apos;s dream of a great image. Daniel identifies a succession of kingdoms—from Babylon onward—and a final kingdom established by God that will never be destroyed.</motion.p>
-            <motion.p variants={fadeUp} className="mt-5 font-sans text-base leading-[1.85] text-[#5c564d] sm:text-lg">The chapter introduces the method and central hope of biblical prophecy: God knows history in advance, rules above earthly powers, and will bring human kingdoms to an end.</motion.p>
-            <motion.div variants={fadeUp} className="mt-9 flex flex-wrap gap-3"><Link href="/bible-studies/prophecy/daniel-2" className="inline-flex min-h-14 items-center justify-center bg-[#1a1814] px-8 font-sans text-xs font-semibold tracking-[0.2em] text-[#f4efe6] uppercase">Begin the Daniel 2 Study →</Link></motion.div>
-          </motion.div>
-        </div>
-      </section>
-
-      <section id="daniel-revelation" className="scroll-mt-24 border-y border-accent/25 bg-[#0b1b28] px-6 py-20 sm:px-10 lg:px-12" aria-labelledby="prophecy-journey-heading">
+      </>}
+      {collection === "daniel-revelation" && <>
+      <section id="daniel-revelation" className="scroll-mt-24 border-y border-accent/25 bg-[#faf9f6] text-[#202a30] px-6 py-20 sm:px-10 lg:px-12" aria-labelledby="prophecy-journey-heading">
         <div className="mx-auto max-w-[1250px]">
-          <p className="font-sans text-sm tracking-[0.2em] uppercase text-accent">Daniel &amp; Revelation · The prophecy journey</p>
+          <p className="font-sans text-sm tracking-[0.2em] uppercase text-[#806027]">Daniel &amp; Revelation · The prophecy journey</p>
           <h2 id="prophecy-journey-heading" className="mt-5 font-serif text-5xl sm:text-6xl">From earthly kingdoms to everlasting hope.</h2>
-          <p className="mt-6 max-w-3xl text-base leading-relaxed text-[#c5cdd1]">Begin with Daniel’s vision of the kingdoms, then explore the final events with Scripture, careful comparisons, and clearly marked Adventist interpretations.</p>
+          <p className="mt-6 max-w-3xl text-base leading-relaxed text-[#56616a]">Begin with Daniel’s vision of the kingdoms, then explore the final events with Scripture, careful comparisons, and clearly distinguished biblical statements and historical interpretations.</p>
           <nav aria-label="Daniel and Revelation studies" className="mt-10 grid gap-6 md:grid-cols-2">
-            <Link href="/bible-studies/prophecy/daniel-2" className="border border-accent/30 p-7 transition-colors hover:bg-white/5"><span className="text-sm text-accent">Daniel 2 · The foundation</span><h3 className="mt-3 font-serif text-3xl">God Unfolds the Future →</h3><p className="mt-4 text-base text-[#bdc8ce]">The rise and fall of kingdoms—and the kingdom that never ends.</p></Link>
-            <Link href="/bible-studies/prophecy/when-michael-stands-up" className="border border-accent/60 bg-accent/5 p-7 transition-colors hover:bg-accent/10"><span className="text-sm text-accent">Daniel 11–12 &amp; Revelation 14–22</span><h3 className="mt-3 font-serif text-3xl">When Michael Stands Up →</h3><p className="mt-4 text-base text-[#bdc8ce]">A guided study with an interactive timeline of the final events.</p></Link>
+            <Link href="/bible-studies/prophecy/daniel-2" className="border border-accent/30 p-7 transition-colors hover:bg-[#f0ede5]"><span className="text-sm text-[#806027]">Daniel 2 · The foundation</span><h3 className="mt-3 font-serif text-3xl">God Unfolds the Future →</h3><p className="mt-4 text-base text-[#56616a]">The rise and fall of kingdoms—and the kingdom that never ends.</p></Link>
+            <Link href="/bible-studies/prophecy/when-michael-stands-up" className="border border-accent/60 bg-accent/5 p-7 transition-colors hover:bg-accent/10"><span className="text-sm text-[#806027]">Daniel 11–12 &amp; Revelation 14–22</span><h3 className="mt-3 font-serif text-3xl">When Michael Stands Up →</h3><p className="mt-4 text-base text-[#56616a]">A guided study with an interactive timeline of the final events.</p></Link>
           </nav>
         </div>
       </section>
 
-      <section className="px-6 py-20 sm:px-10 lg:px-12 lg:py-28" aria-labelledby="study-library-heading">
+      </>}
+      {collection === "general" && <>
+      <section className="bg-[#faf9f6] px-6 py-20 text-[#202a30] sm:px-10 lg:px-12 lg:py-28" aria-labelledby="study-library-heading">
         <div className="mx-auto max-w-[1200px]">
-          <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.3 }} className="max-w-3xl"><p className="font-sans text-xs tracking-[0.35em] uppercase text-accent">Continue Studying</p><h2 id="study-library-heading" className="mt-5 font-serif text-[clamp(3rem,5vw,5rem)] font-light leading-none">Explore the great themes of Scripture</h2><p className="mt-6 font-sans text-base leading-[1.8] text-muted sm:text-lg">Read at your own pace, reveal the Bible passages and explanations, save your progress, and return whenever you are ready.</p></motion.div>
+          <motion.div variants={fadeIn} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.3 }} className="max-w-3xl"><p className="font-sans text-xs tracking-[0.35em] uppercase text-[#806027]">Continue Studying</p><h2 id="study-library-heading" className="mt-5 font-serif text-[clamp(3rem,5vw,5rem)] font-light leading-none">Explore the great themes of Scripture</h2><p className="mt-6 font-sans text-base leading-[1.8] text-[#56616a] sm:text-lg">Read at your own pace, reveal the Bible passages and explanations, save your progress, and return whenever you are ready.</p></motion.div>
           <motion.div variants={staggerContainer} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.1 }} className="mt-14 grid gap-px overflow-hidden border border-accent/20 bg-accent/20 md:grid-cols-2">
-            {studies.map((study) => <motion.article key={study.number} variants={fadeUp} className="group flex min-h-[330px] flex-col bg-[#06101a] p-8 transition-colors hover:bg-[#0d2531]"><div className="flex items-center justify-between"><p className="font-sans text-[0.62rem] tracking-[0.25em] text-accent uppercase">{study.label}</p><span className="font-sans text-[0.62rem] tracking-[0.2em] text-foreground/45">{study.number}</span></div><h3 className="mt-6 font-serif text-4xl font-light">{study.title}</h3><p className="mt-4 flex-1 font-sans text-base leading-[1.75] text-muted">{study.description}</p><div className="mt-7 flex flex-wrap items-center justify-between gap-4 border-t border-white/10 pt-5"><span className="font-sans text-[0.6rem] tracking-[0.18em] text-foreground/45 uppercase">{study.meta}</span><Link href={study.href} className="font-sans text-xs tracking-[0.22em] text-accent uppercase">Begin Study →</Link></div></motion.article>)}
+            {studies.map((study) => <motion.article key={study.number} variants={fadeUp} className="group flex min-h-[330px] flex-col bg-white p-8 transition-colors hover:bg-[#f6f3ec]"><div className="flex items-center justify-between"><p className="font-sans text-[0.62rem] tracking-[0.25em] text-[#806027] uppercase">{study.label}</p><span className="font-sans text-[0.62rem] tracking-[0.2em] text-[#68737b]">{study.number}</span></div><h3 className="mt-6 font-serif text-4xl font-light">{study.title}</h3><p className="mt-4 flex-1 font-sans text-base leading-[1.75] text-[#56616a]">{study.description}</p><div className="mt-7 flex flex-wrap items-center justify-between gap-4 border-t border-black/10 pt-5"><span className="font-sans text-[0.6rem] tracking-[0.18em] text-[#68737b] uppercase">{study.meta}</span><Link href={study.href} className="font-sans text-xs tracking-[0.22em] text-[#806027] uppercase">Begin Study →</Link></div></motion.article>)}
           </motion.div>
         </div>
       </section>
+
+      </>}
 
       <section className="bg-[#eee7da] px-6 py-20 text-center text-[#1a1814] sm:px-10 lg:py-24" aria-labelledby="study-help-heading"><div className="mx-auto max-w-3xl"><p className="font-sans text-xs tracking-[0.35em] uppercase text-[#8a6728]">You Don&apos;t Have to Study Alone</p><h2 id="study-help-heading" className="mt-5 font-serif text-[clamp(3rem,5vw,4.8rem)] font-medium leading-none">Questions are welcome</h2><p className="mx-auto mt-6 max-w-2xl font-sans text-base leading-[1.8] text-[#5c564d] sm:text-lg">Request Bible studies, ask a biblical question, or tell us which subject you would like to explore next.</p><Link href="/contact" className="mt-9 inline-flex min-h-14 items-center justify-center bg-[#1a1814] px-9 font-sans text-xs font-semibold tracking-[0.2em] text-[#f4efe6] uppercase">Contact RevelationSigns</Link></div></section>
 

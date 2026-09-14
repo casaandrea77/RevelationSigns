@@ -3,10 +3,9 @@ import { BibleStudiesPageContent } from "@/sections/bible-studies/BibleStudiesPa
 
 export const metadata: Metadata = {
   title: "Bible Studies | RevelationSigns",
-  description:
-    "Choose Amazing Facts Bible Studies, general Bible Studies, or the Daniel and Revelation series.",
+  description: "Explore Jesus, salvation, Christian living, and the great themes of Scripture.",
 };
 
-export default function BibleStudiesPage() {
-  return <BibleStudiesPageContent />;
+export default function Page() {
+  return <BibleStudiesPageContent collection="general" />;
 }

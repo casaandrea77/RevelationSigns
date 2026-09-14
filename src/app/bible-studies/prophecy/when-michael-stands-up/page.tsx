@@ -23,7 +23,7 @@ export default function MichaelStudy() {
       <Image src="/assets/media/images/bible-studies/worlds-only-hope.png" alt="An artistic depiction of Christ appearing in glory above a waiting people" fill priority sizes="100vw" className="ms-hero-art" />
       <div className="ms-hero-shade" />
       <div className="ms-shell ms-hero-content">
-        <nav className="ms-breadcrumb" aria-label="Breadcrumb"><Link href="/bible-studies">Bible Studies</Link><span>/</span><Link href="/bible-studies#daniel-revelation">Daniel & Revelation</Link></nav>
+        <nav className="ms-breadcrumb" aria-label="Breadcrumb"><Link href="/bible-studies">Bible Studies</Link><span>/</span><Link href="/bible-studies/daniel-revelation">Daniel & Revelation</Link></nav>
         <p className="ms-eyebrow">The final events · A guided Bible study</p>
         <h1 id="ms-title">When Michael<br /><em>Stands Up</em></h1>
         <p className="ms-subtitle">The Final Events in Daniel & Revelation</p>
@@ -67,7 +67,7 @@ export default function MichaelStudy() {
         </div>
       </div>
     </div>
-    <section className="ms-closing"><div className="ms-shell"><p className="ms-eyebrow">The hope at the heart of prophecy</p><h2>Earthly powers pass.<br /><em>His kingdom remains.</em></h2><p>“His kingdom is an everlasting kingdom, and all dominions shall serve and obey him.”</p><cite><BibleLink passage="Daniel 7:27" /> · KJV excerpt</cite><nav className="ms-next" aria-label="Continue studying"><Link href="/bible-studies/prophecy/daniel-2"><small>Return to Daniel</small>God Unfolds the Future <span>←</span></Link><Link href="/bible-studies/worlds-only-hope"><small>Explore the promise</small>The World’s Only Hope <span>→</span></Link></nav><Link className="ms-link" href="/bible-studies#daniel-revelation">All Daniel & Revelation studies</Link></div></section>
+    <section className="ms-closing"><div className="ms-shell"><p className="ms-eyebrow">The hope at the heart of prophecy</p><h2>Earthly powers pass.<br /><em>His kingdom remains.</em></h2><p>“His kingdom is an everlasting kingdom, and all dominions shall serve and obey him.”</p><cite><BibleLink passage="Daniel 7:27" /> · KJV excerpt</cite><nav className="ms-next" aria-label="Continue studying"><Link href="/bible-studies/prophecy/daniel-2"><small>Return to Daniel</small>God Unfolds the Future <span>←</span></Link><Link href="/bible-studies/worlds-only-hope"><small>Explore the promise</small>The World’s Only Hope <span>→</span></Link></nav><Link className="ms-link" href="/bible-studies/daniel-revelation">All Daniel & Revelation studies</Link></div></section>
     <Footer />
   </main>;
 }

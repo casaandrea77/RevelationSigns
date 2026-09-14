@@ -53,7 +53,7 @@ export function AmazingFactsFacsimile({ guide }: { guide: AmazingFactsStudyGuide
   return <main className="af-facsimile-page pt-[82px]">
     <header className="af-facsimile-header">
       <div className="shell">
-        <Link className="back-link" href="/bible-studies#amazing-facts-guides">← All 27 study guides</Link>
+        <Link className="back-link" href="/bible-studies/amazing-facts">← All 27 study guides</Link>
         <p>Amazing Facts · Study Guide {guide.number}</p>
         <h1>{guide.title}</h1>
         <div className="af-facsimile-actions">
@@ -91,10 +91,10 @@ export function AmazingFactsFacsimile({ guide }: { guide: AmazingFactsStudyGuide
     <nav className="af-facsimile-nav shell" aria-label="Amazing Facts study guide navigation">
       {previousGuide
         ? <Link href={amazingFactsGuideHref(previousGuide)}>← Study {previousGuide.number}: {previousGuide.title}</Link>
-        : <Link href="/bible-studies#amazing-facts-guides">← All Bible Studies</Link>}
+        : <Link href="/bible-studies/amazing-facts">← All Bible Studies</Link>}
       {nextGuide
         ? <Link href={amazingFactsGuideHref(nextGuide)}>Study {nextGuide.number}: {nextGuide.title} →</Link>
-        : <Link href="/bible-studies#amazing-facts-guides">All 27 Study Guides →</Link>}
+        : <Link href="/bible-studies/amazing-facts">All 27 Study Guides →</Link>}
     </nav>
     <Footer />
   </main>;

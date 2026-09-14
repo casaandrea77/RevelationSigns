@@ -9,6 +9,9 @@ const baseUrl = "https://revelationsigns.one";
 const mainRoutes = [
   "",
   "/bible-studies",
+  "/bible-studies/amazing-facts",
+  "/bible-studies/general",
+  "/bible-studies/daniel-revelation",
   "/documentaries",
   "/starfall",
   "/great-controversy",
