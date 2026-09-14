@@ -105,12 +105,17 @@ export function DocumentariesPageContent() {
             <p className="mt-7 max-w-xl font-sans text-base leading-[1.8] text-muted sm:text-lg">Explore this extensive presentation series on Bible prophecy, history, spiritual deception, and the great controversy.</p>
             <Link href="/lecture-series/total-onslaught" className="mt-9 inline-flex min-h-13 w-fit items-center justify-center border border-accent/60 px-7 font-sans text-xs font-semibold tracking-[0.18em] text-accent uppercase transition-colors hover:bg-accent hover:text-[#06101a]">Explore the complete series →</Link>
           </div>
-          <Link href="/lecture-series/total-onslaught" className="group relative flex min-h-[360px] items-center justify-center overflow-hidden bg-[radial-gradient(circle_at_center,rgba(206,159,78,0.2),transparent_42%),linear-gradient(145deg,#173d48,#071722_72%)] p-8 sm:min-h-[480px]" aria-label="Explore Walter Veith's Total Onslaught lecture series">
-            <div className="absolute inset-7 border border-accent/20 transition-transform duration-500 group-hover:scale-[0.98]" />
-            <div className="relative text-center">
-              <span className="font-sans text-[0.65rem] tracking-[0.32em] text-accent uppercase">Truth · History · Prophecy</span>
-              <p className="mt-7 font-serif text-[clamp(4rem,8vw,7.5rem)] font-light leading-[0.75] text-foreground/95">T<span className="text-accent">O</span></p>
-              <span className="mt-8 block font-sans text-xs tracking-[0.24em] text-foreground/55 uppercase">Complete YouTube Playlist</span>
+          <Link href="/lecture-series/total-onslaught" className="group relative flex flex-col overflow-hidden bg-[#10232c] focus-visible:outline-2 focus-visible:-outline-offset-4 focus-visible:outline-accent" aria-label="Explore Walter Veith's Total Onslaught lecture series">
+            <div className="relative min-h-[240px] flex-1 overflow-hidden sm:min-h-[300px]">
+              <Image src="/assets/media/images/bible-studies/gods-amazing-book.png" alt="An open Bible illuminated by warm golden light" fill sizes="(max-width: 1023px) 100vw, 55vw" className="object-cover object-[65%_center] transition-transform duration-700 motion-safe:group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#10232c] via-transparent to-transparent" />
+            </div>
+            <div className="relative px-8 pb-10 pt-3 sm:px-12 sm:pb-12">
+              <p className="font-sans text-[0.65rem] tracking-[0.25em] text-accent uppercase">Truth · History · Prophecy</p>
+              <h3 className="mt-4 max-w-lg font-serif text-[clamp(2.4rem,4vw,3.6rem)] leading-[1.02]">See history through<br />the light of <em className="text-[#e1bb73]">Scripture.</em></h3>
+              <p className="mt-5 max-w-md font-sans text-base leading-relaxed text-[#d0d6d8]">Open your Bible and explore the questions that shape our faith—with Walter Veith.</p>
+              <span className="mt-7 inline-flex min-h-12 items-center gap-5 bg-accent px-6 py-3 font-sans text-xs font-semibold tracking-[0.15em] text-[#06101a] uppercase transition-colors group-hover:bg-[#e1bb73]">Explore the series <span aria-hidden="true" className="text-lg">→</span></span>
+              <p className="mt-4 font-sans text-xs text-[#b9c4c9]">Choose a presentation · Watch at your own pace</p>
             </div>
           </Link>
         </div>
