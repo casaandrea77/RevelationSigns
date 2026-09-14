@@ -290,6 +290,32 @@ export const historyStudies = {
         "question": ""
       },
       {
+        "id": "jesuit-counter-reformation",
+        "title": "Jesuit futurism and the Counter-Reformation",
+        "ref": "Francisco Ribera · late sixteenth century",
+        "quote": "",
+        "body": [
+          "Many Protestant interpreters identified the papacy with the Antichrist. Catholic writers disputed that identification. The Spanish Jesuit Francisco Ribera (1537–1591) placed much of Revelation’s final conflict in a future crisis centered on an individual Antichrist, rather than identifying the papacy as the continuing prophetic antagonist.",
+          "Ribera’s Apocalypse commentary belongs to the late sixteenth century; the bibliographic record linked below identifies a 1591 edition. In his historical survey, Le Roy Edwin Froom describes Ribera’s interpretation as a Counter-Reformation answer to Protestant prophetic claims. That assessment should be recognized as a historicist historian’s account, not a quotation from Scripture.",
+          "This counterinterpretation matters: placing the decisive Antichrist crisis in the future challenges the historicist application to papal history. But Ribera’s future Antichrist and three-and-a-half-year crisis are not the complete modern scheme of a pretribulation church rapture followed by seven years. Earlier future-Antichrist expectations also predate the Jesuits, as the Irenaeus section shows."
+        ],
+        "note": "Historical distinction: a documented Jesuit counterinterpretation is not proof that Jesuits invented every form of futurism, or that all later futurist teachers were knowingly advancing a Catholic strategy.",
+        "question": ""
+      },
+      {
+        "id": "lacunza-irving",
+        "title": "Lacunza and Irving: a documented passage into English",
+        "ref": "Manuel Lacunza · Edward Irving’s translation, 1827",
+        "quote": "",
+        "body": [
+          "Manuel Lacunza (1731–1801) was a Chilean Jesuit writer whose work on the coming of the Messiah circulated under the pen name Juan Josafat Ben-Ezra. Edward Irving published an English translation, The Coming of Messiah in Glory and Majesty, in 1827. The National Library of Chile documents Lacunza’s background, and the linked library record confirms the translation and date.",
+          "This is a concrete instance of a Jesuit author’s prophetic work reaching English-speaking readers through a Protestant translator. It belongs in the history of nineteenth-century interest in Christ’s return.",
+          "It does not, by itself, establish a continuous chain in which Ribera’s system passed unchanged through Lacunza and Irving to Darby. Nor does translation prove that Lacunza taught the same seven-year pretribulation schedule later popularized by dispensationalists. The content and timing of each writer’s teaching must be compared."
+        ],
+        "note": "Evidence and inference: the author, translation, and publication date are documented. A coordinated plan to infiltrate Protestant churches is a further claim that these sources do not establish.",
+        "question": ""
+      },
+      {
         "id": "darby",
         "title": "Who shaped the modern pretribulation system?",
         "ref": "John Nelson Darby · nineteenth century",
@@ -312,6 +338,20 @@ export const historyStudies = {
         ],
         "note": "Historical source: Dallas Theological Seminary’s discussion of dispensationalism acknowledges Darby’s formative role and the influence of the 1909 Scofield Bible. Its doctrinal statement also lets readers examine a current pretribulation position firsthand.",
         "question": ""
+      },
+      {
+        "id": "rapture-on-screen",
+        "title": "From church films to Hollywood audiences",
+        "ref": "A Thief in the Night · 1972 | Left Behind · 2014",
+        "quote": "",
+        "body": [
+          "Rapture teaching spread through pictures as well as sermons. A Thief in the Night (1972), produced by evangelical filmmakers, dramatized sudden disappearances and life under an oppressive post-rapture world government. Its circulation through churches and youth audiences helped make this interpretation vivid and memorable.",
+          "The later Left Behind screen adaptations extended that imagery. The 2014 theatrical film starring Nicolas Cage was promoted by Stoney Lake Entertainment as an action-adventure story based on the novels of Tim LaHaye and Jerry B. Jenkins. Its release announcement explicitly describes the story’s rapture premise.",
+          "The distinction between church-based filmmaking and commercial cinema matters. “Hollywood spread it” is too broad to describe every production. Named filmmakers, novels, release dates, and distribution channels show how a particular prophetic interpretation reached wider audiences; they do not demonstrate Jesuit direction of those films.",
+          "Empty seats, vanished family members, and ensuing chaos turn a disputed timeline into a story that viewers can picture. Our study’s concern is that a memorable scene may become a reader’s assumed meaning of a biblical passage. That is a reason to reopen Scripture, not evidence that every filmmaker intended to deceive."
+        ],
+        "note": "Historical sources: Timothy Beal’s essay for the National Endowment for the Humanities discusses the influence of A Thief in the Night. The 2014 Left Behind release announcement is the producer’s own account of its cast, premise, and intended theatrical release.",
+        "question": "Which parts of my picture of the rapture come from a biblical passage, and which come from a film?"
       },
       {
         "id": "wrath",
@@ -338,6 +378,19 @@ export const historyStudies = {
         "question": "Am I reading the whole comparison, or importing a movie scene into a short phrase?"
       },
       {
+        "id": "counterfeit-or-scripture",
+        "title": "A counterfeit prophetic picture? Test the claim",
+        "ref": "1 Thessalonians 5:21; Acts 17:11",
+        "quote": "Prove all things; hold fast that which is good.",
+        "body": [
+          "From this study’s historicist perspective, moving the decisive Antichrist crisis wholly out of church history and placing the church’s removal before it can obscure warnings that historicists apply to the church’s own experience. In that theological sense, the resulting picture may be criticized as a counterfeit of the biblical prophetic sequence.",
+          "“Counterfeit” here names this study’s judgment about an interpretation. It is not documentary proof of a conspiracy or a verdict on the honesty of every Catholic, Jesuit, evangelical, or filmmaker. The historicist identification of the papacy as Antichrist is itself a theological interpretation, contested by other Christians.",
+          "Test the teaching in three steps: read what each passage actually states; identify the assumptions used to connect the passages; then check the historical claim against the writer’s own work. Neither a Jesuit connection nor a Hollywood production can, on its own, prove a doctrine false. Its biblical case still needs to be examined."
+        ],
+        "note": "Study conclusion: the critique concerns a prophetic system. Historical influence, intentional deception, and the biblical correctness of a teaching are three different questions.",
+        "question": ""
+      },
+      {
         "id": "hope",
         "title": "What remains certain when timelines differ?",
         "ref": "John 14:1–3; 1 Thessalonians 4:18; Acts 1:11",
@@ -362,6 +415,16 @@ export const historyStudies = {
         "text": "Against Heresies V.30.4 describes three and a half years before the Lord’s coming; it does not give the complete modern system."
       },
       {
+        "date": "Late sixteenth century",
+        "title": "Ribera’s Jesuit counterinterpretation",
+        "text": "A future individual Antichrist challenges the Protestant application to the papacy. A 1591 commentary edition is documented."
+      },
+      {
+        "date": "1827",
+        "title": "Lacunza translated by Irving",
+        "text": "A Jesuit author’s work on the Messiah’s coming reaches English readers. This does not establish an unchanged transmission of the later rapture system."
+      },
+      {
         "date": "Around the 1830s onward",
         "title": "John Nelson Darby",
         "text": "A formative developer and teacher of the dispensational pretribulation framework."
@@ -370,6 +433,16 @@ export const historyStudies = {
         "date": "1909",
         "title": "The Scofield Reference Bible",
         "text": "Its study notes help bring dispensational interpretation to a wider readership."
+      },
+      {
+        "date": "1972",
+        "title": "A Thief in the Night",
+        "text": "An evangelical film brings a post-rapture crisis to church audiences."
+      },
+      {
+        "date": "2014",
+        "title": "Left Behind in cinemas",
+        "text": "The Nicolas Cage film brings the novels’ rapture premise to a commercial theatrical release."
       }
     ],
     "sources": [
@@ -397,6 +470,36 @@ export const historyStudies = {
         "title": "Dallas Theological Seminary · Doctrinal Statement",
         "url": "https://www.dts.edu/why-dts/doctrinal-statement",
         "detail": "Read its account of the church’s translation, Israel’s seventieth week, and Christ’s return."
+      },
+      {
+        "title": "Ribera · Apocalypse commentary, 1591 edition",
+        "url": "https://liburutegibiltegi.bizkaia.eus/handle/20.500.11938/69240",
+        "detail": "Library record of the Jesuit author and his commentary; a bibliographic source, not evidence of every claimed later influence."
+      },
+      {
+        "title": "Le Roy Edwin Froom · The Prophetic Faith of Our Fathers, volume II",
+        "url": "https://text.egwwritings.org/read/1579.3102",
+        "detail": "A historicist account of Ribera’s futurist counterinterpretation. This is Froom’s writing, hosted on EGW Writings; it is not authored by Ellen White."
+      },
+      {
+        "title": "National Library of Chile · Manuel Lacunza",
+        "url": "https://www.memoriachilena.gob.cl/602/w3-article-3589.html",
+        "detail": "Spanish-language biographical account of Lacunza’s Jesuit background and work."
+      },
+      {
+        "title": "Loma Linda University Library · Irving’s 1827 translation",
+        "url": "https://library.llu.edu/coming-of-messiah-glory-and-majesty-tr-edward-irving",
+        "detail": "Bibliographic record for The Coming of Messiah in Glory and Majesty."
+      },
+      {
+        "title": "Timothy Beal · The Rise of Rapture Horror Culture",
+        "url": "https://www.neh.gov/article/rise-rapture-horror-culture",
+        "detail": "National Endowment for the Humanities, 2022: the evangelical film tradition and A Thief in the Night."
+      },
+      {
+        "title": "Stoney Lake Entertainment · Left Behind release announcement, 2014",
+        "url": "https://www.prnewswire.com/news-releases/left-behind-upcoming-apocalyptic-action-adventure-feature-film-starring-nicolas-cage-to-open-in-theaters-nationwide-october-3-2014-252983511.html",
+        "detail": "Producer-issued primary source for the Nicolas Cage film, novel adaptation, rapture premise, and announced theatrical release."
       }
     ],
     "conclusion": "The catching up of believers is a biblical promise. The familiar pretribulation, seven-year schedule is an interpretation developed through a particular reading of several passages. Keep the promise of Christ central while testing the timeline carefully.",
