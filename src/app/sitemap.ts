@@ -20,6 +20,8 @@ const mainRoutes = [
 ];
 
 const studyRoutes = [
+  "/bible-studies/legalism-and-the-ten-commandments",
+  "/bible-studies/rapture-and-seven-years-of-tribulation",
   "/bible-studies/prophecy/when-michael-stands-up",
   "/bible-studies/prophecy/daniel-2",
   "/bible-studies/origin-of-sin",

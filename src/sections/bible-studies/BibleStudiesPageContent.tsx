@@ -8,6 +8,8 @@ import { Footer } from "@/components/layout/Footer";
 import { amazingFactsGuideHref, amazingFactsStudyGuides } from "@/data/amazingFactsStudyGuides";
 
 const studies = [
+  { number: "15", title: "Legalism & the Ten Commandments", description: "Where did legalism begin? Follow the commandments, grace, and obedience from Scripture through Christian history.", href: "/bible-studies/legalism-and-the-ten-commandments", meta: "11 sections · Scripture & history", label: "Grace & Obedience" },
+  { number: "16", title: "The Rapture & Seven Years of Tribulation", description: "Compare the biblical promise of being caught up with the history and interpretation of the seven-year timeline.", href: "/bible-studies/rapture-and-seven-years-of-tribulation", meta: "12 sections · Scripture & history", label: "Prophecy & History" },
   { number: "03", title: "The Origin of Sin", description: "Where did evil begin—and why did God allow freedom to be misused?", href: "/bible-studies/origin-of-sin", meta: "14 questions · 25 min", label: "Great Controversy" },
   { number: "04", title: "Who Is Christ?", description: "Discover the identity, character, and saving mission of Jesus.", href: "/bible-studies/who-is-christ", meta: "17 questions · 25 min", label: "Jesus Christ" },
   { number: "05", title: "The Problem of Sin", description: "What has sin broken, and why can humanity not repair it alone?", href: "/bible-studies/problem-of-sin", meta: "16 questions · 25 min", label: "Foundations" },
@@ -23,7 +25,7 @@ const studies = [
 
 const collections = [
   { key: "amazing-facts", title: "Amazing Facts Bible Studies", subtitle: "The illustrated collection", description: "Explore all 27 original Amazing Facts Study Guides, presented page by page.", image: "/assets/media/images/amazing-facts-study-1/pages/page-01.jpg", count: "27 study guides", anchor: "amazing-facts-guides" },
-  { key: "general", title: "Bible Studies", subtitle: "Faith & the Christian life", description: "Discover Jesus, salvation, the great controversy, and the promises of Scripture at your own pace.", image: "/assets/media/images/bible-studies/gods-amazing-book.png", count: "11 guided studies", anchor: "general-studies" },
+  { key: "general", title: "Bible Studies", subtitle: "Faith & the Christian life", description: "Discover Jesus, salvation, the great controversy, and the promises of Scripture at your own pace.", image: "/assets/media/images/bible-studies/gods-amazing-book.png", count: "13 guided studies", anchor: "general-studies" },
   { key: "daniel-revelation", title: "Daniel & Revelation Series", subtitle: "Prophecy & everlasting hope", description: "Follow the kingdoms of Daniel through the final events of Revelation and the return of Jesus.", image: "/assets/media/images/daniel-2-statue.png", count: "2 in-depth Bible studies", anchor: "daniel-revelation" },
 ] as const;
 
