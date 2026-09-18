@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { motion, useReducedMotion } from "framer-motion";
 import { Brand } from "@/components/layout/Brand";
 
@@ -41,6 +42,8 @@ function HamburgerIcon({ isOpen }: { isOpen: boolean }) {
 }
 
 export function Header() {
+  const pathname = usePathname();
+  const isQuestions = pathname.startsWith("/questions");
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -57,7 +60,7 @@ export function Header() {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 h-[82px] transition-all duration-300 ${
-        isScrolled
+        (isScrolled || isQuestions)
           ? "border-b border-accent/20 bg-[#06101a]/95 shadow-[0_8px_30px_rgba(0,0,0,0.28)] backdrop-blur-md"
           : "border-b border-transparent bg-transparent"
       }`}
@@ -65,26 +68,28 @@ export function Header() {
       <div className="mx-auto flex h-full max-w-[1440px] items-center justify-between gap-8 px-5 sm:px-8 lg:px-12">
         <Brand />
 
-        <nav className="hidden items-center gap-8 lg:flex" aria-label="Primary navigation">
+        <nav className="hidden items-center gap-4 xl:gap-6 lg:flex" aria-label="Primary navigation">
           {[
             ["Journey", "/#journey"],
             ["Documentaries", "/documentaries"],
             ["Starfall", "/starfall"],
             ["The Book", "/great-controversy"],
             ["Bible Studies", "/bible-studies"],
+            ["Questions", "/questions"],
             ["Contact", "/contact"],
           ].map(([label, href]) => (
             <Link
               key={label}
               href={href}
-              className="font-sans text-[0.67rem] font-medium tracking-[0.12em] uppercase text-foreground/85 transition-colors hover:text-accent"
+              aria-current={pathname === href ? "page" : undefined}
+              className="font-sans text-[0.67rem] font-medium tracking-[0.12em] uppercase text-foreground/85 transition-colors hover:text-accent aria-[current=page]:text-accent"
             >
               {label}
             </Link>
           ))}
         </nav>
 
-        <div className="hidden lg:block">
+        <div className="hidden xl:block">
           <Link href="/#journey" className="inline-flex min-h-11 items-center justify-center border border-transparent bg-accent px-7 font-sans text-xs font-medium tracking-[0.18em] text-background uppercase transition-colors hover:bg-accent-hover">Start the Journey</Link>
         </div>
 
@@ -108,9 +113,10 @@ export function Header() {
               ["Starfall", "/starfall"],
               ["The Book", "/great-controversy"],
               ["Bible Studies", "/bible-studies"],
+            ["Questions", "/questions"],
               ["Contact", "/contact"],
             ].map(([label, href]) => (
-              <Link key={label} href={href} onClick={() => setIsMenuOpen(false)} className="border-b border-white/8 py-4 font-sans text-xs tracking-[0.2em] uppercase text-foreground/85 transition-colors hover:text-accent">{label}</Link>
+              <Link key={label} href={href} aria-current={pathname === href ? "page" : undefined} onClick={() => setIsMenuOpen(false)} className="border-b border-white/8 py-4 font-sans text-xs tracking-[0.2em] uppercase text-foreground/85 transition-colors hover:text-accent aria-[current=page]:text-accent">{label}</Link>
             ))}
           </div>
         </nav>

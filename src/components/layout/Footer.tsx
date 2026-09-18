@@ -32,6 +32,7 @@ export function Footer() {
           >
             Bible Studies
           </Link>
+          <Link href="/questions" className="font-sans text-xs tracking-[0.22em] uppercase text-muted transition-colors duration-300 hover:text-foreground">Questions</Link>
           <Link
             href="/contact"
             className="font-sans text-xs tracking-[0.22em] uppercase text-muted transition-colors duration-300 hover:text-foreground"

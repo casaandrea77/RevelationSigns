@@ -9,6 +9,7 @@ const baseUrl = "https://revelationsigns.one";
 const mainRoutes = [
   "",
   "/bible-studies",
+  "/questions",
   "/bible-studies/amazing-facts",
   "/bible-studies/general",
   "/bible-studies/daniel-revelation",
