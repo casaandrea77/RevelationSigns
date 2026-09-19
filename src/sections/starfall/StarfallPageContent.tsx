@@ -331,6 +331,15 @@ export function StarfallPageContent() {
         <div className="mx-auto max-w-3xl"><p className="font-sans text-xs tracking-[0.35em] uppercase text-accent">The mystery is only the beginning</p><h2 id="final-invitation" className="mt-5 font-serif text-[clamp(2.8rem,5vw,4.8rem)] font-light leading-none">Discover the story behind history.</h2><p className="mx-auto mt-6 max-w-2xl font-sans text-base leading-[1.8] text-muted sm:text-lg">Follow the biblical story from the conflict in heaven to the restoration of all things.</p><Link href="/#journey" className="mt-9 inline-flex min-h-14 items-center justify-center bg-accent px-9 font-sans text-sm font-semibold tracking-[0.17em] text-[#06101a] uppercase transition-colors hover:bg-accent-hover">Continue the Journey</Link></div>
       </section>
 
+      <section className="border-b border-accent/20 bg-[#06101a] px-6 py-14 text-center" aria-labelledby="ufo-question-heading">
+        <div className="mx-auto max-w-3xl">
+          <p className="font-sans text-xs tracking-[0.25em] uppercase text-accent">Explore the Bible question</p>
+          <h2 id="ufo-question-heading" className="mt-5 font-serif text-3xl leading-tight sm:text-4xl">Does the Bible say anything about UFOs or life elsewhere in the universe?</h2>
+          <p className="mt-5 font-sans text-base leading-relaxed text-muted">Read the passages, consider the supernatural, and distinguish biblical teaching from modern speculation.</p>
+          <Link href="/questions#ufos-life-in-the-universe" className="mt-7 inline-flex min-h-12 items-center justify-center border border-accent/60 px-7 py-3 font-sans text-sm text-accent transition-colors hover:bg-accent hover:text-[#06101a]">Explore this question →</Link>
+        </div>
+      </section>
+
       <Footer />
     </main>
   );
