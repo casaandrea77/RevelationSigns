@@ -48,7 +48,7 @@ export function TotalOnslaughtVideoLibrary() {
       {videos.map(([videoId, title], index) => {
         const isActive = activeVideo === videoId;
         return (
-          <article key={videoId} className={`overflow-hidden border border-accent/25 bg-[#0a1926] ${isActive ? "md:col-span-2" : ""}`}>
+          <article key={videoId} className={`overflow-hidden border border-accent/25 bg-white shadow-sm ${isActive ? "md:col-span-2" : ""}`}>
             <div className="relative aspect-video bg-black">
               {isActive ? (
                 <iframe
@@ -69,7 +69,7 @@ export function TotalOnslaughtVideoLibrary() {
                   {/* YouTube thumbnails avoid loading 35 full video players at once. */}
                   <span className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-[1.03]" style={{ backgroundImage: `url(https://i.ytimg.com/vi/${videoId}/hqdefault.jpg)` }} />
                   <span className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/5 to-black/10" />
-                  <span className="absolute left-1/2 top-1/2 grid h-16 w-16 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full bg-[#d4a653] text-[#06101a] shadow-2xl transition-transform group-hover:scale-110" aria-hidden="true">
+                  <span className="absolute left-1/2 top-1/2 grid h-16 w-16 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full bg-[#ffd34f] text-[#06101a] shadow-2xl transition-transform group-hover:scale-110" aria-hidden="true">
                     <span className="ml-1 text-2xl">▶</span>
                   </span>
                 </button>

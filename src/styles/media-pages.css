@@ -1,0 +1,23 @@
+/* The Questions palette, scoped to the two watch pages. */
+.media-bright {
+  --color-foreground: #001e40;
+  --color-muted: #526573;
+  --color-accent: #805e19;
+  --color-accent-hover: #ffe18b;
+  --color-background: #f4f7fa;
+  --color-border: #dce5ee;
+  background: #f4f7fa;
+  color: #001e40;
+}
+.media-bright .media-hero,
+.media-bright > footer {
+  --color-foreground: #f7f9fc;
+  --color-muted: #c7d6e2;
+  --color-accent: #ffd34f;
+  --color-background: #001e3b;
+  color: #f7f9fc;
+  background-color: #001e3b;
+}
+.media-bright .bg-accent { background-color: #ffd34f; color: #001e3b; }
+.media-bright .hover\:bg-accent:hover { background-color: #ffd34f; color: #001e3b; }
+.media-bright :is(a,button):focus-visible { outline: 3px solid #bf8c18; outline-offset: 4px; }

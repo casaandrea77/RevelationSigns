@@ -1,3 +1,4 @@
+import "@/styles/media-pages.css";
 import type { Metadata } from "next";
 import { DocumentariesPageContent } from "@/sections/documentaries/DocumentariesPageContent";
 
