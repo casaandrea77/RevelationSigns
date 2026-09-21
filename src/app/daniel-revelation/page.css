@@ -79,3 +79,11 @@ body:has(.dr-page) > header { display: none; }
   .dr-grand{margin-top:24px}
   .dr-messiah,.dr-angels,.dr-comparison{margin-top:20px}
 }
+/* Keep all hero headings above the panorama, clear of the statue. */
+.dr-hero{height:auto}
+.dr-hero-copy{padding:28px 20px 32px;background:#00152a}
+.dr-hero-scene{position:relative;aspect-ratio:3/1;width:100%}
+.dr-hero-scene>.dr-art{position:absolute;inset:0}
+.dr-hero-scene .dr-image{object-fit:contain;object-position:center}
+.dr-hero-scene .dr-quote{top:12%}
+@media(max-width:650px){.dr-hero{height:auto}.dr-hero-copy{padding:24px 16px 28px}.dr-hero-copy>p:last-child{max-width:100%;margin-top:14px}.dr-hero-scene .dr-image{object-position:center}}

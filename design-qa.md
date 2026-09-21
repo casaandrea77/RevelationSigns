@@ -28,3 +28,7 @@ User requested a substantially taller hero and less crowded information, using t
 ## Follow-up: centered section widths
 
 Timelines, angelic line and comparison now share a centered 90% width capped at 1440px, with 16px side margins on phones and extra vertical separation. Hero remains full width. Production build passed. Browser checked at 1309px (1178px sections, 65px margins) and 322px (290px sections, 16px margins), with no document overflow. Existing internal timeline/table scrolling is retained to keep the larger artwork and text readable.
+
+## Follow-up: headings above hero artwork
+
+Moved the full hero title block into normal flow above a separate 3:1 panorama. The navy title band no longer overlaps the Daniel 2 statue. Preserved the complete image and existing section margins. Production build passed; desktop and mobile browser measurements confirmed the title band's bottom meets the artwork's top without overlap or document overflow. Desktop screenshot visually confirmed the unobstructed statue.
