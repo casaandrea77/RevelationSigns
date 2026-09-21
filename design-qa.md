@@ -20,3 +20,7 @@ Evidence: `../output/daniel-revelation/mockup-comparison.png`, `mockup-implement
 Production build passed, including type and lint checks and prerendering. Desktop: no horizontal document overflow, nine aligned rows in each table, all route images loaded, no browser console errors. Mobile at 390px: no horizontal document overflow; menu opens with existing site destinations; continuous strips scroll within their regions. Start Exploring and Babylon timeline links navigate to their intended anchors. Video is explicitly disabled pending a real video.
 
 Baseline retained: original live tag `baseline-live-2026-09-21`, and `baseline-imagery-before-mockup` at a85b57d. Source changes confined to `src/app/daniel-revelation`; no Total Onslaught, FAQ, Starfall, Bible-study or shared site content removed.
+
+## Follow-up: more breathing room
+
+User requested a substantially taller hero and less crowded information, using the 15:15:39 image as spacing guidance. Removed compact desktop overrides. Hero now follows its 3:1 artwork ratio (minimum 340px on desktop, 400px on phones); mobile contains the entire panorama below the text. Enlarged timeline images to 160px, increased card padding and label spacing, and added horizontal-scroll guidance. Table rows increased to 132px with 14px type; tables stack below 1100px. Section and footer spacing expanded. Browser review confirmed aligned rows and no document overflow on desktop and mobile. This supersedes the earlier compact-density assessment; section content and order remain intact.

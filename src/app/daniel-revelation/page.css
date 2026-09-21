@@ -14,8 +14,53 @@ body:has(.dr-page) > header { display: none; }
 @media(max-width:900px){.dr-nav,.dr-start{display:none}.dr-header{height:58px;padding:0 18px}.dr-search{margin-left:auto}.dr-mobile-menu{display:block;position:relative}.dr-mobile-menu summary{list-style:none;font-size:23px;padding:9px;cursor:pointer}.dr-mobile-menu nav{position:absolute;right:-18px;top:43px;background:#03233e;border:1px solid #91acbe;width:min(300px,90vw);padding:12px;box-shadow:0 8px 20px #0008}.dr-mobile-menu nav a{display:block;padding:11px;font-size:16px}.dr-quote{display:none}.dr-hero{height:180px}.dr-hero-copy{padding:24px 10px}.dr-hero h1{font-size:clamp(30px,5.3vw,48px)}.dr-hero-copy>p:last-child{max-width:90%}.dr-grand-track{min-width:1220px}.dr-messiah-track{min-width:1100px}.dr-stage-copy{font-size:13px}.dr-section-bar{font-size:19px}.dr-section-bar span{font-size:14px}.dr-table-pair{gap:8px}.dr-table-scroll table{min-width:490px}.dr-table-scroll tbody tr{height:88px}.dr-revelation-image>.dr-art{height:86px}.dr-footer{display:block;text-align:center}.dr-footer small{display:block;margin-top:10px}}
 @media(max-width:650px){.dr-page{font-size:14px}.dr-hero{height:195px}.dr-hero-copy{padding-top:26px}.dr-overline{font-size:14px}.dr-hero h1{font-size:34px;line-height:1.08;margin:8px 0}.dr-hero h2{font-size:17px}.dr-hero-copy>p:last-child{font-size:14px;margin-top:10px}.dr-section-bar{padding:8px}.dr-section-bar span{display:block;margin-top:4px}.dr-grand{padding-inline:0}.dr-grand-track{min-width:1430px}.dr-stage-image{height:120px}.dr-stage-copy{min-height:101px;padding:7px}.dr-messiah-track{min-width:1260px}.dr-messiah-track>article>.dr-art{height:115px}.dr-messiah-copy{font-size:13px;min-height:76px}.dr-angels h2{font-size:21px;padding:10px}.dr-angels h2 span{display:block;margin-top:4px}.dr-angel-track{grid-template-columns:1fr 1fr}.dr-angel-track .dr-art{height:115px}.dr-angel-copy{padding:8px 14px;min-height:93px}.dr-angel-arrow{display:none}.dr-angel-note{padding:8px 16px;font-size:12px}.dr-comparison{padding-inline:8px;background-attachment:scroll}.dr-comparison-heading{margin-inline:-8px;padding:14px 14px 10px}.dr-comparison-heading h2{font-size:26px;line-height:1.2}.dr-comparison-heading p{font-size:13px;margin-top:7px}.dr-table-pair{grid-template-columns:1fr;gap:16px}.dr-table-scroll table{font-size:12px;min-width:490px}.dr-table-scroll caption{position:sticky;left:0}.dr-table-scroll caption strong{font-size:30px}.dr-table-scroll caption span{font-size:15px}.dr-reading-note{grid-template-columns:1fr;gap:7px;font-size:12px;padding:12px}.dr-watch{margin:10px 8px}.dr-watch-content{flex-wrap:wrap;gap:12px;padding:16px}.dr-watch-content>div{flex:1;min-width:200px}.dr-play-emblem{width:44px;height:44px;font-size:24px}.dr-watch h2{font-size:22px}.dr-watch .dr-button{margin:0 auto}.dr-study-links{flex-direction:column;align-items:center;gap:12px;font-size:14px;padding:12px}.dr-footer{font-size:12px;line-height:1.5}}
 @media(prefers-reduced-motion:reduce){html:has(.dr-page){scroll-behavior:auto}}
-/* Keep the desktop composition as compact as the approved poster. */
-.dr-table-scroll td>.dr-refs{display:flex;gap:3px}
-@media(min-width:901px) and (max-width:1100px){.dr-header{height:44px}.dr-hero{height:138px}.dr-hero h1{font-size:50px}.dr-stage-copy{min-height:74px;padding:4px 3px}.dr-stage-symbol{margin-top:6px!important}.dr-stage-image{height:92px}.dr-messiah-track>article>.dr-art{height:90px}.dr-messiah-copy{min-height:55px;padding:7px 3px 4px}.dr-angel-track .dr-art{height:78px}.dr-angel-copy{min-height:52px}.dr-table-scroll tbody tr{height:66px}.dr-revelation-image>.dr-art{height:64px}.dr-table-scroll caption{padding:4px}.dr-watch,.dr-watch-content{min-height:96px}.dr-watch-content{padding:10px 2%}}
-@media(min-width:901px) and (max-width:1100px){.dr-table-scroll tbody tr{height:76px}.dr-revelation-image>.dr-art{height:74px}}
-@media(max-width:650px){.dr-hero{height:215px}}
+/* Spacious reading layout requested after the compact mockup review. */
+.dr-table-scroll td>.dr-refs{display:flex;gap:5px}
+.dr-hero{height:clamp(340px,33.333vw,600px)}
+.dr-hero-copy{padding:28px 18px 0}
+.dr-hero h1{margin:8px 0}
+.dr-hero-copy>p:last-child{margin-top:12px}
+.dr-quote{top:28%;max-width:17%}
+.dr-section-bar{padding:18px 12px;line-height:1.4}
+.dr-grand{padding-bottom:24px}
+.dr-grand-track{min-width:1540px}
+.dr-stage-image{height:160px}
+.dr-stage-copy{padding:14px 10px 18px;min-height:134px;line-height:1.45}
+.dr-stage-copy h3{font-size:16px}
+.dr-stage-copy>p{margin-top:8px}
+.dr-stage-symbol{margin-top:16px!important}
+.dr-messiah{padding-bottom:24px}
+.dr-messiah-track{min-width:1440px}
+.dr-messiah-track>article>.dr-art{height:160px}
+.dr-messiah-copy{padding:18px 12px;min-height:110px;font-size:15px;line-height:1.4}
+.dr-messiah .dr-refs{margin-top:9px;gap:4px}
+.dr-angels{padding:16px 0 20px}
+.dr-angels h2{padding:8px 14px 22px}
+.dr-angel-track .dr-art{height:160px}
+.dr-angel-copy{padding:16px 17% 16px 7%;min-height:112px;line-height:1.4}
+.dr-angel-arrow{top:30px}
+.dr-angel-note{padding:12px 20px;font-size:13px;line-height:1.5}
+.dr-comparison{padding:20px 24px}
+.dr-comparison-heading{padding:16px 12px 28px;margin:0 -24px}
+.dr-comparison-heading p{margin-top:12px}
+.dr-table-pair{gap:24px}
+.dr-table-scroll table{font-size:14px;min-width:590px}
+.dr-table-scroll caption{padding:16px 10px}
+.dr-table-scroll caption span{margin-top:8px}
+.dr-table-scroll th,.dr-table-scroll td{padding:12px 8px;line-height:1.4}
+.dr-table-scroll thead th{padding:12px 5px}
+.dr-table-scroll tbody tr{height:132px}
+.dr-paired-images .dr-art{height:82px}
+.dr-revelation-image>.dr-art{height:130px}
+.dr-paired-images figcaption{font-size:11px;padding:5px 0}
+.dr-reading-note{padding:18px;margin-top:20px;font-size:13px;line-height:1.6;gap:28px}
+.dr-watch{margin:28px 24px}
+.dr-watch-content{min-height:150px;padding:24px}
+.dr-study-links{padding:8px 20px 28px}
+.dr-footer{padding:20px 3%;line-height:1.6}
+@media(max-width:1100px){.dr-table-pair{grid-template-columns:1fr;gap:28px}.dr-table-scroll tbody tr{height:120px}.dr-revelation-image>.dr-art{height:118px}.dr-quote{display:none}}
+@media(max-width:650px){.dr-hero{height:400px}.dr-hero-copy{padding:30px 16px 0}.dr-hero-copy>p:last-child{margin-top:18px;line-height:1.6}.dr-hero .dr-image{object-position:center bottom}.dr-section-bar{padding:18px 12px}.dr-grand-track{min-width:1650px}.dr-messiah-track{min-width:1530px}.dr-angel-track .dr-art{height:145px}.dr-angel-copy{padding:16px;min-height:132px}.dr-comparison{padding:16px 12px}.dr-comparison-heading{margin:0 -12px;padding:18px 12px 28px}.dr-reading-note{grid-template-columns:1fr}.dr-watch{margin:24px 12px}}
+
+.dr-scroll-hint{display:none;color:#29465b;text-align:center;font-size:13px;padding:0 12px 14px!important}
+@media(max-width:1540px){.dr-scroll-hint{display:block}}
+@media(max-width:650px){.dr-hero .dr-image{object-fit:contain;object-position:center bottom}}
