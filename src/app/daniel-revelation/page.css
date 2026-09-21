@@ -64,3 +64,18 @@ body:has(.dr-page) > header { display: none; }
 .dr-scroll-hint{display:none;color:#29465b;text-align:center;font-size:13px;padding:0 12px 14px!important}
 @media(max-width:1540px){.dr-scroll-hint{display:block}}
 @media(max-width:650px){.dr-hero .dr-image{object-fit:contain;object-position:center bottom}}
+/* Center the study sections beneath the full-width hero. */
+.dr-grand,.dr-messiah,.dr-angels,.dr-comparison{
+  width:90%;
+  max-width:1440px;
+  margin-inline:auto;
+}
+.dr-grand{margin-top:32px}
+.dr-messiah,.dr-angels,.dr-comparison{margin-top:28px}
+.dr-comparison-heading{margin-inline:0}
+.dr-scroll-hint{display:block}
+@media(max-width:650px){
+  .dr-grand,.dr-messiah,.dr-angels,.dr-comparison{width:calc(100% - 32px)}
+  .dr-grand{margin-top:24px}
+  .dr-messiah,.dr-angels,.dr-comparison{margin-top:20px}
+}

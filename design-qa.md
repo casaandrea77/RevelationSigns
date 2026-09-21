@@ -24,3 +24,7 @@ Baseline retained: original live tag `baseline-live-2026-09-21`, and `baseline-i
 ## Follow-up: more breathing room
 
 User requested a substantially taller hero and less crowded information, using the 15:15:39 image as spacing guidance. Removed compact desktop overrides. Hero now follows its 3:1 artwork ratio (minimum 340px on desktop, 400px on phones); mobile contains the entire panorama below the text. Enlarged timeline images to 160px, increased card padding and label spacing, and added horizontal-scroll guidance. Table rows increased to 132px with 14px type; tables stack below 1100px. Section and footer spacing expanded. Browser review confirmed aligned rows and no document overflow on desktop and mobile. This supersedes the earlier compact-density assessment; section content and order remain intact.
+
+## Follow-up: centered section widths
+
+Timelines, angelic line and comparison now share a centered 90% width capped at 1440px, with 16px side margins on phones and extra vertical separation. Hero remains full width. Production build passed. Browser checked at 1309px (1178px sections, 65px margins) and 322px (290px sections, 16px margins), with no document overflow. Existing internal timeline/table scrolling is retained to keep the larger artwork and text readable.
