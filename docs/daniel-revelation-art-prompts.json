@@ -1,0 +1,85 @@
+{
+  "tool": "Built-in image_gen",
+  "scenes": [
+    {
+      "id": "babylon",
+      "prompt": "Use case: historical-scene / illustration-story. Asset: cinematic educational website card. Historical reconstruction of Neo-Babylonian Babylon about 575 BC: blue glazed brick Ishtar Gate with bull and dragon reliefs, crenellated mudbrick walls, processional way, tiny figures in period Mesopotamian dress. No Greek columns. Rich naturalistic painted realism, believable textures, luminous warm gold and deep blue palette, strong clear central subject readable at thumbnail size. Landscape 3:2 image. Full bleed, no border, no captions, no words, no watermark. This is an illustration, not a documentary photograph."
+    },
+    {
+      "id": "persia",
+      "prompt": "Use case: historical-scene / illustration-story. Asset: cinematic educational website card. Historical reconstruction of Achaemenid Persepolis around 500 BC: monumental Apadana columned terrace, double-bull capitals, carved stairway with Persian and Median delegations in long robes. Rich naturalistic painted realism, believable textures, luminous warm gold and deep blue palette, strong clear central subject readable at thumbnail size. Landscape 3:2 image. Full bleed, no border, no captions, no words, no watermark. This is an illustration, not a documentary photograph."
+    },
+    {
+      "id": "greece",
+      "prompt": "Use case: historical-scene / illustration-story. Asset: cinematic educational website card. Historical reconstruction of Alexander's Macedonian world, 4th century BC: Macedonian soldiers with long sarissa spears before a Greek marble columned city; no Roman armor. Rich naturalistic painted realism, believable textures, luminous warm gold and deep blue palette, strong clear central subject readable at thumbnail size. Landscape 3:2 image. Full bleed, no border, no captions, no words, no watermark. This is an illustration, not a documentary photograph."
+    },
+    {
+      "id": "rome",
+      "prompt": "Use case: historical-scene / illustration-story. Asset: cinematic educational website card. Historical reconstruction of imperial Rome 2nd century AD, Roman Forum with basilicas and triumphal arch, legionaries in segmented armor and rectangular shields. Rich naturalistic painted realism, believable textures, luminous warm gold and deep blue palette, strong clear central subject readable at thumbnail size. Landscape 3:2 image. Full bleed, no border, no captions, no words, no watermark. This is an illustration, not a documentary photograph."
+    },
+    {
+      "id": "divided-rome",
+      "prompt": "Use case: historical-scene / illustration-story. Asset: cinematic educational website card. Historical reconstruction of post-Roman western Europe about AD 600: early medieval stone settlement among reused Roman ruins, separate small groups with plain different colored banners. No modern flags, no late medieval castles. Rich naturalistic painted realism, believable textures, luminous warm gold and deep blue palette, strong clear central subject readable at thumbnail size. Landscape 3:2 image. Full bleed, no border, no captions, no words, no watermark. This is an illustration, not a documentary photograph."
+    },
+    {
+      "id": "papal-era",
+      "prompt": "Use case: historical-scene / illustration-story. Asset: cinematic educational website card. Neutral historical reconstruction of medieval Latin Christian Rome about AD 1200: old Saint Peter's basilica with its early medieval facade and courtyard, clergy and a royal envoy in period robes. No Renaissance dome, no modern pope, no monstrous figures. Rich naturalistic painted realism, believable textures, luminous warm gold and deep blue palette, strong clear central subject readable at thumbnail size. Landscape 3:2 image. Full bleed, no border, no captions, no words, no watermark. This is an illustration, not a documentary photograph."
+    },
+    {
+      "id": "reformation",
+      "prompt": "Use case: historical-scene / illustration-story. Asset: cinematic educational website card. Historical reconstruction of the Reformation about 1520: early wooden printing press in a German workshop, printer setting movable type, bound Bible and sheets of printed pages, window with Wittenberg rooftops. No legible text. Rich naturalistic painted realism, believable textures, luminous warm gold and deep blue palette, strong clear central subject readable at thumbnail size. Landscape 3:2 image. Full bleed, no border, no captions, no words, no watermark. This is an illustration, not a documentary photograph."
+    },
+    {
+      "id": "final-events",
+      "prompt": "Use case: historical-scene / illustration-story. Asset: cinematic educational website card. Biblical conceptual illustration of final events: a family holding an open Bible in foreground, vast modern city and gathering storm behind, warm light on faces, hopeful courage, no violence or sensational destruction. Rich naturalistic painted realism, believable textures, luminous warm gold and deep blue palette, strong clear central subject readable at thumbnail size. Landscape 3:2 image. Full bleed, no border, no captions, no words, no watermark. This is an illustration, not a documentary photograph."
+    },
+    {
+      "id": "second-coming",
+      "prompt": "Use case: historical-scene / illustration-story. Asset: cinematic educational website card. Reverent biblical illustration of Jesus returning in glory among luminous clouds with a multitude of angels, people looking up with hope, wide dramatic composition, no text. Rich naturalistic painted realism, believable textures, luminous warm gold and deep blue palette, strong clear central subject readable at thumbnail size. Landscape 3:2 image. Full bleed, no border, no captions, no words, no watermark. This is an illustration, not a documentary photograph."
+    },
+    {
+      "id": "millennium",
+      "prompt": "Use case: historical-scene / illustration-story. Asset: cinematic educational website card. Reverent biblical illustration of redeemed people in heaven with Christ during the millennium, peaceful heavenly court with open books and luminous throne at distance, clear blue and gold atmosphere, no earthly city. Rich naturalistic painted realism, believable textures, luminous warm gold and deep blue palette, strong clear central subject readable at thumbnail size. Landscape 3:2 image. Full bleed, no border, no captions, no words, no watermark. This is an illustration, not a documentary photograph."
+    },
+    {
+      "id": "new-earth",
+      "prompt": "Use case: historical-scene / illustration-story. Asset: cinematic educational website card. Reverent biblical illustration of New Earth, clear river of life and lush trees leading toward distant luminous New Jerusalem, peaceful diverse families, mountains and flowers, no pain, no text. Rich naturalistic painted realism, believable textures, luminous warm gold and deep blue palette, strong clear central subject readable at thumbnail size. Landscape 3:2 image. Full bleed, no border, no captions, no words, no watermark. This is an illustration, not a documentary photograph."
+    },
+    {
+      "id": "bethlehem",
+      "prompt": "Use case: historical-scene / illustration-story. Asset: cinematic educational website card. Reverent historical biblical illustration of Mary and Joseph with newborn Jesus in a manger in a modest Judean stone shelter, first century clothing, warm lamplight and quiet night. Rich naturalistic painted realism, believable textures, luminous warm gold and deep blue palette, strong clear central subject readable at thumbnail size. Landscape 3:2 image. Full bleed, no border, no captions, no words, no watermark. This is an illustration, not a documentary photograph."
+    },
+    {
+      "id": "ministry",
+      "prompt": "Use case: historical-scene / illustration-story. Asset: cinematic educational website card. Historical biblical illustration of Middle Eastern Jesus teaching a small group beside the Sea of Galilee, first century simple linen robes and stone fishing village. Rich naturalistic painted realism, believable textures, luminous warm gold and deep blue palette, strong clear central subject readable at thumbnail size. Landscape 3:2 image. Full bleed, no border, no captions, no words, no watermark. This is an illustration, not a documentary photograph."
+    },
+    {
+      "id": "cross",
+      "prompt": "Use case: historical-scene / illustration-story. Asset: cinematic educational website card. Reverent biblical illustration of three crosses on a Judean hill at dusk, central cross in silhouette, no visible wounds or graphic details, hope breaking through the sky. Rich naturalistic painted realism, believable textures, luminous warm gold and deep blue palette, strong clear central subject readable at thumbnail size. Landscape 3:2 image. Full bleed, no border, no captions, no words, no watermark. This is an illustration, not a documentary photograph."
+    },
+    {
+      "id": "resurrection",
+      "prompt": "Use case: historical-scene / illustration-story. Asset: cinematic educational website card. Reverent biblical illustration of the empty rock-cut tomb of Jesus at dawn, rolled round stone, linen cloth visible within, ancient Jerusalem garden, no modern objects. Rich naturalistic painted realism, believable textures, luminous warm gold and deep blue palette, strong clear central subject readable at thumbnail size. Landscape 3:2 image. Full bleed, no border, no captions, no words, no watermark. This is an illustration, not a documentary photograph."
+    },
+    {
+      "id": "heavenly-ministry",
+      "prompt": "Use case: historical-scene / illustration-story. Asset: cinematic educational website card. Reverent biblical illustration of Jesus as heavenly high priest, white and gold robes, standing before golden altar in radiant heavenly sanctuary, no text. Rich naturalistic painted realism, believable textures, luminous warm gold and deep blue palette, strong clear central subject readable at thumbnail size. Landscape 3:2 image. Full bleed, no border, no captions, no words, no watermark. This is an illustration, not a documentary photograph."
+    },
+    {
+      "id": "daniel-vision",
+      "prompt": "Use case: historical-scene / illustration-story. Asset: cinematic educational website card. Historical biblical illustration of Daniel by the river Ulai receiving a vision, adult Jewish prophet in Babylonian exile robes, ancient Susa landscape, radiant heavenly light above. Rich naturalistic painted realism, believable textures, luminous warm gold and deep blue palette, strong clear central subject readable at thumbnail size. Landscape 3:2 image. Full bleed, no border, no captions, no words, no watermark. This is an illustration, not a documentary photograph."
+    },
+    {
+      "id": "gabriel",
+      "prompt": "Use case: historical-scene / illustration-story. Asset: cinematic educational website card. Reverent biblical illustration of angel Gabriel explaining an open prophetic scroll to Daniel, ancient Persian-period room, calm luminous angel, Daniel listening attentively. Rich naturalistic painted realism, believable textures, luminous warm gold and deep blue palette, strong clear central subject readable at thumbnail size. Landscape 3:2 image. Full bleed, no border, no captions, no words, no watermark. This is an illustration, not a documentary photograph."
+    },
+    {
+      "id": "daniel-strengthened",
+      "prompt": "Use case: historical-scene / illustration-story. Asset: cinematic educational website card. Reverent biblical illustration of exhausted elderly prophet Daniel kneeling by the Tigris, a heavenly messenger gently touching his shoulder to strengthen him, comforting luminous atmosphere. Rich naturalistic painted realism, believable textures, luminous warm gold and deep blue palette, strong clear central subject readable at thumbnail size. Landscape 3:2 image. Full bleed, no border, no captions, no words, no watermark. This is an illustration, not a documentary photograph."
+    },
+    {
+      "id": "john-angel",
+      "prompt": "Use case: historical-scene / illustration-story. Asset: cinematic educational website card. Reverent biblical illustration of elderly apostle John on rocky island Patmos receiving revelation from a radiant angel, Aegean sea and a scroll, first century clothing. Rich naturalistic painted realism, believable textures, luminous warm gold and deep blue palette, strong clear central subject readable at thumbnail size. Landscape 3:2 image. Full bleed, no border, no captions, no words, no watermark. This is an illustration, not a documentary photograph."
+    }
+  ]
+}
