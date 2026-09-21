@@ -32,3 +32,7 @@ Timelines, angelic line and comparison now share a centered 90% width capped at 
 ## Follow-up: headings above hero artwork
 
 Moved the full hero title block into normal flow above a separate 3:1 panorama. The navy title band no longer overlaps the Daniel 2 statue. Preserved the complete image and existing section margins. Production build passed; desktop and mobile browser measurements confirmed the title band's bottom meets the artwork's top without overlap or document overflow. Desktop screenshot visually confirmed the unobstructed statue.
+
+## Follow-up: introduce the timeline
+
+Added “Discover History in Advance” before the kingdom timeline, with the requested Daniel-to-Revelation / Babylon-to-our-days wording and a short left-to-right reading guide. “And beyond” explains the timeline's future stages. Existing interpretation qualification retained. Production build passed; browser confirmed correct placement, readable mobile wrapping and no document overflow.

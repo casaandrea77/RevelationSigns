@@ -87,3 +87,8 @@ body:has(.dr-page) > header { display: none; }
 .dr-hero-scene .dr-image{object-fit:contain;object-position:center}
 .dr-hero-scene .dr-quote{top:12%}
 @media(max-width:650px){.dr-hero{height:auto}.dr-hero-copy{padding:24px 16px 28px}.dr-hero-copy>p:last-child{max-width:100%;margin-top:14px}.dr-hero-scene .dr-image{object-position:center}}
+.dr-timeline-intro{width:90%;max-width:1000px;margin:44px auto 28px;text-align:center;padding:0 16px;line-height:1.65}
+.dr-timeline-intro h2{font:small-caps 600 clamp(28px,3vw,42px)/1.2 Georgia,serif;color:#ffe0a4;margin-bottom:16px}
+.dr-timeline-intro .dr-intro-lead{font-size:clamp(18px,1.7vw,24px);color:#fff;margin-bottom:14px}
+.dr-timeline-intro>p:last-child{font-size:clamp(16px,1.25vw,18px);color:#d5e3ed;max-width:850px;margin-inline:auto}
+@media(max-width:650px){.dr-timeline-intro{width:calc(100% - 32px);padding:0;margin-top:30px;text-align:left}}
