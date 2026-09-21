@@ -75,6 +75,7 @@ export function Header() {
             ["Starfall", "/starfall"],
             ["The Book", "/great-controversy"],
             ["Bible Studies", "/bible-studies"],
+            ["Daniel & Revelation", "/daniel-revelation"],
             ["Questions", "/questions"],
             ["Contact", "/contact"],
           ].map(([label, href]) => (
@@ -113,6 +114,7 @@ export function Header() {
               ["Starfall", "/starfall"],
               ["The Book", "/great-controversy"],
               ["Bible Studies", "/bible-studies"],
+            ["Daniel & Revelation", "/daniel-revelation"],
             ["Questions", "/questions"],
               ["Contact", "/contact"],
             ].map(([label, href]) => (
