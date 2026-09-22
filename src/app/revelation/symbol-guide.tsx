@@ -17,4 +17,69 @@ const examples = [
  {art:'linen',alt:'Clean white linen robes in warm light',picture:'Clean, white linen',meaning:'The righteousness of God’s people',verse:'Revelation 19:8',quote:'the fine linen is the righteousness of saints',help:'The bride is given clean clothing. It pictures the righteous life of God’s people; “saints” means His holy people.'},
 
 ];
-export default function SymbolGuide({compact=false}:{compact?:boolean}){return <section className="rv-symbol-guide rv-shell" id="bible-symbols" aria-labelledby="bible-symbols-title"><div className="rv-symbol-banner"><p className="rv-eyebrow">Before you begin · The Bible explains the Bible</p><h2 id="bible-symbols-title">Your illustrated guide to Revelation’s symbols.</h2><p className="rv-guide-intro">A symbol is a picture that stands for something. We do not need to guess: first, look for a verse that explains it. Follow the pictures down the page, one at a time.</p></div><ol className="rv-reading-steps"><li><strong>1. See the picture</strong><span>What does John see?</span></li><li><strong>2. Read the explanation</strong><span>What does the Bible say it means?</span></li><li><strong>3. Read around it</strong><span>How does it fit this part of the story?</span></li></ol>{!compact && <nav className="rv-symbol-jumps" aria-label="Find a Bible symbol">{examples.map(item=><a key={item.art} href={`#symbol-${item.art}`}>{item.picture}</a>)}</nav>}<div className="rv-symbol-examples">{(compact ? examples.slice(0,2) : examples).map((item,index)=><article key={item.picture} id={`symbol-${item.art}`}><Image className="rv-symbol-art" src={'folder' in item ? `/media/images/${item.folder}/${item.art}.webp` : `/media/images/revelation/symbol-${item.art}-realistic.webp`} alt={item.alt} width={1536} height={1024} sizes="(max-width:650px) 92vw, 420px"/><div className="rv-symbol-story"><span className="rv-label">{String(index+1).padStart(2,'0')} · {'interpretation' in item ? 'Interpretation from related verses' : 'Picture → Bible explanation'}</span><h3>{item.picture}</h3><p className="rv-symbol-meaning">{item.meaning}</p><blockquote>“{item.quote}”</blockquote><a className="rv-reference" href={bibleUrl(item.verse)} target="_blank" rel="noreferrer">{item.verse} · KJV ↗<span className="rv-sr-only"> (opens in a new tab)</span></a><p className="rv-symbol-help">{item.help}</p></div></article>)}</div>{compact?<p className="rv-guide-note">These two pictures are explained in this chapter. <a href="/revelation#bible-symbols">See more examples in the symbol guide →</a></p>:null}<p className="rv-guide-note"><strong>Keep the verse beside the picture.</strong> These illustrations highlight a symbol; they do not show every detail of each vision. A symbol can have a different meaning in another passage. If the Bible does not explain it directly, we will show the verses we compare and clearly say when we are giving an interpretation.</p></section>}
+const simpleMeanings: Record<string, string> = {
+  lampstands: 'Each lampstand stands for a church: a group of people who follow Jesus. Seven lampstands represent seven churches.',
+  stars: 'Jesus says the seven stars stand for the angels of the seven churches.',
+  dragon: 'The dragon stands for Satan. He is the enemy who tries to lead people away from God.',
+  waters: 'In this vision, the waters stand for people from many countries who speak different languages.',
+  'woman-sun': 'We understand this woman as a picture of God’s faithful people. This meaning comes from comparing Bible passages.',
+  'woman-babylon': 'The angel says this woman stands for a great city called Babylon. It has power over the kings of the earth.',
+  'seven-mountains': 'The angel gives two clues about the seven heads: seven mountains and seven kings. We need to read both clues together.',
+  'symbol-horns': 'The ten horns stand for ten kings. The angel explains this directly.',
+  'symbol-lion': 'In Daniel’s vision, the beasts stand for kings and kingdoms. Revelation uses some of the same animal pictures.',
+  'new-earth': 'The angel promises to show John the bride. Then he shows him New Jerusalem: the holy city where God lives with His people.',
+  lamb: 'The Lamb stands for Jesus. He gave His life to save us from sin.',
+  incense: 'The incense stands for the prayers of God’s people. The picture reminds us that God hears our prayers.',
+  linen: 'The clean white linen pictures the righteous lives of God’s people: living in a way that is right before God.',
+};
+
+export default function SymbolGuide({ compact = false }: { compact?: boolean }) {
+  return (
+    <section className="rv-symbol-guide rv-shell" id="bible-symbols" aria-labelledby="bible-symbols-title">
+      <div className="rv-symbol-banner">
+        <p className="rv-eyebrow">Before you begin · The Bible explains the Bible</p>
+        <h2 id="bible-symbols-title">Your illustrated guide to Revelation’s symbols.</h2>
+        <p className="rv-guide-intro">A symbol is a picture that stands for something. Start with the picture, read its meaning, then look at the Bible verse.</p>
+      </div>
+      <ol className="rv-reading-steps">
+        <li><strong>1. See the picture</strong><span>What does John see?</span></li>
+        <li><strong>2. Understand the meaning</strong><span>Read the simple explanation.</span></li>
+        <li><strong>3. Check the Bible</strong><span>Read the verse for yourself.</span></li>
+      </ol>
+      {!compact && <nav className="rv-symbol-jumps" aria-label="Find a Bible symbol">
+        {examples.map(item => <a key={item.art} href={`#symbol-${item.art}`}>{item.picture}</a>)}
+      </nav>}
+      <div className="rv-symbol-examples">
+        {(compact ? examples.slice(0, 2) : examples).map((item, index) => (
+          <article key={item.picture} id={`symbol-${item.art}`}>
+            <Image className="rv-symbol-art"
+              src={'folder' in item ? `/media/images/${item.folder}/${item.art}.webp` : `/media/images/revelation/symbol-${item.art}-realistic.webp`}
+              alt={item.alt} width={1536} height={1024} sizes="(max-width:700px) 92vw, 450px" />
+            <div className="rv-symbol-story">
+              <span className="rv-label">Symbol {String(index + 1).padStart(2, '0')}</span>
+              <h3>{item.picture}</h3>
+              <div className="rv-plain-meaning">
+                <p className="rv-meaning-heading">{'interpretation' in item ? 'How we understand it' : 'What it means'}</p>
+                <p>{simpleMeanings[item.art]}</p>
+              </div>
+              {'interpretation' in item && <p className="rv-interpretation-label">Interpretation · based on related Bible passages</p>}
+              <div className="rv-verse-proof">
+                <p className="rv-meaning-heading">Read it in the Bible</p>
+                <blockquote>“{item.quote}”</blockquote>
+                <a className="rv-reference" href={bibleUrl(item.verse)} target="_blank" rel="noreferrer">
+                  {item.verse} · KJV ↗<span className="rv-sr-only"> (opens in a new tab)</span>
+                </a>
+              </div>
+              <details className="rv-symbol-more">
+                <summary>Read more<span className="rv-sr-only"> about {item.picture.toLowerCase()}</span></summary>
+                <p>{item.help}</p>
+              </details>
+            </div>
+          </article>
+        ))}
+      </div>
+      {compact && <p className="rv-guide-note">These two pictures are explained in this chapter. <a href="/revelation#bible-symbols">See more examples in the symbol guide →</a></p>}
+      <p className="rv-guide-note"><strong>Keep the verse beside the picture.</strong> These illustrations highlight a symbol; they do not show every detail of each vision. A symbol can have a different meaning in another passage. When we give an interpretation, we label it and show the verses we compare.</p>
+    </section>
+  );
+}

@@ -42,3 +42,18 @@ body:has(.rv-page)>header{display:none}
 .rv-symbol-examples article{display:grid;grid-template-columns:minmax(0,0.9fr) minmax(0,1.5fr);align-items:center}
 .rv-symbol-art{border-bottom:0}.rv-symbol-story{padding:30px}
 @media(max-width:700px){.rv-symbol-examples article{grid-template-columns:1fr}.rv-symbol-banner{padding:24px}.rv-symbol-story{padding:22px}}
+/* Beginner-friendly reading: plain meaning first, supporting verse second. */
+.rv-symbol-story{padding:32px 36px;max-width:100%;min-width:0}
+.rv-symbol-examples h3{font-size:36px;line-height:1.2}
+.rv-symbol-story .rv-label{font-size:13px;color:#526173}
+.rv-plain-meaning{margin-top:22px;padding:20px 24px;background:#fff4c9;border-left:4px solid #e9b82f;border-radius:4px}
+.rv-symbol-story .rv-meaning-heading{font-family:var(--font-inter),sans-serif;font-size:15px;font-weight:700;line-height:1.5;color:#001e40;margin-bottom:8px}
+.rv-plain-meaning>p:last-child{font-size:21px;line-height:1.65;color:#001e40;max-width:48ch}
+.rv-verse-proof{margin-top:24px;max-width:54ch}
+.rv-symbol-examples .rv-verse-proof blockquote{font-size:18px;line-height:1.7;color:#243b53;margin:8px 0 0;padding-left:0;border:0}
+.rv-symbol-story .rv-reference{font-size:16px;line-height:1.6;margin-top:10px}
+.rv-symbol-more{margin-top:22px;border-top:1px solid #dce5ee;padding-top:16px;max-width:54ch}
+.rv-symbol-more summary{font-size:17px;font-weight:600;color:#001e40}
+.rv-symbol-more p{font-size:18px;line-height:1.75;color:#243b53;margin-top:14px}
+.rv-interpretation-label{font-size:15px;line-height:1.6;color:#624900;margin-top:12px!important}
+@media(max-width:700px){.rv-symbol-story{padding:24px}.rv-symbol-examples h3{font-size:32px}.rv-plain-meaning{padding:18px}.rv-plain-meaning>p:last-child{font-size:20px}}

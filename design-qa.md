@@ -77,3 +77,6 @@ At desktop widths of 1000px and above, removed track minimum widths and reduced 
 - Added both women, seven mountains/kings, ten horns, prophetic beasts, New Jerusalem, Lamb, incense and linen; named all seven church communities.
 - Preserved Chapter 1’s compact two-symbol selection and all other site content.
 - Production build passes (60 routes). Browser verified thirteen rows, working woman-symbol anchor, full uncropped artwork and no horizontal overflow at desktop or 390px mobile width. Preview restarted on port 4384. Local review only; no deployment.
+
+## Clearer symbol explanations · 22 September 2026
+Rewrote all thirteen entries with a short plain-English meaning before the KJV evidence. Larger dark 20–21px explanation text, constrained line length, distinct meaning/verse sections and expandable secondary details. Interpretation notice remains visible for the woman in Revelation 12; Babylon historical interpretation remains labelled inside its details. Verified production build, desktop appearance, working Read more disclosure, and 390px mobile layout without overflow. Local preview only.
