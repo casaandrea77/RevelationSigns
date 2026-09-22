@@ -14,3 +14,26 @@ Prompt: A reverent cinematic Bible illustration for a beginner study of Revelati
 - https://www.biblegateway.com/passage/?search=Daniel+10%3A5-6&version=KJV
 - https://www.biblegateway.com/passage/?search=Hebrews+4%3A12&version=KJV
 - https://www.biblegateway.com/passage/?search=Revelation+19%3A15&version=KJV
+
+# Final realistic symbol illustrations
+User selected realistic cinematic imagery; storybook variants are not used.
+
+## symbol-lampstands-realistic.webp
+Built-in image generation. Full 3:2 composition retained.
+
+Prompt: Create a realistic cinematic biblical illustration for RevelationSigns, landscape 3:2. Seven separate golden ancient oil lampstands, three on the left and four on the right, in the foreground of a first-century stone courtyard. Behind them is a small community of Christian believers listening together, in historically appropriate linen and wool clothing. Show all seven lamps clearly. Lamps are visual symbols for churches. Match sophisticated richly detailed classical Bible artwork: realistic anatomy, natural materials, photographic depth and lighting with subtle painterly finish, navy blue, luminous gold and warm earthy colours. NOT children's book art, NOT cartoon, NOT watercolor, NOT cute, NOT flat illustration. Clear educational composition, main subjects completely within frame, no clutter. No words, labels, numbers, text or watermark.
+
+## symbol-stars-realistic.webp
+Built-in image generation. Full 3:2 composition retained.
+
+Prompt: Create a realistic cinematic biblical illustration for RevelationSigns, landscape 3:2. Exactly seven large luminous golden stars across a deep blue evening sky, above an ancient Mediterranean town and seven warmly lit stone house doorways. Realistic atmospheric landscape, no cartoon five-point shapes; stars look like bright points of light with natural rays. The stars are the subject, the town only background context. Match sophisticated richly detailed classical Bible artwork: realistic anatomy, natural materials, photographic depth and lighting with subtle painterly finish, navy blue, luminous gold and warm earthy colours. NOT children's book art, NOT cartoon, NOT watercolor, NOT cute, NOT flat illustration. Clear educational composition, main subjects completely within frame, no clutter. No words, labels, numbers, text or watermark.
+
+## symbol-waters-realistic.webp
+Built-in image generation. Full 3:2 composition retained.
+
+Prompt: Create a realistic cinematic biblical illustration for RevelationSigns, landscape 3:2. A broad expanse of deep blue sea with waves in the foreground, and a diverse gathering of people from many nations along the shore behind it. Different ages and cultures, dignified natural faces, realistic modest timeless clothing. A visual link between many waters and many peoples, not a holiday beach scene. Match sophisticated richly detailed classical Bible artwork: realistic anatomy, natural materials, photographic depth and lighting with subtle painterly finish, navy blue, luminous gold and warm earthy colours. NOT children's book art, NOT cartoon, NOT watercolor, NOT cute, NOT flat illustration. Clear educational composition, main subjects completely within frame, no clutter. No words, labels, numbers, text or watermark.
+
+## symbol-dragon-realistic.webp
+Built-in image generation. Full 3:2 composition retained.
+
+Prompt: Create a realistic cinematic biblical illustration for RevelationSigns, landscape 3:2. A powerful red dragon with folded wings on a rocky outcrop, serious and imposing but no attack, no violence, no flames, no people in danger. It is an allegorical biblical illustration of the dragon as the enemy. A realistic detailed creature with textured scales in a cinematic natural mountain landscape. Full creature in frame. Match sophisticated richly detailed classical Bible artwork: realistic anatomy, natural materials, photographic depth and lighting with subtle painterly finish, navy blue, luminous gold and warm earthy colours. NOT children's book art, NOT cartoon, NOT watercolor, NOT cute, NOT flat illustration. Clear educational composition, main subjects completely within frame, no clutter. No words, labels, numbers, text or watermark.

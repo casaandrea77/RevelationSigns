@@ -65,3 +65,9 @@ At desktop widths of 1000px and above, removed track minimum widths and reduced 
 - Introductory symbol guide uses direct KJV explanations for lampstands, stars, the dragon and waters; expandable Daniel beasts example. Chapter 1 repeats its two directly explained symbols.
 - Build passed (60 pages). Browser verified all six chapter anchors, Chapter 19 navigation, symbol disclosure and Chapter 1 current marker. Mobile 390px has no horizontal overflow; timeline and help text visually reviewed.
 - Scope: local Revelation review sample. Existing published site unchanged.
+
+## 22 September — realistic symbol illustrations
+- Four original cinematic illustrations added to the symbol guide: seven lampstands and believers, seven stars, a symbolic red dragon, and waters with many peoples. User clarified realistic imagery with simple explanations.
+- Full 3:2 images appear above the existing meanings and Bible verses, with no cropping; Chapter 1 reuses the first two. Expanded Daniel example includes the existing winged-lion illustration.
+- Image generation prompts and asset paths recorded in the image folder README. Unused storybook alternatives are not shipped.
+- Build passed (60 pages). Browser verified the final realistic sources, visible imagery, contain sizing and no desktop overflow. Local review preview only.
