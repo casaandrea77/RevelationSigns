@@ -45,3 +45,11 @@ At desktop widths of 1000px and above, removed track minimum widths and reduced 
 - Removed vertical gaps between the three timelines and the extra bottom padding on the first two.
 - Restored the artwork's 3:2 aspect ratio and contain sizing in all three timelines, including mobile, so faces and figures are not cropped.
 - Production build passed (58 pages). Browser review at 1470px showed all three timelines together in approximately 757px, with complete images and zero inter-section margins.
+
+## 22 September — Revelation overview and Chapter 1 sample
+- New standalone routes /revelation and /revelation/chapter-1. Existing pages and locked timelines unchanged.
+- 22 chapter cards in Bible order. Chapter 1 opens the finished sample; later chapter links explicitly open Bible Gateway while studies are in preparation.
+- Two original 3:2 illustrations saved under public/media/images/revelation; full images shown without cropping. Prompts and sources in that folder's README.
+- All twenty KJV verses available in an expandable reader. Five scene summaries, symbol explanations, Daniel comparisons, historicist interpretation note and three expandable reflection answers.
+- Production build passed (60 pages), including lint/types. Desktop 1470px and mobile 390px browser review passed. No horizontal overflow or observed broken images. Chapter navigation, scripture expansion, twenty verse numbers and reflection answer expansion verified. No browser console errors.
+- Prepared as a local review sample; not published. Final result: passed.
