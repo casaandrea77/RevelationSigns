@@ -80,3 +80,6 @@ At desktop widths of 1000px and above, removed track minimum widths and reduced 
 
 ## Clearer symbol explanations · 22 September 2026
 Rewrote all thirteen entries with a short plain-English meaning before the KJV evidence. Larger dark 20–21px explanation text, constrained line length, distinct meaning/verse sections and expandable secondary details. Interpretation notice remains visible for the woman in Revelation 12; Babylon historical interpretation remains labelled inside its details. Verified production build, desktop appearance, working Read more disclosure, and 390px mobile layout without overflow. Local preview only.
+
+## Introduction to symbolic language · 22 September 2026
+Added a beginner introduction ahead of the symbol examples: Revelation’s visions, what a symbol means, a lampstands/churches example with Revelation 1:20, and reading related passages in context. Large readable paragraphs and a highlighted example; distinguishes symbolism from direct messages and promises. Production build passed (60 routes), desktop preview verified. Local only.

@@ -57,3 +57,12 @@ body:has(.rv-page)>header{display:none}
 .rv-symbol-more p{font-size:18px;line-height:1.75;color:#243b53;margin-top:14px}
 .rv-interpretation-label{font-size:15px;line-height:1.6;color:#624900;margin-top:12px!important}
 @media(max-width:700px){.rv-symbol-story{padding:24px}.rv-symbol-examples h3{font-size:32px}.rv-plain-meaning{padding:18px}.rv-plain-meaning>p:last-child{font-size:20px}}
+/* A short introduction before asking beginners to decode any symbols. */
+.rv-symbol-introduction{max-width:800px;margin:36px auto 32px;color:#001e40}
+.rv-symbol-introduction h3{font-size:30px;line-height:1.25;margin-top:30px}
+.rv-symbol-introduction>p{font-size:20px;line-height:1.8;margin-top:14px}
+.rv-intro-example{background:#fff4c9;border-left:4px solid #e9b82f;padding:24px 28px;margin-top:24px;border-radius:4px;font-size:20px;line-height:1.75}
+.rv-intro-example>strong{display:block;font-size:16px;margin-bottom:8px}
+.rv-intro-example .rv-reference{font-size:16px}
+.rv-symbol-introduction .rv-intro-invitation{border-top:1px solid #bdcddb;padding-top:22px}
+@media(max-width:650px){.rv-symbol-introduction>p,.rv-intro-example{font-size:19px}.rv-intro-example{padding:20px}.rv-symbol-introduction h3{font-size:28px}}

@@ -41,6 +41,21 @@ export default function SymbolGuide({ compact = false }: { compact?: boolean }) 
         <h2 id="bible-symbols-title">Your illustrated guide to Revelation’s symbols.</h2>
         <p className="rv-guide-intro">A symbol is a picture that stands for something. Start with the picture, read its meaning, then look at the Bible verse.</p>
       </div>
+      {!compact && <div className="rv-symbol-introduction">
+        <h3>Revelation tells its message through pictures.</h3>
+        <p>The book of Revelation is full of symbols. John sees visions with lampstands, stars, animals, women and cities. These pictures help tell the story of Jesus, His people and the struggle between good and evil.</p>
+        <h3>What is a symbol?</h3>
+        <p>A symbol is something we can picture that stands for something else. For example, a heart can stand for love. In Revelation, a lampstand can stand for a church.</p>
+        <div className="rv-intro-example">
+          <strong>A simple example</strong>
+          <p>John sees <strong>seven lampstands</strong>. Jesus explains that they stand for <strong>seven churches</strong>. The picture has a meaning, and Jesus gives us the answer.</p>
+          <a className="rv-reference" href={bibleUrl('Revelation 1:20')} target="_blank" rel="noreferrer">Read Revelation 1:20 ↗<span className="rv-sr-only"> (opens in a new tab)</span></a>
+        </div>
+        <h3>How do we understand the pictures?</h3>
+        <p>We let the Bible help explain the Bible. Sometimes the same chapter tells us what a symbol means. Other times, we compare it with another Bible passage, such as a vision in Daniel.</p>
+        <p>We do not need to guess or treat every detail as a secret code. Revelation also contains direct messages and promises. Read the words around each picture, and keep the main message in view: <strong>Jesus overcomes evil and brings His people home to God.</strong></p>
+        <p className="rv-intro-invitation">Start with the pictures below. We will explain them one at a time, with the Bible verses beside them. Where an explanation is an interpretation, we will say so.</p>
+      </div>}
       <ol className="rv-reading-steps">
         <li><strong>1. See the picture</strong><span>What does John see?</span></li>
         <li><strong>2. Understand the meaning</strong><span>Read the simple explanation.</span></li>
