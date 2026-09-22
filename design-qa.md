@@ -53,3 +53,8 @@ At desktop widths of 1000px and above, removed track minimum widths and reduced 
 - All twenty KJV verses available in an expandable reader. Five scene summaries, symbol explanations, Daniel comparisons, historicist interpretation note and three expandable reflection answers.
 - Production build passed (60 pages), including lint/types. Desktop 1470px and mobile 390px browser review passed. No horizontal overflow or observed broken images. Chapter navigation, scripture expansion, twenty verse numbers and reflection answer expansion verified. No browser console errors.
 - Prepared as a local review sample; not published. Final result: passed.
+
+## 22 September — brighter Revelation palette
+- Matched Questions and Documentaries: #f4f7fa background, #001e40 text, white cards, #e9eff4 section panels and #ffd34f buttons.
+- Applied to both the overview and Chapter 1, with dark gold links for readable contrast and the shared navy footer.
+- Layout, artwork and study content unchanged. Production build passed (60 pages); browser checked the updated overview and Chapter 1.
