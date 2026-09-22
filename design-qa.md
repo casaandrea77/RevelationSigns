@@ -58,3 +58,10 @@ At desktop widths of 1000px and above, removed track minimum widths and reduced 
 - Matched Questions and Documentaries: #f4f7fa background, #001e40 text, white cards, #e9eff4 section panels and #ffd34f buttons.
 - Applied to both the overview and Chapter 1, with dark gold links for readable contrast and the shared navy footer.
 - Layout, artwork and study content unchanged. Production build passed (60 pages); browser checked the updated overview and Chapter 1.
+
+## 22 September — simple story timeline and Bible symbol guide
+- Shared six-stage story map near the beginning of the overview and Chapter 1. Current chapter uses a visible and accessible You are here marker.
+- Timeline links lead to real chapter cards. Each chapter card displays its broad time setting. Repeated visions and the historicist approach are explained in plain language, without invented dates.
+- Introductory symbol guide uses direct KJV explanations for lampstands, stars, the dragon and waters; expandable Daniel beasts example. Chapter 1 repeats its two directly explained symbols.
+- Build passed (60 pages). Browser verified all six chapter anchors, Chapter 19 navigation, symbol disclosure and Chapter 1 current marker. Mobile 390px has no horizontal overflow; timeline and help text visually reviewed.
+- Scope: local Revelation review sample. Existing published site unchanged.
