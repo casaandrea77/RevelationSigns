@@ -92,3 +92,28 @@ body:has(.dr-page) > header { display: none; }
 .dr-timeline-intro .dr-intro-lead{font-size:clamp(18px,1.7vw,24px);color:#fff;margin-bottom:14px}
 .dr-timeline-intro>p:last-child{font-size:clamp(16px,1.25vw,18px);color:#d5e3ed;max-width:850px;margin-inline:auto}
 @media(max-width:650px){.dr-timeline-intro{width:calc(100% - 32px);padding:0;margin-top:30px;text-align:left}}
+/* Desktop overview: all three timelines can be read together. */
+@media(min-width:1000px){
+  .dr-grand,.dr-messiah,.dr-angels{font-size:12px;line-height:1.2;padding-bottom:8px}
+  .dr-grand{margin-top:20px}
+  .dr-messiah,.dr-angels{margin-top:10px}
+  .dr-grand .dr-section-bar,.dr-messiah .dr-section-bar{padding:8px 6px;font-size:20px;line-height:1.2}
+  .dr-grand-track,.dr-messiah-track{min-width:0}
+  .dr-grand .dr-scroll-hint,.dr-messiah .dr-scroll-hint{display:none}
+  .dr-stage-image{height:76px}
+  .dr-stage-copy{padding:6px 4px 8px;min-height:0;line-height:1.2}
+  .dr-stage-copy h3{font-size:12px}
+  .dr-stage-copy>p{margin-top:4px}
+  .dr-stage-symbol{margin-top:7px!important}
+  .dr-stage-copy .dr-refs{font-size:11px}
+  .dr-messiah-track>article>.dr-art{height:76px}
+  .dr-messiah-copy{padding:8px 4px 5px;min-height:0;font-size:12px;line-height:1.2}
+  .dr-messiah .dr-refs{margin-top:4px;gap:2px;font-size:11px}
+  .dr-angels{padding-top:0}
+  .dr-angels h2{padding:7px 6px;font-size:22px}
+  .dr-angel-track .dr-art{height:72px}
+  .dr-angel-copy{padding:6px 14% 4px 5%;min-height:0;line-height:1.2}
+  .dr-angel-copy h3{font-size:12px}
+  .dr-angel-arrow{top:14px;font-size:20px}
+  .dr-angel-note{font-size:11px;line-height:1.3;padding:5px 12px 0}
+}

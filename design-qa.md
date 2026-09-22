@@ -36,3 +36,7 @@ Moved the full hero title block into normal flow above a separate 3:1 panorama. 
 ## Follow-up: introduce the timeline
 
 Added “Discover History in Advance” before the kingdom timeline, with the requested Daniel-to-Revelation / Babylon-to-our-days wording and a short left-to-right reading guide. “And beyond” explains the timeline's future stages. Existing interpretation qualification retained. Production build passed; browser confirmed correct placement, readable mobile wrapping and no document overflow.
+
+## Follow-up: all three timelines in one desktop view
+
+At desktop widths of 1000px and above, removed track minimum widths and reduced timeline image height, label padding and inter-section gaps. All 11 kingdom stages and 9 Messiah stages remain visible. Mobile retains scrolling and larger labels. Hero and comparison unchanged. Production build passed. Chrome at 1470 × 802 confirmed the three complete timelines occupy 620px together, with no horizontal overflow in either track and no browser console errors. Screenshot verified all three simultaneously after Start Exploring.
