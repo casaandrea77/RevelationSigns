@@ -117,3 +117,13 @@ body:has(.dr-page) > header { display: none; }
   .dr-angel-arrow{top:14px;font-size:20px}
   .dr-angel-note{font-size:11px;line-height:1.3;padding:5px 12px 0}
 }
+/* Keep the timelines together and show complete artwork instead of shallow crops. */
+.dr-messiah,.dr-angels{margin-top:0}
+.dr-grand,.dr-messiah{padding-bottom:0}
+.dr-stage-image,.dr-messiah-track>article>.dr-art,.dr-angel-track .dr-art{
+  height:auto;
+  aspect-ratio:3/2;
+}
+.dr-stage-image .dr-image,.dr-messiah-track .dr-image,.dr-angel-track .dr-image{
+  object-fit:contain;
+}
