@@ -37,3 +37,10 @@ Prompt: Create a realistic cinematic biblical illustration for RevelationSigns, 
 Built-in image generation. Full 3:2 composition retained.
 
 Prompt: Create a realistic cinematic biblical illustration for RevelationSigns, landscape 3:2. A powerful red dragon with folded wings on a rocky outcrop, serious and imposing but no attack, no violence, no flames, no people in danger. It is an allegorical biblical illustration of the dragon as the enemy. A realistic detailed creature with textured scales in a cinematic natural mountain landscape. Full creature in frame. Match sophisticated richly detailed classical Bible artwork: realistic anatomy, natural materials, photographic depth and lighting with subtle painterly finish, navy blue, luminous gold and warm earthy colours. NOT children's book art, NOT cartoon, NOT watercolor, NOT cute, NOT flat illustration. Clear educational composition, main subjects completely within frame, no clutter. No words, labels, numbers, text or watermark.
+
+## Expanded vertical symbol guide · 22 September 2026
+Six additional AI-generated cinematic illustrations: symbol-woman-sun-realistic.webp (Revelation 12:1), symbol-woman-babylon-realistic.webp (17:4–5), symbol-seven-mountains-realistic.webp (17:9), symbol-lamb-realistic.webp (John 1:29; Revelation 5), symbol-incense-realistic.webp (5:8), symbol-linen-realistic.webp (19:8). Generated with the built-in image tool, 1536×1024, converted to WebP quality 86 without cropping. These are selective artistic illustrations, not complete reproductions of the visions or historical photographs.
+
+Prompt direction: realistic adult Bible-study artwork, natural textures, navy shadows, golden light, no text or cartoon styling. Subjects: woman in sunlight with moon and star crown; woman in purple/scarlet with gold cup before Babylon; seven mountain peaks; white lamb with distant cross; golden incense bowl; clean white linen robes.
+
+Bible references are linked beside every image in the guide. The Revelation 12 woman is marked as interpretation from related passages. The historicist association of Babylon with papal Rome is explicitly an interpretation.

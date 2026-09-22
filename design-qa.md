@@ -71,3 +71,9 @@ At desktop widths of 1000px and above, removed track minimum widths and reduced 
 - Full 3:2 images appear above the existing meanings and Bible verses, with no cropping; Chapter 1 reuses the first two. Expanded Daniel example includes the existing winged-lion illustration.
 - Image generation prompts and asset paths recorded in the image folder README. Unused storybook alternatives are not shipped.
 - Build passed (60 pages). Browser verified the final realistic sources, visible imagery, contain sizing and no desktop overflow. Local review preview only.
+
+## Expanded Revelation symbol guide · 22 September 2026
+- Changed the four-card grid to thirteen numbered vertical image-and-explanation rows, with navy/yellow introductory sign and symbol jump links.
+- Added both women, seven mountains/kings, ten horns, prophetic beasts, New Jerusalem, Lamb, incense and linen; named all seven church communities.
+- Preserved Chapter 1’s compact two-symbol selection and all other site content.
+- Production build passes (60 routes). Browser verified thirteen rows, working woman-symbol anchor, full uncropped artwork and no horizontal overflow at desktop or 390px mobile width. Preview restarted on port 4384. Local review only; no deployment.

@@ -34,3 +34,11 @@ body:has(.rv-page)>header{display:none}
 .rv-symbol-story .rv-symbol-meaning{background:#fff1ba;border-radius:4px;padding:10px 14px;display:inline-block}
 .rv-beast-example{max-width:360px;margin-top:20px;border-radius:5px}
 @media(max-width:650px){.rv-symbol-examples article{padding:0}.rv-symbol-story{padding:22px}}
+/* One illustrated symbol per row, with a clear starting sign and quick index. */
+.rv-symbol-banner{background:#001e3b;color:white;padding:32px;border-radius:8px;border-top:5px solid #ffd34f}
+.rv-symbol-banner .rv-eyebrow{color:#ffd34f}.rv-symbol-banner .rv-guide-intro{color:#e2ebf3}
+.rv-symbol-jumps{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 28px}.rv-symbol-jumps a{background:white;border:1px solid #bdcddb;border-radius:24px;padding:8px 15px;font-size:13px}
+.rv-symbol-examples{grid-template-columns:1fr;gap:24px}
+.rv-symbol-examples article{display:grid;grid-template-columns:minmax(0,0.9fr) minmax(0,1.5fr);align-items:center}
+.rv-symbol-art{border-bottom:0}.rv-symbol-story{padding:30px}
+@media(max-width:700px){.rv-symbol-examples article{grid-template-columns:1fr}.rv-symbol-banner{padding:24px}.rv-symbol-story{padding:22px}}
