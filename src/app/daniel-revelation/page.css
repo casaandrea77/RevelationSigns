@@ -127,3 +127,12 @@ body:has(.dr-page) > header { display: none; }
 .dr-stage-image .dr-image,.dr-messiah-track .dr-image,.dr-angel-track .dr-image{
   object-fit:contain;
 }
+
+/* Mobile: keep the Angelic Messenger Line as one horizontal timeline. */
+@media(max-width:650px){
+ .dr-angels .dr-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;scroll-snap-type:x proximity}
+ .dr-angels .dr-angel-track{display:grid;grid-template-columns:repeat(4,280px);width:max-content;min-width:max-content}
+ .dr-angels .dr-angel-track article{width:280px;scroll-snap-align:start}
+ .dr-angels .dr-scroll-hint{display:block;color:#d6e4ef;padding-bottom:12px!important}
+ .dr-angels .dr-angel-note{padding:14px 18px 18px}
+}
