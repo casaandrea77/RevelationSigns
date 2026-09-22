@@ -151,3 +151,13 @@ body:has(.dr-page) > header { display: none; }
 .dr-time-map-canvas:after{content:"490 YEARS (70 weeks)     ·     1,260 YEARS     ·     2,300 YEARS";position:absolute;left:5%;right:5%;bottom:42px;border-top:4px solid #2f9fd0;border-bottom:4px solid #d2a741;padding:14px;text-align:center;letter-spacing:2px;color:#fff;font-weight:600}
 .dr-time-map-note{max-width:950px;margin:16px auto 0;text-align:center;color:#cbd9e4;font-size:12px;line-height:1.55}
 @media(max-width:650px){.dr-time-map{width:calc(100% - 32px);padding:16px 0 20px}.dr-time-map-head{padding:0 14px}.dr-time-map-head h2{font-size:26px}.dr-time-map-head>span{font-size:13px;line-height:1.5}.dr-time-map .dr-scroll-hint{color:#d6e4ef}.dr-time-map-canvas{height:400px;margin-inline:10px}.dr-time-map-note{text-align:left;padding:0 16px;font-size:12px}}
+
+/* Fix prophetic time map after global .dr-scroll rules: ensure mobile canvas is a real horizontal surface. */
+.dr-time-map .dr-scroll{display:block;width:100%;max-width:100%;overflow-x:auto!important;overflow-y:hidden;-webkit-overflow-scrolling:touch;scrollbar-color:#d4ad55 #001b33}
+.dr-time-map .dr-time-map-canvas{display:block;box-sizing:border-box;width:1120px!important;min-width:1120px!important;max-width:none!important;flex:none}
+@media(max-width:650px){
+ .dr-time-map{overflow:hidden}
+ .dr-time-map .dr-scroll{margin:0;width:100%;padding:0 0 12px}
+ .dr-time-map .dr-time-map-canvas{width:1120px!important;min-width:1120px!important;margin:0!important;height:410px}
+ .dr-time-map .dr-scroll-hint{opacity:1;color:#d6e4ef;font-weight:600}
+}
