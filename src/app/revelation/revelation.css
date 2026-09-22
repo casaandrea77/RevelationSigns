@@ -10,3 +10,14 @@ body:has(.rv-page)>header{display:none}
 .rv-connection,.rv-reflection{background:#e9eff4}
 .rv-footer{background:#001e3b;color:#c7d6e2}
 .rv-footer a{color:#ffd34f}
+/* Match Bible Questions: navy introduction above the bright study content. */
+.rv-header{background:#001e3b;color:#fff;width:100%;padding-inline:max(32px,calc((100% - 1360px)/2));border-bottom-color:#ffffff25}
+.rv-brand span{color:#ffd34f}
+.rv-hero,.rv-study-hero{background:#001e3b;color:#fff;width:100%;padding-inline:max(40px,calc((100% - 1200px)/2))}
+.rv-hero h1 em,.rv-study-hero h1 em{color:#ffd34f}
+.rv-hero .rv-eyebrow,.rv-study-hero .rv-eyebrow{color:#ffd34f}
+.rv-hero .rv-muted,.rv-study-hero .rv-lead{color:#e2ebf3}
+.rv-hero .rv-text-link,.rv-study-hero .rv-text-link{color:#ffd34f!important}
+.rv-hero figcaption,.rv-study-hero figcaption{color:#c7d6e2}
+.rv-study-hero{padding-bottom:40px}
+@media(max-width:650px){.rv-header,.rv-hero,.rv-study-hero{padding-inline:18px}}
