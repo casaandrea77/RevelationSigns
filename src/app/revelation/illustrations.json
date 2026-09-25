@@ -286,15 +286,22 @@
     },
     {
       "start": 7,
-      "src": "/media/images/revelation/studies/paul-vi-audience-hall.webp",
-      "title": "Vatican · Paul VI Audience Hall",
-      "caption": "The Paul VI Audience Hall, designed by Pier Luigi Nervi, is shown here from above. The “serpent” comparison refers to a perceived resemblance in its architecture, especially interior views. This is a visual comparison, not a building named in Revelation 17 or evidence of the architect’s intent.",
+      "src": "/media/images/revelation/studies/vatican.webp",
+      "title": "The beast · Papal religious-political power",
+      "caption": "Vatican imagery accompanies this study’s explanation of the beast and its alliance with religious power. The interpretation concerns systems and actions, not individual Catholics.",
+      "kind": "Study explanation"
+    },
+    {
+      "start": 9,
+      "src": "/media/images/revelation/studies/paul-vi-audience-hall-interior.webp",
+      "title": "Paul VI Audience Hall · Interior",
+      "caption": "This front-facing view shows the oval windows, ribbed ceiling and angled pillars that suggest a serpent’s face to some viewers. The resemblance is a visual comparison; Revelation 17 does not name this building.",
       "kind": "Architecture photograph",
-      "credit": "Photograph: Air fans · CC0 · Resized for display",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aula_Paolo_VI.jpg",
-      "sourceLabel": "Photo source and licence",
-      "referenceUrl": "https://www.laboratorionervi.polimi.it/en/portfolio/aula-per-le-udienze-in-vaticano-1963-1971/",
-      "referenceLabel": "View the interior and architectural history"
+      "credit": "Image via Historia Arte · Manuel Chacón-Palomares · Resized for display",
+      "sourceUrl": "https://historia-arte.com/articulos/la-serpiente-escondida-en-el-vaticano",
+      "sourceLabel": "Image source and attribution",
+      "referenceUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "referenceLabel": "CC BY 4.0 licence"
     }
   ],
   "18": [

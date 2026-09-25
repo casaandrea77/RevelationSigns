@@ -28,3 +28,12 @@ Asset processing: resized to 1200 pixels wide and encoded as WebP quality 85; no
 - Photograph licence: CC0 1.0, as stated on the source page (architecture rights are separate).
 - Change: proportionally resized to 1200 pixels wide and encoded as WebP; no compositing or architectural alterations.
 - The caption discusses the user's visual comparison, without asserting architectural intent or biblical identification of this building. The linked Laboratorio Nervi architectural reference supplies an interior view.
+
+## Paul VI Audience Hall interior replacement
+
+- File: `paul-vi-audience-hall-interior.webp`
+- Source: https://historia-arte.com/articulos/la-serpiente-escondida-en-el-vaticano
+- Attribution as published: Manuel Chacón-Palomares / Historia Arte, 15 May 2018; page links CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
+- Source image: article's `8-altar.jpg`, front-facing colour photograph showing both oval windows and the central aisle.
+- Change: proportional resize to 1200 pixels and WebP encoding; no mirrored, composited or generated serpent features.
+- Replaces the overhead photograph in chapter 17. The Vatican illustration is restored separately alongside the beast explanation.
