@@ -106,7 +106,7 @@ export default function SymbolGuide({ compact = false }: { compact?: boolean }) 
           </article>
         ))}
       </div>
-      {compact && <p className="rv-guide-note">These two pictures are explained in this chapter. <a href="/revelation/symbols">See more examples in the symbol guide →</a></p>}
+      {compact && <p className="rv-guide-note">These two pictures are explained in this chapter. <Link href="/revelation/symbols">See more examples in the symbol guide →</Link></p>}
       <p className="rv-guide-note"><strong>Keep the verse beside the picture.</strong> These illustrations highlight a symbol; they do not show every detail of each vision. A symbol can have a different meaning in another passage. When we give an interpretation, we label it and show the verses we compare.</p>
     </section>
   );
