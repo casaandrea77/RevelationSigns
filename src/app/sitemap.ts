@@ -13,6 +13,7 @@ const mainRoutes = [
   "/bible-studies/amazing-facts",
   "/bible-studies/general",
   "/bible-studies/daniel-revelation",
+  "/revelation",
   "/documentaries",
   "/starfall",
   "/great-controversy",
@@ -21,6 +22,7 @@ const mainRoutes = [
 ];
 
 const studyRoutes = [
+  "/revelation/chapter-1",
   "/bible-studies/legalism-and-the-ten-commandments",
   "/bible-studies/rapture-and-seven-years-of-tribulation",
   "/bible-studies/prophecy/when-michael-stands-up",
