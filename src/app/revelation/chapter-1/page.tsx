@@ -1,4 +1,4 @@
-import SymbolGuide from '../symbol-guide';
+import { SymbolLinks } from '../symbol-guide';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -17,8 +17,8 @@ const scenes=[
 export default function ChapterOne(){return <main>
 <div className="rv-shell rv-breadcrumb"><Link href="/revelation"><FiArrowLeft/> All chapters</Link><span>Revelation 1 · Illustrated study</span></div>
 <section className="rv-shell rv-study-hero"><p className="rv-eyebrow">Chapter 01 · Jesus revealed</p><h1>Before the symbols,<br/><em>meet the Saviour.</em></h1><p className="rv-lead">John’s first vision brings him face to face with the risen Jesus.<br/>His message begins with reassurance: “Fear not.”</p><div className="rv-actions"><a className="rv-button" href="#read"><FiBookOpen/> Read Revelation 1</a><a className="rv-text-link" href="#understand">Explore the vision ↓</a></div></section>
+<SymbolLinks/>
 <StoryMap chapter={1}/>
-<SymbolGuide compact/>
 <section className="rv-shell"><figure className="rv-vision"><Image src="/media/images/revelation/christ-lampstands.webp" alt="Artistic illustration of the risen Jesus in a white robe with a golden sash, among separate golden lampstands" width={1536} height={1024} priority/><figcaption>An artistic illustration of Christ among the lampstands, inspired by Revelation 1:12–13. It shows selected elements, not every detail of John’s vision.</figcaption></figure></section>
 <nav className="rv-study-nav rv-shell" aria-label="Chapter 1 sections"><a href="#read">Read</a><a href="#understand">Follow the scene</a><a href="#symbols">Understand the symbols</a><a href="#daniel">Connect with Daniel</a><a href="#reflect">Reflect</a></nav>
 <section id="read" className="rv-shell rv-study-section"><div className="rv-section-heading"><p className="rv-eyebrow">01 · Read the passage</p><h2>Let the chapter speak first.</h2><p>Read all twenty verses. Notice what John sees, what Jesus says, and which symbols Jesus explains.</p></div><details className="rv-scripture"><summary>Open Revelation 1 <span>King James Version · 20 verses</span></summary><div>{verses.map((verse,i)=><p key={verse} id={`verse-${i+1}`}><sup>{i+1}</sup> {verse}</p>)}<p className="rv-text-credit">King James Version. <Passage reference="Revelation 1"/></p></div></details></section>

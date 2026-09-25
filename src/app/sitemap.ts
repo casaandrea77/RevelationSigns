@@ -14,6 +14,7 @@ const mainRoutes = [
   "/bible-studies/general",
   "/bible-studies/daniel-revelation",
   "/revelation",
+  "/revelation/symbols",
   "/documentaries",
   "/starfall",
   "/great-controversy",

@@ -66,3 +66,14 @@ body:has(.rv-page)>header{display:none}
 .rv-intro-example .rv-reference{font-size:16px}
 .rv-symbol-introduction .rv-intro-invitation{border-top:1px solid #bdcddb;padding-top:22px}
 @media(max-width:650px){.rv-symbol-introduction>p,.rv-intro-example{font-size:19px}.rv-intro-example{padding:20px}.rv-symbol-introduction h3{font-size:28px}}
+
+/* Small symbol links keep the chapter study close to the beginning. */
+.rv-symbol-links{padding-block:30px;border-bottom:1px solid #bdcddb}
+.rv-symbol-links-heading{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.rv-symbol-links-heading h2{font-size:30px}.rv-symbol-links-heading .rv-eyebrow{margin-bottom:6px!important}
+.rv-symbol-links-heading p:not(.rv-eyebrow){font-size:15px;color:#435e73;margin-top:8px}.rv-symbol-links-heading>a{flex-shrink:0;text-decoration:underline}
+.rv-symbol-thumbnails{display:flex;gap:14px;overflow-x:auto;padding:18px 5px 12px;scrollbar-color:#bf8c18 #e9eff4}
+.rv-symbol-thumbnails>a{flex:0 0 112px;display:block;font-size:12px;line-height:1.4;text-align:center;font-weight:600}
+.rv-symbol-thumbnails img{width:112px;height:75px;object-fit:contain;background:#001e3b;border-radius:5px;border:1px solid #bdcddb;margin-bottom:8px}
+.rv-symbol-thumbnails a:hover img{border-color:#bf8c18}.rv-symbol-page-title{padding-top:40px}.rv-symbol-page-title h1{font-size:clamp(40px,5vw,64px)}.rv-symbol-page-title p{margin-top:12px;color:#435e73}
+@media(max-width:650px){.rv-symbol-links-heading{display:block}.rv-symbol-links-heading>a{display:inline-block;margin-top:12px}.rv-symbol-links-heading h2{font-size:28px}}

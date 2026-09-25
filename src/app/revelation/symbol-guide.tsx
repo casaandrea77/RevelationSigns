@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { bibleUrl } from './data';
 const examples = [
  {art:'lampstands',alt:'Cinematic illustration of seven golden lampstands with a church community gathered behind them',picture:'Seven lampstands',meaning:'Seven churches',verse:'Revelation 1:20',quote:'the seven candlesticks which thou sawest are the seven churches.',help:'These were seven real church communities: Ephesus, Smyrna, Pergamos, Thyatira, Sardis, Philadelphia and Laodicea. Read their messages in Revelation 2–3. “Candlesticks” means lampstands.'},
@@ -32,6 +33,18 @@ const simpleMeanings: Record<string, string> = {
   incense: 'The incense stands for the prayers of God’s people. The picture reminds us that God hears our prayers.',
   linen: 'The clean white linen pictures the righteous lives of God’s people: living in a way that is right before God.',
 };
+
+export function SymbolLinks() {
+  return <section className="rv-symbol-links rv-shell" id="bible-symbols" aria-labelledby="symbol-links-title">
+    <div className="rv-symbol-links-heading"><div><p className="rv-eyebrow">A picture guide</p><h2 id="symbol-links-title">Explore Revelation’s symbols</h2><p>Choose a picture to open its meaning and Bible verses, or continue with the study below.</p></div><Link className="rv-text-link" href="/revelation/symbols">Open the full symbol guide →</Link></div>
+    <nav className="rv-symbol-thumbnails" aria-label="Open a symbol explanation">
+      {examples.map(item => <Link key={item.art} href={`/revelation/symbols#symbol-${item.art}`}>
+        <Image src={'folder' in item ? `/media/images/${item.folder}/${item.art}.webp` : `/media/images/revelation/symbol-${item.art}-realistic.webp`} alt="" width={144} height={96} sizes="112px" />
+        <span>{item.picture}</span>
+      </Link>)}
+    </nav>
+  </section>;
+}
 
 export default function SymbolGuide({ compact = false }: { compact?: boolean }) {
   return (
@@ -93,7 +106,7 @@ export default function SymbolGuide({ compact = false }: { compact?: boolean }) 
           </article>
         ))}
       </div>
-      {compact && <p className="rv-guide-note">These two pictures are explained in this chapter. <a href="/revelation#bible-symbols">See more examples in the symbol guide →</a></p>}
+      {compact && <p className="rv-guide-note">These two pictures are explained in this chapter. <a href="/revelation/symbols">See more examples in the symbol guide →</a></p>}
       <p className="rv-guide-note"><strong>Keep the verse beside the picture.</strong> These illustrations highlight a symbol; they do not show every detail of each vision. A symbol can have a different meaning in another passage. When we give an interpretation, we label it and show the verses we compare.</p>
     </section>
   );
