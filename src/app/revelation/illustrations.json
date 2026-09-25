@@ -182,15 +182,15 @@
       "start": 1,
       "src": "/media/images/revelation/studies/vatican.webp",
       "title": "The first beast · Papal power",
-      "caption": "Vatican architecture illustrates the Adventist historicist identification of the sea beast with papal religious-political power. Revelation does not name the Vatican; this is an interpretation of the system, not of individual Catholics.",
-      "kind": "Historicist interpretation"
+      "caption": "Vatican architecture accompanies this study’s identification of the first beast with papal religious-political power. The explanation concerns a system and its actions, not individual Catholics.",
+      "kind": "Study explanation"
     },
     {
       "start": 11,
       "src": "/media/images/revelation/studies/america.webp",
       "title": "The second beast · America",
-      "caption": "The US Capitol illustrates the Adventist historicist identification of the earth beast with the United States in a coercive religious role. The name America is not given in the passage.",
-      "kind": "Historicist interpretation"
+      "caption": "The US Capitol accompanies this study’s identification of the second beast with the United States in a coercive religious role. The passage describes the beast’s actions without naming America.",
+      "kind": "Study explanation"
     }
   ],
   "14": [
@@ -283,6 +283,18 @@
       "title": "The woman called Babylon",
       "caption": "The symbolic woman portrays corrupt splendour and unfaithfulness in the vision.",
       "kind": "Symbol illustration"
+    },
+    {
+      "start": 7,
+      "src": "/media/images/revelation/studies/paul-vi-audience-hall.webp",
+      "title": "Vatican · Paul VI Audience Hall",
+      "caption": "The Paul VI Audience Hall, designed by Pier Luigi Nervi, is shown here from above. The “serpent” comparison refers to a perceived resemblance in its architecture, especially interior views. This is a visual comparison, not a building named in Revelation 17 or evidence of the architect’s intent.",
+      "kind": "Architecture photograph",
+      "credit": "Photograph: Air fans · CC0 · Resized for display",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aula_Paolo_VI.jpg",
+      "sourceLabel": "Photo source and licence",
+      "referenceUrl": "https://www.laboratorionervi.polimi.it/en/portfolio/aula-per-le-udienze-in-vaticano-1963-1971/",
+      "referenceLabel": "View the interior and architectural history"
     }
   ],
   "18": [

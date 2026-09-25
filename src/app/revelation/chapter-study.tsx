@@ -13,7 +13,7 @@ const sources: Record<number, [string, string]> = {
   2: ['Churches and the historicist approach', 'https://adventistbiblicalresearch.org/articles/ellen-g-white-and-the-interpretation-of-daniel-and-revelation'],
   8: ['Biblical Research Institute: interpreting the trumpets', 'https://adventistbiblicalresearch.org/articles/issues-in-the-interpretation-of-the-seven-trumpets-of-revelation'],
   9: ['Biblical Research Institute: interpreting the trumpets', 'https://adventistbiblicalresearch.org/articles/issues-in-the-interpretation-of-the-seven-trumpets-of-revelation'],
-  13: ['Background to the Adventist historicist reading', 'https://adventistbiblicalresearch.org/articles/ellen-g-white-and-the-interpretation-of-daniel-and-revelation'],
+  13: ['Background to this study’s explanation', 'https://adventistbiblicalresearch.org/articles/ellen-g-white-and-the-interpretation-of-daniel-and-revelation'],
   20: ['Adventist belief: the millennium and the end of sin', 'https://adventist.org/beliefs/official/millennium-and-the-end-of-sin'],
 };
 function Passage({ reference }: { reference: string }) {

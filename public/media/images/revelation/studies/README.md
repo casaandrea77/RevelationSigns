@@ -19,3 +19,12 @@ Shared direction: original cinematic photorealistic biblical illustration, lands
 - gathering-redeemed.webp: Visible Second Coming and gathering of the redeemed, radiant Jesus in white and gold surrounded by angels above mountains; joyful people of many backgrounds rising to meet Him, inspired by 1 Thessalonians 4:16–17. Final edit: preserve composition and replace a generated wheelchair and seated occupant with a restored, healthy adult freely rising with the others; no assistive device. This represents restored bodies in the requested biblical scene.
 
 Asset processing: resized to 1200 pixels wide and encoded as WebP quality 85; no visual compositing or content edits outside the image-generation tool. Earlier reusable artwork is stored in the parent directory and ../daniel-revelation.
+
+## Paul VI Audience Hall photograph
+
+- File: `paul-vi-audience-hall.webp`
+- Photographer: Air fans, 10 June 2024.
+- Source: https://commons.wikimedia.org/wiki/File:Aula_Paolo_VI.jpg
+- Photograph licence: CC0 1.0, as stated on the source page (architecture rights are separate).
+- Change: proportionally resized to 1200 pixels wide and encoded as WebP; no compositing or architectural alterations.
+- The caption discusses the user's visual comparison, without asserting architectural intent or biblical identification of this building. The linked Laboratorio Nervi architectural reference supplies an interior view.
