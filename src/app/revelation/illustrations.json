@@ -1,0 +1,375 @@
+{
+  "1": [
+    {
+      "start": 1,
+      "src": "/media/images/revelation/john-patmos.webp",
+      "title": "John receives the message",
+      "caption": "An artistic reconstruction of John on Patmos, where he received the vision.",
+      "kind": "Bible scene"
+    },
+    {
+      "start": 12,
+      "src": "/media/images/revelation/christ-lampstands.webp",
+      "title": "Jesus among the lampstands",
+      "caption": "The risen Jesus stands among the lampstands representing His churches.",
+      "kind": "Bible scene"
+    }
+  ],
+  "2": [
+    {
+      "start": 1,
+      "src": "/media/images/revelation/symbol-lampstands-realistic.webp",
+      "title": "Christ cares for His churches",
+      "caption": "The lampstands picture the churches addressed by Jesus.",
+      "kind": "Symbol illustration"
+    },
+    {
+      "start": 18,
+      "src": "/media/images/revelation/symbol-stars-realistic.webp",
+      "title": "A message to the churches",
+      "caption": "The stars recall the angels of the churches, addressed in these letters.",
+      "kind": "Symbol illustration"
+    }
+  ],
+  "3": [
+    {
+      "start": 1,
+      "src": "/media/images/revelation/symbol-linen-realistic.webp",
+      "title": "The promise of white clothing",
+      "caption": "An illustration of the purity and belonging pictured by white clothing.",
+      "kind": "Symbol illustration"
+    },
+    {
+      "start": 14,
+      "src": "/media/images/daniel-revelation/ministry.webp",
+      "title": "Jesus calls His people back",
+      "caption": "A thematic illustration of Jesus, who calls Laodicea to repentance and fellowship.",
+      "kind": "Theme illustration"
+    }
+  ],
+  "4": [
+    {
+      "start": 1,
+      "src": "/media/images/daniel-revelation/heavenly-ministry.webp",
+      "title": "Heavenly worship",
+      "caption": "A sanctuary-themed illustration introducing worship before God’s throne.",
+      "kind": "Theme illustration"
+    }
+  ],
+  "5": [
+    {
+      "start": 1,
+      "src": "/media/images/daniel-revelation/prophecy-scroll.webp",
+      "title": "The scroll",
+      "caption": "A thematic scroll illustration; the chapter describes a scroll sealed with seven seals.",
+      "kind": "Theme illustration"
+    },
+    {
+      "start": 6,
+      "src": "/media/images/revelation/symbol-lamb-realistic.webp",
+      "title": "The Lamb is worthy",
+      "caption": "The Lamb points to Christ, whose redeeming death is the reason for heaven’s praise.",
+      "kind": "Symbol illustration"
+    }
+  ],
+  "6": [
+    {
+      "start": 1,
+      "src": "/media/images/daniel-revelation/final-events.webp",
+      "title": "A world in conflict",
+      "caption": "Thematic artwork for the suffering and upheaval revealed by the seals.",
+      "kind": "Theme illustration"
+    },
+    {
+      "start": 9,
+      "src": "/media/images/revelation/symbol-linen-realistic.webp",
+      "title": "White robes and hope",
+      "caption": "The faithful receive white robes while awaiting God’s vindication.",
+      "kind": "Symbol illustration"
+    }
+  ],
+  "7": [
+    {
+      "start": 1,
+      "src": "/media/images/revelation/symbol-stars-realistic.webp",
+      "title": "God knows His people",
+      "caption": "Thematic artwork of God’s people; the sealing is described in the verses beside it.",
+      "kind": "Theme illustration"
+    },
+    {
+      "start": 9,
+      "src": "/media/images/revelation/studies/gathering-redeemed.webp",
+      "title": "A people from every nation",
+      "caption": "An illustration of the redeemed gathered to Christ. Compare the multitude here with 1 Thessalonians 4:16–17.",
+      "kind": "Scripture comparison"
+    }
+  ],
+  "8": [
+    {
+      "start": 1,
+      "src": "/media/images/revelation/symbol-incense-realistic.webp",
+      "title": "The prayers of the saints",
+      "caption": "Incense accompanies the prayers presented before God.",
+      "kind": "Symbol illustration"
+    },
+    {
+      "start": 6,
+      "src": "/media/images/daniel-revelation/final-events.webp",
+      "title": "The trumpets begin",
+      "caption": "A thematic illustration of upheaval and warning, rather than a literal rendering of each trumpet.",
+      "kind": "Theme illustration"
+    }
+  ],
+  "9": [
+    {
+      "start": 1,
+      "src": "/media/images/daniel-revelation/final-events.webp",
+      "title": "Warnings and distress",
+      "caption": "Thematic imagery of crisis introduces the fifth and sixth trumpets.",
+      "kind": "Theme illustration"
+    }
+  ],
+  "10": [
+    {
+      "start": 1,
+      "src": "/media/images/daniel-revelation/john-angel.webp",
+      "title": "A heavenly messenger",
+      "caption": "A thematic illustration of John receiving a heavenly message.",
+      "kind": "Theme illustration"
+    },
+    {
+      "start": 8,
+      "src": "/media/images/daniel-revelation/prophecy-scroll.webp",
+      "title": "Receive the little book",
+      "caption": "The scroll introduces the message John is told to receive and proclaim.",
+      "kind": "Theme illustration"
+    }
+  ],
+  "11": [
+    {
+      "start": 1,
+      "src": "/media/images/daniel-revelation/heavenly-ministry.webp",
+      "title": "The temple and worshippers",
+      "caption": "Sanctuary imagery introduces the measuring scene.",
+      "kind": "Theme illustration"
+    },
+    {
+      "start": 3,
+      "src": "/media/images/daniel-revelation/prophecy-scroll.webp",
+      "title": "The two witnesses",
+      "caption": "Scripture represented by a scroll recalls the Adventist interpretation of the witnesses as the Old and New Testaments.",
+      "kind": "Historicist interpretation"
+    }
+  ],
+  "12": [
+    {
+      "start": 1,
+      "src": "/media/images/revelation/symbol-woman-sun-realistic.webp",
+      "title": "The woman clothed with the sun",
+      "caption": "An illustration of the woman in John’s vision.",
+      "kind": "Symbol illustration"
+    },
+    {
+      "start": 7,
+      "src": "/media/images/revelation/symbol-dragon-realistic.webp",
+      "title": "The dragon is cast down",
+      "caption": "The dragon represents Satan, as the chapter explicitly explains.",
+      "kind": "Symbol illustration"
+    }
+  ],
+  "13": [
+    {
+      "start": 1,
+      "src": "/media/images/revelation/studies/vatican.webp",
+      "title": "The first beast · Papal power",
+      "caption": "Vatican architecture illustrates the Adventist historicist identification of the sea beast with papal religious-political power. Revelation does not name the Vatican; this is an interpretation of the system, not of individual Catholics.",
+      "kind": "Historicist interpretation"
+    },
+    {
+      "start": 11,
+      "src": "/media/images/revelation/studies/america.webp",
+      "title": "The second beast · America",
+      "caption": "The US Capitol illustrates the Adventist historicist identification of the earth beast with the United States in a coercive religious role. The name America is not given in the passage.",
+      "kind": "Historicist interpretation"
+    }
+  ],
+  "14": [
+    {
+      "start": 1,
+      "src": "/media/images/revelation/symbol-lamb-realistic.webp",
+      "title": "With the Lamb",
+      "caption": "The Lamb stands at the centre of the faithful people’s hope.",
+      "kind": "Symbol illustration"
+    },
+    {
+      "start": 14,
+      "src": "/media/images/daniel-revelation/second-coming.webp",
+      "title": "The earth’s harvest",
+      "caption": "Artwork of Christ’s return introduces the harvest vision and its completion of earth’s story.",
+      "kind": "Theme illustration"
+    }
+  ],
+  "15": [
+    {
+      "start": 1,
+      "src": "/media/images/daniel-revelation/heavenly-ministry.webp",
+      "title": "Before the last plagues",
+      "caption": "A heavenly sanctuary illustration introduces the setting of the seven angels.",
+      "kind": "Theme illustration"
+    },
+    {
+      "start": 2,
+      "src": "/media/images/revelation/symbol-linen-realistic.webp",
+      "title": "The victorious give praise",
+      "caption": "Thematic artwork of the redeemed accompanies the song of Moses and the Lamb.",
+      "kind": "Theme illustration"
+    }
+  ],
+  "16": [
+    {
+      "start": 1,
+      "src": "/media/images/revelation/studies/plague-1.webp",
+      "title": "First plague · Painful sores",
+      "caption": "An imagined scene illustrating the sores described in verse 2.",
+      "kind": "Prophetic illustration"
+    },
+    {
+      "start": 3,
+      "src": "/media/images/revelation/studies/plague-2.webp",
+      "title": "Second plague · The sea becomes blood",
+      "caption": "The lifeless red sea illustrates the second bowl.",
+      "kind": "Prophetic illustration"
+    },
+    {
+      "start": 4,
+      "src": "/media/images/revelation/studies/plague-3.webp",
+      "title": "Third plague · Rivers become blood",
+      "caption": "Fresh waters turn to blood; the accompanying verses explain the judgment.",
+      "kind": "Prophetic illustration"
+    },
+    {
+      "start": 8,
+      "src": "/media/images/revelation/studies/plague-4.webp",
+      "title": "Fourth plague · Scorching heat",
+      "caption": "Intense heat illustrates the sun’s power in the fourth bowl.",
+      "kind": "Prophetic illustration"
+    },
+    {
+      "start": 10,
+      "src": "/media/images/revelation/studies/plague-5.webp",
+      "title": "Fifth plague · Darkness",
+      "caption": "An imagined city under darkness pictures the judgment on the beast’s kingdom.",
+      "kind": "Prophetic illustration"
+    },
+    {
+      "start": 12,
+      "src": "/media/images/revelation/studies/plague-6.webp",
+      "title": "Sixth plague · The Euphrates dries",
+      "caption": "An imagined dried riverbed introduces the sixth bowl. The passage also describes deception and the gathering of the kings.",
+      "kind": "Prophetic illustration"
+    },
+    {
+      "start": 17,
+      "src": "/media/images/revelation/studies/plague-7.webp",
+      "title": "Seventh plague · Earthquake and hail",
+      "caption": "An imagined scene of great hail and collapsing buildings illustrates the final bowl.",
+      "kind": "Prophetic illustration"
+    }
+  ],
+  "17": [
+    {
+      "start": 1,
+      "src": "/media/images/revelation/symbol-woman-babylon-realistic.webp",
+      "title": "The woman called Babylon",
+      "caption": "The symbolic woman portrays corrupt splendour and unfaithfulness in the vision.",
+      "kind": "Symbol illustration"
+    },
+    {
+      "start": 7,
+      "src": "/media/images/revelation/studies/vatican.webp",
+      "title": "Rome in the historicist reading",
+      "caption": "Vatican architecture represents the papal connection in this study’s reading of Babylon. Babylon’s symbolism extends to a wider alliance of false worship and earthly power.",
+      "kind": "Historicist interpretation"
+    }
+  ],
+  "18": [
+    {
+      "start": 1,
+      "src": "/media/images/revelation/studies/babylon-fall.webp",
+      "title": "The fall of Babylon · Vatican imagery",
+      "caption": "An imagined collapse using Vatican architecture to illustrate the papal connection in this historicist reading. This is not a prediction of the precise fate of these buildings; Babylon represents a wider corrupt religious-political system.",
+      "kind": "Historicist interpretation"
+    },
+    {
+      "start": 20,
+      "src": "/media/images/revelation/symbol-woman-babylon-realistic.webp",
+      "title": "The end of Babylon’s power",
+      "caption": "The symbolic woman recalls the system whose corruption and violence are exposed by this chapter.",
+      "kind": "Symbol illustration"
+    }
+  ],
+  "19": [
+    {
+      "start": 1,
+      "src": "/media/images/revelation/symbol-linen-realistic.webp",
+      "title": "The marriage of the Lamb",
+      "caption": "Fine linen is associated with the righteousness of the saints in verse 8.",
+      "kind": "Symbol illustration"
+    },
+    {
+      "start": 11,
+      "src": "/media/images/daniel-revelation/second-coming.webp",
+      "title": "The returning King",
+      "caption": "An artistic vision of Jesus’ visible return. Read the Rider’s titles and symbolic description beside it.",
+      "kind": "Theme illustration"
+    }
+  ],
+  "20": [
+    {
+      "start": 1,
+      "src": "/media/images/daniel-revelation/millennium.webp",
+      "title": "The thousand years",
+      "caption": "Thematic artwork introduces the millennium and Christ’s reign.",
+      "kind": "Theme illustration"
+    },
+    {
+      "start": 4,
+      "src": "/media/images/revelation/studies/gathering-redeemed.webp",
+      "title": "Resurrection and reunion",
+      "caption": "An illustration of the redeemed meeting Jesus, connecting the first resurrection with 1 Thessalonians 4:16–17.",
+      "kind": "Scripture comparison"
+    }
+  ],
+  "21": [
+    {
+      "start": 1,
+      "src": "/media/images/daniel-revelation/new-earth.webp",
+      "title": "All things made new",
+      "caption": "An artistic vision of renewed creation and life with God.",
+      "kind": "Theme illustration"
+    },
+    {
+      "start": 9,
+      "src": "/media/images/daniel-revelation/new-earth.webp",
+      "title": "The bride, the holy city",
+      "caption": "A conceptual illustration of New Jerusalem, shown as the Lamb’s bride.",
+      "kind": "Symbol illustration"
+    }
+  ],
+  "22": [
+    {
+      "start": 1,
+      "src": "/media/images/daniel-revelation/new-earth.webp",
+      "title": "Life restored",
+      "caption": "A thematic illustration of the world made new, where the curse is gone.",
+      "kind": "Theme illustration"
+    },
+    {
+      "start": 12,
+      "src": "/media/images/revelation/studies/gathering-redeemed.webp",
+      "title": "Come, Lord Jesus",
+      "caption": "An illustration of the hope of Christ’s return and gathering His people.",
+      "kind": "Scripture comparison"
+    }
+  ]
+}

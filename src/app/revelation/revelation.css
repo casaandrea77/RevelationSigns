@@ -85,3 +85,17 @@ body:has(.rv-page)>header{display:none}
 .rv-lecture-credit{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-top:16px;font-size:13px;color:#435e73}
 .rv-lecture-credit a{color:#715224;text-decoration:underline}
 @media(max-width:650px){.rv-lecture-player{min-height:200px}.rv-lecture-series{padding-block:36px 44px}}
+
+/* Keep illustrations next to their verse group, without hiding the Bible text. */
+.rv-illustrated-scripture>.rv-scripture-content{max-width:none;padding:0 30px 30px}
+.rv-illustrated-scripture .rv-art-note{font-size:14px;color:#526573;line-height:1.65;margin:0;padding:12px 0 24px}
+.rv-passage-row{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);align-items:start;gap:36px;padding:30px 0;border-top:1px solid #dce5ee}
+.rv-passage-verses p:first-child{margin-top:0}
+.rv-passage-art{margin:0!important;min-width:0;position:sticky;top:24px;background:#f3f6f9;border:1px solid #dce5ee}
+.rv-passage-art img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:contain;background:#001e3b}
+.rv-passage-art figcaption{padding:20px;text-align:left;color:#435e73}
+.rv-passage-art h3{font-size:25px;line-height:1.2;color:#001e40}
+.rv-passage-art figcaption p{font-size:14px;line-height:1.65;margin-top:12px}
+.rv-passage-art .rv-label{margin-bottom:10px}
+.rv-art-credit{display:block;font-size:11px;line-height:1.5;margin-top:15px;color:#526573}
+@media(max-width:800px){.rv-passage-row{grid-template-columns:1fr;gap:24px}.rv-passage-art{position:static}.rv-illustrated-scripture>.rv-scripture-content{padding:0 18px 24px}}
