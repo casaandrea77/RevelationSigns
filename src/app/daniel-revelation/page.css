@@ -137,7 +137,7 @@ body:has(.dr-page) > header { display: none; }
  .dr-angels .dr-angel-note{padding:14px 18px 18px}
 }
 
-/* Prophetic time map: historicist overview after the Angelic Messenger Line. */
+/* Prophetic time map: historicist overview directly after the hero. */
 .dr-time-map{width:90%;max-width:1440px;margin:0 auto;background:#041f36;border-bottom:1px solid #d7b866;padding:18px 16px 22px}
 .dr-time-map-head{text-align:center}.dr-time-map-head>p{text-transform:uppercase;letter-spacing:2px;font-size:11px;color:#f0c766}.dr-time-map-head h2{font:600 clamp(25px,3vw,42px)/1.15 Georgia,serif;color:#ffe0a4;margin-top:4px}.dr-time-map-head>span{display:block;margin-top:7px;color:#d8e5ee;font-size:15px}
 .dr-time-map-canvas{position:relative;min-width:1120px;height:410px;margin-top:12px;padding:0 30px;background:linear-gradient(180deg,#062844 0%,#03192c 100%);border:1px solid #376985;border-radius:5px;overflow:hidden}
@@ -161,3 +161,7 @@ body:has(.dr-page) > header { display: none; }
  .dr-time-map .dr-time-map-canvas{width:1120px!important;min-width:1120px!important;margin:0!important;height:410px}
  .dr-time-map .dr-scroll-hint{opacity:1;color:#d6e4ef;font-weight:600}
 }
+
+/* Centre the chart within its section while retaining horizontal scrolling on small screens. */
+.dr-time-map .dr-time-map-canvas{margin-inline:auto}
+@media(min-width:1280px){.dr-time-map .dr-scroll-hint{display:none}}
