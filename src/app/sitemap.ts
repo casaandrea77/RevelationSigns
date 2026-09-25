@@ -23,7 +23,7 @@ const mainRoutes = [
 ];
 
 const studyRoutes = [
-  "/revelation/chapter-1",
+  ...Array.from({ length: 22 }, (_, i) => `/revelation/chapter-${i + 1}`),
   "/bible-studies/legalism-and-the-ten-commandments",
   "/bible-studies/rapture-and-seven-years-of-tribulation",
   "/bible-studies/prophecy/when-michael-stands-up",

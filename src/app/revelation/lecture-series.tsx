@@ -4,7 +4,7 @@ export default function RevelationLectureSeries() {
   return <section className="rv-shell rv-lecture-series" id="lecture-series" aria-labelledby="lecture-series-title">
     <p className="rv-eyebrow">Continue exploring · Video lectures</p>
     <h2 id="lecture-series-title">Revelation lectures with Walter Veith</h2>
-    <p className="rv-lecture-intro">Watch the lecture series alongside your Bible study. Use the playlist menu in the player to choose another talk.</p>
+    <p className="rv-lecture-intro">Explore the whole Revelation lecture series alongside your Bible study. This shared playlist is not matched to individual chapters; use its menu to choose a talk.</p>
     <div className="rv-lecture-player">
       <iframe
         src="https://www.youtube-nocookie.com/embed/uKcXTYWh2F0?list=PLyE90DWMj-PkRT5bpSPyov8g4UjJYNZHo&rel=0"
