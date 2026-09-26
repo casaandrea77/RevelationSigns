@@ -14,7 +14,8 @@ for (const study of studies) {
   });
   assert.deepEqual(covered, Array.from({length:counts[study.number-1]}, (_, i) => i+1), `Chapter ${study.number}: every verse must be covered exactly once`);
   assert.equal(study.symbols.length, 3);
-  assert.equal(study.connections.length, 2);
+  assert.ok(study.connections.length >= 2, `Chapter ${study.number}: at least two Scripture connections`);
+  for (const connection of study.connections) assert.ok(connection.title && connection.text && connection.references.length);
   assert.equal(study.questions.length, 3);
   assert.ok(study.time && study.interpretation.text && study.reflection && study.prayer);
 }
