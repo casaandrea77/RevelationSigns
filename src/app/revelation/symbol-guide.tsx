@@ -18,6 +18,8 @@ const examples = [
  {art:'linen',alt:'Clean white linen robes in warm light',picture:'Clean, white linen',meaning:'The righteousness of God’s people',verse:'Revelation 19:8',quote:'the fine linen is the righteousness of saints',help:'The bride is given clean clothing. It pictures the righteous life of God’s people; “saints” means His holy people.'},
 
 ];
+// Some art names already start with 'symbol-'; avoid a doubled 'symbol-symbol-' anchor.
+const symbolAnchor = (art: string) => `symbol-${art.replace(/^symbol-/, '')}`;
 const simpleMeanings: Record<string, string> = {
   lampstands: 'Each lampstand stands for a church: a group of people who follow Jesus. Seven lampstands represent seven churches.',
   stars: 'Jesus says the seven stars stand for the angels of the seven churches.',
@@ -38,7 +40,7 @@ export function SymbolLinks() {
   return <section className="rv-symbol-links rv-shell" id="bible-symbols" aria-labelledby="symbol-links-title">
     <div className="rv-symbol-links-heading"><div><p className="rv-eyebrow">A picture guide</p><h2 id="symbol-links-title">Explore Revelation’s symbols</h2><p>Choose a picture to open its meaning and Bible verses, or continue with the study below.</p></div><Link className="rv-text-link" href="/revelation/symbols">Open the full symbol guide →</Link></div>
     <nav className="rv-symbol-thumbnails" aria-label="Open a symbol explanation">
-      {examples.map(item => <Link key={item.art} href={`/revelation/symbols#symbol-${item.art}`}>
+      {examples.map(item => <Link key={item.art} href={`/revelation/symbols#${symbolAnchor(item.art)}`}>
         <Image src={'folder' in item ? `/media/images/${item.folder}/${item.art}.webp` : `/media/images/revelation/symbol-${item.art}-realistic.webp`} alt="" width={144} height={96} sizes="112px" />
         <span>{item.picture}</span>
       </Link>)}
@@ -75,11 +77,11 @@ export default function SymbolGuide({ compact = false }: { compact?: boolean }) 
         <li><strong>3. Check the Bible</strong><span>Read the verse for yourself.</span></li>
       </ol>
       {!compact && <nav className="rv-symbol-jumps" aria-label="Find a Bible symbol">
-        {examples.map(item => <a key={item.art} href={`#symbol-${item.art}`}>{item.picture}</a>)}
+        {examples.map(item => <a key={item.art} href={`#${symbolAnchor(item.art)}`}>{item.picture}</a>)}
       </nav>}
       <div className="rv-symbol-examples">
         {(compact ? examples.slice(0, 2) : examples).map((item, index) => (
-          <article key={item.picture} id={`symbol-${item.art}`}>
+          <article key={item.picture} id={symbolAnchor(item.art)}>
             <Image className="rv-symbol-art"
               src={'folder' in item ? `/media/images/${item.folder}/${item.art}.webp` : `/media/images/revelation/symbol-${item.art}-realistic.webp`}
               alt={item.alt} width={1536} height={1024} sizes="(max-width:700px) 92vw, 450px" />
