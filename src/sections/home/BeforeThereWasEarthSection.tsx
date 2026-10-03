@@ -12,6 +12,7 @@ export function BeforeThereWasEarthSection() {
 
   return (
     <section
+      id="before-earth"
       aria-labelledby="before-earth-heading"
       className="relative w-full overflow-hidden border-y border-accent/20 bg-[#06101a] text-foreground"
     >

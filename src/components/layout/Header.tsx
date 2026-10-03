@@ -57,6 +57,9 @@ export function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // The Daniel & Revelation page has its own header; showing both duplicates the brand and navigation.
+  if (pathname.startsWith("/daniel-revelation")) return null;
+
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 h-[82px] transition-all duration-300 ${
