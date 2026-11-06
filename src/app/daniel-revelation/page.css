@@ -165,3 +165,17 @@ body:has(.dr-page) > header { display: none; }
 /* Centre the chart within its section while retaining horizontal scrolling on small screens. */
 .dr-time-map .dr-time-map-canvas{margin-inline:auto}
 @media(min-width:1530px){.dr-time-map .dr-scroll-hint{display:none}}
+
+/* Desktop and tablet: fit the whole time map to the section width instead of a fixed 1320px canvas that clips at the edges. Phones keep sideways scrolling. */
+@media(min-width:901px){
+ .dr-time-map .dr-scroll{overflow-x:visible!important;padding:0}
+ .dr-time-map .dr-time-map-canvas{width:100%!important;min-width:0!important;padding:0}
+ .dr-time-map .dr-scroll-hint{display:none}
+ .dr-time-map .dr-time-band strong{font-size:clamp(18px,1.9vw,28px)}
+ .dr-time-map .dr-time-band span{font-size:clamp(13px,1.15vw,17px)}
+ .dr-time-map .dr-time-events article{padding:18px 4px 0}
+ .dr-time-map .dr-time-events strong{font-size:clamp(17px,1.65vw,24px)}
+ .dr-time-map .dr-time-events span{font-size:clamp(13px,1.2vw,18px)}
+ .dr-time-map .dr-time-events small{font-size:clamp(12px,1.05vw,16px)}
+ .dr-time-map .dr-time-map-canvas:after{font-size:clamp(14px,1.35vw,20px);letter-spacing:1px}
+}
