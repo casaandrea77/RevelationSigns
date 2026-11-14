@@ -232,8 +232,10 @@
    "text": "The Bible links the two passages through shared words: an image, worship, and death for refusing. Historicist readers see Daniel 3 as a picture of the final test over worship described in Revelation 13–14. That is a comparison of themes. Daniel 3 itself is a true story from Nebuchadnezzar’s reign, not a coded prophecy."
   },
   "source": [
-   "Biblical Research Institute: interpreting Daniel and Revelation",
-   "https://adventistbiblicalresearch.org/articles/ellen-g-white-and-the-interpretation-of-daniel-and-revelation"
+   [
+    "Biblical Research Institute: interpreting Daniel and Revelation",
+    "https://adventistbiblicalresearch.org/articles/ellen-g-white-and-the-interpretation-of-daniel-and-revelation"
+   ]
   ],
   "reflection": "Can you trust God even when you don’t know how He will answer?",
   "prayer": "Lord, You walk with Your people through the fire. Give me courage to worship You alone. Amen."
@@ -715,7 +717,7 @@
   ],
   "calculation": {
    "title": "How long is “a time and times and the dividing of time”?",
-   "intro": "The first three steps come from the Bible. The last step applies them to history, and that is interpretation.",
+   "intro": "The first three steps come from the Bible. The last two apply them to history, and that is interpretation. The dates follow Amazing Facts.",
    "steps": [
     {
      "kind": "Bible statement",
@@ -746,8 +748,20 @@
     },
     {
      "kind": "Historicist interpretation",
+     "title": "Three horns plucked up: 493, 534 and 538",
+     "text": "Amazing Facts identifies the three horns plucked up before the little horn as three Arian kingdoms that opposed the bishop of Rome: the Heruli (eradicated in 493), the Vandals (534) and the Ostrogoths (538).",
+     "references": [
+      "Daniel 7:8",
+      "Daniel 7:24"
+     ]
+    },
+    {
+     "kind": "Historicist interpretation",
      "title": "1,260 years: AD 538 to 1798",
-     "text": "Historicist readers take the period as 1,260 years. They date it from AD 538, when the last of the three opposing kingdoms lost power in Rome, to 1798, when the pope was taken prisoner by a French army."
+     "text": "Following Amazing Facts, this study takes the period as 1,260 years. It begins in AD 538, when the last of the three opposing Arian kingdoms, the Ostrogoths, was uprooted. It ends in 1798, when Napoleon’s general Berthier took the pope captive, the “deadly wound” of Revelation 13:3.",
+     "references": [
+      "Revelation 13:3"
+     ]
     }
    ]
   },
@@ -756,8 +770,14 @@
    "text": "Daniel 7 says the beasts are kingdoms but does not name them. Comparing chapters 2 and 8, historicist readers identify them as Babylon, Medo-Persia, Greece and Rome. The ten horns are read as the kingdoms that came out of divided Rome, and the little horn as the papacy as a religious and political power in the Middle Ages. These identifications are interpretation, not words written in Daniel 7. They describe a system and its claims, not the faith of individual Catholics. Other Christians read the chapter differently."
   },
   "source": [
-   "Biblical Research Institute: interpreting Daniel and Revelation",
-   "https://adventistbiblicalresearch.org/articles/ellen-g-white-and-the-interpretation-of-daniel-and-revelation"
+   [
+    "Biblical Research Institute: interpreting Daniel and Revelation",
+    "https://adventistbiblicalresearch.org/articles/ellen-g-white-and-the-interpretation-of-daniel-and-revelation"
+   ],
+   [
+    "Amazing Facts: Who Is the Antichrist?",
+    "https://www.amazingfacts.org/study/bible-study-guides/who-is-the-antichrist/"
+   ]
   ],
   "reflection": "When the world seems ruled by fierce powers, what difference does it make that the last kingdom belongs to the Son of man?",
   "prayer": "Lord Jesus, Your kingdom will never pass away. Help me to stay faithful to You and to trust Your judgment. Amen."
@@ -922,7 +942,7 @@
     {
      "kind": "Historicist interpretation",
      "title": "457 BC to AD 1844",
-     "text": "Historicist readers begin the 2,300 years at the same point as the seventy weeks of chapter 9: 457 BC. Counting 2,300 years from 457 BC, with no year zero, reaches AD 1844. Adventists understand this as the start of the judgment of Daniel 7 in the heavenly sanctuary."
+     "text": "This study follows Amazing Facts and begins the 2,300 years at the same point as the seventy weeks of chapter 9: the autumn of 457 BC. Counting 2,300 years from 457 BC, with no year zero, reaches the autumn of AD 1844, which Amazing Facts dates to October 22, 1844. Adventists understand this as the start of the judgment of Daniel 7 in the heavenly sanctuary."
     }
    ]
   },
@@ -931,8 +951,14 @@
    "text": "Daniel 8 names Media-Persia and Greece; it does not name the power that follows. Historicist readers see the little horn first as Rome, which rose after Greece and stood against Christ, and then as Rome in its papal form, which they believe drew attention away from Christ’s priestly work in heaven. Many other interpreters link this horn with the Greek king Antiochus IV. Historicists answer that this horn grows “exceeding great”, more than the powers before it, and that the vision reaches to the time of the end."
   },
   "source": [
-   "Adventist belief: Christ’s ministry in the heavenly sanctuary",
-   "https://adventist.org/beliefs/official/christs-ministry-in-the-heavenly-sanctuary"
+   [
+    "Adventist belief: Christ’s ministry in the heavenly sanctuary",
+    "https://adventist.org/beliefs/official/christs-ministry-in-the-heavenly-sanctuary"
+   ],
+   [
+    "Amazing Facts: Who Is the Antichrist?",
+    "https://www.amazingfacts.org/study/bible-study-guides/who-is-the-antichrist/"
+   ]
   ],
   "reflection": "Even when truth seems thrown to the ground, God has set a time to put things right. Where do you need to trust His timing?",
   "prayer": "Lord, You see what is hidden and You keep Your promises. Help me to trust Jesus, my High Priest. Amen."
@@ -1069,9 +1095,10 @@
     {
      "kind": "History",
      "title": "The starting point: 457 BC",
-     "text": "The countdown begins with the command to restore and build Jerusalem. In the seventh year of King Artaxerxes, 457 BC, a decree sent Ezra to Jerusalem with authority to set up its government under God’s law.",
+     "text": "The countdown begins with the command to restore and build Jerusalem. In the seventh year of King Artaxerxes, in the autumn of 457 BC, a decree sent Ezra to Jerusalem with authority to set up its government under God’s law. It completed earlier decrees by Cyrus and Darius.",
      "references": [
       "Daniel 9:25",
+      "Ezra 6:14",
       "Ezra 7:7–8,11–13,25–26"
      ]
     },
@@ -1105,7 +1132,7 @@
     {
      "kind": "Historicist interpretation",
      "title": "The longer period: 2,300 years",
-     "text": "Gabriel came to explain “the vision” of chapter 8. Historicists therefore start the 2,300 years at the same point, 457 BC, which reaches AD 1844.",
+     "text": "Gabriel came to explain “the vision” of chapter 8. So the 2,300 years start at the same point, 457 BC. The first 490 years end in AD 34; the remaining 1,810 years reach AD 1844, dated to October 22, 1844.",
      "references": [
       "Daniel 8:14",
       "Daniel 9:23"
@@ -1118,8 +1145,10 @@
    "text": "This study follows the historicist reading, which applies all seventy weeks to the time of Christ without a gap. It reads “he” in verse 27 as the Messiah, who confirms the covenant. Many other Christians place the final week in the future and apply verse 27 to an antichrist. The dates above (457 BC, AD 27, 31 and 34) come from applying the text to history; Daniel 9 itself does not list them."
   },
   "source": [
-   "Biblical Research Institute: interpreting Daniel and Revelation",
-   "https://adventistbiblicalresearch.org/articles/ellen-g-white-and-the-interpretation-of-daniel-and-revelation"
+   [
+    "Biblical Research Institute: interpreting Daniel and Revelation",
+    "https://adventistbiblicalresearch.org/articles/ellen-g-white-and-the-interpretation-of-daniel-and-revelation"
+   ]
   ],
   "reflection": "Daniel prayed “for thy great mercies”, not for his own goodness. How might you pray today in the same spirit?",
   "prayer": "O Lord, hear; O Lord, forgive. Thank You for sending the Messiah at the right time. Amen."
@@ -1230,8 +1259,10 @@
    "text": "The Bible calls Michael a prince, a chief prince and the archangel. Seventh-day Adventists and many Protestant interpreters through history have understood Michael as a name for Christ in His role as leader of heaven’s angels, not as a created angel. They point to the archangel’s voice at Christ’s return and to the “great prince” of Daniel 12:1. Other Christians understand Michael as a leading created angel. Both readings agree that Michael defends God’s people."
   },
   "source": [
-   "Biblical Research Institute: interpreting Daniel and Revelation",
-   "https://adventistbiblicalresearch.org/articles/ellen-g-white-and-the-interpretation-of-daniel-and-revelation"
+   [
+    "Biblical Research Institute: interpreting Daniel and Revelation",
+    "https://adventistbiblicalresearch.org/articles/ellen-g-white-and-the-interpretation-of-daniel-and-revelation"
+   ]
   ],
   "deeper": {
    "label": "When Michael Stands Up",
@@ -1361,8 +1392,10 @@
    "text": "Daniel 11 does not name its kings after Persia and Greece, so every reading of it is interpretation. Most interpreters agree that verses 5–20 describe the wars between the Seleucid and Ptolemaic kingdoms. Historicists then see the chapter move on to Rome, reading “the prince of the covenant” in verse 22 as the Messiah, and see verses 31–39 as the papal power of chapters 7 and 8. Adventist scholars do not all agree on verses 40–45, and this study does not give a detailed modern identification. Many others read verses 21–35 as Antiochus IV."
   },
   "source": [
-   "Biblical Research Institute: interpreting Daniel and Revelation",
-   "https://adventistbiblicalresearch.org/articles/ellen-g-white-and-the-interpretation-of-daniel-and-revelation"
+   [
+    "Biblical Research Institute: interpreting Daniel and Revelation",
+    "https://adventistbiblicalresearch.org/articles/ellen-g-white-and-the-interpretation-of-daniel-and-revelation"
+   ]
   ],
   "deeper": {
    "label": "When Michael Stands Up",
@@ -1491,7 +1524,7 @@
   ],
   "calculation": {
    "title": "The 1,260, 1,290 and 1,335 days",
-   "intro": "Daniel 12 gives three time periods. The Bible gives the numbers; applying them to dates is interpretation, and readers differ.",
+   "intro": "Daniel 12 gives three time periods. The Bible gives the numbers; the dates come from applying them to history, as Amazing Facts does.",
    "steps": [
     {
      "kind": "Bible statement",
@@ -1514,7 +1547,12 @@
     {
      "kind": "Historicist interpretation",
      "title": "From AD 508 to 1798 and 1843",
-     "text": "Many historicist interpreters begin the 1,290 and 1,335 years around AD 508, a date they link with Clovis, king of the Franks, joining the power of the state to the church of Rome. Counted from there, they end in 1798, the end of the 1,260 years, and in 1843, during the Advent awakening that came before 1844. Interpreters differ on these dates, so this is offered as a possible reading, not as a settled teaching of Scripture."
+     "text": "Following Amazing Facts’ charts, both periods begin in AD 508, when Clovis, king of the Franks, established the priesthood of the papal church. The charts link this with the “daily”: Christ’s heavenly ministry was displaced by an earthly priesthood. The 1,290 years end in 1798, when General Berthier ended papal supremacy. The 1,335 years end in 1843, when the Advent movement, which studied Daniel after 1798, was waiting for Christ’s coming. Verse 12’s blessing on “he that waiteth” is applied to them.",
+     "references": [
+      "Daniel 8:11–13",
+      "Daniel 11:31",
+      "Daniel 12:11–12"
+     ]
     }
    ]
   },
@@ -1523,8 +1561,18 @@
    "text": "Historicist readers understand Michael’s standing up as the moment Christ finishes His work as High Priest in heaven and takes up His kingdom. This is followed by the time of trouble and His return to deliver His people. Daniel 12 itself says Michael stands up, trouble follows, God’s people are delivered and many are raised. The order of events beyond that is drawn from other passages."
   },
   "source": [
-   "Adventist belief: Christ’s ministry in the heavenly sanctuary",
-   "https://adventist.org/beliefs/official/christs-ministry-in-the-heavenly-sanctuary"
+   [
+    "Adventist belief: Christ’s ministry in the heavenly sanctuary",
+    "https://adventist.org/beliefs/official/christs-ministry-in-the-heavenly-sanctuary"
+   ],
+   [
+    "Amazing Facts chart: the 1,290 days",
+    "https://manna.amazingfacts.org/amazingfacts/website/bibleprophecytruth/documents/1290-chart.pdf"
+   ],
+   [
+    "Amazing Facts chart: the 1,335 days",
+    "https://manna.amazingfacts.org/amazingfacts/website/bibleprophecytruth/documents/1335-chart.pdf"
+   ]
   ],
   "deeper": {
    "label": "When Michael Stands Up",
