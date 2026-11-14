@@ -1,5 +1,593 @@
 [
  {
+  "number": 1,
+  "heading": "Far from home, faithful to God.",
+  "time": "Daniel 1 opens the book. Nebuchadnezzar of Babylon besieges Jerusalem in the third year of King Jehoiakim (verse 1), about 605 BC. Young Daniel and his friends are taken to Babylon. The last verse jumps ahead about seventy years to the first year of King Cyrus, showing that Daniel stays faithful through the whole exile.",
+  "scenes": [
+   {
+    "start": 1,
+    "end": 2,
+    "title": "Jerusalem is taken",
+    "text": "Nebuchadnezzar besieges Jerusalem. The Bible says it was the Lord who gave King Jehoiakim into his hand. Some of the holy vessels from God’s temple are carried to the house of Babylon’s god."
+   },
+   {
+    "start": 3,
+    "end": 7,
+    "title": "Chosen for the king’s court",
+    "text": "The best young men of Judah are chosen to be trained for three years in Babylon’s language and learning. They are given food from the king’s table and new names. Daniel becomes Belteshazzar; his friends become Shadrach, Meshach and Abed-nego."
+   },
+   {
+    "start": 8,
+    "end": 14,
+    "title": "Daniel makes up his mind",
+    "text": "Daniel purposes in his heart not to defile himself with the king’s food and wine. He asks politely for a ten-day test: vegetables (“pulse”) and water. God gives Daniel favour with the official."
+   },
+   {
+    "start": 15,
+    "end": 16,
+    "title": "The ten-day test",
+    "text": "After ten days, Daniel and his friends look healthier than all the others. They are allowed to keep their simple diet."
+   },
+   {
+    "start": 17,
+    "end": 21,
+    "title": "Ten times wiser",
+    "text": "God gives the four young men knowledge and wisdom. Daniel also understands visions and dreams. The king finds them ten times better than all his wise men. Daniel continues until the first year of Cyrus."
+   }
+  ],
+  "symbols": [
+   {
+    "title": "The temple vessels",
+    "kind": "Compare Scripture",
+    "text": "The holy vessels taken to Babylon return in chapter 5, when Belshazzar drinks from them at his feast. Ezra later records that Cyrus sent them back to Jerusalem.",
+    "references": [
+     "Daniel 1:2",
+     "Daniel 5:2–4",
+     "Ezra 1:7–11"
+    ]
+   },
+   {
+    "title": "New names",
+    "kind": "Explained in the chapter",
+    "text": "Babylon changes the young men’s names. Their Hebrew names honour the God of Israel; for example, Daniel means “God is my judge”. Babylon could change their names, but not their loyalty.",
+    "references": [
+     "Daniel 1:6–7",
+     "Daniel 4:8"
+    ]
+   },
+   {
+    "title": "“Purposed in his heart”",
+    "kind": "Explained in the chapter",
+    "text": "Daniel’s choice starts inside, before anyone is watching. He then acts with respect and wisdom, asking for a fair test rather than starting a fight.",
+    "references": [
+     "Daniel 1:8",
+     "Daniel 1:12–13"
+    ]
+   }
+  ],
+  "connections": [
+   {
+    "title": "A warning fulfilled",
+    "text": "About a century earlier, Isaiah warned King Hezekiah that treasures and descendants of the royal family would be carried to Babylon.",
+    "references": [
+     "Isaiah 39:5–7",
+     "2 Kings 24:1"
+    ]
+   },
+   {
+    "title": "Your body, God’s temple",
+    "text": "Paul teaches that our bodies belong to God and that whatever we eat or drink should be done to His glory.",
+    "references": [
+     "1 Corinthians 6:19–20",
+     "1 Corinthians 10:31"
+    ]
+   },
+   {
+    "title": "Wisdom comes from God",
+    "text": "Daniel and his friends did not become wise by their own skill alone. God gave it, as He promises to those who ask.",
+    "references": [
+     "Daniel 1:17",
+     "James 1:5"
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "question": "Who gave Jehoiakim into Nebuchadnezzar’s hand?",
+    "answer": "The Lord did. Even in defeat, God was still in control.",
+    "reference": "Daniel 1:2"
+   },
+   {
+    "question": "What did Daniel ask for during the ten-day test?",
+    "answer": "Pulse (vegetables) to eat and water to drink.",
+    "reference": "Daniel 1:12"
+   },
+   {
+    "question": "Where did the young men’s wisdom come from?",
+    "answer": "God gave them knowledge, skill and wisdom.",
+    "reference": "Daniel 1:17"
+   }
+  ],
+  "interpretation": {
+   "title": "Why this story comes first",
+   "text": "Chapter 1 has no prophecy, but it sets the scene for the whole book. It shows God ruling over kings, and His people staying faithful in small, daily choices. Many readers, including this study, see Daniel’s diet as a lesson about honouring God with the body. The Bible itself does not say exactly why the king’s food would have defiled Daniel; it may have broken the food laws or been offered to idols."
+  },
+  "reflection": "What small, everyday choice could show that your loyalty belongs to God?",
+  "prayer": "Lord, give me a heart like Daniel’s, faithful in small things and gentle with others. Amen."
+ },
+ {
+  "number": 3,
+  "heading": "Bow to the image, or trust God in the fire.",
+  "time": "Daniel 3 follows the statue dream of chapter 2. Nebuchadnezzar now builds a statue of gold, as if his kingdom would never pass away. Daniel himself does not appear in this chapter; the story is about his three friends.",
+  "scenes": [
+   {
+    "start": 1,
+    "end": 7,
+    "title": "A golden image on the plain",
+    "text": "Nebuchadnezzar sets up a golden image sixty cubits high on the plain of Dura. All the leaders are called together. When the music plays, everyone must bow and worship, or be thrown into a burning furnace. Everyone bows."
+   },
+   {
+    "start": 8,
+    "end": 12,
+    "title": "Three men stand",
+    "text": "Some Chaldeans tell the king that three Jews he has put in charge, Shadrach, Meshach and Abed-nego, do not serve his gods or worship the golden image."
+   },
+   {
+    "start": 13,
+    "end": 18,
+    "title": "“But if not”",
+    "text": "The furious king gives them one more chance. They answer calmly: our God is able to deliver us, and He will. But even if He does not, we will not serve your gods or worship your image."
+   },
+   {
+    "start": 19,
+    "end": 23,
+    "title": "Into the furnace",
+    "text": "The furnace is heated seven times hotter. The strongest soldiers tie up the three men and throw them in. The flames kill the soldiers, and the three men fall down bound into the fire."
+   },
+   {
+    "start": 24,
+    "end": 27,
+    "title": "A fourth man in the fire",
+    "text": "The king jumps up in shock. He sees four men walking free in the fire, unhurt, and the fourth looks “like the Son of God”. The three come out. Their hair is not singed, and they do not even smell of smoke."
+   },
+   {
+    "start": 28,
+    "end": 30,
+    "title": "The king praises God",
+    "text": "Nebuchadnezzar blesses the God who sent His angel and saved His servants who trusted in Him. He makes a decree protecting their God, and promotes the three men."
+   }
+  ],
+  "symbols": [
+   {
+    "title": "An image all of gold",
+    "kind": "Compare Scripture",
+    "text": "In chapter 2 only the head was gold, and it was followed by other kingdoms. A statue all of gold looks like Babylon refusing God’s message that its kingdom would end.",
+    "references": [
+     "Daniel 2:38–39",
+     "Daniel 3:1"
+    ]
+   },
+   {
+    "title": "The fourth man",
+    "kind": "Explained in the chapter",
+    "text": "The king says the fourth looks like “the Son of God” and then says God “sent his angel”. Many Christians see here the presence of Christ Himself. Either way, God was with them in the fire.",
+    "references": [
+     "Daniel 3:25",
+     "Daniel 3:28"
+    ]
+   },
+   {
+    "title": "Worship under pressure",
+    "kind": "Compare Scripture",
+    "text": "God’s commandments forbid bowing to images. The three men obey God rather than the king, as the apostles later did.",
+    "references": [
+     "Exodus 20:3–5",
+     "Acts 5:29"
+    ]
+   }
+  ],
+  "connections": [
+   {
+    "title": "“When thou walkest through the fire”",
+    "text": "God promised Israel that the fire would not burn them, because He would be with them.",
+    "references": [
+     "Isaiah 43:2"
+    ]
+   },
+   {
+    "title": "An image and a death decree in Revelation",
+    "text": "Revelation 13 also describes an image that all must worship, with death for those who refuse. Daniel 3 shows that God can keep His people faithful in that kind of test.",
+    "references": [
+     "Revelation 13:14–15",
+     "Revelation 14:9–12"
+    ]
+   },
+   {
+    "title": "Faith that trusts without knowing the outcome",
+    "text": "Hebrews remembers those who “quenched the violence of fire” through faith, and others who suffered without being rescued in this life.",
+    "references": [
+     "Hebrews 11:33–38"
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "question": "What did the three men say if God chose not to deliver them?",
+    "answer": "They still would not serve the king’s gods or worship the golden image.",
+    "reference": "Daniel 3:17–18"
+   },
+   {
+    "question": "How many men did the king see in the fire?",
+    "answer": "Four, walking loose and unhurt.",
+    "reference": "Daniel 3:25"
+   },
+   {
+    "question": "What did the fire burn?",
+    "answer": "Only their ropes. Their bodies, hair and clothes were unharmed.",
+    "reference": "Daniel 3:21,25,27"
+   }
+  ],
+  "interpretation": {
+   "title": "Reading Daniel 3 alongside Revelation 13",
+   "text": "The Bible links the two passages through shared words: an image, worship, and death for refusing. Historicist readers see Daniel 3 as a picture of the final test over worship described in Revelation 13–14. That is a comparison of themes. Daniel 3 itself is a true story from Nebuchadnezzar’s reign, not a coded prophecy."
+  },
+  "source": [
+   "Biblical Research Institute: interpreting Daniel and Revelation",
+   "https://adventistbiblicalresearch.org/articles/ellen-g-white-and-the-interpretation-of-daniel-and-revelation"
+  ],
+  "reflection": "Can you trust God even when you don’t know how He will answer?",
+  "prayer": "Lord, You walk with Your people through the fire. Give me courage to worship You alone. Amen."
+ },
+ {
+  "number": 4,
+  "heading": "The most High rules in the kingdom of men.",
+  "time": "Daniel 4 is a letter written by Nebuchadnezzar himself. He tells how God humbled him, probably late in his long reign. It is the last time we see him in the book; the next chapter jumps ahead to Belshazzar.",
+  "scenes": [
+   {
+    "start": 1,
+    "end": 3,
+    "title": "The king’s letter",
+    "text": "Nebuchadnezzar writes to all nations to tell what the most high God has done for him. He begins with praise: God’s kingdom is everlasting."
+   },
+   {
+    "start": 4,
+    "end": 9,
+    "title": "A frightening dream",
+    "text": "Resting in his palace, the king dreams a dream that frightens him. His wise men cannot explain it, so he calls Daniel."
+   },
+   {
+    "start": 10,
+    "end": 18,
+    "title": "The great tree",
+    "text": "He sees a huge tree that reaches heaven and feeds everyone. A holy watcher from heaven orders it cut down, but the stump is to be left, bound with iron and brass, while “seven times” pass, so that people may know the most High rules."
+   },
+   {
+    "start": 19,
+    "end": 27,
+    "title": "“It is thou, O king”",
+    "text": "Daniel is troubled, but tells the truth kindly. The tree is the king. He will be driven from people and live like an animal until he knows that God rules. Daniel urges him to turn from sin and show mercy to the poor."
+   },
+   {
+    "start": 28,
+    "end": 33,
+    "title": "Pride and fall",
+    "text": "A year later the king boasts about the great Babylon he has built. At once a voice from heaven speaks, and he loses his reason and lives in the fields like an ox."
+   },
+   {
+    "start": 34,
+    "end": 37,
+    "title": "Restored and humble",
+    "text": "At the end of the time, Nebuchadnezzar looks up to heaven, and his understanding returns. He praises the King of heaven, whose ways are right, and who is able to humble the proud."
+   }
+  ],
+  "symbols": [
+   {
+    "title": "The great tree",
+    "kind": "Explained in the chapter",
+    "text": "The tree is King Nebuchadnezzar, whose greatness reached to heaven and whose rule reached the ends of the earth (verses 20–22).",
+    "references": [
+     "Daniel 4:20–22"
+    ]
+   },
+   {
+    "title": "The stump left in the ground",
+    "kind": "Explained in the chapter",
+    "text": "His kingdom will be kept for him and given back, once he knows that the heavens rule (verse 26).",
+    "references": [
+     "Daniel 4:15",
+     "Daniel 4:26"
+    ]
+   },
+   {
+    "title": "Seven times",
+    "kind": "Interpretation",
+    "text": "The length of the king’s humbling. Many readers understand it as seven years. Verse 34 simply calls it “the end of the days”.",
+    "references": [
+     "Daniel 4:16,32",
+     "Daniel 4:34"
+    ]
+   }
+  ],
+  "connections": [
+   {
+    "title": "Pride before a fall",
+    "text": "Proverbs warns that pride goes before destruction. Jesus taught that whoever exalts himself will be humbled.",
+    "references": [
+     "Proverbs 16:18",
+     "Luke 14:11"
+    ]
+   },
+   {
+    "title": "God sets up kings",
+    "text": "Daniel had already said this in chapter 2. Chapter 4 shows it happen to the most powerful king of his day.",
+    "references": [
+     "Daniel 2:21",
+     "Daniel 4:17"
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "question": "What lesson was the dream meant to teach?",
+    "answer": "That the most High rules in the kingdom of men and gives it to whomever He wills.",
+    "reference": "Daniel 4:17,25"
+   },
+   {
+    "question": "What did Daniel advise the king to do?",
+    "answer": "Break off his sins by righteousness and show mercy to the poor.",
+    "reference": "Daniel 4:27"
+   },
+   {
+    "question": "When was the king’s understanding restored?",
+    "answer": "When he lifted his eyes to heaven and praised the most High.",
+    "reference": "Daniel 4:34"
+   }
+  ],
+  "interpretation": {
+   "title": "A real king, a lasting lesson",
+   "text": "The chapter tells what happened to Nebuchadnezzar and explains it plainly; it is not a time prophecy about later history. This study reads it as hope: God humbled the king in order to save him, and the story ends with the king praising God. We do not try to add details about his illness that the Bible does not give."
+  },
+  "reflection": "Where might pride be keeping you from seeing that God is in charge?",
+  "prayer": "King of heaven, all Your works are truth. Keep me humble, and teach me to give You the glory. Amen."
+ },
+ {
+  "number": 5,
+  "heading": "Weighed in the balances.",
+  "time": "Daniel 5 jumps to the last night of Babylon, in 539 BC, more than twenty years after Nebuchadnezzar’s death. Daniel is now an old man. The visions of chapters 7 and 8 have already been given during Belshazzar’s reign. Babylon, the head of gold, now falls to the Medes and Persians, as chapter 2 said.",
+  "scenes": [
+   {
+    "start": 1,
+    "end": 4,
+    "title": "A feast with the temple vessels",
+    "text": "King Belshazzar holds a great feast for a thousand lords. He calls for the gold and silver vessels from God’s temple, and they drink from them while praising idols."
+   },
+   {
+    "start": 5,
+    "end": 9,
+    "title": "A hand writes on the wall",
+    "text": "Fingers of a man’s hand appear and write on the palace wall. The king is terrified, and his knees knock together. None of his wise men can read the writing."
+   },
+   {
+    "start": 10,
+    "end": 16,
+    "title": "The queen remembers Daniel",
+    "text": "The queen reminds the king about Daniel, who had wisdom in Nebuchadnezzar’s day. Daniel is brought in and promised rich rewards."
+   },
+   {
+    "start": 17,
+    "end": 24,
+    "title": "Daniel’s rebuke",
+    "text": "Daniel refuses the gifts. He reminds Belshazzar how God humbled Nebuchadnezzar. Belshazzar knew all this, yet he has not humbled his heart and has praised idols instead of the God who holds his breath."
+   },
+   {
+    "start": 25,
+    "end": 28,
+    "title": "MENE, MENE, TEKEL, UPHARSIN",
+    "text": "Daniel reads and explains the writing. God has numbered the kingdom and finished it. The king has been weighed and found wanting. The kingdom is divided and given to the Medes and Persians."
+   },
+   {
+    "start": 29,
+    "end": 31,
+    "title": "That same night",
+    "text": "Daniel is made third ruler in the kingdom. That night Belshazzar is killed, and Darius the Median takes the kingdom."
+   }
+  ],
+  "symbols": [
+   {
+    "title": "MENE",
+    "kind": "Explained in the chapter",
+    "text": "“God hath numbered thy kingdom, and finished it.” Babylon’s time is over.",
+    "references": [
+     "Daniel 5:26"
+    ]
+   },
+   {
+    "title": "TEKEL",
+    "kind": "Explained in the chapter",
+    "text": "“Thou art weighed in the balances, and art found wanting.” God has judged the king’s life.",
+    "references": [
+     "Daniel 5:27"
+    ]
+   },
+   {
+    "title": "PERES (UPHARSIN)",
+    "kind": "Explained in the chapter",
+    "text": "“Thy kingdom is divided, and given to the Medes and Persians.” The word sounds like the name “Persia”.",
+    "references": [
+     "Daniel 5:28"
+    ]
+   }
+  ],
+  "connections": [
+   {
+    "title": "The head of gold gives way to silver",
+    "text": "Daniel told Nebuchadnezzar that another, lesser kingdom would follow his. Chapter 8 names the ram as Media and Persia.",
+    "references": [
+     "Daniel 2:38–39",
+     "Daniel 8:20"
+    ]
+   },
+   {
+    "title": "Cyrus named in advance",
+    "text": "Isaiah named Cyrus as the one God would use to open the gates and set His people free.",
+    "references": [
+     "Isaiah 44:28–45:1",
+     "Jeremiah 51:11"
+    ]
+   },
+   {
+    "title": "Babylon falls in Revelation",
+    "text": "Revelation uses Babylon’s fall to describe the end of a great end-time system that opposes God.",
+    "references": [
+     "Revelation 14:8",
+     "Revelation 18:2"
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "question": "Why was Belshazzar without excuse?",
+    "answer": "He knew what had happened to Nebuchadnezzar, yet he did not humble his heart.",
+    "reference": "Daniel 5:22"
+   },
+   {
+    "question": "What does TEKEL mean?",
+    "answer": "You are weighed in the balances and found wanting.",
+    "reference": "Daniel 5:27"
+   },
+   {
+    "question": "When was Belshazzar killed?",
+    "answer": "That same night.",
+    "reference": "Daniel 5:30"
+   }
+  ],
+  "interpretation": {
+   "title": "History confirms the setting",
+   "text": "For a long time Belshazzar was known only from the Bible. Babylonian records found later show that he ruled in Babylon as co-regent while his father Nabonidus was away. That explains why he could offer Daniel only the third place in the kingdom. Revelation’s “Babylon” is a separate end-time symbol; linking the two is a comparison, not something Daniel 5 says."
+  },
+  "reflection": "If your life were weighed today, what would you want God to find?",
+  "prayer": "Lord, my breath is in Your hand. Help me to honour You and not waste the time You give. Amen."
+ },
+ {
+  "number": 6,
+  "heading": "Daniel keeps praying, and God shuts the lions’ mouths.",
+  "time": "Daniel 6 follows the fall of Babylon. Darius the Mede now rules, and Daniel, over eighty years old, is one of three top officials. This is the last story in the first half of the book. The following chapters return to Daniel’s visions.",
+  "scenes": [
+   {
+    "start": 1,
+    "end": 5,
+    "title": "No fault in Daniel",
+    "text": "Darius sets 120 princes over the kingdom, with three presidents above them, and Daniel is first. Jealous officials look for a fault in Daniel but find none. They decide to use his faithfulness to his God against him."
+   },
+   {
+    "start": 6,
+    "end": 9,
+    "title": "A law that cannot be changed",
+    "text": "The officials persuade Darius to sign a decree: for thirty days nobody may ask anything of any god or man except the king. Anyone who does will be thrown to the lions."
+   },
+   {
+    "start": 10,
+    "end": 13,
+    "title": "Windows open toward Jerusalem",
+    "text": "Daniel knows the law is signed. He goes home and prays three times a day with his windows open toward Jerusalem, just as he always had. His enemies catch him and report it."
+   },
+   {
+    "start": 14,
+    "end": 17,
+    "title": "Into the den",
+    "text": "The king tries all day to save Daniel, but the law cannot be changed. Daniel is thrown into the den. Darius says, “Thy God whom thou servest continually, he will deliver thee.” A stone is sealed over the entrance."
+   },
+   {
+    "start": 18,
+    "end": 23,
+    "title": "“My God hath sent his angel”",
+    "text": "The king cannot sleep. At dawn he runs to the den and calls out. Daniel answers that God sent His angel and shut the lions’ mouths. He is lifted out without a scratch, because he trusted in his God."
+   },
+   {
+    "start": 24,
+    "end": 28,
+    "title": "A decree for the living God",
+    "text": "Daniel’s accusers are punished. Darius writes to all nations that everyone should fear the God of Daniel, the living God whose kingdom will never be destroyed. Daniel prospers under Darius and Cyrus."
+   }
+  ],
+  "symbols": [
+   {
+    "title": "Open windows toward Jerusalem",
+    "kind": "Compare Scripture",
+    "text": "At the temple’s dedication, Solomon asked God to hear His people when they pray toward Jerusalem from a foreign land. Daniel prays the way he always had.",
+    "references": [
+     "Daniel 6:10",
+     "1 Kings 8:46–49"
+    ]
+   },
+   {
+    "title": "A law that cannot be changed",
+    "kind": "Explained in the chapter",
+    "text": "The law of the Medes and Persians could not be altered, even by the king. The trap depended on it.",
+    "references": [
+     "Daniel 6:8,15"
+    ]
+   },
+   {
+    "title": "The sealed stone",
+    "kind": "Compare Scripture",
+    "text": "A stone is sealed over the den, and Daniel comes out alive in the morning. Many readers notice the echo of Jesus’ sealed tomb and His resurrection.",
+    "references": [
+     "Daniel 6:17",
+     "Matthew 27:66",
+     "Matthew 28:2,6"
+    ]
+   }
+  ],
+  "connections": [
+   {
+    "title": "Shut the mouths of lions",
+    "text": "Hebrews lists those who “through faith … stopped the mouths of lions”.",
+    "references": [
+     "Hebrews 11:33"
+    ]
+   },
+   {
+    "title": "Faithful in prayer",
+    "text": "Paul urges believers to pray without ceasing. Jesus taught us to pray to our Father in secret.",
+    "references": [
+     "1 Thessalonians 5:17",
+     "Matthew 6:6"
+    ]
+   },
+   {
+    "title": "A test of loyalty at the end",
+    "text": "Revelation describes a law that forces worship. Like Daniel 3, this story shows God’s people staying loyal under such pressure.",
+    "references": [
+     "Revelation 13:15–17"
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "question": "Why could Daniel’s enemies find no fault in him?",
+    "answer": "He was faithful, and no error or fault was found in him.",
+    "reference": "Daniel 6:4"
+   },
+   {
+    "question": "What did Daniel do after the decree was signed?",
+    "answer": "He prayed three times a day, as he did before.",
+    "reference": "Daniel 6:10"
+   },
+   {
+    "question": "Why was no hurt found on Daniel?",
+    "answer": "Because he believed in his God.",
+    "reference": "Daniel 6:23"
+   }
+  ],
+  "interpretation": {
+   "title": "Who was Darius the Mede?",
+   "text": "The Bible says Darius the Mede took the kingdom at about 62 years old and later mentions Cyrus the Persian. Outside the Bible, historians have not found a record under this name, and they suggest different identifications. This study does not pick one. The point of the story is clear: God protects those who are faithful to Him."
+  },
+  "reflection": "What habit of prayer would you want to keep even if it cost you something?",
+  "prayer": "Living God, You deliver and rescue. Help me to serve You continually, as Daniel did. Amen."
+ },
+ {
   "number": 7,
   "heading": "Beasts rise, but the Son of man receives the kingdom.",
   "time": "Daniel 7 goes back in time. Daniel has this dream in the first year of King Belshazzar (verse 1), before Babylon falls in chapter 5. It is the first vision Daniel himself receives. It covers the same history as the king’s statue dream in chapter 2, then adds a judgment in heaven and more detail about the last power on earth.",
@@ -535,5 +1123,415 @@
   ],
   "reflection": "Daniel prayed “for thy great mercies”, not for his own goodness. How might you pray today in the same spirit?",
   "prayer": "O Lord, hear; O Lord, forgive. Thank You for sending the Messiah at the right time. Amen."
+ },
+ {
+  "number": 10,
+  "heading": "A heavenly messenger, and a conflict behind the scenes.",
+  "time": "Daniel 10 begins the last vision of the book, which runs through chapters 10, 11 and 12. It is the third year of Cyrus king of Persia (verse 1), about 536 BC. Some Jews have returned to Jerusalem, but Daniel, now very old, is still in Persia, mourning and praying.",
+  "scenes": [
+   {
+    "start": 1,
+    "end": 3,
+    "title": "Three weeks of mourning",
+    "text": "Daniel receives a message about a great conflict. He mourns and fasts from rich food for three full weeks."
+   },
+   {
+    "start": 4,
+    "end": 9,
+    "title": "A man clothed in linen",
+    "text": "By the river Hiddekel (the Tigris), Daniel sees a man dressed in linen with a golden belt. His face is like lightning, his eyes like lamps of fire, and his voice like a crowd. Daniel’s strength leaves him, and he falls to the ground."
+   },
+   {
+    "start": 10,
+    "end": 14,
+    "title": "“Thou art greatly beloved”",
+    "text": "A hand touches Daniel. He is told that his prayer was heard from the first day. The prince of Persia resisted the messenger for twenty-one days, but Michael came to help. Now he has come to explain what will happen in the latter days."
+   },
+   {
+    "start": 15,
+    "end": 19,
+    "title": "Strengthened",
+    "text": "Daniel cannot speak or breathe. One like a man touches his lips and strengthens him. “Fear not: peace be unto thee, be strong.”"
+   },
+   {
+    "start": 20,
+    "end": 21,
+    "title": "The scripture of truth",
+    "text": "The messenger will return to fight with the prince of Persia, and the prince of Grecia will come. He will show Daniel what is written in the scripture of truth. Only Michael stands with him."
+   }
+  ],
+  "symbols": [
+   {
+    "title": "The man clothed in linen",
+    "kind": "Compare Scripture",
+    "text": "John’s vision of the risen Jesus in Revelation 1 uses very similar words: a golden girdle, eyes like fire, feet like polished brass and a voice like many waters.",
+    "references": [
+     "Daniel 10:5–6",
+     "Revelation 1:13–15"
+    ]
+   },
+   {
+    "title": "The prince of Persia",
+    "kind": "Interpretation",
+    "text": "This prince resists a heavenly messenger for 21 days, so he is more than a human ruler. Many readers understand him as an evil spiritual power working behind the kingdom of Persia.",
+    "references": [
+     "Daniel 10:13,20",
+     "Ephesians 6:12"
+    ]
+   },
+   {
+    "title": "Michael",
+    "kind": "Compare Scripture",
+    "text": "Michael is “one of the chief princes” and “your prince”, who stands for Daniel’s people. Jude calls him “Michael the archangel”, and Revelation shows Michael leading heaven’s army against the dragon.",
+    "references": [
+     "Daniel 10:13,21",
+     "Jude 9",
+     "Revelation 12:7"
+    ]
+   }
+  ],
+  "connections": [
+   {
+    "title": "Prayer is heard at once",
+    "text": "God heard Daniel from the first day, even though the answer took three weeks. Jesus promised that the Father hears those who ask.",
+    "references": [
+     "Daniel 10:12",
+     "Matthew 7:7–8"
+    ]
+   },
+   {
+    "title": "An unseen conflict",
+    "text": "The book of Job and Paul’s letters also describe a spiritual struggle behind what happens on earth.",
+    "references": [
+     "Job 1:6–12",
+     "Ephesians 6:12"
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "question": "When was Daniel’s prayer heard?",
+    "answer": "From the first day he set his heart to understand and humble himself.",
+    "reference": "Daniel 10:12"
+   },
+   {
+    "question": "Who helped the messenger against the prince of Persia?",
+    "answer": "Michael, one of the chief princes.",
+    "reference": "Daniel 10:13"
+   },
+   {
+    "question": "What did the messenger say when he strengthened Daniel?",
+    "answer": "“O man greatly beloved, fear not: peace be unto thee, be strong.”",
+    "reference": "Daniel 10:19"
+   }
+  ],
+  "interpretation": {
+   "title": "Who is Michael?",
+   "text": "The Bible calls Michael a prince, a chief prince and the archangel. Seventh-day Adventists and many Protestant interpreters through history have understood Michael as a name for Christ in His role as leader of heaven’s angels, not as a created angel. They point to the archangel’s voice at Christ’s return and to the “great prince” of Daniel 12:1. Other Christians understand Michael as a leading created angel. Both readings agree that Michael defends God’s people."
+  },
+  "source": [
+   "Biblical Research Institute: interpreting Daniel and Revelation",
+   "https://adventistbiblicalresearch.org/articles/ellen-g-white-and-the-interpretation-of-daniel-and-revelation"
+  ],
+  "deeper": {
+   "label": "When Michael Stands Up",
+   "href": "/bible-studies/prophecy/when-michael-stands-up",
+   "text": "Follow Daniel 11–12 into the final events of Revelation with an interactive timeline."
+  },
+  "reflection": "When an answer to prayer seems slow, what does Daniel 10 tell you about what may be happening unseen?",
+  "prayer": "Lord, thank You for hearing me from the first day. Strengthen me and give me Your peace. Amen."
+ },
+ {
+  "number": 11,
+  "heading": "Kings rise and fall; the time of the end draws near.",
+  "time": "Daniel 11 is the messenger’s explanation, which continues from chapter 10. It begins in the days of Persia and follows the struggles of kings, “the king of the north” and “the king of the south”, all the way to the time of the end. It covers the same ground as chapters 2, 7 and 8, in much more detail.",
+  "scenes": [
+   {
+    "start": 1,
+    "end": 4,
+    "title": "Persia, then a mighty king",
+    "text": "Three more kings will rule Persia, and a fourth will be very rich and stir up all against Greece. Then a mighty king will rule, but his kingdom will be broken and divided toward the four winds, not to his own descendants."
+   },
+   {
+    "start": 5,
+    "end": 20,
+    "title": "North against south",
+    "text": "The king of the south and the king of the north make alliances and wars. Marriages, armies and treaties come and go. Some kings grow strong, others stumble and fall."
+   },
+   {
+    "start": 21,
+    "end": 30,
+    "title": "A vile person comes to power",
+    "text": "A contemptible person takes the kingdom by flatteries. He works deceitfully and breaks “the prince of the covenant”. His heart is against the holy covenant."
+   },
+   {
+    "start": 31,
+    "end": 35,
+    "title": "The sanctuary polluted",
+    "text": "Forces take away the daily and set up the abomination that makes desolate. Those who know their God will be strong. Many fall by the sword and flame, to refine and purify God’s people until the time of the end."
+   },
+   {
+    "start": 36,
+    "end": 39,
+    "title": "The king who exalts himself",
+    "text": "A king will do as he pleases, exalt himself above every god, and speak marvellous things against the God of gods. He will prosper until the indignation is finished."
+   },
+   {
+    "start": 40,
+    "end": 45,
+    "title": "At the time of the end",
+    "text": "At the time of the end, the king of the south pushes, and the king of the north sweeps through many countries and enters the glorious land. Troubling news makes him furious. He plants his tents between the seas and the glorious holy mountain, yet he will come to his end, and none will help him."
+   }
+  ],
+  "symbols": [
+   {
+    "title": "The mighty king and the four winds",
+    "kind": "Compare Scripture",
+    "text": "The broken kingdom divided toward the four winds matches the goat’s great horn in chapter 8, which Gabriel named as the first king of Grecia.",
+    "references": [
+     "Daniel 11:3–4",
+     "Daniel 8:8,21–22"
+    ]
+   },
+   {
+    "title": "The king of the north and the king of the south",
+    "kind": "Interpretation",
+    "text": "North and south are described from Israel’s point of view. Early in the chapter they fit the Greek kingdoms that came after Alexander: the Seleucids to the north and the Ptolemies of Egypt to the south. Later in the chapter, the titles are applied to other powers.",
+    "references": [
+     "Daniel 11:5–6",
+     "Daniel 11:40"
+    ]
+   },
+   {
+    "title": "The abomination that maketh desolate",
+    "kind": "Compare Scripture",
+    "text": "Jesus pointed to this phrase from Daniel as something still future in His day, when He spoke of Jerusalem’s coming destruction.",
+    "references": [
+     "Daniel 11:31",
+     "Matthew 24:15",
+     "Luke 21:20"
+    ]
+   }
+  ],
+  "connections": [
+   {
+    "title": "Pictures from earlier chapters",
+    "text": "The daily taken away and the sanctuary polluted repeat the words of chapter 8’s little horn. The king who speaks against the God of gods repeats chapter 7’s little horn.",
+    "references": [
+     "Daniel 8:11–12",
+     "Daniel 7:25",
+     "Daniel 11:31,36"
+    ]
+   },
+   {
+    "title": "The man of sin",
+    "text": "Paul describes one who exalts himself above all that is called God, using language close to Daniel 11:36.",
+    "references": [
+     "2 Thessalonians 2:3–4"
+    ]
+   },
+   {
+    "title": "Strong in God",
+    "text": "Even in this dark chapter, there is a promise for God’s people: those who know their God will be strong and do exploits.",
+    "references": [
+     "Daniel 11:32",
+     "Ephesians 6:10"
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "question": "What happens to the mighty king’s kingdom?",
+    "answer": "It is broken and divided toward the four winds of heaven, not to his descendants.",
+    "reference": "Daniel 11:3–4"
+   },
+   {
+    "question": "What does the chapter promise to people who know their God?",
+    "answer": "They will be strong and do exploits.",
+    "reference": "Daniel 11:32"
+   },
+   {
+    "question": "How does the king of the north finally end?",
+    "answer": "He comes to his end, and none shall help him.",
+    "reference": "Daniel 11:45"
+   }
+  ],
+  "interpretation": {
+   "title": "A chapter readers explain in different ways",
+   "text": "Daniel 11 does not name its kings after Persia and Greece, so every reading of it is interpretation. Most interpreters agree that verses 5–20 describe the wars between the Seleucid and Ptolemaic kingdoms. Historicists then see the chapter move on to Rome, reading “the prince of the covenant” in verse 22 as the Messiah, and see verses 31–39 as the papal power of chapters 7 and 8. Adventist scholars do not all agree on verses 40–45, and this study does not give a detailed modern identification. Many others read verses 21–35 as Antiochus IV."
+  },
+  "source": [
+   "Biblical Research Institute: interpreting Daniel and Revelation",
+   "https://adventistbiblicalresearch.org/articles/ellen-g-white-and-the-interpretation-of-daniel-and-revelation"
+  ],
+  "deeper": {
+   "label": "When Michael Stands Up",
+   "href": "/bible-studies/prophecy/when-michael-stands-up",
+   "text": "Follow Daniel 11–12 into the final events of Revelation with an interactive timeline."
+  },
+  "reflection": "Kings rise and fall all through this chapter. What helps you stay strong when the news is full of conflict?",
+  "prayer": "Lord, You know the end from the beginning. Help me to know You, and to be strong in You. Amen."
+ },
+ {
+  "number": 12,
+  "heading": "Michael stands up, and God’s people are delivered.",
+  "time": "Daniel 12 ends the vision that began in chapter 10, and it ends the book. It takes us to “that time”, the very end of the conflict in chapter 11. Daniel asks how long it will be, and he is told to go his way and rest, with a promise that he will rise again.",
+  "scenes": [
+   {
+    "start": 1,
+    "end": 1,
+    "title": "Michael stands up",
+    "text": "At that time Michael, the great prince who stands for God’s people, stands up. There will be a time of trouble such as never was. But everyone found written in the book will be delivered."
+   },
+   {
+    "start": 2,
+    "end": 3,
+    "title": "Many wake from the dust",
+    "text": "Many who sleep in the dust will awake, some to everlasting life and some to shame. The wise will shine like the sky, and those who turn many to righteousness like the stars for ever."
+   },
+   {
+    "start": 4,
+    "end": 4,
+    "title": "Seal the book",
+    "text": "Daniel is told to shut up the words and seal the book until the time of the end, when many will run to and fro and knowledge will increase."
+   },
+   {
+    "start": 5,
+    "end": 7,
+    "title": "How long?",
+    "text": "Two figures stand by the river. One asks the man in linen how long until the end of these wonders. He swears by Him who lives for ever: it will be for a time, times and a half, and then all these things will be finished."
+   },
+   {
+    "start": 8,
+    "end": 10,
+    "title": "The wise will understand",
+    "text": "Daniel hears but does not understand. He is told the words are sealed until the time of the end. Many will be purified, but the wicked will not understand. The wise will."
+   },
+   {
+    "start": 11,
+    "end": 13,
+    "title": "1,290 days, 1,335 days, and rest",
+    "text": "From the time the daily is taken away there will be 1,290 days. Blessed is the one who waits and comes to 1,335 days. Daniel is told to go his way: he will rest and stand in his lot at the end of the days."
+   }
+  ],
+  "symbols": [
+   {
+    "title": "The book",
+    "kind": "Compare Scripture",
+    "text": "Those written in the book are delivered. Moses, Jesus and Revelation all speak of names written in God’s book of life.",
+    "references": [
+     "Daniel 12:1",
+     "Exodus 32:32–33",
+     "Luke 10:20",
+     "Revelation 20:12,15"
+    ]
+   },
+   {
+    "title": "Sleep in the dust",
+    "kind": "Compare Scripture",
+    "text": "The Bible often calls death a sleep. Jesus said of Lazarus, “Our friend Lazarus sleepeth,” and Paul writes of the dead in Christ rising at His coming.",
+    "references": [
+     "Daniel 12:2",
+     "John 11:11–14",
+     "1 Thessalonians 4:13–16"
+    ]
+   },
+   {
+    "title": "The sealed book",
+    "kind": "Explained in the chapter",
+    "text": "Parts of Daniel would not be fully understood until the time of the end (verses 4 and 9). Revelation 10 shows an angel with a little book open.",
+    "references": [
+     "Daniel 12:4,9",
+     "Revelation 10:2"
+    ]
+   }
+  ],
+  "connections": [
+   {
+    "title": "The time of trouble",
+    "text": "Jesus spoke of great tribulation “such as was not since the beginning of the world”, using words close to Daniel 12:1.",
+    "references": [
+     "Matthew 24:21",
+     "Revelation 16:17–18"
+    ]
+   },
+   {
+    "title": "Shining like the stars",
+    "text": "Jesus said the righteous would shine like the sun in their Father’s kingdom.",
+    "references": [
+     "Daniel 12:3",
+     "Matthew 13:43"
+    ]
+   },
+   {
+    "title": "The resurrection",
+    "text": "Jesus said all who are in the graves will hear His voice and come out, some to life and some to judgment.",
+    "references": [
+     "John 5:28–29",
+     "Revelation 20:4–6"
+    ]
+   }
+  ],
+  "questions": [
+   {
+    "question": "Who will be delivered in the time of trouble?",
+    "answer": "Everyone found written in the book.",
+    "reference": "Daniel 12:1"
+   },
+   {
+    "question": "What happens to those who sleep in the dust?",
+    "answer": "Many will awake, some to everlasting life and some to shame and everlasting contempt.",
+    "reference": "Daniel 12:2"
+   },
+   {
+    "question": "What promise is Daniel given at the end of the book?",
+    "answer": "He will rest, and stand in his lot at the end of the days.",
+    "reference": "Daniel 12:13"
+   }
+  ],
+  "calculation": {
+   "title": "The 1,260, 1,290 and 1,335 days",
+   "intro": "Daniel 12 gives three time periods. The Bible gives the numbers; applying them to dates is interpretation, and readers differ.",
+   "steps": [
+    {
+     "kind": "Bible statement",
+     "title": "A time, times and a half",
+     "text": "The man in linen repeats the period of Daniel 7:25. As in chapter 7, it equals 1,260 prophetic days.",
+     "references": [
+      "Daniel 12:7",
+      "Daniel 7:25",
+      "Revelation 12:6,14"
+     ]
+    },
+    {
+     "kind": "Bible statement",
+     "title": "1,290 and 1,335 days",
+     "text": "Both periods are counted from the time the daily is taken away and the abomination that makes desolate is set up. A blessing is promised to the one who reaches the 1,335 days.",
+     "references": [
+      "Daniel 12:11–12"
+     ]
+    },
+    {
+     "kind": "Historicist interpretation",
+     "title": "From AD 508 to 1798 and 1843",
+     "text": "Many historicist interpreters begin the 1,290 and 1,335 years around AD 508, a date they link with Clovis, king of the Franks, joining the power of the state to the church of Rome. Counted from there, they end in 1798, the end of the 1,260 years, and in 1843, during the Advent awakening that came before 1844. Interpreters differ on these dates, so this is offered as a possible reading, not as a settled teaching of Scripture."
+    }
+   ]
+  },
+  "interpretation": {
+   "title": "Michael standing up",
+   "text": "Historicist readers understand Michael’s standing up as the moment Christ finishes His work as High Priest in heaven and takes up His kingdom. This is followed by the time of trouble and His return to deliver His people. Daniel 12 itself says Michael stands up, trouble follows, God’s people are delivered and many are raised. The order of events beyond that is drawn from other passages."
+  },
+  "source": [
+   "Adventist belief: Christ’s ministry in the heavenly sanctuary",
+   "https://adventist.org/beliefs/official/christs-ministry-in-the-heavenly-sanctuary"
+  ],
+  "deeper": {
+   "label": "When Michael Stands Up",
+   "href": "/bible-studies/prophecy/when-michael-stands-up",
+   "text": "Follow Daniel 11–12 into the final events of Revelation with an interactive timeline."
+  },
+  "reflection": "Daniel’s book ends with the promise of rest and resurrection. How does that hope change the way you face the future?",
+  "prayer": "Lord, write my name in Your book. Keep me faithful until the end, and raise me up with Daniel at the end of the days. Amen."
  }
 ]

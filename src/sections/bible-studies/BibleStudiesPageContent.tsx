@@ -105,7 +105,7 @@ export function BibleStudiesPageContent({ collection }: { collection?: Collectio
             <Link href="/daniel" className="group relative flex flex-col border border-accent/60 border-t-4 border-t-accent bg-white p-8 shadow-[0_16px_40px_rgba(45,38,28,0.1)] transition-all duration-300 hover:-translate-y-1 hover:border-accent hover:shadow-[0_24px_55px_rgba(45,38,28,0.18)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent sm:p-10">
               <div className="flex items-center justify-between gap-4"><span className="font-sans text-xs font-semibold tracking-[0.2em] text-[#806027] uppercase">Daniel 1–12 · Chapter by chapter</span><span className="font-serif text-2xl text-accent">03</span></div>
               <h3 className="mt-5 font-serif text-4xl font-semibold leading-[1.05] text-[#1a1814] sm:text-5xl">The Book of Daniel</h3>
-              <p className="mt-5 flex-1 text-base leading-relaxed text-[#56616a] sm:text-lg">Illustrated studies of each chapter, beginning with the visions of Daniel 7, 8 and 9.</p>
+              <p className="mt-5 flex-1 text-base leading-relaxed text-[#56616a] sm:text-lg">Illustrated studies of every chapter: the stories of faithfulness and the visions of the future.</p>
               <span className="mt-8 inline-flex min-h-12 items-center gap-3 self-start bg-accent px-7 font-sans text-xs font-semibold tracking-[0.18em] text-background uppercase transition-colors group-hover:bg-accent-hover">Start this study <span aria-hidden="true" className="transition-transform duration-300 group-hover:translate-x-1">→</span></span>
             </Link>
           </nav>

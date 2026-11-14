@@ -1,23 +1,234 @@
 {
+  "1": [
+    {
+      "start": 1,
+      "src": "/media/images/daniel-revelation/babylon.webp",
+      "title": "Babylon",
+      "caption": "A reconstruction of Babylon and its blue Ishtar Gate, where Daniel was taken as a young man.",
+      "kind": "History · reconstruction"
+    },
+    {
+      "start": 17,
+      "src": "/media/images/daniel-revelation/daniel-vision.webp",
+      "title": "Wisdom from God",
+      "caption": "God gives Daniel understanding in visions and dreams.",
+      "kind": "Bible scene"
+    }
+  ],
+  "3": [
+    {
+      "start": 1,
+      "src": "/media/images/daniel-revelation/babylon.webp",
+      "title": "The province of Babylon",
+      "caption": "A reconstruction of Babylon. The image was set up on the plain of Dura in this province.",
+      "kind": "History · reconstruction"
+    },
+    {
+      "start": 13,
+      "src": "/media/images/daniel-revelation/final-events.webp",
+      "title": "Faith under pressure",
+      "caption": "A thematic illustration of standing firm when faith is tested.",
+      "kind": "Thematic illustration"
+    }
+  ],
+  "4": [
+    {
+      "start": 28,
+      "src": "/media/images/daniel-revelation/babylon.webp",
+      "title": "“Is not this great Babylon?”",
+      "caption": "A reconstruction of the city Nebuchadnezzar boasted about in verse 30.",
+      "kind": "History · reconstruction"
+    }
+  ],
+  "5": [
+    {
+      "start": 25,
+      "src": "/media/images/daniel-revelation/persia.webp",
+      "title": "Given to the Medes and Persians",
+      "caption": "A reconstruction of Persepolis, a Persian royal city. The kingdom passes to Persia that night.",
+      "kind": "History · reconstruction"
+    }
+  ],
+  "6": [
+    {
+      "start": 1,
+      "src": "/media/images/daniel-revelation/persia.webp",
+      "title": "The kingdom of Darius",
+      "caption": "A reconstruction of a Persian royal city. Daniel now serves the new rulers.",
+      "kind": "History · reconstruction"
+    }
+  ],
   "7": [
-    {"start": 1, "src": "/media/images/daniel-revelation/daniel-vision.webp", "title": "Daniel’s night vision", "caption": "Daniel writes down what he sees in a dream at night.", "kind": "Bible scene"},
-    {"start": 4, "src": "/media/images/daniel-revelation/symbol-lion.webp", "title": "A lion with eagle’s wings", "caption": "The first of four beasts. Verse 17 explains that the beasts are kings, or kingdoms.", "kind": "Symbol illustration"},
-    {"start": 5, "src": "/media/images/daniel-revelation/symbol-bear.webp", "title": "A bear raised up on one side", "caption": "The second beast, with three ribs in its mouth.", "kind": "Symbol illustration"},
-    {"start": 6, "src": "/media/images/daniel-revelation/symbol-leopard.webp", "title": "A leopard with four wings and four heads", "caption": "The third beast. Dominion is given to it.", "kind": "Symbol illustration"},
-    {"start": 7, "src": "/media/images/daniel-revelation/symbol-fourth-beast.webp", "title": "The fourth beast", "caption": "Dreadful and strong, with great iron teeth and ten horns. A little horn rises among them.", "kind": "Symbol illustration"},
-    {"start": 9, "src": "/media/images/daniel-revelation/heavenly-ministry.webp", "title": "The court in heaven", "caption": "A thematic illustration of heaven’s sanctuary. Daniel sees thrones set, the Ancient of days seated and the books opened.", "kind": "Thematic illustration"}
+    {
+      "start": 1,
+      "src": "/media/images/daniel-revelation/daniel-vision.webp",
+      "title": "Daniel’s night vision",
+      "caption": "Daniel writes down what he sees in a dream at night.",
+      "kind": "Bible scene"
+    },
+    {
+      "start": 4,
+      "src": "/media/images/daniel-revelation/symbol-lion.webp",
+      "title": "A lion with eagle’s wings",
+      "caption": "The first of four beasts. Verse 17 explains that the beasts are kings, or kingdoms.",
+      "kind": "Symbol illustration"
+    },
+    {
+      "start": 5,
+      "src": "/media/images/daniel-revelation/symbol-bear.webp",
+      "title": "A bear raised up on one side",
+      "caption": "The second beast, with three ribs in its mouth.",
+      "kind": "Symbol illustration"
+    },
+    {
+      "start": 6,
+      "src": "/media/images/daniel-revelation/symbol-leopard.webp",
+      "title": "A leopard with four wings and four heads",
+      "caption": "The third beast. Dominion is given to it.",
+      "kind": "Symbol illustration"
+    },
+    {
+      "start": 7,
+      "src": "/media/images/daniel-revelation/symbol-fourth-beast.webp",
+      "title": "The fourth beast",
+      "caption": "Dreadful and strong, with great iron teeth and ten horns. A little horn rises among them.",
+      "kind": "Symbol illustration"
+    },
+    {
+      "start": 9,
+      "src": "/media/images/daniel-revelation/heavenly-ministry.webp",
+      "title": "The court in heaven",
+      "caption": "A thematic illustration of heaven’s sanctuary. Daniel sees thrones set, the Ancient of days seated and the books opened.",
+      "kind": "Thematic illustration"
+    }
   ],
   "8": [
-    {"start": 1, "src": "/media/images/daniel-revelation/daniel-vision.webp", "title": "A vision by the river Ulai", "caption": "Daniel’s second vision, two years after the first.", "kind": "Bible scene"},
-    {"start": 3, "src": "/media/images/daniel-revelation/persia.webp", "title": "The ram: Media and Persia", "caption": "Persepolis, a Persian royal city, reconstructed. Gabriel names the ram in verse 20.", "kind": "History · named in verse 20"},
-    {"start": 5, "src": "/media/images/daniel-revelation/greece.webp", "title": "The goat: Grecia", "caption": "Macedonian soldiers, reconstructed. Gabriel names the goat and its first king in verse 21.", "kind": "History · named in verse 21"},
-    {"start": 9, "src": "/media/images/daniel-revelation/symbol-horns.webp", "title": "A little horn", "caption": "Horns picture ruling powers. The little horn is not named in this chapter.", "kind": "Symbol illustration"},
-    {"start": 13, "src": "/media/images/daniel-revelation/heavenly-ministry.webp", "title": "The sanctuary cleansed", "caption": "A thematic illustration of Christ’s ministry in heaven, connected with verse 14 in this study’s interpretation.", "kind": "Interpretation"},
-    {"start": 15, "src": "/media/images/daniel-revelation/gabriel.webp", "title": "Gabriel explains", "caption": "Gabriel is sent to make Daniel understand the vision.", "kind": "Bible scene"}
+    {
+      "start": 1,
+      "src": "/media/images/daniel-revelation/daniel-vision.webp",
+      "title": "A vision by the river Ulai",
+      "caption": "Daniel’s second vision, two years after the first.",
+      "kind": "Bible scene"
+    },
+    {
+      "start": 3,
+      "src": "/media/images/daniel-revelation/persia.webp",
+      "title": "The ram: Media and Persia",
+      "caption": "Persepolis, a Persian royal city, reconstructed. Gabriel names the ram in verse 20.",
+      "kind": "History · named in verse 20"
+    },
+    {
+      "start": 5,
+      "src": "/media/images/daniel-revelation/greece.webp",
+      "title": "The goat: Grecia",
+      "caption": "Macedonian soldiers, reconstructed. Gabriel names the goat and its first king in verse 21.",
+      "kind": "History · named in verse 21"
+    },
+    {
+      "start": 9,
+      "src": "/media/images/daniel-revelation/symbol-horns.webp",
+      "title": "A little horn",
+      "caption": "Horns picture ruling powers. The little horn is not named in this chapter.",
+      "kind": "Symbol illustration"
+    },
+    {
+      "start": 13,
+      "src": "/media/images/daniel-revelation/heavenly-ministry.webp",
+      "title": "The sanctuary cleansed",
+      "caption": "A thematic illustration of Christ’s ministry in heaven, connected with verse 14 in this study’s interpretation.",
+      "kind": "Interpretation"
+    },
+    {
+      "start": 15,
+      "src": "/media/images/daniel-revelation/gabriel.webp",
+      "title": "Gabriel explains",
+      "caption": "Gabriel is sent to make Daniel understand the vision.",
+      "kind": "Bible scene"
+    }
   ],
   "9": [
-    {"start": 1, "src": "/media/images/daniel-revelation/prophecy-scroll.webp", "title": "Reading Jeremiah", "caption": "Daniel learns from Jeremiah’s book that the exile will last seventy years.", "kind": "Bible scene"},
-    {"start": 20, "src": "/media/images/daniel-revelation/gabriel.webp", "title": "Gabriel answers the prayer", "caption": "Gabriel arrives while Daniel is still praying.", "kind": "Bible scene"},
-    {"start": 25, "src": "/media/images/daniel-revelation/cross.webp", "title": "Messiah cut off", "caption": "Verse 26 says the Messiah will be cut off, but not for himself. This study connects it with Jesus’ death on the cross.", "kind": "Interpretation"}
+    {
+      "start": 1,
+      "src": "/media/images/daniel-revelation/prophecy-scroll.webp",
+      "title": "Reading Jeremiah",
+      "caption": "Daniel learns from Jeremiah’s book that the exile will last seventy years.",
+      "kind": "Bible scene"
+    },
+    {
+      "start": 20,
+      "src": "/media/images/daniel-revelation/gabriel.webp",
+      "title": "Gabriel answers the prayer",
+      "caption": "Gabriel arrives while Daniel is still praying.",
+      "kind": "Bible scene"
+    },
+    {
+      "start": 25,
+      "src": "/media/images/daniel-revelation/cross.webp",
+      "title": "Messiah cut off",
+      "caption": "Verse 26 says the Messiah will be cut off, but not for himself. This study connects it with Jesus’ death on the cross.",
+      "kind": "Interpretation"
+    }
+  ],
+  "10": [
+    {
+      "start": 4,
+      "src": "/media/images/daniel-revelation/daniel-vision.webp",
+      "title": "By the great river",
+      "caption": "Daniel sees a glorious man clothed in linen.",
+      "kind": "Bible scene"
+    },
+    {
+      "start": 10,
+      "src": "/media/images/daniel-revelation/daniel-strengthened.webp",
+      "title": "Daniel is strengthened",
+      "caption": "A heavenly messenger touches Daniel and gives him strength.",
+      "kind": "Bible scene"
+    }
+  ],
+  "11": [
+    {
+      "start": 1,
+      "src": "/media/images/daniel-revelation/persia.webp",
+      "title": "Persia",
+      "caption": "The vision begins in the days of the Persian kings.",
+      "kind": "History · reconstruction"
+    },
+    {
+      "start": 3,
+      "src": "/media/images/daniel-revelation/greece.webp",
+      "title": "A mighty king",
+      "caption": "Macedonian soldiers, reconstructed. Most readers see Alexander the Great in verse 3.",
+      "kind": "History · interpretation"
+    },
+    {
+      "start": 5,
+      "src": "/media/images/daniel-revelation/symbol-horns.webp",
+      "title": "North and south",
+      "caption": "Rival kings struggle for power. The chapter does not name them.",
+      "kind": "Symbol illustration"
+    },
+    {
+      "start": 40,
+      "src": "/media/images/daniel-revelation/final-globe.webp",
+      "title": "The time of the end",
+      "caption": "A conceptual illustration of final events.",
+      "kind": "Thematic illustration"
+    }
+  ],
+  "12": [
+    {
+      "start": 1,
+      "src": "/media/images/daniel-revelation/final-events.webp",
+      "title": "A time of trouble",
+      "caption": "A thematic illustration of God’s people holding on to His word in the time of trouble.",
+      "kind": "Thematic illustration"
+    },
+    {
+      "start": 2,
+      "src": "/media/images/daniel-revelation/resurrection.webp",
+      "title": "Awake from the dust",
+      "caption": "The empty tomb at dawn, a reminder of the resurrection hope in verse 2.",
+      "kind": "Thematic illustration"
+    }
   ]
 }
