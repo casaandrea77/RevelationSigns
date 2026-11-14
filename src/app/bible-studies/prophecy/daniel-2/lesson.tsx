@@ -51,25 +51,26 @@ export default function StudyTwo() {
             <h2 id="daniel-2-film-title" className="text-[clamp(2.4rem,5vw,3.8rem)] leading-[0.95]">Watch the prophecy unfold.</h2>
             <p className="mt-5 text-sm leading-7 text-[#596567]">From Babylon&apos;s head of gold to the stone that becomes a great mountain, this visual journey follows the complete sequence revealed in Daniel 2.</p>
           </div>
-          <div className="overflow-hidden rounded-sm border border-[#bb9154] bg-[#06101a] shadow-2xl">
-            <div className="aspect-video bg-black">
-              <video
-                className="h-full w-full"
-                controls
-                playsInline
-                preload="metadata"
-                poster="/media/images/daniel-2-film-poster.png"
-                aria-label="Daniel 2: The king's dream and its interpretation"
-              >
-                <source src="/media/videos/daniel-2-complete-sequence.mp4?v=2" type="video/mp4" />
-                Your browser does not support the video player.
-              </video>
+          <figure className="mx-auto w-full max-w-[360px]">
+            <div className="overflow-hidden rounded-sm border border-[#bb9154] bg-[#06101a] shadow-2xl">
+              <div className="relative aspect-[9/16] bg-black">
+                <iframe
+                  className="absolute inset-0 h-full w-full"
+                  src="https://www.youtube-nocookie.com/embed/KxLcp2XmHeE?rel=0&playsinline=1"
+                  title="The Dream That Predicted World History (Daniel 2)"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                />
+              </div>
             </div>
-            <div className="flex flex-col gap-2 border-t border-[#bb9154]/35 px-5 py-4 text-[#f0bd5d] sm:flex-row sm:items-center sm:justify-between">
-              <span className="font-sans text-[0.68rem] font-semibold tracking-[0.17em] uppercase">Daniel 2 · The Rise and Fall of Kingdoms</span>
-              <span className="font-sans text-[0.68rem] tracking-[0.12em] uppercase text-[#e5c98f]">1 min 26 sec</span>
-            </div>
-          </div>
+            <figcaption className="mt-3 text-center font-sans text-[0.68rem] tracking-[0.08em] text-[#596567]">
+              Video: &ldquo;The Dream That Predicted World History (Daniel 2)&rdquo; by{" "}
+              <a className="underline underline-offset-2" href="https://www.youtube.com/@KingdomMindsetRevealed" target="_blank" rel="noopener noreferrer">Kingdom Mindset Revealed</a>{" "}
+              on YouTube
+            </figcaption>
+          </figure>
         </section>
 
         {questions.map((item, index) => {
