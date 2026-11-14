@@ -26,7 +26,7 @@ const studies = [
 const collections = [
   { key: "amazing-facts", title: "Amazing Facts Bible Studies", subtitle: "The illustrated collection", description: "Explore all 27 original Amazing Facts Study Guides, presented page by page.", image: "/assets/media/images/amazing-facts-study-1/pages/page-01.jpg", count: "27 study guides", anchor: "amazing-facts-guides" },
   { key: "general", title: "Bible Studies", subtitle: "Faith & the Christian life", description: "Discover Jesus, salvation, the great controversy, and the promises of Scripture at your own pace.", image: "/assets/media/images/bible-studies/gods-amazing-book.png", count: "13 guided studies", anchor: "general-studies" },
-  { key: "daniel-revelation", title: "Daniel & Revelation Series", subtitle: "Prophecy & everlasting hope", description: "Follow the kingdoms of Daniel through the final events of Revelation and the return of Jesus.", image: "/assets/media/images/daniel-2-statue.png", count: "2 in-depth Bible studies", anchor: "daniel-revelation" },
+  { key: "daniel-revelation", title: "Daniel & Revelation Series", subtitle: "Prophecy & everlasting hope", description: "Follow the kingdoms of Daniel through the final events of Revelation and the return of Jesus.", image: "/assets/media/images/daniel-2-statue.png", count: "3 in-depth Bible studies", anchor: "daniel-revelation" },
 ] as const;
 
 type Collection = typeof collections[number]["key"];
@@ -89,7 +89,7 @@ export function BibleStudiesPageContent({ collection }: { collection?: Collectio
           <p className="font-sans text-sm tracking-[0.2em] uppercase text-[#806027]">Daniel &amp; Revelation · The prophecy journey</p>
           <h2 id="prophecy-journey-heading" className="mt-5 font-serif text-5xl sm:text-6xl">From earthly kingdoms to everlasting hope.</h2>
           <p className="mt-6 max-w-3xl text-base leading-relaxed text-[#56616a]">Begin with Daniel’s vision of the kingdoms, then explore the final events with Scripture, careful comparisons, and clearly distinguished biblical statements and historical interpretations.</p>
-          <nav aria-label="Daniel and Revelation studies" className="mt-10 grid gap-6 md:grid-cols-2">
+          <nav aria-label="Daniel and Revelation studies" className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             <Link href="/bible-studies/prophecy/daniel-2" className="group relative flex flex-col border border-accent/60 border-t-4 border-t-accent bg-white p-8 shadow-[0_16px_40px_rgba(45,38,28,0.1)] transition-all duration-300 hover:-translate-y-1 hover:border-accent hover:shadow-[0_24px_55px_rgba(45,38,28,0.18)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent sm:p-10">
               <div className="flex items-center justify-between gap-4"><span className="font-sans text-xs font-semibold tracking-[0.2em] text-[#806027] uppercase">Daniel 2 · The foundation</span><span className="font-serif text-2xl text-accent">01</span></div>
               <h3 className="mt-5 font-serif text-4xl font-semibold leading-[1.05] text-[#1a1814] sm:text-5xl">God Unfolds the Future</h3>
@@ -100,6 +100,12 @@ export function BibleStudiesPageContent({ collection }: { collection?: Collectio
               <div className="flex items-center justify-between gap-4"><span className="font-sans text-xs font-semibold tracking-[0.2em] text-[#806027] uppercase">Daniel 11–12 &amp; Revelation 14–22</span><span className="font-serif text-2xl text-accent">02</span></div>
               <h3 className="mt-5 font-serif text-4xl font-semibold leading-[1.05] text-[#1a1814] sm:text-5xl">When Michael Stands Up</h3>
               <p className="mt-5 flex-1 text-base leading-relaxed text-[#56616a] sm:text-lg">A guided study with an interactive timeline of the final events.</p>
+              <span className="mt-8 inline-flex min-h-12 items-center gap-3 self-start bg-accent px-7 font-sans text-xs font-semibold tracking-[0.18em] text-background uppercase transition-colors group-hover:bg-accent-hover">Start this study <span aria-hidden="true" className="transition-transform duration-300 group-hover:translate-x-1">→</span></span>
+            </Link>
+            <Link href="/daniel" className="group relative flex flex-col border border-accent/60 border-t-4 border-t-accent bg-white p-8 shadow-[0_16px_40px_rgba(45,38,28,0.1)] transition-all duration-300 hover:-translate-y-1 hover:border-accent hover:shadow-[0_24px_55px_rgba(45,38,28,0.18)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent sm:p-10">
+              <div className="flex items-center justify-between gap-4"><span className="font-sans text-xs font-semibold tracking-[0.2em] text-[#806027] uppercase">Daniel 1–12 · Chapter by chapter</span><span className="font-serif text-2xl text-accent">03</span></div>
+              <h3 className="mt-5 font-serif text-4xl font-semibold leading-[1.05] text-[#1a1814] sm:text-5xl">The Book of Daniel</h3>
+              <p className="mt-5 flex-1 text-base leading-relaxed text-[#56616a] sm:text-lg">Illustrated studies of each chapter, beginning with the visions of Daniel 7, 8 and 9.</p>
               <span className="mt-8 inline-flex min-h-12 items-center gap-3 self-start bg-accent px-7 font-sans text-xs font-semibold tracking-[0.18em] text-background uppercase transition-colors group-hover:bg-accent-hover">Start this study <span aria-hidden="true" className="transition-transform duration-300 group-hover:translate-x-1">→</span></span>
             </Link>
           </nav>
