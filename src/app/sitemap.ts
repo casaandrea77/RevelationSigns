@@ -4,6 +4,8 @@ import {
   amazingFactsStudyGuides,
 } from "@/data/amazingFactsStudyGuides";
 
+import danielStudies from "./daniel/studies.json";
+
 const baseUrl = "https://revelationsigns.one";
 
 const mainRoutes = [
@@ -14,6 +16,7 @@ const mainRoutes = [
   "/bible-studies/general",
   "/bible-studies/daniel-revelation",
   "/revelation",
+  "/daniel",
   "/revelation/symbols",
   "/documentaries",
   "/starfall",
@@ -24,6 +27,7 @@ const mainRoutes = [
 
 const studyRoutes = [
   ...Array.from({ length: 22 }, (_, i) => `/revelation/chapter-${i + 1}`),
+  ...danielStudies.map(({ number }) => `/daniel/chapter-${number}`),
   "/bible-studies/legalism-and-the-ten-commandments",
   "/bible-studies/rapture-and-seven-years-of-tribulation",
   "/bible-studies/prophecy/when-michael-stands-up",
