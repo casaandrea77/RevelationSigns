@@ -35,6 +35,30 @@ export default function MichaelStudy() {
 
     <div className="ms-shell">
       <section className="ms-intro" aria-labelledby="ms-intro-title"><div><p className="ms-eyebrow">The promise beyond the crisis</p><h2 id="ms-intro-title">The story ends<br />with <em>deliverance.</em></h2></div><div><p>Daniel’s final prophecy does not end in darkness. It ends with Michael arising, God’s people being delivered, resurrection, and an everlasting kingdom.</p><p>What happens before Michael stands? Follow Daniel into Revelation—and keep the words of Scripture distinct from the connections we draw between them.</p></div></section>
+      <section className="pb-[60px]" aria-labelledby="ms-video-title">
+        <p className="ms-eyebrow">Watch first</p>
+        <h2 id="ms-video-title" className="mb-8">The Bride, the Beast <em>&amp; Babylon.</em></h2>
+        <figure className="mx-auto w-full max-w-[960px]">
+          <div className="overflow-hidden rounded-sm border border-[#bb9154] bg-[#06101a] shadow-2xl">
+            <div className="relative aspect-video bg-black">
+              <iframe
+                className="absolute inset-0 h-full w-full"
+                src="https://www.youtube-nocookie.com/embed/vDKG_WFLUi4?rel=0&playsinline=1"
+                title="Revelation: The Bride, the Beast & Babylon"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              />
+            </div>
+          </div>
+          <figcaption className="mt-3 text-center text-[0.8rem] tracking-[0.04em] text-[#596567]">
+            Video: &ldquo;Revelation: The Bride, the Beast &amp; Babylon&rdquo; by{" "}
+            <a className="underline underline-offset-2" href="https://www.youtube.com/channel/UC6VJE6cD8ZPpe6ZOtVtlBTA" target="_blank" rel="noopener noreferrer">Amazing Facts</a>{" "}
+            on YouTube
+          </figcaption>
+        </figure>
+      </section>
       <aside className="ms-reading-key" aria-label="How to read this study"><strong>Scripture first. Interpretation clearly marked.</strong><p>Quoted Scripture is presented in gold-edged panels. Blue labels introduce historicist or Adventist interpretation. “Interpretive parallel” means a proposed connection between passages, not an identification explicitly stated by the Bible. Historicism reads prophecy as unfolding across history toward Christ’s kingdom.</p></aside>
       <Timeline />
 
