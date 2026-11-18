@@ -18,9 +18,45 @@ const inter = Inter({
   display: "swap",
 });
 
+const siteUrl = "https://revelationsigns.one";
+const siteDescription =
+  "Bible prophecy documentaries and Scripture-based studies on Daniel, Revelation and The Great Controversy by Ellen G. White.";
+
 export const metadata: Metadata = {
-  title: "RevelationSigns",
-  description: "Signs that speak before words arrive.",
+  // Absolute base for canonical and social links, so Google treats
+  // revelationsigns.one (not the vercel.app copy) as the real site.
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "RevelationSigns | Bible Prophecy, Daniel & Revelation",
+    template: "%s",
+  },
+  description: siteDescription,
+  applicationName: "RevelationSigns",
+  keywords: [
+    "RevelationSigns",
+    "Revelation Signs",
+    "Bible prophecy",
+    "Book of Revelation",
+    "Book of Daniel",
+    "Great Controversy",
+    "Ellen G. White",
+    "Bible studies",
+    "prophecy documentaries",
+  ],
+  openGraph: {
+    type: "website",
+    siteName: "RevelationSigns",
+    title: "RevelationSigns | Bible Prophecy, Daniel & Revelation",
+    description: siteDescription,
+    locale: "en",
+    images: [{ url: "/assets/logo/RevelationSigns_Logo_Transparent.png", alt: "RevelationSigns" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "RevelationSigns | Bible Prophecy, Daniel & Revelation",
+    description: siteDescription,
+  },
+  robots: { index: true, follow: true },
 };
 
 export default function RootLayout({
