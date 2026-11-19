@@ -83,12 +83,12 @@ function Passage({ reference }: { reference: string }) {
 export default function MarkOfTheBeast({ chapter }: { chapter: number }) {
   const link = chapterLinks[chapter];
   if (!link) return null;
-  return <section id="mark-of-the-beast" className="rv-paper rv-mark">
+  return <section id="mark-of-the-beast" className="rv-mark">
     <div className="rv-shell rv-study-section">
       <div className="rv-section-heading">
-        <p className="rv-eyebrow">Key question · Revelation 12–14</p>
+        <p className="rv-eyebrow">The Bible’s most solemn warning · Revelation 12–14</p>
         <h2>What is the Mark of the Beast?</h2>
-        <p>Revelation 12, 13 and 14 belong together. Here is the answer in plain words, the Bible steps that lead to it, and the deceptions that will push the world to receive it.</p>
+        <p>Revelation 12, 13 and 14 belong together. Here is the answer in plain words, the Bible steps that lead to it, and the deceptions that will push the world to receive it. Read this first, then study the chapter below.</p>
       </div>
 
       <aside className="rv-mark-answer" aria-label="Short answer">
