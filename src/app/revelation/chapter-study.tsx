@@ -7,6 +7,7 @@ import studies from './studies.json';
 import StoryMap from './story-map';
 import { SymbolLinks } from './symbol-guide';
 import RevelationLectureSeries from './lecture-series';
+import MarkOfTheBeast from './mark-of-the-beast';
 
 type Study = (typeof studies)[number];
 const sources: Record<number, [string, string]> = {
@@ -27,14 +28,16 @@ export default function ChapterStudy({ study }: { study: Study }) {
   const [title, intro, art] = chapters[n - 1];
   const verses = scripture[n - 1];
   const source = sources[n];
+  const hasMark = n >= 12 && n <= 14;
   return <main>
     <div className="rv-shell rv-breadcrumb"><Link href="/revelation">← All chapters</Link><span>Revelation {n} · Illustrated study</span></div>
-    <section className="rv-shell rv-study-hero"><p className="rv-eyebrow">Chapter {String(n).padStart(2, '0')} · {title}</p><h1>{study.heading}</h1><p className="rv-lead">{intro}</p><div className="rv-actions"><a className="rv-button" href="#read">Read Revelation {n}</a><a className="rv-text-link" href="#understand">Explore the chapter ↓</a></div></section>
+    <section className="rv-shell rv-study-hero"><p className="rv-eyebrow">Chapter {String(n).padStart(2, '0')} · {title}</p><h1>{study.heading}</h1><p className="rv-lead">{intro}</p><div className="rv-actions"><a className="rv-button" href="#read">Read Revelation {n}</a><a className="rv-text-link" href="#understand">Explore the chapter ↓</a>{hasMark && <a className="rv-text-link" href="#mark-of-the-beast">What is the Mark of the Beast? ↓</a>}</div></section>
+    <MarkOfTheBeast chapter={n} />
     <SymbolLinks />
     <StoryMap chapter={n} />
     <section className="rv-shell rv-study-section rv-time-context"><p className="rv-eyebrow">Where this chapter fits</p><h2>Follow the vision’s setting.</h2><p>{study.time}</p></section>
     <section className="rv-shell"><figure className="rv-vision"><Image src={`/media/images/daniel-revelation/${art}.webp`} alt={`Conceptual artwork introducing the theme: ${title}`} width={960} height={640} sizes="(max-width: 1200px) 92vw, 1200px" /><figcaption>Theme illustration for “{title}.” This artwork introduces the subject; it does not reproduce every detail in Revelation {n}.</figcaption></figure></section>
-    <nav className="rv-study-nav rv-shell" aria-label={`Chapter ${n} sections`}><a href="#read">Read</a><a href="#understand">Follow the scene</a><a href="#symbols">Understand the symbols</a><a href="#connections">Connect Scripture</a><a href="#reflect">Reflect</a></nav>
+    <nav className="rv-study-nav rv-shell" aria-label={`Chapter ${n} sections`}><a href="#read">Read</a><a href="#understand">Follow the scene</a>{hasMark && <a href="#mark-of-the-beast">Mark of the Beast</a>}<a href="#symbols">Understand the symbols</a><a href="#connections">Connect Scripture</a><a href="#reflect">Reflect</a></nav>
     <section id="read" className="rv-shell rv-study-section"><div className="rv-section-heading"><p className="rv-eyebrow">01 · Read the passage</p><h2>Let the chapter speak first.</h2><p>Read the whole chapter. Notice what John sees, what the speakers explain, and what remains a question.</p></div><IllustratedScripture chapter={n} verses={verses}/></section>
     <section id="understand" className="rv-shell rv-study-section"><div className="rv-section-heading"><p className="rv-eyebrow">02 · What John sees and hears</p><h2>What happens in this chapter?</h2><p>Read each group of verses alongside its explanation.</p></div><div className="rv-scene-list">{study.scenes.map(scene => <article key={scene.start}><span className="rv-verse-range">{scene.start === scene.end ? `Verse ${scene.start}` : `Verses ${scene.start}–${scene.end}`}</span><div><h3>{scene.title}</h3><p>{scene.text}</p><Passage reference={`Revelation ${n}:${scene.start}${scene.end === scene.start ? '' : `–${scene.end}`}`} /></div></article>)}</div></section>
     <section id="symbols" className="rv-paper"><div className="rv-shell rv-study-section"><div className="rv-section-heading"><p className="rv-eyebrow">03 · Understand the symbols</p><h2>See the picture. Read the explanation.</h2><p>Some meanings are given directly; others come from comparing Scripture or interpreting the image. Follow the references and read around them.</p></div><div className="rv-symbol-grid">{study.symbols.map(symbol => <article key={symbol.title}><span className="rv-label">{symbol.kind}</span><h3>{symbol.title}</h3><p>{symbol.text}</p><References references={symbol.references} /></article>)}</div><p><Link className="rv-reference" href="/revelation/symbols">Open the illustrated symbol guide →</Link></p></div></section>
