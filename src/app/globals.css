@@ -861,3 +861,26 @@
   .dead-hero .nephilim-deck { font-size:23px; }
   .difficult-grid article { min-height:330px; padding:32px 25px; }
 }
+
+/* The Dragon & the Commandments study */
+.law-page .nephilim-opening h2 { color:#1b2327; }
+.law-hero { background-image:url('/assets/media/images/dragon-and-commandments-hero.jpg'); background-position:right center; }
+.law-hero h1 { font-size:clamp(64px,8vw,124px); line-height:.78; }
+.law-verses-section,.law-gc-section { background:linear-gradient(rgba(4,10,20,.8),rgba(4,10,20,.94)),url('/assets/media/images/dragon-and-commandments-hero.jpg') center/cover; }
+.law-verses-section blockquote { font-size:30px; }
+.law-inline-link,.law-download { display:inline-block; margin-top:30px; padding:14px 22px; border:1px solid rgba(215,180,110,.6); color:#d7b46e; font-size:11px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; transition:background .2s; }
+.law-inline-link:hover,.law-download:hover { background:rgba(215,180,110,.12); }
+.law-poster-section { padding:130px 0; background:#f4f0e7; color:#1b2327; }
+.law-poster-grid { display:grid; grid-template-columns:1fr 480px; gap:90px; align-items:center; }
+.law-poster-section h2 { font-size:clamp(52px,6vw,78px); line-height:.88; letter-spacing:-.04em; }
+.law-poster-section h2 em { color:#99733e; }
+.law-poster-section p:not(.eyebrow) { margin:30px 0 0; color:#4e5a5e; font-size:15px; line-height:1.8; }
+.law-poster-section .law-download { color:#7d5c2c; border-color:#b08a50; }
+.law-poster-section img { width:100%; height:auto; box-shadow:0 30px 70px rgba(0,0,0,.35); }
+@media (max-width:800px) {
+  .law-hero { background-position:72% center; }
+  .law-hero h1 { font-size:62px; }
+  .law-verses-section blockquote { padding:32px; font-size:25px; }
+  .law-poster-section { padding:88px 0; }
+  .law-poster-grid { grid-template-columns:1fr; gap:50px; }
+}

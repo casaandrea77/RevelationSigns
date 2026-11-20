@@ -21,11 +21,12 @@ const studies = [
   { number: "11", title: "The Nephilim", description: "Angels, giants, or men? Test Genesis 6 and the popular claims against Scripture.", href: "/bible-studies/prophecy/nephilim", meta: "Evidence study · 35 min", label: "Bible Mystery" },
   { number: "12", title: "Angels, Demons & the Great Controversy", description: "Follow the unseen conflict from rebellion in heaven to Christ’s victory and the final end of evil.", href: "/bible-studies/angels-demons-great-controversy", meta: "Evidence study · 40 min", label: "Great Controversy" },
   { number: "13", title: "The State of the Dead", description: "Can the dead speak to the living? Examine the soul, spiritualism, difficult passages, and the resurrection hope.", href: "/bible-studies/state-of-the-dead", meta: "Evidence study · 40 min", label: "Life & Death" },
+  { number: "14", title: "The Dragon & the Commandments", description: "If Jesus abolished God’s law, why does Satan make war on those who keep it? Revelation 12:17 and 14:12 in the King James Bible.", href: "/bible-studies/the-dragon-and-the-commandments", meta: "10 steps · 20 min", label: "Revelation 12 & 14" },
 ] as const;
 
 const collections = [
   { key: "amazing-facts", title: "Amazing Facts Bible Studies", subtitle: "The illustrated collection", description: "Explore all 27 original Amazing Facts Study Guides, presented page by page.", image: "/assets/media/images/amazing-facts-study-1/pages/page-01.jpg", count: "27 study guides", anchor: "amazing-facts-guides" },
-  { key: "general", title: "Bible Studies", subtitle: "Faith & the Christian life", description: "Discover Jesus, salvation, the great controversy, and the promises of Scripture at your own pace.", image: "/assets/media/images/bible-studies/gods-amazing-book.png", count: "13 guided studies", anchor: "general-studies" },
+  { key: "general", title: "Bible Studies", subtitle: "Faith & the Christian life", description: "Discover Jesus, salvation, the great controversy, and the promises of Scripture at your own pace.", image: "/assets/media/images/bible-studies/gods-amazing-book.png", count: "14 guided studies", anchor: "general-studies" },
   { key: "daniel-revelation", title: "Daniel & Revelation Series", subtitle: "Prophecy & everlasting hope", description: "Follow the kingdoms of Daniel through the final events of Revelation and the return of Jesus.", image: "/assets/media/images/daniel-2-statue.png", count: "3 in-depth Bible studies", anchor: "daniel-revelation" },
 ] as const;
 
