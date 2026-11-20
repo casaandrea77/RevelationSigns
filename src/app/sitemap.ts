@@ -43,6 +43,7 @@ const studyRoutes = [
   "/bible-studies/prophecy/nephilim",
   "/bible-studies/angels-demons-great-controversy",
   "/bible-studies/state-of-the-dead",
+  "/bible-studies/the-dragon-and-the-commandments",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
