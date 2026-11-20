@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: "/bible-studies/the-dragon-and-the-commandments",
   },
   openGraph: {
-    title: "If Jesus abolished God's law, why does Satan make war on those who keep it?",
+    title: "Nobody fights a law that is gone. So why is the dragon at war with commandment keepers?",
     description: "A KJV study of Revelation 12:17 and 14:12.",
     images: [{ url: "/assets/media/images/dragon-and-commandments-poster.jpg", width: 1080, height: 1350 }],
   },
