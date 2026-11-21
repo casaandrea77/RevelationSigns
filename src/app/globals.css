@@ -870,7 +870,7 @@
 .law-verses-section blockquote { font-size:30px; }
 .law-inline-link,.law-download { display:inline-block; margin-top:30px; padding:14px 22px; border:1px solid rgba(215,180,110,.6); color:#d7b46e; font-size:11px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; transition:background .2s; }
 .law-inline-link:hover,.law-download:hover { background:rgba(215,180,110,.12); }
-.law-poster-section { padding:130px 0; background:#f4f0e7; color:#1b2327; }
+.law-poster-section { padding:130px 0; background:#f4f0e7; color:#1b2327; border-bottom:1px solid rgba(153,115,62,.25); }
 .law-poster-grid { display:grid; grid-template-columns:1fr 480px; gap:90px; align-items:center; }
 .law-poster-section h2 { font-size:clamp(52px,6vw,78px); line-height:.88; letter-spacing:-.04em; }
 .law-poster-section h2 em { color:#99733e; }
